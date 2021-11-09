@@ -1175,7 +1175,6 @@ helicoptersArray = compileFinal str
 	["M-900 Civilian", "C_Heli_Light_01_civil_F", 4000, "vehicle"], // MH-6, no flares
 	["MH-9 Hummingbird", "B_Heli_Light_01_F", 5000, "vehicle"], // MH-6
 	["PO-30 Orca (Unarmed)", "O_Heli_Light_02_unarmed_F", 30000, "vehicle"], // Ka-60
-	["WY-55 Hellcat (Unarmed)", "I_Heli_light_03_unarmed_F", 30000, "vehicle"], // AW159
 	["CH-49 Mohawk", "I_Heli_Transport_02_F", 30000, "vehicle"], // AW101
 
 	["Mi-290 Taru (Resupply)", "O_Heli_Transport_04_ammo_F", 45000, "vehicle"],
@@ -1191,13 +1190,27 @@ helicoptersArray = compileFinal str
 	["CH-67 Huron (Armed)", "B_Heli_Transport_03_F", 50000, "vehicle"], // CH-47 with 2 side miniguns
 
 	["UH-80 Ghost Hawk", "B_Heli_Transport_01_F", 35000, "vehicle"], // UH-60 Stealth with 2 side miniguns
-	["AH-9 Pawnee (Gun-Only)", "B_Heli_Light_01_dynamicLoadout_F", 60000, "vehicle", "variant_pawneeGun"], // Armed AH-6 (no missiles)
-	["AH-9 Pawnee", "B_Heli_Light_01_dynamicLoadout_F", 65000, "vehicle", "variant_pawneeNormal"], // Armed AH-6
-	["PO-30 Orca (DAR)", "O_Heli_Light_02_dynamicLoadout_F", 60000, "vehicle", "variant_orcaDAR"], // Armed Ka-60
-	["PO-30 Orca (DAGR)", "O_Heli_Light_02_dynamicLoadout_F", 70000, "vehicle", "variant_orcaDAGR"], // Armed Ka-60, add "HIDDEN" if you don't want it, but don't remove the line!
-	["WY-55 Hellcat (Armed)", "I_Heli_light_03_dynamicLoadout_F", 70000, "vehicle"], // Armed AW159
-	["AH-99 Blackfoot", "B_Heli_Attack_01_dynamicLoadout_F", 100000, "vehicle"], // RAH-66 with gunner
-	["Mi-48 Kajman", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle"], // Mi-28 with gunner
+
+	["AH-9 Pawnee (Gun-Only)", "B_Heli_Light_01_dynamicLoadout_F", 60000, "vehicle", "variant_pawneeGun"], // CUSTOM
+	["AH-9 Pawnee (CAS)", "B_Heli_Light_01_dynamicLoadout_F", 70000, "vehicle"], // CUSTOM
+	["AH-9 Pawnee (Unguided AT)", "B_Heli_Light_01_dynamicLoadout_F", 70000, "vehicle", "variant_pawneeGun"], // CUSTOM
+
+	["PO-30 Orca (DAR)", "O_Heli_Light_02_dynamicLoadout_F", 60000, "vehicle"], // CUSTOM
+	["PO-30 Orca (DAGR)", "O_Heli_Light_02_dynamicLoadout_F", 70000, "vehicle", "variant_orcaDAGR"], // CUSTOM
+	["PO-30 Orca (DAKKA)", "O_Heli_Light_02_dynamicLoadout_F", 60000, "vehicle", "variant_orcaDAKKA"], // CUSTOM
+
+	["WY-55 Hellcat (Unarmed)", "I_Heli_light_03_unarmed_F", 30000, "vehicle"], // AW159
+	["WY-55 Hellcat (DAKKA)", "I_Heli_light_03_dynamicLoadout_F", 80000, "vehicle", "variant_catDAKKA"], // CUSTOM
+	["WY-55 Hellcat (MR)", "I_Heli_light_03_dynamicLoadout_F", 80000, "vehicle"], // CUSTOM
+	["WY-55 Hellcat (AT)", "I_Heli_light_03_dynamicLoadout_F", 100000, "vehicle", "variant_catAT"], // CUSTOM
+
+	["AH-99 Blackfoot (CAS)", "B_Heli_Attack_01_dynamicLoadout_F", 100000, "vehicle"], // RAH-66 with gunner // CUSTOM
+	["AH-99 Blackfoot (MR)", "B_Heli_Attack_01_dynamicLoadout_F", 100000, "vehicle", "variant_footMR"], // CUSTOM
+
+	["Mi-48 Kajman (MR)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle"], // Mi-28 with gunner // CUSTOM
+	["Mi-48 Kajman (AT)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle", "variant_kajAT"], // Mi-28 with gunner // CUSTOM
+	["Mi-48 Kajman (AA)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle", "variant_kajAA"], // Mi-28 with gunner // CUSTOM
+	["Mi-48 Kajman (HVY)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle", "variant_kajHVY"], // Mi-28 with gunner // CUSTOM
 
 	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 110000, "vehicle"] // Do NOT use "B_T_UAV_03_dynamicLoadout_F" (unlees you don't need ASRAAM)
 ];
@@ -1206,47 +1219,50 @@ planesArray = compileFinal str
 [
 	["Caesar BTT", "C_Plane_Civil_01_F", 5000, "vehicle"],
 
-	["A-143 Buzzard AA", "I_Plane_Fighter_03_dynamicLoadout_F", 150000, "vehicle", "variant_buzzardAA"],
-	["A-143 Buzzard CAS", "I_Plane_Fighter_03_dynamicLoadout_F", 200000, "vehicle", "variant_buzzardCAS"],
+	["A-143 Buzzard (AA)", "I_Plane_Fighter_03_dynamicLoadout_F", 150000, "vehicle", "variant_buzzardAA"],
+	["A-143 Buzzard (CAS)", "I_Plane_Fighter_03_dynamicLoadout_F", 200000, "vehicle", "variant_buzzardCAS"],
 
-	["A-149 Gryphon", "I_Plane_Fighter_04_F", 150000, "vehicle"],
+	["A-149 Gryphon (AA)", "I_Plane_Fighter_04_F", 150000, "vehicle"], // CUSTOM
+	["A-149 Gryphon (CLST)", "I_Plane_Fighter_04_F", 150000, "vehicle", "variant_gryphonCLST"], // CUSTOM
 
-	["F/A-181 Black Wasp (Gun-Only)", "B_Plane_Fighter_01_Stealth_F", 100000, "vehicle"], // no missiles or bombs
-	["F/A-181 Black Wasp AA", "B_Plane_Fighter_01_F", 150000, "vehicle", "variant_blackwaspAA"],
-	["F/A-181 Black Wasp CAS", "B_Plane_Fighter_01_F", 200000, "vehicle", "variant_blackwaspCAS"],
+	["F/A-181 Black Wasp Stealth (AA)", "B_Plane_Fighter_01_Stealth_F", 150000, "vehicle"], // CUSTOM
+	["F/A-181 Black Wasp (AT)", "B_Plane_Fighter_01_F", 150000, "vehicle"], // CUSTOM
+	["F/A-181 Black Wasp (MR)", "B_Plane_Fighter_01_F", 200000, "vehicle", "variant_blackwaspMR"], // CUSTOM
 
-	["To-201 Shikra (Gun-Only)", "O_Plane_Fighter_02_Stealth_F", 100000, "vehicle"], // no missiles or bombs
-	["To-201 Shikra AA", "O_Plane_Fighter_02_F", 150000, "vehicle", "variant_shikraAA"],
-	["To-201 Shikra CAS", "O_Plane_Fighter_02_F", 200000, "vehicle", "variant_shikraCAS"],
+	["To-201 Shikra Stealth (AA)", "O_Plane_Fighter_02_Stealth_F", 150000, "vehicle"], // CUSTOM
+	["To-201 Shikra (AT)", "O_Plane_Fighter_02_F", 150000, "vehicle"], // CUSTOM
 
-	["A-164 Wipeout CAS", "B_Plane_CAS_01_dynamicLoadout_F", 200000, "vehicle"],
-	["To-199 Neophron CAS", "O_Plane_CAS_02_dynamicLoadout_F", 200000, "vehicle"],
+	["A-164 Wipeout (CAS)", "B_Plane_CAS_01_dynamicLoadout_F", 200000, "vehicle"], // CUSTOM
+  ["A-164 Wipeout (CLST)", "B_Plane_CAS_01_dynamicLoadout_F", 200000, "vehicle", "variant_wipeCLST"], // CUSTOM
+
+	["To-199 Neophron (CAS)", "O_Plane_CAS_02_dynamicLoadout_F", 200000, "vehicle"], // CUSTOM
 
 	["V-44 X Blackfish (Infantry)", "B_T_VTOL_01_infantry_F", 100000, "vehicle"],
 	["V-44 X Blackfish (Gunship)", "B_T_VTOL_01_armed_F", 150000, "vehicle"],
+
 	["Y-32 Xi'an", "O_T_VTOL_02_infantry_dynamicLoadout_F", 120000, "vehicle"],
 
-	["KH-3A Fenghuang Missile UAV", "O_T_UAV_04_CAS_F", 140000, "vehicle"],
+	//["KH-3A Fenghuang Missile UAV", "O_T_UAV_04_CAS_F", 140000, "vehicle"],
 
-	["MQ4A Greyhawk Missile UAV", "B_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkMissile"],
-	["K40 Ababil-3 Missile UAV", "O_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkMissile"],
-	["K40 Ababil-3 Missile UAV", "I_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkMissile"],
+	["MQ4A Greyhawk Missile UAV", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkMissile"],
+	["K40 Ababil-3 Missile UAV", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkMissile"],
+	["K40 Ababil-3 Missile UAV", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkMissile"],
 
-	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkBomber"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
-	["K40 Ababil-3 Bomber UAV", "O_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkBomber"],
-	["K40 Ababil-3 Bomber UAV", "I_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkBomber"],
+	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkBomber"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
+	["K40 Ababil-3 Bomber UAV", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkBomber"],
+	["K40 Ababil-3 Bomber UAV", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkBomber"],
 
-	["MQ4A Greyhawk Cluster UAV", "B_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkCluster"],
-	["K40 Ababil-3 Cluster UAV", "O_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkCluster"],
-	["K40 Ababil-3 Cluster UAV", "I_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkCluster"],
+	["MQ4A Greyhawk Cluster UAV", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkCluster"],
+	["K40 Ababil-3 Cluster UAV", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkCluster"],
+	["K40 Ababil-3 Cluster UAV", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkCluster"],
 
-	["MQ4A Greyhawk DAGR UAV", "B_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkDAGR"],
-	["K40 Ababil-3 DAGR UAV", "O_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkDAGR"],
-	["K40 Ababil-3 DAGR UAV", "I_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_greyhawkDAGR"],
+	["MQ4A Greyhawk (DAGR) UAV", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkDAGR"],
+	["K40 Ababil-3 (DAGR) UAV", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkDAGR"],
+	["K40 Ababil-3 (DAGR) UAV", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkDAGR"],
 
-	["UCAV Sentinel Missile", "B_UAV_05_F", 150000, "vehicle", "variant_sentinelMissile"],
-	["UCAV Sentinel Bomber", "B_UAV_05_F", 150000, "vehicle", "variant_sentinelBomber"],
-	["UCAV Sentinel Cluster", "B_UAV_05_F", 150000, "vehicle", "variant_sentinelCluster"]
+	["UCAV Sentinel Missile", "B_UAV_05_F", 350000, "vehicle", "variant_sentinelMissile"],
+	["UCAV Sentinel Bomber", "B_UAV_05_F", 350000, "vehicle", "variant_sentinelBomber"],
+	["UCAV Sentinel Cluster", "B_UAV_05_F", 350000, "vehicle", "variant_sentinelCluster"]
 ];
 
 boatsArray = compileFinal str
