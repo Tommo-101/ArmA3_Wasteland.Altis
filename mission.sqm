@@ -8,7 +8,7 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=947;
+		nextID=953;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=24;
+		nextID=26;
 	};
 	class Camera
 	{
-		pos[]={20812.363,103.01198,7169.8237};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={27961.057,100.17352,23659.52};
+		dir[]={-0.9643541,-0.21654978,0.15214555};
+		up[]={-0.21392953,0.97626507,0.033751581};
+		aside[]={0.15584254,4.3219188e-007,0.98779088};
 	};
 };
 binarizationWanted=0;
@@ -155,7 +155,7 @@ class Mission
 	class Intel
 	{
 		briefingName="A3Wasteland Altis v1.4d";
-		overviewText="Wasteland survival sandbox by Team Wasteland - visit A3Wasteland.com for more details";
+		overviewText="Wasteland survival sandbox by Team Wasteland - Edited by Tommo for TBG.";
 		resistanceWest=0;
 		timeOfChanges=28800;
 		startWeather=0;
@@ -173,7 +173,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=271;
+		items=286;
 		class Item0
 		{
 			dataType="Group";
@@ -5773,7 +5773,7 @@ class Mission
 					name="Parking6_spawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=215.59122;
+					angle=215.5912;
 					id=427;
 				};
 				class Item12
@@ -5890,6 +5890,7 @@ class Mission
 					};
 					id=437;
 					type="C_Truck_02_box_F";
+					atlOffset=-0.0096263885;
 				};
 				class Item20
 				{
@@ -5990,7 +5991,7 @@ class Mission
 					name="Parking11_spawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=180.06798;
+					angle=180.06796;
 					id=941;
 					atlOffset=3.5033865;
 				};
@@ -6011,7 +6012,7 @@ class Mission
 					name="Parking12_spawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=36.059998;
+					angle=36.059994;
 					id=946;
 				};
 			};
@@ -6182,7 +6183,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={22934.5,11.453303,18819.5};
-				angles[]={0,5.5064273,-0};
+				angles[]={0,5.5064273,0};
 			};
 			side="Empty";
 			flags=5;
@@ -6221,7 +6222,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={22936.75,6.6068869,18827.25};
-				angles[]={0,2.3472579,-0};
+				angles[]={0,2.3472579,0};
 			};
 			side="Empty";
 			flags=5;
@@ -6253,7 +6254,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={22990,14.228073,18887};
-				angles[]={0,6.1390247,-0};
+				angles[]={0,6.1390247,0};
 			};
 			side="Empty";
 			flags=5;
@@ -6262,6 +6263,7 @@ class Mission
 			};
 			id=509;
 			type="Land_Sawmill_01_illuminati_tower_F";
+			atlOffset=4.7683716e-007;
 		};
 		class Item269
 		{
@@ -6269,7 +6271,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={23000.75,6.3103018,18903.25};
-				angles[]={0,4.1592932,-0};
+				angles[]={0,4.1592932,0};
 			};
 			side="Empty";
 			flags=1;
@@ -6286,7 +6288,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={20847.875,30.685303,7252.25};
-				angles[]={0,2.37865,-0};
+				angles[]={0,2.37865,0};
 			};
 			side="Empty";
 			flags=1;
@@ -6296,6 +6298,187 @@ class Mission
 			id=944;
 			type="Land_SM_01_shed_F";
 			atlOffset=0.76677513;
+		};
+		class Item271
+		{
+			dataType="Marker";
+			position[]={8724.3066,13.565552,15851.997};
+			name="Roadblock_1";
+			type="Empty";
+			colorName="ColorUNKNOWN";
+			angle=180;
+			id=881;
+			atlOffset=-81.864349;
+		};
+		class Item272
+		{
+			dataType="Marker";
+			position[]={20561.07,27.045715,8117.4492};
+			name="Roadblock_10";
+			type="Empty";
+			colorName="ColorUNKNOWN";
+			angle=18;
+			id=882;
+			atlOffset=-1.9073486e-006;
+		};
+		class Item273
+		{
+			dataType="Marker";
+			position[]={17420.93,7.3394165,13728.772};
+			name="Roadblock_2";
+			type="Empty";
+			colorName="ColorUNKNOWN";
+			id=883;
+			atlOffset=-2.3841858e-006;
+		};
+		class Item274
+		{
+			dataType="Marker";
+			position[]={14780.016,21.329323,17714.207};
+			name="Roadblock_3";
+			type="Empty";
+			colorName="ColorUNKNOWN";
+			angle=122.99997;
+			id=884;
+			atlOffset=1.9073486e-006;
+		};
+		class Item275
+		{
+			dataType="Marker";
+			position[]={18568.914,40.868103,16534.154};
+			name="Roadblock_4";
+			type="Empty";
+			colorName="ColorUNKNOWN";
+			angle=66.999962;
+			id=885;
+		};
+		class Item276
+		{
+			dataType="Marker";
+			position[]={9129.0186,89.692383,15596.45};
+			name="Roadblock_5";
+			type="Empty";
+			colorName="ColorUNKNOWN";
+			angle=19.999992;
+			id=886;
+			atlOffset=0.00038146973;
+		};
+		class Item277
+		{
+			dataType="Marker";
+			position[]={3953.4287,49.114136,12210.31};
+			name="Roadblock_6";
+			type="Empty";
+			colorName="ColorUNKNOWN";
+			angle=99.999985;
+			id=887;
+			atlOffset=0.0032958984;
+		};
+		class Item278
+		{
+			dataType="Marker";
+			position[]={4434.0439,270.83322,20827.891};
+			name="Roadblock_7";
+			type="Empty";
+			colorName="ColorUNKNOWN";
+			angle=334.99985;
+			id=888;
+		};
+		class Item279
+		{
+			dataType="Marker";
+			position[]={9041.4648,18.734634,21335.74};
+			name="Roadblock_8";
+			type="Empty";
+			colorName="ColorUNKNOWN";
+			angle=49.999992;
+			id=889;
+			atlOffset=0.0010948181;
+		};
+		class Item280
+		{
+			dataType="Marker";
+			position[]={26760.328,22.531876,23035.527};
+			name="Roadblock_9";
+			type="Empty";
+			colorName="ColorUNKNOWN";
+			angle=36;
+			id=890;
+			atlOffset=1.9073486e-006;
+		};
+		class Item281
+		{
+			dataType="Marker";
+			position[]={4338.375,293,20666.625};
+			name="TERRITORY_COMMS_SITE_ALPHA";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=50;
+			b=110;
+			angle=90;
+			id=947;
+			atlOffset=-3.3139648;
+		};
+		class Item282
+		{
+			dataType="Marker";
+			position[]={12763.375,-2.875,14188.375};
+			name="TERRITORY_NEOCHORI_HARBOUR";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=70;
+			b=110;
+			angle=66;
+			id=948;
+			atlOffset=8.3465185;
+		};
+		class Item283
+		{
+			dataType="Marker";
+			position[]={17427.75,14.374,13163.125};
+			name="TERRITORY_PYRGOS_FOB";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=105;
+			b=80;
+			angle=45.999996;
+			id=950;
+			atlOffset=5.9127808e-005;
+		};
+		class Item284
+		{
+			dataType="Marker";
+			position[]={19348.25,195.797,9683.875};
+			name="TERRITORY_COMMS_SITE_BRAVO";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=50;
+			b=50;
+			id=951;
+			atlOffset=-0.0004119873;
+		};
+		class Item285
+		{
+			dataType="Marker";
+			position[]={25414.375,10.005,20331.375};
+			name="TERRITORY_EAST_POWER_PLANT";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=50;
+			b=50;
+			angle=60;
+			id=952;
+			atlOffset=-5.8174133e-005;
 		};
 	};
 };
