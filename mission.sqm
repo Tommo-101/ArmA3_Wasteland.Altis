@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=6;
+	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=452;
+		nextID=947;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=24;
 	};
 	class Camera
 	{
-		pos[]={14305.578,164.96268,16028.331};
-		dir[]={0.27691755,-0.36774236,0.88788301};
-		up[]={0.10952215,0.92984635,0.35117492};
-		aside[]={0.9547565,3.2084063e-007,-0.29777604};
+		pos[]={20812.363,103.01198,7169.8237};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -41,13 +41,19 @@ addons[]=
 	"A3_Structures_F_EPC_Civ_Accessories",
 	"A3_Structures_F_System",
 	"A3_Structures_F_EPA_Mil_Scrapyard",
-	"A3_Soft_F_Gamma_Truck_02"
+	"A3_Soft_F_Gamma_Truck_02",
+	"A3_Structures_F_Ind_Shed",
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Structures_F_Enoch_Military_Radar",
+	"A3_Structures_F_Ind_Transmitter_Tower",
+	"A3_Structures_F_Enoch_Industrial_Sawmills",
+	"A3_Structures_F_Exp_Industrial_SurfaceMine_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=12;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -104,7 +110,40 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item8
+		{
+			className="A3_Structures_F_Ind";
+			name="Arma 3 - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Structures_F_Enoch_Military";
+			name="Arma 3 Contact Platform - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Structures_F_Enoch_Industrial";
+			name="Arma 3 Contact Platform - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item11
+		{
+			className="A3_Structures_F_Exp_Industrial";
+			name="Arma 3 Apex - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
+};
+dlcs[]=
+{
+	"Enoch",
+	"Expansion"
 };
 randomSeed=3783014;
 class ScenarioData
@@ -118,7 +157,7 @@ class Mission
 		briefingName="A3Wasteland Altis v1.4d";
 		overviewText="Wasteland survival sandbox by Team Wasteland - visit A3Wasteland.com for more details";
 		resistanceWest=0;
-		timeOfChanges=3e+038;
+		timeOfChanges=28800;
 		startWeather=0;
 		startWind=0;
 		forecastWeather=0;
@@ -127,14 +166,14 @@ class Mission
 		rainForced=1;
 		year=2035;
 		month=6;
-		hour=6;
-		minute=0;
+		hour=8;
+		minute=20;
 		startFogDecay=0;
 		forecastFogDecay=0;
 	};
 	class Entities
 	{
-		items=262;
+		items=271;
 		class Item0
 		{
 			dataType="Group";
@@ -5620,7 +5659,7 @@ class Mission
 			name="VanillaLayer";
 			class Entities
 			{
-				items=24;
+				items=30;
 				class Item0
 				{
 					dataType="Marker";
@@ -5734,7 +5773,7 @@ class Mission
 					name="Parking6_spawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=215.59125;
+					angle=215.59122;
 					id=427;
 				};
 				class Item12
@@ -5838,8 +5877,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={20832.541,31.142574,7237.2524};
-						angles[]={0.029321531,3.9986713,0.012007865};
+						position[]={20832.471,29.313805,7300.0698};
+						angles[]={6.2791886,1.0013946,6.2179461};
 					};
 					side="Empty";
 					flags=4;
@@ -5851,7 +5890,6 @@ class Mission
 					};
 					id=437;
 					type="C_Truck_02_box_F";
-					atlOffset=-0.0081043243;
 				};
 				class Item20
 				{
@@ -5896,26 +5934,89 @@ class Mission
 				class Item22
 				{
 					dataType="Marker";
-					position[]={15121.5,17.91,17255};
-					name="Parking9";
-					type="Empty";
-					colorName="ColorBlack";
-					id=446;
-				};
-				class Item23
-				{
-					dataType="Marker";
 					position[]={15133.755,21.528,17276.59};
 					name="Parking9_spawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=180.06798;
+					angle=180.06796;
 					id=447;
 					atlOffset=3.654089;
 				};
+				class Item23
+				{
+					dataType="Marker";
+					position[]={26822.865,21.541,24659.658};
+					name="Parking10";
+					type="Empty";
+					colorName="ColorBlack";
+					id=454;
+					atlOffset=-0.066612244;
+				};
+				class Item24
+				{
+					dataType="Marker";
+					position[]={26830.213,25.159,24667.004};
+					name="Parking10_spawn";
+					type="Empty";
+					colorName="ColorBlack";
+					angle=180.06796;
+					id=455;
+					atlOffset=3.5032692;
+				};
+				class Item25
+				{
+					dataType="Marker";
+					position[]={15106.881,17.677607,17300.637};
+					name="Parking9";
+					type="Empty";
+					colorName="ColorBlack";
+					id=459;
+					atlOffset=-3.8146973e-005;
+				};
+				class Item26
+				{
+					dataType="Marker";
+					position[]={22997.129,4.618,18904.814};
+					name="Parking11";
+					type="Empty";
+					colorName="ColorBlack";
+					id=940;
+					atlOffset=0.00042200089;
+				};
+				class Item27
+				{
+					dataType="Marker";
+					position[]={23014.578,7.0650001,18911.172};
+					name="Parking11_spawn";
+					type="Empty";
+					colorName="ColorBlack";
+					angle=180.06798;
+					id=941;
+					atlOffset=3.5033865;
+				};
+				class Item28
+				{
+					dataType="Marker";
+					position[]={20848.949,28.986,7247.9399};
+					name="Parking12";
+					type="Empty";
+					colorName="ColorBlack";
+					id=945;
+					atlOffset=0.00014877319;
+				};
+				class Item29
+				{
+					dataType="Marker";
+					position[]={20817.25,28.622175,7239.125};
+					name="Parking12_spawn";
+					type="Empty";
+					colorName="ColorBlack";
+					angle=36.059998;
+					id=946;
+				};
 			};
 			id=415;
-			atlOffset=5.6778383;
+			atlOffset=-5.1071262;
 		};
 		class Item258
 		{
@@ -6023,6 +6124,178 @@ class Mission
 			};
 			id=451;
 			type="Land_Atm_01_F";
+		};
+		class Item262
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26825.875,23.03997,24679.625};
+				angles[]={0,5.8387027,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=452;
+			type="Land_i_Shed_Ind_F";
+			atlOffset=0.39991379;
+		};
+		class Item263
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15104.875,19.41497,17301.75};
+				angles[]={0,5.5043759,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=458;
+			type="Land_i_Shed_Ind_F";
+			atlOffset=0.21734047;
+		};
+		class Item264
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={22999.965,3.9540958,18857.158};
+				angles[]={6.272521,0,6.2511988};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=488;
+			type="Land_HelipadCircle_F";
+			atlOffset=-2.5272369e-005;
+		};
+		class Item265
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={22934.5,11.453303,18819.5};
+				angles[]={0,5.5064273,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=493;
+			type="Land_MobileRadar_01_radar_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Rotation_Speed";
+					expression="_this animateSource ['Radar_Rotation',1e6-1,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.30000001;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item266
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={22936.75,6.6068869,18827.25};
+				angles[]={0,2.3472579,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=494;
+			type="Land_MobileRadar_01_generator_F";
+		};
+		class Item267
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={22976.557,21.380291,18869.959};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=504;
+			type="Land_Communication_F";
+			atlOffset=0.00014877319;
+		};
+		class Item268
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={22990,14.228073,18887};
+				angles[]={0,6.1390247,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=509;
+			type="Land_Sawmill_01_illuminati_tower_F";
+		};
+		class Item269
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={23000.75,6.3103018,18903.25};
+				angles[]={0,4.1592932,-0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=513;
+			type="Land_SM_01_shed_F";
+			atlOffset=0.68436003;
+		};
+		class Item270
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20847.875,30.685303,7252.25};
+				angles[]={0,2.37865,-0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=944;
+			type="Land_SM_01_shed_F";
+			atlOffset=0.76677513;
 		};
 	};
 };

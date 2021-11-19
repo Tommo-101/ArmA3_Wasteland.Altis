@@ -20,6 +20,7 @@ _aiGroup = grpNull;
 if (!isNil "_setupVars") then { call _setupVars };
 
 diag_log format ["WASTELAND SERVER - %1 Mission%2 started: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+[markerPos _missionLocation] spawn cleanupMissionObjects;
 
 _missionTimeout = MISSION_PROC_TIMEOUT;
 
