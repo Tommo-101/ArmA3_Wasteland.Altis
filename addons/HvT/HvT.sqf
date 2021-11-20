@@ -4,7 +4,7 @@
 
 #define HVT_AMOUNT 100000  // how much a player needs to be carrying to become a HvT
 #define HINT_DELAY 60  // number of seconds between each HvT reminder hint
-#define MARKER_REFRESH 30  // number of seconds between each HvT marker refresh
+#define MARKER_REFRESH 40  // number of seconds between each HvT marker refresh
 
 if (isServer) then
 {
