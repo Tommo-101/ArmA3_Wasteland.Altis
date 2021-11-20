@@ -8,7 +8,7 @@ APOC_AA_VehOptions =
   ["Strider HMG", "I_MRAP_03_hmg_F", 50000, "vehicle"],
   ["Ifrit HMG", "O_MRAP_02_hmg_F", 50000, "vehicle"],
   ["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 95000, "vehicle"],
-  ["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 100000, "vehicle"],
+  ["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 100000, "vehicle"]
 ];
 
 APOC_AA_SupOptions =
@@ -17,6 +17,3 @@ APOC_AA_SupOptions =
   ["Assault Rifle", "mission_USSpecial", 35000, "supply"],
   ["Sniper Rifles", "airdrop_Snipers", 50000, "supply"]
 ];
-
-//["DLC Rifles", "airdrop_DLC_Rifles", 45000, "supply"],
-//["DLC LMGs", 			"airdrop_DLC_LMGs", 45000, "supply"],
