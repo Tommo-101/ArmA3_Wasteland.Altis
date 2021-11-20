@@ -9,6 +9,8 @@ if (!isServer) exitWith {};
 MainMissions =
 [
 	// Mission filename, weight
+  ["mission_AbandonedHeli", 1],
+	["mission_AbandonedJet", 1],
 	["mission_ArmedDiversquad", 1],
 	["mission_Coastal_Convoy", 1],
 	["mission_Convoy", 1],
@@ -31,6 +33,8 @@ SideMissions =
 	["mission_Outpost", 3],
 	["mission_Truck", 1],
 	["mission_HostageRescue", 1]
+	["mission_Occupation", 1]
+	["mission_Sniper", 1]
 ];
 
 MoneyMissions =
