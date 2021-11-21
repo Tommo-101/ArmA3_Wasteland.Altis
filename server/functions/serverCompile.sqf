@@ -40,6 +40,7 @@ removeDisabledMissions = [_path, "removeDisabledMissions.sqf"] call mf_compile;
 setLocationObjects = [_path, "setLocationObjects.sqf"] call mf_compile;
 setLocationState = [_path, "setLocationState.sqf"] call mf_compile;
 setMissionState = [_path, "setMissionState.sqf"] call mf_compile;
+cleanupMissionObjects = [_path, "cleanupMissionObjects.sqf"] call mf_compile;
 
 //Function Compiles
 _path = "server\functions";
@@ -85,7 +86,6 @@ vehicleRepair = [_path, "vehicleRepair.sqf"] call mf_compile;
 vehicleSetup = [_path, "vehicleSetup.sqf"] call mf_compile;
 waitUntilBagTaken = [_path, "waitUntilBagTaken.sqf"] call mf_compile;
 weaponDisassembledServer = [_path, "weaponDisassembledServer.sqf"] call mf_compile;
-cleanupMissionObjects = [_path, "cleanupMissionObjects.sqf"] call mf_compile;
 
 //Player Management
 server_playerDied = [_path, "serverAiDied.sqf"] call mf_compile;
