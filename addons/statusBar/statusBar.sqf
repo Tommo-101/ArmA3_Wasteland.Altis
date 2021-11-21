@@ -47,7 +47,7 @@ ZGO_StatusEnabled = true;
 			_dir = round (getDir (vehicle player));
 			_grid = mapGridPosition  player; _xx = (format[_grid]) select  [0,3];
 			_yy = (format[_grid]) select  [3,3];
-			_time = (round(239-(serverTime)/60));  //edit the '240' value (60*4=240) to change the countdown timer if your server restarts are shorter or longer than 4 hour intervals
+			_time = (round(359-(serverTime)/60));  //edit the '240' value (60*4=240) to change the countdown timer if your server restarts are shorter or longer than 4 hour intervals
 			_hours = (floor(_time/60));
 			_minutes = (_time - (_hours * 60));
 
@@ -67,8 +67,8 @@ ZGO_StatusEnabled = true;
 
 			//Color Default
 			_colourDefault 	= parseText "#00A1FF";
-			
-			//Color Damage Gradient 
+
+			//Color Damage Gradient
 			_colourDamageDefault 	= parseText "#76FF00";
 			_colour90 				= parseText "#B2FF00";
 			_colour80 				= parseText "#CCFF00";
@@ -96,7 +96,7 @@ ZGO_StatusEnabled = true;
 			if((_damage >= 10) && (_damage < 20)) then {_colourDamage =  _colour10;};
 			if((_damage >= 1) && (_damage < 10)) then {_colourDamage =  _colour0;};
 			if(_damage < 1) then{_colourDamage =  _colourDead;};
-			
+
 			//Color FPS Gradient
 			_colourFPSDefault 	= parseText "#76FF00";
 			_colourFPS40 		= parseText "#FAFF00";
@@ -104,7 +104,7 @@ ZGO_StatusEnabled = true;
 			_colourFPS20 		= parseText "#FF6600";
 			_colourFPS10 		= parseText "#FF0000";
 			_colourFPS0 		= parseText "#FF0000";
-			
+
 			//Colour FPS
 			_colourFPS = _colourFPSDefault;
 			if(_serverFPS >= 50) then{_colourFPS = _colourFPSDefault;};
