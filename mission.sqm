@@ -173,7 +173,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=286;
+		items=295;
 		class Item0
 		{
 			dataType="Group";
@@ -6479,6 +6479,105 @@ class Mission
 			angle=60;
 			id=952;
 			atlOffset=-5.8174133e-005;
+		};
+		class Item286
+		{
+			dataType="Marker";
+			position[]={14746.5,1.8186994e+011,16720};
+			name="Occupation_1";
+			type="Empty";
+			colorName="ColorYellow";
+			angle=17.792999;
+			id=858;
+			atlOffset=1.8186994e+011;
+		};
+		class Item287
+		{
+			dataType="Marker";
+			position[]={14255,0,16260};
+			name="Occupation_2";
+			type="Empty";
+			colorName="ColorYellow";
+			angle=17.792999;
+			id=859;
+			atlOffset=-19.740002;
+		};
+		class Item288
+		{
+			dataType="Marker";
+			position[]={12374.5,0,15585};
+			name="Occupation_3";
+			type="Empty";
+			colorName="ColorYellow";
+			angle=17.792999;
+			id=860;
+			atlOffset=-24.776632;
+		};
+		class Item289
+		{
+			dataType="Marker";
+			position[]={20940.5,0,7342};
+			name="Occupation_4";
+			type="Empty";
+			colorName="ColorYellow";
+			angle=17.792999;
+			id=861;
+			atlOffset=-25.363333;
+		};
+		class Item290
+		{
+			dataType="Marker";
+			position[]={26838.5,0,24673};
+			name="Occupation_5";
+			type="Empty";
+			colorName="ColorYellow";
+			angle=17.792999;
+			id=862;
+			atlOffset=-21.626669;
+		};
+		class Item291
+		{
+			dataType="Marker";
+			position[]={9319.5,0,15765.5};
+			name="Occupation_6";
+			type="Empty";
+			colorName="ColorYellow";
+			angle=17.792999;
+			id=863;
+			atlOffset=-130.27129;
+		};
+		class Item292
+		{
+			dataType="Marker";
+			position[]={16569.5,0,12777.5};
+			name="Occupation_7";
+			type="Empty";
+			colorName="ColorYellow";
+			angle=17.792999;
+			id=864;
+			atlOffset=-11;
+		};
+		class Item293
+		{
+			dataType="Marker";
+			position[]={12437,0,15910.5};
+			name="Occupation_8";
+			type="Empty";
+			colorName="ColorYellow";
+			angle=17.792999;
+			id=865;
+			atlOffset=-20.537334;
+		};
+		class Item294
+		{
+			dataType="Marker";
+			position[]={18068.5,0,15283.5};
+			name="Occupation_9";
+			type="Empty";
+			colorName="ColorYellow";
+			angle=17.792999;
+			id=866;
+			atlOffset=-28.585972;
 		};
 	};
 };

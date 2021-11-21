@@ -32,8 +32,8 @@ SideMissions =
 	["mission_TownInvasion", 2],
 	["mission_Outpost", 3],
 	["mission_Truck", 1],
-	["mission_HostageRescue", 1]
-	["mission_Occupation", 1]
+	["mission_HostageRescue", 1],
+	["mission_Occupation", 1],
 	["mission_Sniper", 1]
 ];
 
@@ -47,6 +47,7 @@ MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith
 ForestMissionMarkers = (allMapMarkers select {["ForestMission_", _x] call fn_startsWith}) apply {[_x, false]};
 SunkenMissionMarkers = (allMapMarkers select {["SunkenMission_", _x] call fn_startsWith}) apply {[_x, false]};
 RoadblockMissionMarkers = (allMapMarkers select {["Roadblock_", _x] call fn_startsWith}) apply {[_x, false]};
+OccupationMissionMarkers = (allMapMarkers select {["Occupation_", _x] call fn_startsWith}) apply {[_x, false]};
 
 if !(ForestMissionMarkers isEqualTo []) then
 {
