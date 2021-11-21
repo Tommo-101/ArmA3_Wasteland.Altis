@@ -173,7 +173,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=295;
+		items=307;
 		class Item0
 		{
 			dataType="Group";
@@ -6578,6 +6578,117 @@ class Mission
 			angle=17.792999;
 			id=866;
 			atlOffset=-28.585972;
+		};
+		class Item295
+		{
+			dataType="Marker";
+			position[]={12806.834,87.691101,16660.371};
+			name="Sniper_1";
+			type="Empty";
+			colorName="ColorCIV";
+			id=891;
+		};
+		class Item296
+		{
+			dataType="Marker";
+			position[]={6076.937,238.45117,19513.861};
+			name="Sniper_10";
+			type="Empty";
+			colorName="ColorCIV";
+			id=892;
+		};
+		class Item297
+		{
+			dataType="Marker";
+			position[]={27491.432,48.587158,25134.615};
+			name="Sniper_11";
+			type="Empty";
+			colorName="ColorCIV";
+			id=893;
+			atlOffset=3.8146973e-006;
+		};
+		class Item298
+		{
+			dataType="Marker";
+			position[]={8420.1514,111.48961,25111.037};
+			name="Sniper_12";
+			type="Empty";
+			colorName="ColorCIV";
+			id=894;
+		};
+		class Item299
+		{
+			dataType="Marker";
+			position[]={9695.8877,213.20737,20174.68};
+			name="Sniper_2";
+			type="Empty";
+			colorName="ColorCIV";
+			id=895;
+		};
+		class Item300
+		{
+			dataType="Marker";
+			position[]={4512.8525,102.03847,13468.388};
+			name="Sniper_3";
+			type="Empty";
+			colorName="ColorCIV";
+			id=896;
+			atlOffset=-7.6293945e-006;
+		};
+		class Item301
+		{
+			dataType="Marker";
+			position[]={18315.26,128.73756,12245.663};
+			name="Sniper_4";
+			type="Empty";
+			colorName="ColorCIV";
+			id=897;
+		};
+		class Item302
+		{
+			dataType="Marker";
+			position[]={9520.3398,150.64557,15741.57};
+			name="Sniper_5";
+			type="Empty";
+			colorName="ColorCIV";
+			id=898;
+		};
+		class Item303
+		{
+			dataType="Marker";
+			position[]={25364.445,76.49939,21774.748};
+			name="Sniper_6";
+			type="Empty";
+			colorName="ColorCIV";
+			id=899;
+		};
+		class Item304
+		{
+			dataType="Marker";
+			position[]={11199.199,182.41,8715.8789};
+			name="Sniper_7";
+			type="Empty";
+			colorName="ColorCIV";
+			id=900;
+		};
+		class Item305
+		{
+			dataType="Marker";
+			position[]={18746.145,209.48889,10205.464};
+			name="Sniper_8";
+			type="Empty";
+			colorName="ColorCIV";
+			id=901;
+			atlOffset=1.5258789e-005;
+		};
+		class Item306
+		{
+			dataType="Marker";
+			position[]={2306.1982,95.397324,22179.004};
+			name="Sniper_9";
+			type="Empty";
+			colorName="ColorCIV";
+			id=902;
 		};
 	};
 };

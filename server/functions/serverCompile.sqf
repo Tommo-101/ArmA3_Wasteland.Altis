@@ -21,9 +21,6 @@ createCustomGroup2 = [_path, "createUnits\customGroup2.sqf"] call mf_compile;
 createCustomGroup3 = [_path, "createUnits\customGroup3.sqf"] call mf_compile;
 createCustomGroup4 = [_path, "createUnits\customGroup3.sqf"] call mf_compile;
 createLargeDivers = [_path, "createUnits\largeDivers.sqf"] call mf_compile;
-createOccupationGroup = [_path, "createUnits\occupationGroup.sqf"] call mf_compile;
-addDefensiveMines = [_path, "createUnits\addDefensiveMines.sqf"] call mf_compile;
-createsniperGroup = [_path, "createUnits\sniperGroup.sqf"] call mf_compile;
 createMissionLocation = [_path, "createMissionLocation.sqf"] call mf_compile;
 createMissionMarker = [_path, "createMissionMarker.sqf"] call mf_compile;
 createMissionVehicle = [_path, "createMissionVehicle.sqf"] call mf_compile;
@@ -31,6 +28,7 @@ createMissionVehicle2 = [_path, "createMissionVehicle2.sqf"] call mf_compile;
 createOutpost = [_path, "createOutpost.sqf"] call mf_compile;
 createRandomSoldier = [_path, "createUnits\createRandomSoldier.sqf"] call mf_compile;
 createRandomSoldierC = [_path, "createUnits\createRandomSoldierC.sqf"] call mf_compile;
+createRandomPilot = [_path, "createUnits\createRandomPilot.sqf"] call mf_compile;
 createSmallDivers = [_path, "createUnits\smallDivers.sqf"] call mf_compile;
 generateMissionWeights = [_path, "generateMissionWeights.sqf"] call mf_compile;
 mission_VehicleCapture = "server\missions\mainMissions\mission_VehicleCapture.sqf" call mf_compile;
@@ -40,6 +38,9 @@ removeDisabledMissions = [_path, "removeDisabledMissions.sqf"] call mf_compile;
 setLocationObjects = [_path, "setLocationObjects.sqf"] call mf_compile;
 setLocationState = [_path, "setLocationState.sqf"] call mf_compile;
 setMissionState = [_path, "setMissionState.sqf"] call mf_compile;
+createOccupationGroup = [_path, "createUnits\occupationGroup.sqf"] call mf_compile;
+addDefensiveMines = [_path, "createUnits\addDefensiveMines.sqf"] call mf_compile;
+createsniperGroup = [_path, "createUnits\sniperGroup.sqf"] call mf_compile;
 cleanupMissionObjects = [_path, "cleanupMissionObjects.sqf"] call mf_compile;
 
 //Function Compiles
