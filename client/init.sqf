@@ -55,6 +55,7 @@ player addEventHandler ["Killed", onKilled];
 
 call compile preprocessFileLineNumbers "addons\far_revive\FAR_revive_init.sqf";
 
+
 A3W_scriptThreads pushBack execVM "client\functions\evalManagedActions.sqf";
 
 [player, objNull] remoteExec ["A3W_fnc_playerRespawnServer", 2];
@@ -161,6 +162,7 @@ A3W_scriptThreads pushBack execVM "addons\Lootspawner\LSclientScan.sqf";
 [] execVM "client\functions\drawPlayerIcons.sqf";
 [] execVM "addons\camera\functions.sqf";
 [] execVM "addons\UAV_Control\functions.sqf";
+[] execVM "addons\cctv\functions.sqf";             // CCTV Camera addon
 
 call compile preprocessFileLineNumbers "client\functions\generateAtmArray.sqf";
 [] execVM "client\functions\drawPlayerMarkers.sqf";
@@ -178,4 +180,4 @@ inGameUISetEventHandler ["Action", "_this call A3W_fnc_inGameUIActionEvent"];
 	};
 } forEach pvar_spawn_beacons;
 
-if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"}; 
+if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};

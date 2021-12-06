@@ -980,48 +980,60 @@ allStoreGear = compileFinal str (call headArray + call uniformArray + call vestA
 
 genObjectsArray = compileFinal str
 [
+	//["Base in a Box (Small)", "Land_CargoBox_V1_F", 50000, "object"],
+	//["Base in a Box (Medium)", "Land_Cargo20_yellow_F", 100000, "object"],
+	//["Base in a Box (Large)", "Land_Cargo40_white_F", 150000, "object"],
+	["Base door (beta)", "Land_Canal_Wall_10m_F", 25000, "object"],  // LouD
+	["Base door key (PIN: 0000) (beta)", "Land_InfoStand_V2_F", 10000, "object"],  // LouD
+	["Base locker (PIN: 0000)", "Land_Device_assembled_F", 50000, "object"],  //Cael817, SNAFU,Used for base operations <-- Destroyable
+	["Safe (PIN: 0000)", "Box_NATO_AmmoVeh_F", 50000, "ammocrate"],
+	["Empty Ammo Crate", "Box_NATO_Ammo_F", 200, "ammocrate"],
+	["Camp Fire", "Land_FirePlace_F", 100, "object"],
+	["Small Platform", "Land_GH_Platform_F", 500, "object"],
+	["Halogen lamp post", "Land_LampHalogen_F", 500, "object"],
+	["Lamp Post (Harbour)", "Land_LampHarbour_F", 200, "object"],
+	["Lamp Post (Shabby)", "Land_LampShabby_F", 200, "object"],
+	["Boom Gate", "Land_BarGate_F", 300, "object"],
+	["Pipes", "Land_Pipes_Large_F", 400, "object"],
+	["Concrete Frame", "Land_CncShelter_F", 400, "object"],
+	["Highway Guardrail", "Land_Crash_barrier_F", 400, "object"],
+	["Concrete Barrier", "Land_CncBarrier_F", 400, "object"],
+	["Concrete Barrier (Medium)", "Land_CncBarrierMedium_F", 700, "object"],
+	["Concrete Barrier (Long)", "Land_CncBarrierMedium4_F", 1000, "object"],
+	["HBarrier (1 block)", "Land_HBarrier_1_F", 300, "object"],
+	["HBarrier (3 blocks)", "Land_HBarrier_3_F", 400, "object"],
+	["HBarrier (5 blocks)", "Land_HBarrier_5_F", 500, "object"],
+	["HBarrier Big", "Land_HBarrierBig_F", 1000, "object"],
+	["HBarrier Wall (4 blocks)", "Land_HBarrierWall4_F", 800, "object"],
+	["HBarrier Wall (6 blocks)", "Land_HBarrierWall6_F", 1000, "object"],
+	["HBarrier Watchtower", "Land_HBarrierTower_F", 1200, "object"],
+	["Concrete Wall", "Land_CncWall1_F", 800, "object"],
+	["Concrete Military Wall", "Land_Mil_ConcreteWall_F", 800, "object"],
+	["Concrete Wall (Long)", "Land_CncWall4_F", 1200, "object"],
+	["Military Wall (Big)", "Land_Mil_WallBig_4m_F", 1200, "object"],
+	//["Shoot House Wall", "Land_Shoot_House_Wall_F", 180, "object"],
+	["Canal Wall (Small)", "Land_Canal_WallSmall_10m_F", 800, "object"],
+	["Canal Stairs", "Land_Canal_Wall_Stairs_F", 1000, "object"],
+	["Bag Fence (Corner)", "Land_BagFence_Corner_F", 300, "object"],
+	["Bag Fence (End)", "Land_BagFence_End_F", 300, "object"],
+	["Bag Fence (Long)", "Land_BagFence_Long_F", 400, "object"],
+	["Bag Fence (Round)", "Land_BagFence_Round_F", 300, "object"],
+	["Bag Fence (Short)", "Land_BagFence_Short_F", 300, "object"],
+	["Bag Bunker (Small)", "Land_BagBunker_Small_F", 300, "object"],
+	["Bag Bunker (Large)", "Land_BagBunker_Large_F", 1000, "object"],
+	["Bag Bunker Tower", "Land_BagBunker_Tower_F", 2000, "object"],
+	["Military Cargo Post", "Land_Cargo_Patrol_V1_F", 5000, "object"],
+	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 7500, "object"],
+	["Military Cargo HQ", "Land_Cargo_HQ_V1_F", 10000, "object"], // Added on player request
+	["Concrete Ramp", "Land_RampConcrete_F", 1000, "object"],
+	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 1500, "object"],
+	["Concrete Block", "BlockConcrete_F", 5000, "object"],
+	["Scaffolding", "Land_Scaffolding_F", 1000, "object"],
+	["Food sacks", "Land_Sacks_goods_F", 5000, "object"], // Added on player request
+	["Water Barrel", "Land_BarrelWater_F", 5000, "object"] // Added on player request
 	["Camo Net", "CamoNet_INDP_open_F", 200, "object", "HIDDEN"], // unlisted, only for object saving
-
 	["Pier Ladder", "Land_PierLadder_F", 250, "object"],
 	["Ammo Cache", "Box_FIA_Support_F", 250, "ammocrate"],
-	//["Metal Barrel", "Land_MetalBarrel_F", 25, "object"],
-	//["Toilet Box", "Land_ToiletBox_F", 25, "object"],
-	["Lamp Post (Harbour)", "Land_LampHarbour_F", 100, "object"],
-	["Lamp Post (Shabby)", "Land_LampShabby_F", 100, "object"],
-	["Boom Gate", "Land_BarGate_F", 150, "object"],
-	["Pipes", "Land_Pipes_Large_F", 200, "object"],
-	["Concrete Frame", "Land_CncShelter_F", 200, "object"],
-	["Highway Guardrail", "Land_Crash_barrier_F", 200, "object"],
-	["Concrete Barrier", "Land_CncBarrier_F", 200, "object"],
-	["Concrete Barrier (Medium)", "Land_CncBarrierMedium_F", 350, "object"],
-	["Concrete Barrier (Long)", "Land_CncBarrierMedium4_F", 500, "object"],
-	["HBarrier (1 block)", "Land_HBarrier_1_F", 150, "object"],
-	["HBarrier (3 blocks)", "Land_HBarrier_3_F", 200, "object"],
-	["HBarrier (5 blocks)", "Land_HBarrier_5_F", 250, "object"],
-	["HBarrier Big", "Land_HBarrierBig_F", 500, "object"],
-	["HBarrier Wall (4 blocks)", "Land_HBarrierWall4_F", 400, "object"],
-	["HBarrier Wall (6 blocks)", "Land_HBarrierWall6_F", 500, "object"],
-	["HBarrier Watchtower", "Land_HBarrierTower_F", 600, "object"],
-	["Concrete Wall", "Land_CncWall1_F", 400, "object"],
-	["Concrete Military Wall", "Land_Mil_ConcreteWall_F", 400, "object"],
-	["Concrete Wall (Long)", "Land_CncWall4_F", 600, "object"],
-	["Military Wall (Big)", "Land_Mil_WallBig_4m_F", 600, "object"],
-	//["Shoot House Wall", "Land_Shoot_House_Wall_F", 180, "object"],
-	["Canal Wall (Small)", "Land_Canal_WallSmall_10m_F", 400, "object"],
-	["Canal Stairs", "Land_Canal_Wall_Stairs_F", 500, "object"],
-	["Bag Fence (Corner)", "Land_BagFence_Corner_F", 150, "object"],
-	["Bag Fence (End)", "Land_BagFence_End_F", 150, "object"],
-	["Bag Fence (Long)", "Land_BagFence_Long_F", 200, "object"],
-	["Bag Fence (Round)", "Land_BagFence_Round_F", 150, "object"],
-	["Bag Fence (Short)", "Land_BagFence_Short_F", 150, "object"],
-	["Bag Bunker (Small)", "Land_BagBunker_Small_F", 250, "object"],
-	["Bag Bunker (Large)", "Land_BagBunker_Large_F", 500, "object"],
-	["Bag Bunker Tower", "Land_BagBunker_Tower_F", 1000, "object"],
-	["Military Cargo Post", "Land_Cargo_Patrol_V1_F", 800, "object"],
-	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 10000, "object"],
-	["Concrete Ramp", "Land_RampConcrete_F", 350, "object"],
-	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 500, "object"],
-	["Scaffolding", "Land_Scaffolding_F", 250, "object"]
 ];
 
 allGenStoreVanillaItems = compileFinal str (call genItemArray + call genObjectsArray + call allStoreGear);
@@ -1462,17 +1474,24 @@ colorsArray = compileFinal str
 // ["Medical Kit", "medkits", localize "STR_WL_ShopDescriptions_MedKit", "client\icons\medkit.paa", 400, 200],  // not needed since there are First Ait Kits
 customPlayerItems = compileFinal str
 [
+	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 12500, 6250],
+	["Marijuana", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 10000, 5000],
+	["Cocaine", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 14000, 7000],
+	["Heroin", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 15000, 7500],
+
 	["Artillery Strike", "artillery", "", "client\icons\tablet.paa", 500000, 100000, "HIDDEN"],
-	// ["Water Bottle", "water", localize "STR_WL_ShopDescriptions_Water", "client\icons\waterbottle.paa", 30, 15],
-	// ["Canned Food", "cannedfood", localize "STR_WL_ShopDescriptions_CanFood", "client\icons\cannedfood.paa", 30, 15],
-	["Repair Kit", "repairkit", localize "STR_WL_ShopDescriptions_RepairKit", "client\icons\briefcase.paa", 500, 250],
+	["Vehicle Pinlock", "pinlock", localize "STR_WL_ShopDescriptions_Pinlock", "client\icons\keypad.paa", 1000, 500],
+	["Repair Kit", "repairkit", localize "STR_WL_ShopDescriptions_RepairKit", "client\icons\briefcase.paa", 750, 375],
 	["Jerry Can (Full)", "jerrycanfull", localize "STR_WL_ShopDescriptions_fuelFull", "client\icons\jerrycan.paa", 150, 75],
 	["Jerry Can (Empty)", "jerrycanempty", localize "STR_WL_ShopDescriptions_fuelEmpty", "client\icons\jerrycan.paa", 50, 25],
-	["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 1500, 750],
-	["Camo Net", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 200, 100],
+	["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 5000, 2500],
+	["Camo Net", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 600, 300],
 	["Syphon Hose", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100],
 	["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
-	["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500, "HIDDEN"]
+	["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500],
+
+	["IP/Net Camera", "cctv_camera", localize "STR_WL_ShopDescriptions_CCTV_Camera", "addons\cctv\icons\camcorder.paa", 850, 500],
+	["Camera Terminal", "cctv_base", localize "STR_WL_ShopDescriptions_CCTV_Base", "addons\cctv\icons\laptop.paa", 500, 300]
 ];
 
 call compile preprocessFileLineNumbers "mapConfig\storeOwners.sqf";
