@@ -978,15 +978,20 @@ allStoreMagazines = compileFinal str (call ammoArray + call throwputArray + call
 allRegularStoreItems = compileFinal str (call allGunStoreFirearms + call allStoreMagazines + call accessoriesArray);
 allStoreGear = compileFinal str (call headArray + call uniformArray + call vestArray + call backpackArray);
 
+BaseManagementArray = compileFinal str
+[
+	["Base Manager", "Land_SatellitePhone_F", 500000]
+];
+
 genObjectsArray = compileFinal str
 [
 	//["Base in a Box (Small)", "Land_CargoBox_V1_F", 50000, "object"],
 	//["Base in a Box (Medium)", "Land_Cargo20_yellow_F", 100000, "object"],
 	//["Base in a Box (Large)", "Land_Cargo40_white_F", 150000, "object"],
-	["Base door (beta)", "Land_Canal_Wall_10m_F", 25000, "object"],  // LouD
-	["Base door key (PIN: 0000) (beta)", "Land_InfoStand_V2_F", 10000, "object"],  // LouD
-	["Base locker (PIN: 0000)", "Land_Device_assembled_F", 50000, "object"],  //Cael817, SNAFU,Used for base operations <-- Destroyable
-	["Safe (PIN: 0000)", "Box_NATO_AmmoVeh_F", 50000, "ammocrate"],
+	//["Base door (beta)", "Land_Canal_Wall_10m_F", 25000, "object"],  // LouD
+	//["Base door key (PIN: 0000) (beta)", "Land_InfoStand_V2_F", 10000, "object"],  // LouD
+	//["Base locker (PIN: 0000) (beta)", "Land_Device_assembled_F", 50000, "object"],  //Cael817, SNAFU,Used for base operations <-- Destroyable
+	//["Safe (PIN: 0000) (beta)", "Box_NATO_AmmoVeh_F", 50000, "ammocrate"],
 	["Empty Ammo Crate", "Box_NATO_Ammo_F", 200, "ammocrate"],
 	["Camp Fire", "Land_FirePlace_F", 100, "object"],
 	["Small Platform", "Land_GH_Platform_F", 500, "object"],
@@ -1030,13 +1035,13 @@ genObjectsArray = compileFinal str
 	["Concrete Block", "BlockConcrete_F", 5000, "object"],
 	["Scaffolding", "Land_Scaffolding_F", 1000, "object"],
 	["Food sacks", "Land_Sacks_goods_F", 5000, "object"], // Added on player request
-	["Water Barrel", "Land_BarrelWater_F", 5000, "object"] // Added on player request
+	["Water Barrel", "Land_BarrelWater_F", 5000, "object"], // Added on player request
 	["Camo Net", "CamoNet_INDP_open_F", 200, "object", "HIDDEN"], // unlisted, only for object saving
 	["Pier Ladder", "Land_PierLadder_F", 250, "object"],
-	["Ammo Cache", "Box_FIA_Support_F", 250, "ammocrate"],
+	["Ammo Cache", "Box_FIA_Support_F", 250, "ammocrate"]
 ];
 
-allGenStoreVanillaItems = compileFinal str (call genItemArray + call genObjectsArray + call allStoreGear);
+allGenStoreVanillaItems = compileFinal str (call genItemArray + call genObjectsArray + call allStoreGear + call BaseManagementArray);
 
 //Text name, classname, buy cost, spawn type, sell price (selling not implemented) or spawning color
 landArray = compileFinal str

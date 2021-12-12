@@ -95,6 +95,7 @@ client_respawnDialog = "client\systems\playerMenu\dialog\loadRespawnDialog.sqf" 
 fn_checkStoreItemDLC = "client\functions\fn_checkStoreItemDLC.sqf" call mf_compile;
 fn_respawnTimer = "client\systems\scoreboard\fn_respawnTimer.sqf" call mf_compile;
 loadGeneralStore = "client\systems\generalStore\loadGenStore.sqf" call mf_compile;
+populateBaseStore = "client\systems\BasePartsStore\populateBaseStore.sqf" call mf_compile;
 loadGunStore = "client\systems\gunStore\loadGunStore.sqf" call mf_compile;
 loadScoreboard = "client\systems\scoreboard\loadScoreboard.sqf" call mf_compile;
 loadVehicleStore = "client\systems\vehicleStore\loadVehicleStore.sqf" call mf_compile;

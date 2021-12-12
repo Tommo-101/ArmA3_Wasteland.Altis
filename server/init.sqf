@@ -183,7 +183,15 @@ if (isServer) then
 		"A3W_artilleryAmmo",
 		"A3W_territoryWarningIcons",
 		"A3W_disableBuiltInThermal",
-		"A3W_headshotNoRevive"
+		"A3W_headshotNoRevive",
+		"APOC_coolDownTimer",
+		"BoS_coolDownTimer",
+		"Safe_coolDownTimer",
+		"Sell_Price",
+		"License_Price",
+		"Service_Price",
+		"Vehicle_Distance",
+		"A3W_supportersEnabled"
 	];
 
 	addMissionEventHandler ["PlayerConnected", fn_onPlayerConnected];
@@ -198,12 +206,13 @@ _staticWeaponSavingOn = ["A3W_staticWeaponSaving"] call isConfigOn;
 _warchestSavingOn = ["A3W_warchestSaving"] call isConfigOn;
 _warchestMoneySavingOn = ["A3W_warchestMoneySaving"] call isConfigOn;
 _beaconSavingOn = ["A3W_spawnBeaconSaving"] call isConfigOn;
+_camonetSavingOn = ["A3W_camoNetSaving"] call isConfigOn;
 _timeSavingOn = ["A3W_timeSaving"] call isConfigOn;
 _weatherSavingOn = ["A3W_weatherSaving"] call isConfigOn;
 _mineSavingOn = ["A3W_mineSaving"] call isConfigOn;
 _cameraSavingOn = ["A3W_cctvCameraSaving"] call isConfigOn;
 
-_objectSavingOn = (_baseSavingOn || _boxSavingOn || _staticWeaponSavingOn || _warchestSavingOn || _warchestMoneySavingOn || _beaconSavingOn);
+_objectSavingOn = (_baseSavingOn || _boxSavingOn || _staticWeaponSavingOn || _cameraSavingOn || _warchestSavingOn || _warchestMoneySavingOn || _beaconSavingOn || _camonetSavingOn);
 _vehicleSavingOn = ["A3W_vehicleSaving"] call isConfigOn;
 _hcObjSavingOn = ["A3W_hcObjSaving"] call isConfigOn;
 
@@ -436,6 +445,7 @@ if (_playerSavingOn || _objectSavingOn || _vehicleSavingOn || _mineSavingOn || _
 			["warchestSaving", _warchestSavingOn],
 			["warchestMoneySaving", _warchestMoneySavingOn],
 			["spawnBeaconSaving", _beaconSavingOn],
+			["camoNetSaving", _camonetSavingOn],
 			["timeSaving", _timeSavingOn],
 			["weatherSaving", _weatherSavingOn],
 			["hcObjSaving", _hcObjSavingOn]

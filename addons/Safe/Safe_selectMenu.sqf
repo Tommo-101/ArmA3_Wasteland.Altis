@@ -9,7 +9,7 @@
 #define PLAYER_CONDITION "(vehicle player == player && {!isNull cursorTarget})"
 #define ITEM_CONDITION "{cursortarget iskindof 'Box_NATO_AmmoVeh_F'} && {(player distance cursortarget) < 5}"
 #define OBJECT_CONDITION "{cursorTarget getVariable ['objectLocked', false]}"
-#define HACKING_CONDITION "{'ToolKit' in (items player)} && {cursorTarget getVariable ['ownerUID',''] != getPlayerUID player}"
+#define HACKING_CONDITION "{'ACE_key_lockpick' in (items player)} && {cursorTarget getVariable ['ownerUID',''] != getPlayerUID player}"
 
 Safe_open = 
 {
@@ -19,7 +19,7 @@ Safe_open =
 	_uid = getPlayerUID _unit;
 	_owner = cursorTarget getvariable "ownerUID";
 
-	if (!isNull (uiNamespace getVariable ["Safe_Menu", displayNull]) && !(player call A3W_fnc_isUnconscious)) exitWith {};
+	if (!isNull (uiNamespace getVariable ["Safe_Menu", displayNull]) && player getVariable ["FAR_isUnconscious", 0] == 0) exitWith {};
 
 	switch (true) do
 	{
@@ -34,7 +34,7 @@ Safe_open =
 		};
 		default
 		{
-		hint "An unknown error occurred. This could be because your safe is not locked."
+		hint "An unknown error occurred. This could be because your Base Locker is not locked."
 		};
 
 	};
@@ -44,8 +44,8 @@ Safe_Actions =
 {
 	{ [player, _x] call fn_addManagedAction } forEach
 	[
-		["<t color='#FFE496'><img image='client\icons\keypad.paa'/> Open Safe</t>", Safe_open, [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION + " && " + OBJECT_CONDITION],
-		["<t color='#FFE496'><img image='client\icons\take.paa'/> Hack Safe</t>", "addons\Safe\Safe_hack.sqf", [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION + " && " + OBJECT_CONDITION + " && " + HACKING_CONDITION]
+		["<t color='#FFE496'><img image='client\icons\r3f_lock.paa'/> Abrir Caja Fuerte</t>", Safe_open, [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION + " && " + OBJECT_CONDITION],
+		["<t color='#FFE496'><img image='client\icons\take.paa'/> Forzar Caja Fuerte</t>", "addons\Safe\Safe_hack.sqf", [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION + " && " + OBJECT_CONDITION + " && " + HACKING_CONDITION]
 	];
 };
 

@@ -21,7 +21,7 @@ _checks =
 
 	switch (true) do
 	{
-		case ((player distance cursorTarget) > 5): { _text = "Repair cancelled!" };
+		case ((player distance cursorObject) > 5): { _text = "Repair cancelled!" };
 		case (doCancelAction): { doCancelAction = false; _text = "Repair cancelled!" };
 		case (vehicle player != player): { _text = "Action failed! You can't do this in a vehicle" };
 		default
@@ -30,16 +30,16 @@ _checks =
 			_text = format ["Repair %1%2 complete", floor (_progress * 100), "%"];
 		};
 	};
-	
+
 	[_failed, _text];
 };
 
-_success = [_totalDuration, "AinvPknlMstpSlayWrflDnon_medic", _checks, [cursorTarget]] call a3w_actions_start;
+_success = [_totalDuration, "AinvPknlMstpSlayWrflDnon_medic", _checks, [cursorObject]] call a3w_actions_start;
 
 if (_success) then
 {
 	private["_reLockers", "_repair"];
-	_reLockers = nearestObjects [player, ["Land_Device_assembled_F"], 5];
+	_reLockers = nearestObjects [player, ["Land_SatellitePhone_F"], 5];
 	_repair = _reLockers select 0;
 	_repair setDamage 0;
 	["Base Re-Locker is Repaired.", 5] call mf_notify_client;

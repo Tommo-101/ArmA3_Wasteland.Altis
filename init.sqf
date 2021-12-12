@@ -93,6 +93,7 @@ if (hasInterface || isServer) then
 	//[] execVM "addons\scripts\servercredits.sqf"; -- For future use.
 	//[] execVM "addons\scripts\logo.sqf"; -- For future use.
 	[] execVM "addons\HvT\HvT.sqf";
+	//[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 	[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 	[] execVM "addons\proving_ground\init.sqf";
 	[] execVM "addons\JumpMF\init.sqf";

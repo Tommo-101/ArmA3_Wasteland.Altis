@@ -2,6 +2,8 @@
 //This takes values from command menu, and some passed variables, and interacts with client and sends commands to server
 //Author: Apoc
 //Credits: Some methods taken from Cre4mpie's airdrop scripts, props for the idea!
+#define APOC_coolDownTimer (["APOC_coolDownTimer", 900] call getPublicVar)
+
 scriptName "APOC_cli_startAirdrop";
 private ["_type","_selection","_player"]; //Variables coming from command menu
 _type 				= _this select 0;
@@ -23,9 +25,13 @@ _price 			= (_selectionArray select _selectionNumber) select 2;
 /////////////  Cooldown Timer ////////////////////////
 if (!isNil "APOC_AA_lastUsedTime") then
 {
+if (isNil {_coolDownTimer}) then
+{
+	_coolDownTimer = APOC_coolDownTimer;
+};
 diag_log format ["AAA - Last Used Time: %1; CoolDown Set At: %2; Current Time: %3",APOC_AA_lastUsedTime, APOC_AA_coolDownTime, diag_tickTime];
 _timeRemainingReuse = APOC_AA_coolDownTime - (diag_tickTime - APOC_AA_lastUsedTime); //time is still in s
-if ((_timeRemainingReuse) > 0) then 
+if ((_timeRemainingReuse) > 0) then
 	{
 		hint format["You need to wait %1 seconds before using this service again!", ceil _timeRemainingReuse];
 		playSound "FD_CP_Not_Clear_F";
@@ -40,10 +46,10 @@ if (_price > _playerMoney) exitWith
 		hint format["You don't have enough money in the bank to request this airdrop!"];
 		playSound "FD_CP_Not_Clear_F";
 	};
-			
+
 _confirmMsg = format ["This airdrop will deduct $%1 from your bank account upon delivery<br/>",_price];
 _confirmMsg = _confirmMsg + format ["<br/><t font='EtelkaMonospaceProBold'>1</t> x %1",_selectionName];
-		
+
 	// Display confirm message
 	if ([parseText _confirmMsg, "Confirm", "DROP!", true] call BIS_fnc_guiMessage) then
 	{
@@ -51,4 +57,3 @@ _confirmMsg = _confirmMsg + format ["<br/><t font='EtelkaMonospaceProBold'>1</t>
 	APOC_AA_lastUsedTime = diag_tickTime;
 	diag_log format ["AAA - Just Used Time: %1; CoolDown Set At: %2; Current Time: %3",APOC_AA_lastUsedTime, APOC_AA_coolDownTime, diag_tickTime];
 	};
-	

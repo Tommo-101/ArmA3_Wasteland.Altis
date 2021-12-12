@@ -7,7 +7,9 @@
 #include "functions.sqf"
 #define STR_TO_SIDE(VAL) ([sideUnknown,BLUFOR,OPFOR,INDEPENDENT,CIVILIAN,sideLogic] select ((["WEST","EAST","GUER","CIV","LOGIC"] find toUpper (VAL)) + 1))
 
-private ["_maxLifetime", "_isWarchestEntry", "_isBeaconEntry", "_worldDir", "_methodDir", "_objCount", "_objects", "_exclObjectIDs"];
+//private ["_maxLifetime", "_isWarchestEntry", "_isBeaconEntry", "_worldDir", "_methodDir", "_objCount", "_objects", "_exclObjectIDs"];
+private ["_strToSide", "_maxLifetime", "_isWarchestEntry", "_isBeaconEntry", "_isCamonetEntry", "_isCameraEntry", "_worldDir", "_methodDir", "_objCount", "_objects", "_exclObjectIDs"];
+
 
 _maxLifetime = ["A3W_objectLifetime", 0] call getPublicVar;
 
@@ -180,6 +182,7 @@ _exclObjectIDs = [];
 				publicVariable "pvar_spawn_beacons";
 				true
 			};
+			case (_obj call _isCamonet): { true };
 			case (_locked < 1): { true };
 			default { false };
 		};

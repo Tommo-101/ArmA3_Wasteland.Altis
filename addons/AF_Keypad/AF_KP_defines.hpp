@@ -74,7 +74,7 @@
 
 #define SL_TEXTURES       0x10
 
-// progress bar 
+// progress bar
 #define ST_VERTICAL       0x01
 #define ST_HORIZONTAL     0
 
@@ -98,101 +98,98 @@
 
 class KP_RscText
 {
-    access = 0;
-    idc = -1;
-    type = CT_STATIC;
-    style = 18;
-    linespacing = 1;
-    colorBackground[] = {0,0,0,0};
-    colorText[] = {1,1,1,.5};
-    text = "";
-    shadow = 2;
-    font = "PuristaMedium";
-    SizeEx = 0.05000;
-    fixedWidth = 0;
-    x = 0;
-    y = 0;
-    h = 0;
-    w = 0;
-   
+  access = 0;
+  idc = -1;
+  type = CT_STATIC;
+  style = 18;
+  linespacing = 1;
+  colorBackground[] = {0,0,0,0};
+  colorText[] = {1,1,1,.5};
+  text = "";
+  shadow = 2;
+  font = "PuristaMedium";
+  SizeEx = 0.05000;
+  fixedWidth = 0;
+  x = 0;
+  y = 0;
+  h = 0;
+  w = 0;
 };
 
 class KP_RscPicture
 {
-    access = 0;
-    idc = -1;
-    type = CT_STATIC;
-    style = ST_PICTURE;
-    colorBackground[] = {0,0,0,0};
-    colorText[] = {1,1,1,1};
-    font = "PuristaMedium";
-    sizeEx = 0;
-    lineSpacing = 0;
-    text = "";
-    fixedWidth = 0;
-    shadow = 0;
-    x = 0;
-    y = 0;
-    w = 0.2;
-    h = 0.15;
+  access = 0;
+  idc = -1;
+  type = CT_STATIC;
+  style = ST_PICTURE;
+  colorBackground[] = {0,0,0,0};
+  colorText[] = {1,1,1,1};
+  font = "PuristaMedium";
+  sizeEx = 0;
+  lineSpacing = 0;
+  text = "";
+  fixedWidth = 0;
+  shadow = 0;
+  x = 0;
+  y = 0;
+  w = 0.2;
+  h = 0.15;
 };
 
 class KP_RscButton
 {
-    
-   access = 0;
-    type = CT_BUTTON;
-    text = "";
-    colorText[] = {1,1,1,.9};
-    colorDisabled[] = {0.4,0.4,0.4,0};
-    colorBackground[] = {0.75,0.75,0.75,0.8};
-    colorBackgroundDisabled[] = {0,0.0,0};
-    colorBackgroundActive[] = {0.75,0.75,0.75,1};
-    colorFocused[] = {0.75,0.75,0.75,.5};
-    colorShadow[] = {0.023529,0,0.0313725,1};
-    colorBorder[] = {0.023529,0,0.0313725,1};
-	soundClick[] = { "\A3\ui_f\data\sound\RscButton\soundClick", 0.09, 1 }; // Sound played after control is activated in format {file, volume, pitch}
-	soundEnter[] = { "\A3\ui_f\data\sound\RscButton\soundEnter", 0.09, 1 }; // Sound played when mouse cursor enters the control
-	soundPush[] = { "\A3\ui_f\data\sound\RscButton\soundPush", 0.09, 1 }; // Sound played when the control is pushed down
-	soundEscape[] = { "\A3\ui_f\data\sound\RscButton\soundEscape", 0.09, 1 }; // Sound played when the control is released after pushing down
-    style = 2;
-    x = 0;
-    y = 0;
-    w = 0.055589;
-    h = 0.039216;
-    shadow = 2;
-    font = "PuristaMedium";
-    sizeEx = 0.03921;
-    offsetX = 0.003;
-    offsetY = 0.003;
-    offsetPressedX = 0.002;
-    offsetPressedY = 0.002;
-    borderSize = 0;
+ access = 0;
+  type = CT_BUTTON;
+  text = "";
+  colorText[] = {1,1,1,.9};
+  colorDisabled[] = {0.4,0.4,0.4,0};
+  colorBackground[] = {0.75,0.75,0.75,0.8};
+  colorBackgroundDisabled[] = {0,0.0,0};
+  colorBackgroundActive[] = {0.75,0.75,0.75,1};
+  colorFocused[] = {0.75,0.75,0.75,.5};
+  colorShadow[] = {0.023529,0,0.0313725,1};
+  colorBorder[] = {0.023529,0,0.0313725,1};
+  soundClick[] = { "\A3\ui_f\data\sound\RscButton\soundClick", 0.09, 1 }; // Sound played after control is activated in format {file, volume, pitch}
+  soundEnter[] = { "\A3\ui_f\data\sound\RscButton\soundEnter", 0.09, 1 }; // Sound played when mouse cursor enters the control
+  soundPush[] = { "\A3\ui_f\data\sound\RscButton\soundPush", 0.09, 1 }; // Sound played when the control is pushed down
+  soundEscape[] = { "\A3\ui_f\data\sound\RscButton\soundEscape", 0.09, 1 }; // Sound played when the control is released after pushing down
+  style = 2;
+  x = 0;
+  y = 0;
+  w = 0.055589;
+  h = 0.039216;
+  shadow = 2;
+  font = "PuristaMedium";
+  sizeEx = 0.03921;
+  offsetX = 0.003;
+  offsetY = 0.003;
+  offsetPressedX = 0.002;
+  offsetPressedY = 0.002;
+  borderSize = 0;
 };
 
 class KP_RscFrame
 {
-    type = CT_STATIC;
-    idc = -1;
-    style = ST_FRAME;
-    shadow = 2;
-    colorBackground[] = {1,1,1,1};
-    colorText[] = {1,1,1,0.9};
-    font = "PuristaMedium";
-    sizeEx = 0.03;
-    text = "";
+  type = CT_STATIC;
+  idc = -1;
+  style = ST_FRAME;
+  shadow = 2;
+  colorBackground[] = {1,1,1,1};
+  colorText[] = {1,1,1,0.9};
+  font = "PuristaMedium";
+  sizeEx = 0.03;
+  text = "";
 };
 
 class KP_BOX
-{ 
-   type = CT_STATIC;
-    idc = -1;
-    style = ST_CENTER;
-    shadow = 2;
-    colorText[] = {1,1,1,1};
-    font = "PuristaMedium";
-    sizeEx = 0.02;
-    colorBackground[] = { 0.2,0.2,0.2, 0.9 }; 
-    text = ""; 
-
+{
+ type = CT_STATIC;
+  idc = -1;
+  style = ST_CENTER;
+  shadow = 2;
+  colorText[] = {1,1,1,1};
+  font = "PuristaMedium";
+  sizeEx = 0.02;
+  colorBackground[] = { 0.2,0.2,0.2, 0.9 };
+  text = ""; 
 };

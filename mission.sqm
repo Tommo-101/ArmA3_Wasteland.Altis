@@ -176,7 +176,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=326;
+		items=328;
 		class Item0
 		{
 			dataType="Group";
@@ -6993,6 +6993,28 @@ class Mission
 			colorName="ColorBlack";
 			angle=42.999985;
 			id=307;
+		};
+		class Item326
+		{
+			dataType="Marker";
+			position[]={22244.939,0,14571.266};
+			name="BasePartsStore2";
+			text="BS";
+			type="mil_dot";
+			colorName="ColorRed";
+			id=2318;
+			atlOffset=-4.0498719;
+		};
+		class Item327
+		{
+			dataType="Marker";
+			position[]={5837.332,0,20104.461};
+			name="BasePartsStore1";
+			text="BS";
+			type="mil_dot";
+			colorName="ColorRed";
+			id=2319;
+			atlOffset=-224.82167;
 		};
 	};
 };
