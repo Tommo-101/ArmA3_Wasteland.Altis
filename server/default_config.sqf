@@ -68,15 +68,20 @@ A3W_atmEditorPlacedOnly = 0;       // Only allow access via ATMs placed from the
 A3W_atmMapIcons = 1;               // Draw small icons on the map that indicate ATM locations (0 = no, 1 = yes)
 A3W_atmRemoveIfDisabled = 1;       // Remove all ATMs from map if A3W_atmEnabled is set to 0 (0 = no, 1 = yes)
 
+A3W_bountyMax = 250000;            // Maximum amount of money that can be set as a bounty on someone
+A3W_bountyMinStart = 5000;         // Minimum amount of money to start a bounty on someone
+A3W_bountyRewardPerc = 50;         // Percentage of cost that goes to bounty reward
+A3W_bountyLifetime = 3*24;         // Maximum lifetime in hours for bounty kills to store in DB (storing bounty kills is to prevent from forming groups with someone you collected bounty on)
+
 // Not currently implemented, soon
-A3W_atmBounties = 1;
+/*A3W_atmBounties = 1;
 A3W_bountyMax = 100000;
 A3W_bountyMin = 1000;
 A3W_bountyFee = 50;
-A3W_bountyKillsLifetime = 3*24;
+A3W_bountyKillsLifetime = 3*24;*/
 
 // Persistence settings
-A3W_savingMethod = "profile";      // Method used for saving data ("profile", "iniDB", "extDB")
+A3W_savingMethod = "extDB";      // Method used for saving data ("profile", "iniDB", "extDB")
 A3W_playerSaving = 1;              // Save player data like position, health, inventory, etc. (0 = no, 1 = yes)
 A3W_moneySaving = 1;               // If playerSaving = 1, save player money amount (0 = no, 1 = yes)
 A3W_playerStatsGlobal = 0;         // If playerSaving = 1 and savingMethod = "extDB", players' stats on the scoreboard will be their all-time global values from all servers of your database (0 = no, 1 = yes)
