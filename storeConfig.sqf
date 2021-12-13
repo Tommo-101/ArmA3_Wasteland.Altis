@@ -982,31 +982,26 @@ allStoreMagazines = compileFinal str (call ammoArray + call throwputArray + call
 allRegularStoreItems = compileFinal str (call allGunStoreFirearms + call allStoreMagazines + call accessoriesArray);
 allStoreGear = compileFinal str (call headArray + call uniformArray + call vestArray + call backpackArray);
 
-BaseManagementArray = compileFinal str
-[
-	["Base Manager", "Land_SatellitePhone_F", 500000]
-];
-
 genObjectsArray = compileFinal str
 [
-	//["Base in a Box (Small)", "Land_CargoBox_V1_F", 50000, "object"],
-	//["Base in a Box (Medium)", "Land_Cargo20_yellow_F", 100000, "object"],
-	//["Base in a Box (Large)", "Land_Cargo40_white_F", 150000, "object"],
-	//["Base door (beta)", "Land_Canal_Wall_10m_F", 25000, "object"],  // LouD
-	//["Base door key (PIN: 0000) (beta)", "Land_InfoStand_V2_F", 10000, "object"],  // LouD
-	//["Base locker (PIN: 0000) (beta)", "Land_Device_assembled_F", 50000, "object"],  //Cael817, SNAFU,Used for base operations <-- Destroyable
-	//["Safe (PIN: 0000) (beta)", "Box_NATO_AmmoVeh_F", 50000, "ammocrate"],
 	["Base Re-Locker", "Land_Device_assembled_F", 25000, "object"],  //Cael817, SNAFU,Used for base operations <-- Destroyable
-	["Empty Ammo Crate", "Box_NATO_Ammo_F", 200, "ammocrate"],
+
 	["Camp Fire", "Land_FirePlace_F", 100, "object"],
 	["Small Platform", "Land_GH_Platform_F", 500, "object"],
-	["Halogen lamp post", "Land_LampHalogen_F", 500, "object"],
-	["Lamp Post (Harbour)", "Land_LampHarbour_F", 200, "object"],
-	["Lamp Post (Shabby)", "Land_LampShabby_F", 200, "object"],
-	["Boom Gate", "Land_BarGate_F", 300, "object"],
+	["Camo Net", "CamoNet_INDP_open_F", 200, "object", "HIDDEN"], // unlisted, only for object saving
+	["Pier Ladder", "Land_PierLadder_F", 250, "object"],
+	["Ammo Cache", "Box_FIA_Support_F", 250, "ammocrate"]
+	["Food sacks", "Land_Sacks_goods_F", 5000, "object"], // Added on player request
+	["Water Barrel", "Land_BarrelWater_F", 5000, "object"], // Added on player request
+	["Empty Ammo Crate", "Box_NATO_Ammo_F", 100, "ammocrate"],
+	["Metal Barrel", "Land_MetalBarrel_F", 100, "object"],
+	["Toilet Box", "Land_ToiletBox_F", 100, "object"],
+	["Lamp Post (Harbour)", "Land_LampHarbour_F", 100, "object"],
+	["Lamp Post (Shabby)", "Land_LampShabby_F", 100, "object"],
+	["Barrier Gate", "Land_BarGate_F", 400, "object"],
 	["Pipes", "Land_Pipes_Large_F", 400, "object"],
 	["Concrete Frame", "Land_CncShelter_F", 400, "object"],
-	["Highway Guardrail", "Land_Crash_barrier_F", 400, "object"],
+	["Safety Barrier", "Land_Crash_barrier_F", 400, "object"],
 	["Concrete Barrier", "Land_CncBarrier_F", 400, "object"],
 	["Concrete Barrier (Medium)", "Land_CncBarrierMedium_F", 700, "object"],
 	["Concrete Barrier (Long)", "Land_CncBarrierMedium4_F", 1000, "object"],
@@ -1021,7 +1016,7 @@ genObjectsArray = compileFinal str
 	["Concrete Military Wall", "Land_Mil_ConcreteWall_F", 800, "object"],
 	["Concrete Wall (Long)", "Land_CncWall4_F", 1200, "object"],
 	["Military Wall (Big)", "Land_Mil_WallBig_4m_F", 1200, "object"],
-	//["Shoot House Wall", "Land_Shoot_House_Wall_F", 180, "object"],
+	["Shoot House Wall", "Land_Shoot_House_Wall_F", 180, "object"],
 	["Canal Wall (Small)", "Land_Canal_WallSmall_10m_F", 800, "object"],
 	["Canal Stairs", "Land_Canal_Wall_Stairs_F", 1000, "object"],
 	["Bag Fence (Corner)", "Land_BagFence_Corner_F", 300, "object"],
@@ -1037,16 +1032,39 @@ genObjectsArray = compileFinal str
 	["Military Cargo HQ", "Land_Cargo_HQ_V1_F", 10000, "object"], // Added on player request
 	["Concrete Ramp", "Land_RampConcrete_F", 1000, "object"],
 	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 1500, "object"],
-	["Concrete Block", "BlockConcrete_F", 5000, "object"],
+	["Concrete Block", "BlockConcrete_F", 300, "object"],
 	["Scaffolding", "Land_Scaffolding_F", 1000, "object"],
-	["Food sacks", "Land_Sacks_goods_F", 5000, "object"], // Added on player request
-	["Water Barrel", "Land_BarrelWater_F", 5000, "object"], // Added on player request
-	["Camo Net", "CamoNet_INDP_open_F", 200, "object", "HIDDEN"], // unlisted, only for object saving
-	["Pier Ladder", "Land_PierLadder_F", 250, "object"],
-	["Ammo Cache", "Box_FIA_Support_F", 250, "ammocrate"]
+	["Basketball Court", "Land_BC_Court_F", 1000, "object"],
+	["Transmitter Tower", "Land_TTowerBig_1_F", 2000, "object"],
+	["Transmitter Tower (Tall)", "Land_TTowerBig_2_F", 3500, "object"],
+	["Kavala Castle (Stone)", "Land_Castle_01_step_F", 2000, "object"],
+	["Runway Edgelight", "Land_runway_edgelight_blue_F", 50, "object"],
+	["Shoot House - Wall (Stand, Long)", "Land_Shoot_House_Wall_Long_Stand_F", 180, "object"],
+	["Shoot House - Wall (Crouch, Long)", "Land_Shoot_House_Wall_Long_Crouch_F", 150, "object"],
+	["Shoot House - Wall (Prone, Long)", "Land_Shoot_House_Wall_Long_Prone_F", 120, "object"],
+	["Shoot House - Corner", "Land_Shoot_House_Corner_F", 150, "object"],
+	["Shoot House - Corner (Stand)", "Land_Shoot_House_Corner_Stand_F", 120, "object"],
+	["Shoot House - Corner (Crouch)", "Land_Shoot_House_Corner_Crouch_F", 90, "object"],
+	["Shoot House - Corner (Prone)", "Land_Shoot_House_Corner_Prone_F", 60, "object"],
+	["Shoot House - Panels", "Land_Shoot_House_Panels_F", 200, "object"],
+	["Shoot House - Tunnel", "Land_Shoot_House_Tunnel_F", 150, "object"],
+	["Shoot House - Tunnel (Stand)", "Land_Shoot_House_Tunnel_Stand_F", 120, "object"],
+	["Shoot House - Tunnel (Crouch)", "Land_Shoot_House_Tunnel_Crouch_F", 90, "object"],
+	["Shoot House - Tunnel (Prone)", "Land_Shoot_House_Tunnel_Prone_F", 60, "object"],
+	["Lamp (Halogen)", "Land_LampHalogen_F", 50, "object"],
+	["Solar Tower", "Land_spp_Tower_F", 1500, "object"],
+	["Canal Wall", "Land_Canal_Wall_10m_F", 400, "object"],
+	["Inn Garden", "Land_i_Addon_03_V1_F", 1000, "object"],
+	["Inn Garden (Middle)", "Land_i_Addon_03mid_V1_F", 500, "object"],
+	["Inn Garden (No Roof)", "Land_i_Addon_04_V1_F", 300, "object"],
+	["Grave (Dirt)", "Land_Grave_dirt_F", 2000, "object"],
+	["Grave (Forest)", "Land_Grave_forest_F", 2000, "object"],
+	["Grave (Rocks)", "Land_Grave_rocks_F", 2000, "object"],
+	["Tower Crane", "Land_Crane_F", 2000, "object"],
+	["Concrete Pier", "Land_Pier_Box_F", 500, "object"]
 ];
 
-allGenStoreVanillaItems = compileFinal str (call genItemArray + call genObjectsArray + call allStoreGear + call BaseManagementArray);
+allGenStoreVanillaItems = compileFinal str (call genItemArray + call genObjectsArray + call allStoreGear);
 
 //Text name, classname, buy cost, spawn type, sell price (selling not implemented) or spawning color
 landArray = compileFinal str
