@@ -25,6 +25,9 @@
 
 	["<img image='client\icons\repair.paa'/> Salvage", "client\actions\salvage.sqf", [], 1.1, false, false, "", "!isNull cursorTarget && !alive cursorTarget && {cursorTarget isKindOf 'AllVehicles' && !(cursorTarget isKindOf 'Man') && player distance cursorTarget <= (sizeOf typeOf cursorTarget / 3) max 3}"],
 
+	["<t color='#FFE496'><img image='client\icons\r3f_lock.paa'/> Open Base Menu</t>", "addons\BoS\BoS_selectMenu.sqf", [cursorTarget], -97, false, false, "", "cursortarget iskindof 'Land_Device_assembled_F' && {cursorTarget getVariable ['objectLocked', false]} && {vehicle player == player} && {!isNull cursorTarget} && {alive cursorTarget} && {(player distance cursortarget) < 5}"],
+	["<t color='#FFE496'><img image='client\icons\take.paa'/> Hack Base</t>", "addons\BoS\BoS_hackBase.sqf", [cursorTarget], -97, false, false, "", "cursortarget iskindof 'Land_Device_assembled_F' && {cursorTarget getVariable ['objectLocked', false]} && {vehicle player == player} && {!isNull cursorTarget} && {alive cursorTarget} && {'ToolKit' in (items player)} && {cursorTarget getVariable ['ownerUID',''] != getPlayerUID player} && {(player distance cursortarget) < 5}"],	
+
 	// If you have a custom vehicle licence system, simply remove/comment the following action
 	["<img image='client\icons\r3f_unlock.paa'/> Acquire Vehicle Ownership", "client\actions\takeOwnership.sqf", [], 1, false, false, "", "[] call fn_canTakeOwnership isEqualTo ''"],
 
@@ -47,9 +50,9 @@
 
 //Door Locking
 // For some reason this diesn't work with add managed action.
-player addaction ["Lock Door","client\actions\DoorLocking.sqf", ["lock"], -99, false, true, "", "(cursorObject getVariable [format ['bis_disabled_%1',getCursorObjectParams select 1 select 0], 0]) == 0 && {[['door_'],getCursorObjectParams select 1 select 0] call fn_startsWith} && cursorObject getVariable ['objectLocked', false]"];
-player addaction ["Unlock Door","client\actions\DoorLocking.sqf", ["unlock"], -99, false, true, "", "(cursorObject getVariable [format ['bis_disabled_%1',getCursorObjectParams select 1 select 0], 0]) == 1 && {[['door_'],getCursorObjectParams select 1 select 0] call fn_startsWith} && cursorObject getVariable ['objectLocked', false]"];
-player addaction ["Set Door PIN","client\actions\DoorLocking.sqf", ["ChangePin"], -99, false, true, "", "(cursorObject getVariable 'ownerUID') == (getPlayerUID player) && {[['door_'],getCursorObjectParams select 1 select 0] call fn_startsWith}"];
+//player addaction ["Lock Door","client\actions\DoorLocking.sqf", ["lock"], -99, false, true, "", "(cursorObject getVariable [format ['bis_disabled_%1',getCursorObjectParams select 1 select 0], 0]) == 0 && {[['door_'],getCursorObjectParams select 1 select 0] call fn_startsWith} && cursorObject getVariable ['objectLocked', false]"];
+//player addaction ["Unlock Door","client\actions\DoorLocking.sqf", ["unlock"], -99, false, true, "", "(cursorObject getVariable [format ['bis_disabled_%1',getCursorObjectParams select 1 select 0], 0]) == 1 && {[['door_'],getCursorObjectParams select 1 select 0] call fn_startsWith} && cursorObject getVariable ['objectLocked', false]"];
+//player addaction ["Set Door PIN","client\actions\DoorLocking.sqf", ["ChangePin"], -99, false, true, "", "(cursorObject getVariable 'ownerUID') == (getPlayerUID player) && {[['door_'],getCursorObjectParams select 1 select 0] call fn_startsWith}"];
 
 
 if (["A3W_vehicleLocking"] call isConfigOn) then

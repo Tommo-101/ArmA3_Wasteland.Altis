@@ -996,6 +996,7 @@ genObjectsArray = compileFinal str
 	//["Base door key (PIN: 0000) (beta)", "Land_InfoStand_V2_F", 10000, "object"],  // LouD
 	//["Base locker (PIN: 0000) (beta)", "Land_Device_assembled_F", 50000, "object"],  //Cael817, SNAFU,Used for base operations <-- Destroyable
 	//["Safe (PIN: 0000) (beta)", "Box_NATO_AmmoVeh_F", 50000, "ammocrate"],
+	["Base Re-Locker", "Land_Device_assembled_F", 25000, "object"],  //Cael817, SNAFU,Used for base operations <-- Destroyable
 	["Empty Ammo Crate", "Box_NATO_Ammo_F", 200, "ammocrate"],
 	["Camp Fire", "Land_FirePlace_F", 100, "object"],
 	["Small Platform", "Land_GH_Platform_F", 500, "object"],
