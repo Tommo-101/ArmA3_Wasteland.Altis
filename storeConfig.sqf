@@ -25,7 +25,7 @@ pistolArray = compileFinal str
 	["ACP-C2 Pistol", "hgun_ACPC2_F", 75],
 	["Zubr Revolver", "hgun_Pistol_heavy_02_F", 200],
 	["4-Five Pistol", "hgun_Pistol_heavy_01_F", 300],
-	["4-Five Pistol (Green)", "hgun_Pistol_heavy_01_green_F", 300, noDLC],
+	["4-Five Pistol (Green)", "hgun_Pistol_heavy_01_green_F", 300, "noDLC"],
 	["Starter Pistol", "hgun_Pistol_Signal_F", 500]
 ];
 
