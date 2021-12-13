@@ -990,7 +990,7 @@ genObjectsArray = compileFinal str
 	["Small Platform", "Land_GH_Platform_F", 500, "object"],
 	["Camo Net", "CamoNet_INDP_open_F", 200, "object", "HIDDEN"], // unlisted, only for object saving
 	["Pier Ladder", "Land_PierLadder_F", 250, "object"],
-	["Ammo Cache", "Box_FIA_Support_F", 250, "ammocrate"]
+	["Ammo Cache", "Box_FIA_Support_F", 250, "ammocrate"],
 	["Food sacks", "Land_Sacks_goods_F", 5000, "object"], // Added on player request
 	["Water Barrel", "Land_BarrelWater_F", 5000, "object"], // Added on player request
 	["Empty Ammo Crate", "Box_NATO_Ammo_F", 100, "ammocrate"],
