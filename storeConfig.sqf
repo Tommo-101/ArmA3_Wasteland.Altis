@@ -23,9 +23,10 @@ pistolArray = compileFinal str
 	["P07 Pistol (Khaki)", "hgun_P07_khk_F", 50, "noDLC"],
 	["Rook-40 Pistol", "hgun_Rook40_F", 50],
 	["ACP-C2 Pistol", "hgun_ACPC2_F", 75],
-	["Zubr Revolver", "hgun_Pistol_heavy_02_F", 75],
-	["4-five Pistol", "hgun_Pistol_heavy_01_F", 100],
-	["4-five Pistol (Green)", "hgun_Pistol_heavy_01_green_F", 100, "noDLC"]
+	["Zubr Revolver", "hgun_Pistol_heavy_02_F", 200],
+	["4-Five Pistol", "hgun_Pistol_heavy_01_F", 300],
+	["4-Five Pistol (Green)", "hgun_Pistol_heavy_01_green_F", 300, noDLC],
+	["Starter Pistol", "hgun_Pistol_Signal_F", 500]
 ];
 
 smgArray = compileFinal str
@@ -902,10 +903,13 @@ genItemArray = compileFinal str
 	["NV Goggles (Black)", "NVGoggles_OPFOR", 100, "nvg"],
 	["NV Goggles (Green)", "NVGoggles_INDEP", 100, "nvg"],
 	["NV Goggles (Tropic)", "NVGoggles_tna_F", 100, "nvg", "noDLC"],
-	["Compact NVG (Hex)", "O_NVGoggles_hex_F", 150, "nvg", "noDLC"],
-	["Compact NVG (G Hex)", "O_NVGoggles_ghex_F", 150, "nvg", "noDLC"],
-	["Compact NVG (Green)", "O_NVGoggles_grn_F", 150, "nvg", "noDLC"],
-	["Compact NVG (Urban)", "O_NVGoggles_urb_F", 150, "nvg", "noDLC"],
+	["Compact NVG (Hex)", "O_NVGoggles_hex_F", 300, "nvg", "noDLC"],
+	["Compact NVG (G Hex)", "O_NVGoggles_ghex_F", 300, "nvg", "noDLC"],
+	["Compact NVG (Green)", "O_NVGoggles_grn_F", 300, "nvg", "noDLC"],
+	["Compact NVG (Urban)", "O_NVGoggles_urb_F", 300, "nvg", "noDLC"],
+	["ENVG-II (Black)", "NVGogglesB_blk_F", 2000, "nvg"],
+	["ENVG-II (Green)", "NVGogglesB_grn_F", 2000, "nvg"],
+	["ENVG-II (Grey)", "NVGogglesB_gry_F", 2000, "nvg"],
 	["Binoculars", "Binocular", 50, "binoc"],
 	["Rangefinder", "Rangefinder", 150, "binoc"],
 	["Laser Designator (Sand)", "Laserdesignator", 250, "binoc", "noDLC"],
