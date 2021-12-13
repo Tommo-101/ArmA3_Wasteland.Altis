@@ -1,12 +1,12 @@
 // ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright ï¿½ 2014 	BadVolt 	*
+// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 	BadVolt 	*
 // ******************************************************************************************
 //	@file Version: 1.0
 //	@file Name: password_change.sqf
 //	@file Author: BadVolt
 //	@file Description: Changes password for building and locks all doors.
 
-_object = cursorObject;
+_object = cursorTarget;
 
 OutputText = nil;
 

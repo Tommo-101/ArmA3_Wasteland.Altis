@@ -93,7 +93,6 @@ if (hasInterface || isServer) then
 	//[] execVM "addons\scripts\servercredits.sqf"; -- For future use.
 	//[] execVM "addons\scripts\logo.sqf"; -- For future use.
 	[] execVM "addons\HvT\HvT.sqf";
-	//[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 	[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 	[] execVM "addons\proving_ground\init.sqf";
 	[] execVM "addons\JumpMF\init.sqf";
@@ -102,7 +101,6 @@ if (hasInterface || isServer) then
 	[] execVM "addons\stickyCharges\init.sqf";
 	[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";
 	[] ExecVM "addons\cleanStores\cleanStores.sqf";
-	//[] execVM "addons\bounty\init.sqf"; -- For Future use.
 	[] execVM "addons\statusBar\statusBar.sqf";
 	[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";
 	[] execVM "addons\AF_Keypad\AF_KP_vars.sqf"; //Keypad for base locking

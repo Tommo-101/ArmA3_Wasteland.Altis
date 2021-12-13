@@ -80,10 +80,6 @@ briefing = 0; // if 0, skip Continue button
 #include "addons\cctv\cctv_menu.hpp"
 
 #include "addons\BoS\dialog\BoS_mainMenu.hpp"
-#include "addons\Safe\dialog\Safe_mainMenu.hpp"
-#include "addons\Door\dialog\Door_mainMenu.hpp"
-#include "addons\vPin\dialog\vPin_mainMenu.hpp"
-
 #include "addons\AF_Keypad\AF_KP_defines.hpp"
 #include "addons\AF_Keypad\AF_KP_dialogs.hpp"
 

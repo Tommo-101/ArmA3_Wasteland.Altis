@@ -1,6 +1,6 @@
 //	@file Version:
 //	@file Name:
-//	@file Author: Cael817 Edited By: GMG_Monkey
+//	@file Author: Cael817
 //	@file Created:
 
 #define BoS_Menu_option 17001
@@ -22,59 +22,46 @@ if (!isNil "_uid") then
 
 			switch (lbCurSel _BoS_select) do
 			{
-				case 0: //Turn off all lights
+				case 0: //Re Lock Objects
 				{
-					execVM "addons\BoS\BoS_lightsOff.sqf";;
+					closeDialog 0;
+					execVM "addons\BoS\BoS_reLock.sqf";
 				};
-				case 1: //Turn on all lighs
+				case 1: //Mark Owned Object
 				{
-					execVM "addons\BoS\BoS_lightsOn.sqf";
-				};
-				case 2: //Lock Doors
-				{
-					execVM "addons\Bos\LockDoors.sqf";
-				};
-				Case 3: //Unlock Doors
-				{
-					execVM "addons\Bos\UnlockDoors.sqf";
-				};
-				case 4: //Mark Owned Object
-				{
+					closeDialog 0;
 					execVM "addons\BoS\BoS_markOwned.sqf";
 				};
-				case 5: //Show Base Border
+				case 2: //Show Base Border
 				{
 					closeDialog 0;
 					execVM "addons\BoS\BoS_showBorder.sqf";
 				};
-				case 6: //Lock Down Base
+				case 3: //Turn off all lights
 				{
 					closeDialog 0;
+					execVM "addons\BoS\BoS_lightsOff.sqf";;
+				};
+				case 4: //Turn on all lighs
+				{
+					closeDialog 0;
+					execVM "addons\BoS\BoS_lightsOn.sqf";
+				};
+				case 5: //Lock Down Base
+				{
+					closeDialog 0;					
 					execVM "addons\BoS\BoS_lockDown.sqf";
 				};
-				case 7: //Release Lock Down
+				case 6: //Release Lock Down
 				{
-					closeDialog 0;
+					closeDialog 0;					
 					execVM "addons\BoS\BoS_releaseLockDown.sqf";
 				};
-				case 8: //Relock Base Objects
+				case 7: //Change Password
 				{
-					execVM "addons\BoS\BoS_reLock.sqf";
-				};
-				case 9: //Resupply Service Objects
-				{
-					closedialog 0;
-					execVM "addons\BoS\ResupplyServiceObjects.sqf";
-				};
-				case 10: //Change Password
-				{
-					closeDialog 0;
-					execVM "addons\BoS\password_change.sqf";
-				};
-				case 11: //Upgrade Base
-				{
-					execVM "addons\BoS\UpgradeBase.sqf";
-				}
+					closeDialog 0;					
+					execVM "addons\Bos\password_change.sqf";
+				};					
 			};
 		};
 	};

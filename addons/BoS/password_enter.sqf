@@ -1,5 +1,5 @@
 // ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright ï¿½ 2014 	BadVolt 	*
+// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 	BadVolt 	*
 // ******************************************************************************************
 //	@file Version: 1.0
 //	@file Name: password_enter.sqf
@@ -8,7 +8,7 @@
 
 //#define DURATION 10
 
-_Object = nearestObject [player, "Land_SatellitePhone_F"];
+_object = cursorTarget;
 
 OutputText = nil;
 
@@ -16,7 +16,7 @@ createDialog "AF_Keypad";
 
 waitUntil {!(isNil "OutputText")};
 
-if (OutputText == _Object getVariable [format ["password_%1", _Door], ""] && _Object getVariable [format ["password_%1", _Door], ""] != "") then {
+if (OutputText == _object getVariable ["password", ""]) then {
 	execVM "addons\BoS\BoS_coownerMenu.sqf";	
 	//[format ["Doors opened for %1 seconds ",DURATION], 5] call mf_notify_client;	
 }else{

@@ -95,35 +95,20 @@ if (!isNil "_r3fSide") then
 	_variables pushBack ["R3F_Side", str _r3fSide];
 };
 
-// BASE - SAFE LOCKING Start
-switch (true) do
-{
-	case ( _obj isKindOf "Land_Device_assembled_F"):
-	{
-		{ _variables pushBack [_x select 0, _obj getVariable _x] } forEach
-		[
-			["password", ""],
-			["lights", ""],
-			["lockDown", false]
-		];
-	};
-	case ( _obj isKindOf "Box_NATO_AmmoVeh_F"):
-	{
-		{ _variables pushBack [_x select 0, _obj getVariable _x] } forEach
-		[
-			["password", ""],
-			["lockedSafe", false],
-			["A3W_inventoryLockR3F", false],
-			["R3F_LOG_disabled", false]
-		];
-	};
-	case ( _obj isKindOf "Land_InfoStand_V2_F"):
-	{
-		_variables pushBack ["password", _obj getVariable ["password", ""]];
-	};
-};
-//BASE - SAFE LOCKING End
+// BASE LOCKING
+_lockDown = _obj getVariable "lockDown";
 
+if (!isNil "_lockDown") then
+{
+   _variables pushBack ["lockDown", _lockDown];
+};
+
+_password = _obj getVariable "password";
+if (!isNil "_password") then
+{
+   _variables pushBack ["password", _password];
+};
+//BASE LOCKING, End
 
 _weapons = [];
 _magazines = [];
