@@ -6,13 +6,13 @@
 
 if (!isServer) exitWith {};
 
-AirMissions =
-[
-	// Mission filename, weight
-  ["mission_AbandonedHeli", 1],
-	["mission_AbandonedJet", 1],
-	["mission_ArmedDiversquad", 1],
-];
+//AirMissions =
+//[
+//	// Mission filename, weight
+//  ["mission_AbandonedHeli", 1],
+//	["mission_AbandonedJet", 1],
+//	["mission_ArmedDiversquad", 1],
+//];
 
 MainMissions =
 [

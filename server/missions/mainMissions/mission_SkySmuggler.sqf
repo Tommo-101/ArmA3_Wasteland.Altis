@@ -7,7 +7,7 @@
 //	@file missionSuccessHandler Author: soulkobk
 
 if (!isServer) exitwith {};
-#include "airMissionDefines.sqf"
+#include "mainMissionDefines.sqf"
 
 private ["_heliChoices", "_convoyVeh", "_veh1", "_veh2", "_veh3", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_numWaypoints", "_box1", "_box2","_cash", "_smoke"];
 
