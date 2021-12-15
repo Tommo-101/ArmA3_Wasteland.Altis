@@ -6,6 +6,14 @@
 
 if (!isServer) exitWith {};
 
+AirMissions =
+[
+	// Mission filename, weight
+  ["mission_AbandonedHeli", 1],
+	["mission_AbandonedJet", 1],
+	["mission_ArmedDiversquad", 1],
+];
+
 MainMissions =
 [
 	// Mission filename, weight
@@ -75,6 +83,8 @@ RushConvoyPaths = (call compile preprocessFileLineNumbers "mapConfig\convoys\rus
 MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Convoy", "mission_HostileHeliFormation"]], ["A3W_underWaterMissions", ["mission_ArmedDiversquad"]]]] call removeDisabledMissions;
 SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]], ["A3W_underWaterMissions", ["mission_SunkenSupplies"]]]] call removeDisabledMissions;
 MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTreasure"]]]] call removeDisabledMissions;
+//AirMissions = [AirMissions, [["A3W_heliPatrolMissions", ["mission_HostileVTOL", "mission_SkySmuggler"]]]] call removeDisabledMissions; //FROM 509
+
 
 { _x set [2, false] } forEach MainMissions;
 { _x set [2, false] } forEach SideMissions;
