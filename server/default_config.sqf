@@ -176,3 +176,11 @@ A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
 A3W_sideMissionTimeout = 45*60;    // Time in seconds that a Side Mission will run for, unless completed
 A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
+
+//Mission Reward Money Amounts
+Tier_0_Reward = 0;						//added to eliminate the need to comment out when wantign to cancel $ reward from missions
+Tier_1_Reward = 50000;				//Default $5,000
+Tier_2_Reward = 75000;				//Default $10,000
+Tier_3_Reward = 1000000;				//Default $15,000
+Tier_4_Reward = 150000;				//Default $25,000
+Tier_5_Reward = 200000;				//Default $40,000
