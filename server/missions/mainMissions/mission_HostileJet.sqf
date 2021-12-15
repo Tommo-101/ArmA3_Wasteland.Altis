@@ -133,4 +133,4 @@ _successExec =
 	_successHintMessage = "The sky is clear again, the enemy patrol was taken out! Ammo crates and some money have fallen near the pilot.";
 };
 
-_this call airMissionProcessor;
+_this call mainMissionProcessor;

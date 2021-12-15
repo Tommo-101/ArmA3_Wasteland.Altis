@@ -173,4 +173,4 @@ _missionMoneyChemlightDuration = 120;
 
 _missionSuccessMessage = "The sky is clear again, the Smuggler and Escort were taken out! Ammo crates and Money have fallen near the wreck.";
 
-_this call airMissionProcessor;
+_this call mainMissionProcessor;
