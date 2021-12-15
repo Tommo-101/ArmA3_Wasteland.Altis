@@ -19,23 +19,26 @@ MainMissions =
 	// Mission filename, weight
   ["mission_AbandonedHeli", 1],
 	["mission_AbandonedJet", 1],
+  ["mission_APC", 1],
 	["mission_ArmedDiversquad", 1],
+  ["mission_ArmedHeli", 1],
+  ["mission_CivHeli", 1],
 	["mission_Coastal_Convoy", 1],
 	["mission_Convoy", 1],
 	["mission_HostileHeliFormation", 1],
   ["mission_HostileJetFormation", 1],
-	["mission_APC", 1],
+  ["mission_LightArmVeh", 1],
 	["mission_MBT", 1],
-	["mission_LightArmVeh", 1],
-	["mission_ArmedHeli", 1],
-	["mission_CivHeli", 1],
-	["mission_Smugglers", 1],
-	["mission_Roadblock", 1]
+	["mission_Roadblock", 1],
+  ["mission_SkySmuggler", 1],
+	["mission_Smugglers", 1]
 ];
 
 SideMissions =
 [
-	["mission_HostileHelicopter", 0.5],
+  ["mission_AbandonedArtillery", 0.5],
+  ["mission_AirWreck", 0.5],
+  ["mission_HostileHelicopter", 0.5],
 	["mission_MiniConvoy", 1],
 	["mission_SunkenSupplies", 1],
 	["mission_TownInvasion", 2],
