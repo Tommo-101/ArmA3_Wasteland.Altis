@@ -103,7 +103,9 @@ if (hasInterface || isServer) then
 	[] ExecVM "addons\cleanStores\cleanStores.sqf";
 	[] execVM "addons\statusBar\statusBar.sqf";
 	[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";
-	[] execVM "addons\AF_Keypad\AF_KP_vars.sqf"; //Keypad for base locking
+	//[] execVM "addons\AF_Keypad\AF_KP_vars.sqf"; //Keypad for base locking
+	[] execVM "addons\suicideVest\init.sqf";
+	[] execVM "addons\compass\voyagerCompass.sqf";
 	[] execVM "addons\bounty\init.sqf";
 	if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] execVM "addons\scripts\DynamicWeatherEffects.sqf" };
 };
