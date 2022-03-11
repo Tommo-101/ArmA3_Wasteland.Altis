@@ -12,7 +12,8 @@ disableSerialization;
 
 vehicleStore_noBuzzard = false;
 
-private ["_vehshopDialog", "_Dialog", "_playerMoney", "_owner", "_landButton", "_armorButton", "_tankButton", "_heliButton", "_planeButton", "_boatButton", "_subButton"];
+//private ["_vehshopDialog", "_Dialog", "_playerMoney", "_owner", "_landButton", "_armorButton", "_tankButton", "_heliButton", "_planeButton", "_boatButton", "_subButton"];
+private ["_vehshopDialog", "_Dialog", "_playerMoney", "_owner", "_landButton", "_armorButton", "_tankButton", "_heliButton", "_planeButton", "_antiAirButton", "_boatButton", "_subButton"];
 _vehshopDialog = createDialog "vehshopd";
 
 _Dialog = findDisplay vehshop_DIALOG;
@@ -22,8 +23,8 @@ _armorButton = _Dialog displayCtrl vehshop_button1;
 _tankButton = _Dialog displayCtrl vehshop_button2;
 _heliButton = _Dialog displayCtrl vehshop_button3;
 _planeButton = _Dialog displayCtrl vehshop_button4;
-_boatButton = _Dialog displayCtrl vehshop_button5;
-//_subButton = _Dialog displayCtrl vehshop_button6;
+_antiAirButton = _Dialog displayCtrl vehshop_button5;
+_boatButton = _Dialog displayCtrl vehshop_button6;
 _playerMoney ctrlSetText format["Cash: $%1", [player getVariable ["cmoney", 0]] call fn_numbersText];
 if (!isNil "_this") then { _owner = _this select 0 };
 if (!isNil "_owner") then
@@ -63,7 +64,11 @@ if (!isNil "_owner") then
 				{
 					_planeButton ctrlEnable false;
 				};
-				/*case "boats":
+				case "antiair":
+				{
+					_antiAirButton ctrlEnable false;
+				};
+				case "boats":
 				{
 					_boatButton ctrlEnable false;
 				};
