@@ -102,6 +102,20 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 				_marker = _marker + "_planeSpawn";
 			};
 		};
+
+		// ANTI-AIR
+		if (isNil "_itemEntry") then
+		{
+			_results = (call antiAirArray) select {_x select [1,999] isEqualTo _itemEntrySent};
+
+			if (count _results > 0) then
+			{
+				_itemEntry = _results select 0;
+				_marker = _marker + "_antiAirSpawn";
+			};
+		};
+		_itemPrice = _itemEntry select 2;
+		_itemEntry set [2, _itemPrice];
 	};
 
 	if (!isNil "_itemEntry" && markerShape _marker != "") then
@@ -136,7 +150,7 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 			}
 			else // normal spawn
 			{
-				_safePos = _markerPos findEmptyPosition [0, 50, [_class, "B_Truck_01_transport_F"] select (!surfaceIsWater _markerPos && _seaSpawn)]; // use HEMTT in findEmptyPosition for boats on lands 
+				_safePos = _markerPos findEmptyPosition [0, 50, [_class, "B_Truck_01_transport_F"] select (!surfaceIsWater _markerPos && _seaSpawn)]; // use HEMTT in findEmptyPosition for boats on lands
 				if (count _safePos == 0) then { _safePos = _markerPos };
 				_spawnPosAGL = _safePos;
 				if (_seaSpawn) then { _safePos vectorAdd [0,0,0.05] };

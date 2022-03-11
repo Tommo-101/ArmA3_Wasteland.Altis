@@ -174,8 +174,7 @@ sniperArray = compileFinal str
 	["GM6 Lynx Sniper", "srifle_GM6_LRPS_F", 3250],
 	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_LRPS_F", 3500],
 	["GM6 Lynx Sniper (G Hex)", "srifle_GM6_ghex_LRPS_F", 3500, "noDLC"]
-]
-
+];
 
 lmgArray = compileFinal str
 [
@@ -1759,7 +1758,7 @@ customPlayerItems = compileFinal str
 	["Syphon Hose", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100],
 	["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
 	["Quadbike", "quadbike", localize "STR_WL_ShopDescriptions_QuadBike", "\A3\Soft_F\Quadbike_01\Data\UI\Quadbike_01_CA.paa", 500, 250],
-	["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500],
+	["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500]
 
 	//["IP/Net Camera", "cctv_camera", localize "STR_WL_ShopDescriptions_CCTV_Camera", "addons\cctv\icons\camcorder.paa", 850, 500],
 	//["Camera Terminal", "cctv_base", localize "STR_WL_ShopDescriptions_CCTV_Base", "addons\cctv\icons\laptop.paa", 500, 300]
