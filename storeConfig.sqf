@@ -1530,15 +1530,15 @@ planesArray = compileFinal str
 
 antiAirArray = compileFinal str
 [
-	["Mk21 Centurion", "B_SAM_System_02_F", 75000],
-	["Mk41 VLS", "B_Ship_MRLS_01_F", 150000],
-	["Mk45 Hammer", "B_Ship_Gun_01_F", 120000],
-	["Mk49 Spartan", "B_SAM_System_01_F", 80000],
-	["Praetorian 1C", "B_AAA_System_01_F", 55000],
-	["AN/MPQ-105 Radar", "B_Radar_System_01_F", 30000],
-	["MIM-145 Defender", "B_SAM_System_03_F", 70000],
-	["R-750 Cronus Radar", "O_Radar_System_02_F", 30000],
-	["S-750 Rhea", "O_SAM_System_04_F", 70000]
+	["Mk21 Centurion", "B_SAM_System_02_F", 150000],
+	["Mk41 VLS", "B_Ship_MRLS_01_F", 300000],
+	["Mk45 Hammer", "B_Ship_Gun_01_F", 240000],
+	["Mk49 Spartan", "B_SAM_System_01_F", 160000],
+	["Praetorian 1C", "B_AAA_System_01_F", 120000],
+	["AN/MPQ-105 Radar", "B_Radar_System_01_F", 80000],
+	["MIM-145 Defender", "B_SAM_System_03_F", 140000],
+	["R-750 Cronus Radar", "O_Radar_System_02_F", 80000],
+	["S-750 Rhea", "O_SAM_System_04_F", 150000]
 ];
 
 boatsArray = compileFinal str

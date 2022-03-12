@@ -111,7 +111,7 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 			if (count _results > 0) then
 			{
 				_itemEntry = _results select 0;
-				_marker = _marker + "_antiAirSpawn";
+				_marker = _marker + "_landSpawn";
 			};
 		};
 		_itemPrice = _itemEntry select 2;
