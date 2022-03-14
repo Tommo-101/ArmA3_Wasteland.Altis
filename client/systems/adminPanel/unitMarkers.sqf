@@ -1,6 +1,7 @@
-_uid = getPlayerUID player;
-if (_uid call isAdmin) then
+
+if ((getPlayerUID player) call isAdmin) then
 {
+	hint "Unit Markers- 123";
 	if (isNil "adminUnitMarkers") then { adminUnitMarkers = false };
 
 	if (!adminUnitMarkers) then

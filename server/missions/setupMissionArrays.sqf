@@ -52,14 +52,13 @@ SideMissions =
 MoneyMissions =
 [
 	["mission_MoneyShipment", 1]
-	//["mission_SunkenTreasure", 1]
 ];
 
 PriorityMissions = //using afgm OR 509 where not exists BUDDSKI7
 [
 	["mission_mechpatrol", 0.5],
 	["mission_tankRush", 0.5],
-	["mission_HillBurrow", 0.5],
+	["mission_HillBurrow", 0.5]
 ];
 
 LogisticsMissions =
@@ -104,7 +103,7 @@ RushConvoyPaths = (call compile preprocessFileLineNumbers "mapConfig\convoys\rus
 
 MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Convoy", "mission_HostileHeliFormation"]]]] call removeDisabledMissions;
 SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]]]] call removeDisabledMissions;
-//MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions"]]] call removeDisabledMissions;
+MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTreasure"]]]] call removeDisabledMissions;
 WaterMissions = [WaterMissions, [["A3W_underWaterMissions", ["mission_ArmedDiversquad", "mission_SunkenTreasure", "mission_SunkenSupplies"]]]] call removeDisabledMissions;
 LogisticsMissions = [LogisticsMissions, [["A3W_rescueMissions", ["mission_AltisHasFallen"]]]] call removeDisabledMissions;
 PriorityMissions = [PriorityMissions, [["A3W_rescueMissions", ["mission_tankRush"]]]] call removeDisabledMissions;
@@ -112,7 +111,7 @@ PriorityMissions = [PriorityMissions, [["A3W_rescueMissions", ["mission_tankRush
 
 { _x set [2, false] } forEach MainMissions;
 { _x set [2, false] } forEach SideMissions;
-//{ _x set [2, false] } forEach MoneyMissions;
+{ _x set [2, false] } forEach MoneyMissions;
 { _x set [2, false] } forEach PriorityMissions; //BUDDSKI7
 { _x set [2, false] } forEach LogisticsMissions;
 { _x set [2, false] } forEach WaterMissions;
