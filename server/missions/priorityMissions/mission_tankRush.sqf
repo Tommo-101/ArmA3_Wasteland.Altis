@@ -6,7 +6,7 @@
 //	@file Edit: 27/04/2018 by [509th] Coyote Rogue
 
 if (!isServer) exitwith {};
-#include "PriorityMissionDefines.sqf";
+#include "priorityMissionDefines.sqf";
 
 private ["_convoyVeh","_veh1","_veh2","_veh3","_veh4","_veh5","_veh6","_veh7","_veh8","_veh9","_veh10","_createVehicle","_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_boxes1", "_boxes2", "_boxes3", "_boxes4", "_boxes5", "_box1", "_box2", "_box3", "_box4", "_box5", "_cash", "_moneyAmount", "_smokemarker"];
 

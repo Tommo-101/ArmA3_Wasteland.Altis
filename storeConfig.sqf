@@ -1733,6 +1733,16 @@ colorsArray = compileFinal str
 		[
 			["Trump - Slammer", [[2, _texDir + "slammer_trump_2.paa"]]]
 		]
+	],
+	[
+		"I_Heli_Transport_02_F",
+		[
+			["Marine One", [
+				[0, _texDir + "mohawk_marine_one_0.paa"],
+				[1, _texDir + "mohawk_marine_one_1.paa"],
+				[2, _texDir + "mohawk_marine_one_2.paa"]
+			]]
+		]
 	]
 ];
 

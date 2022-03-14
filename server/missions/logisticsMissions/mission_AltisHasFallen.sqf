@@ -89,7 +89,7 @@ _setupObjects =
 			if ((count _alive == 0) || (count _alive > 0 && {((_alive select 0) distance _heli) > 550})) then
 			{
 				{ deleteVehicle _x } forEach _alive;
-				
+
 				for "_i" from 1 to 2 do
 				{
 					_aiPos = _heli getRelPos [((random 50) + (speed _heli / 3.6 * 5)) min ((_heli distance _airforceOne) * 0.5), random 90 + 135];

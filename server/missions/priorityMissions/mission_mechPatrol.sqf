@@ -8,7 +8,7 @@
 //	@file Edit: 27/04/2018 by [509th] Coyote Rogue
 
 if (!isServer) exitwith {};
-#include "PriorityMissionDefines.sqf";
+#include "priorityMissionDefines.sqf";
 
 private ["_mechPatrol", "_moneyAmount", "_convoys", "_vehChoices", "_moneyText", "_vehClasses", "_createVehicle", "_vehicles", "_veh2", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_cash", "_boxes1","_boxes2", "_boxes3", "_boxes4", "_boxes5", "_box1", "_box2", "_box3", "_box4", "_box5"];
 
