@@ -182,7 +182,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="A3Wasteland Altis v1.4d";
+		briefingName="A3Wasteland: Altis - TBG Edit";
 		overviewText="Wasteland survival sandbox by Team Wasteland - Edited by Tommo for TBG.";
 		resistanceWest=0;
 		timeOfChanges=28800;
