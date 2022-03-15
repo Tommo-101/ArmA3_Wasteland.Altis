@@ -57,14 +57,17 @@ _setupObjects =
 		_vehicle setDir _direction;
 		_aiGroup addVehicle _vehicle;
 
-		_soldier = [_aiGroup, _position, _camo] call createRandomSoldier;
+		//_soldier = [_aiGroup, _position, _camo] call createRandomSoldier;
+		_soldier = [_aiGroup, _position] call createRandomSoldier;
 		_soldier moveInDriver _vehicle;
 
-		_soldier = [_aiGroup, _position, _camo] call createRandomSoldier;
+		//_soldier = [_aiGroup, _position, _camo] call createRandomSoldier;
+		_soldier = [_aiGroup, _position] call createRandomSoldier;
 		_soldier moveInCargo [_vehicle, [0,3] select (_type == "I_G_Offroad_01_F")]; // FFV seat
 		if !(_type isKindOf "Truck_F") then
 		{
-			_soldier = [_aiGroup, _position, _camo] call createRandomSoldier;
+			//_soldier = [_aiGroup, _position, _camo] call createRandomSoldier;
+			_soldier = [_aiGroup, _position] call createRandomSoldier;
 			_soldier moveInGunner _vehicle;
 		};
 
