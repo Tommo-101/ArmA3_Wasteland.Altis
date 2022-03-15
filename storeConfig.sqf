@@ -589,6 +589,7 @@ headArray = compileFinal str
 	["Military Cap (MTP)", "H_MilCap_mcamo", 25, "hat"],
 	["Military Cap (Hex)", "H_MilCap_ocamo", 25, "hat"],
 	["Military Cap (AAF)", "H_MilCap_dgtl", 25, "hat"],
+	["Military Cap (Gendarmerie)", "H_MilCap_gen_F", 45, "hat", "noDLC"],
 	["Rangemaster Cap", "H_Cap_headphones", 25, "hat"],
 	["Bandana (Black)", "H_Bandanna_gry", 10, "hat"],
 	["Bandana (Blue)", "H_Bandanna_blu", 10, "hat"],
@@ -614,6 +615,7 @@ headArray = compileFinal str
 	["Beret (Black)", "H_Beret_blk", 10, "hat"],
 	["Beret (Colonel)", "H_Beret_Colonel", 10, "hat"],
 	["Beret (NATO)", "H_Beret_02", 10, "hat"],
+	["Beret (Gendarmerie)", "H_Beret_gen_F", 30, "hat", "noDLC"],
 	// ["Beret (Green)", "H_Beret_grn", 10, "hat"],
 	// ["Beret (Police)", "H_Beret_blk_POLICE", 10, "hat"],
 	// ["Beret (Red)", "H_Beret_red", 10, "hat"],
@@ -677,6 +679,10 @@ uniformArray = compileFinal str
 	["Wetsuit", "U_B_Wetsuit", 200, "uni"],
 	["Wetsuit", "U_O_Wetsuit", 200, "uni"],
 	["Wetsuit", "U_I_Wetsuit", 200, "uni"],
+	["Gendarmerie Commander Uniform", "U_B_GEN_Commander_F", 200, "uni", "noDLC"],
+	["Gendarmerie Uniform", "U_B_GEN_Soldier_F", 200, "uni", "noDLC"],
+	["Gendarmerie Commander Uniform", "U_O_GEN_Commander_F", 200, "uni", "noDLC"],
+	["Gendarmerie Uniform", "U_O_GEN_Soldier_F", 200, "uni", "noDLC"],
 	["Light Ghillie", "U_B_GhillieSuit", 200, "uni"],
 	["Light Ghillie", "U_O_GhillieSuit", 200, "uni"],
 	["Light Ghillie", "U_I_GhillieSuit", 200, "uni"],
@@ -831,6 +837,7 @@ vestArray = compileFinal str
 	["Tactical Vest (Khaki)", "V_TacVest_khk", -1, "vest"],
 	["Tactical Vest (Olive)", "V_TacVest_oli", -1, "vest"],
 	["Tactical Vest (Police)", "V_TacVest_blk_POLICE", -1, "vest"],
+	["Gendarmerie Vest", "V_TacVest_gen_F", -1, "vest", "noDLC"],
 	["Raven Night Vest", "V_TacVestIR_blk", -1, "vest"],
 	["Press Vest", "V_Press_F", -1, "vest"],
 	["Deck Crew Vest (Blue)", "V_DeckCrew_blue_F", -1, "vest", "noDLC"],
@@ -1741,6 +1748,23 @@ colorsArray = compileFinal str
 				[0, _texDir + "mohawk_marine_one_0.paa"],
 				[1, _texDir + "mohawk_marine_one_1.paa"],
 				[2, _texDir + "mohawk_marine_one_2.paa"]
+			]]
+		]
+	],
+	[
+		"B_MRAP_01_F",
+		[
+			["Gendarmerie", [
+				[0, _texDir + "hunter_gendarmerie_0.paa"],
+				[1, _texDir + "hunter_gendarmerie_1.paa"]
+			]]
+		]
+	],
+	[
+		"I_Heli_light_03_unarmed_F",
+		[
+			["Gendarmerie", [
+				[0, _texDir + "hellcat_gendarmerie_0.paa"]
 			]]
 		]
 	]

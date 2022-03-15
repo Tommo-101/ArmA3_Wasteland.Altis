@@ -54,7 +54,7 @@ _setupObjects =
 			_x setUnloadInCombat [false, false];
 		};
 	} forEach _objects;
-	_missionHintText = format ["Enemies have set up an anti aircraft bunker, go destroy them!", militaryMissionColor];
+	_missionHintText = format ["Enemies have set up an anti aircraft bunker, go destroy them!", mainMissionColor];
 };
 
 _ignoreAiDeaths = true;

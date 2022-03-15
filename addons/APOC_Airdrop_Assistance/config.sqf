@@ -2,6 +2,7 @@ APOC_AA_coolDownTime = 60; //Expressed in sec
 
 APOC_AA_VehOptions =
 [
+  ["Rescue Boat", "C_Rubberboat", 5000, "vehicle"],
   ["Quadbike (Civilian)", "C_Quadbike_01_F", 10000, "vehicle"],
   ["Offroad HMG", "B_G_Offroad_01_armed_F",	20000, "vehicle"],
   ["Hunter HMG", "B_MRAP_01_hmg_F", 50000, "vehicle"],
@@ -13,7 +14,13 @@ APOC_AA_VehOptions =
 
 APOC_AA_SupOptions =
 [
-  ["Launchers", "mission_USLaunchers", 35000, "supply"],
-  ["Assault Rifle", "mission_USSpecial", 35000, "supply"],
-  ["Sniper Rifles", "airdrop_Snipers", 50000, "supply"]
+  ["General Supplies",    "General_supplies", 10000,  "supply"],
+  ["Diving Gear",         "mission_Diving", 10000,  "supply"],
+  ["Assault Rifles (US)", "mission_USRifles", 15000,  "supply"],
+  ["Assault Rifles (RU)", "mission_RURifles", 15000,  "supply"],
+  ["Sniper Rifles (US)",  "mission_Main_A3snipers", 30000,  "supply"],
+  ["Sniper Rifles (RU)",  "mission_RUSniper", 30000,  "supply"],
+  ["Launchers (US)",      "mission_USLaunchers", 40000,  "supply"],
+  ["Launchers (RU)",      "mission_RULaunchers", 40000,  "supply"]
+
 ];
