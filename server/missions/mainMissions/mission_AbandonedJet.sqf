@@ -26,7 +26,7 @@ _setupVars =
 	if (_vehicleClass find "/" != -1) then { _vehicleClass = _vehicleClass splitString "/" };
 
 	_missionType = "Abandoned Jet";
-	_locationsArray = MissionSpawnMarkers;
+	_locationsArray = JetMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };

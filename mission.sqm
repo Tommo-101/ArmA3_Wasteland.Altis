@@ -201,7 +201,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=341;
+		items=361;
 		class Item0
 		{
 			dataType="Group";
@@ -7733,5 +7733,223 @@ class Mission
 			id=1013;
 			atlOffset=9.1552734e-005;
 		};
+		class Item341
+		{
+			dataType="Marker";
+			position[]={12052.943,43.073792,15694.051};
+			name="EvacHQ_1";
+			type="Empty";
+			colorName="ColorRed";
+			angle=8.618453;
+			id=2981;
+			atlOffset=15.125877;
+		};
+		class Item342
+		{
+			dataType="Marker";
+			position[]={20497.346,52.903362,11511.214};
+			name="EvacHQ_2";
+			type="Empty";
+			colorName="ColorRed";
+			angle=32.855453;
+			id=2983;
+			atlOffset=15.1022;
+		};
+		class Item343
+		{
+			dataType="Marker";
+			position[]={17490.268,27.995008,13253.23};
+			name="EvacHQ_3";
+			type="Empty";
+			colorName="ColorRed";
+			angle=136.64584;
+			id=2985;
+			atlOffset=15.05937;
+		};
+		class Item344
+		{
+			dataType="Marker";
+			position[]={21680.477,31.254688,7448.5708};
+			name="EvacHQ_4";
+			type="Empty";
+			colorName="ColorRed";
+			angle=41.251507;
+			id=2987;
+			atlOffset=15.0282;
+		};
+		class Item345
+		{
+			dataType="Marker";
+			position[]={18745.359,48.502563,16831.592};
+			name="EvacHQ_5";
+			type="Empty";
+			colorName="ColorRed";
+			angle=62.749287;
+			id=2989;
+			atlOffset=15.028584;
+		};
+		class Item346
+		{
+			dataType="Marker";
+			position[]={21044.014,31.42186,19240.242};
+			name="EvacHQ_6";
+			type="Empty";
+			colorName="ColorRed";
+			angle=93.764473;
+			id=2993;
+			atlOffset=15.00915;
+		};
+		class Item347
+		{
+			dataType="Marker";
+			position[]={10499.837,30.645893,12438.822};
+			name="EvacHQ_7";
+			type="Empty";
+			colorName="ColorRed";
+			angle=353.22263;
+			id=2995;
+			atlOffset=15.083672;
+		};
+		class Item348
+		{
+			dataType="Marker";
+			position[]={3664.7507,22.521711,13413.162};
+			name="EvacHQ_8";
+			type="Empty";
+			colorName="ColorRed";
+			angle=311.47424;
+			id=2997;
+			atlOffset=15.051421;
+		};
+		class Item349
+		{
+			dataType="Marker";
+			position[]={5451.9131,42.355976,14963.748};
+			name="EvacHQ_9";
+			type="Empty";
+			colorName="ColorRed";
+			angle=126.83407;
+			id=2999;
+			atlOffset=15.055977;
+		};
+		class Item350
+		{
+			dataType="Marker";
+			position[]={10463.014,132.32962,19116.613};
+			name="EvacHQ_10";
+			type="Empty";
+			colorName="ColorRed";
+			angle=248.8322;
+			id=3001;
+			atlOffset=14.999336;
+		};
+		class Item351
+		{
+			dataType="Marker";
+			position[]={14200.677,49.710789,18905.992};
+			name="EvacHQ_11";
+			type="Empty";
+			colorName="ColorRed";
+			angle=67.489761;
+			id=3003;
+			atlOffset=15.029259;
+		};
+		class Item352
+		{
+			dataType="Marker";
+			position[]={16715.229,33.090927,16144.91};
+			name="EvacHQ_12";
+			type="Empty";
+			colorName="ColorRed";
+			angle=35.513718;
+			id=3005;
+			atlOffset=15.036381;
+		};
+		class Item353
+		{
+			dataType="Marker";
+			position[]={9218.0195,30.282169,11958.966};
+			name="EvacHQ_13";
+			type="Empty";
+			colorName="ColorRed";
+			angle=18.617731;
+			id=3007;
+			atlOffset=15.054483;
+		};
+		class Item354
+		{
+			dataType="Marker";
+			position[]={12576.449,49.213215,16349.602};
+			name="EvacHQ_14";
+			type="Empty";
+			colorName="ColorRed";
+			angle=206.30244;
+			id=3009;
+			atlOffset=15.065216;
+		};
+		class Item355
+		{
+			dataType="Marker";
+			position[]={21041.527,25.174999,7176.7422};
+			name="Jet_1";
+			type="Empty";
+			colorName="ColorBlue";
+			angle=119.02685;
+			id=2840;
+			atlOffset=-6.2942505e-005;
+		};
+		class Item356
+		{
+			dataType="Marker";
+			position[]={23188.475,3.1900001,18401.754};
+			name="Jet_2";
+			type="Empty";
+			colorName="ColorBlue";
+			id=2841;
+		};
+		class Item357
+		{
+			dataType="Marker";
+			position[]={26891.777,21.311695,24692.816};
+			name="Jet_3";
+			type="Empty";
+			colorName="ColorBlue";
+			angle=62.766048;
+			id=2842;
+			atlOffset=-0.014492035;
+		};
+		class Item358
+		{
+			dataType="Marker";
+			position[]={15123.757,17.91,16834.039};
+			name="Jet_4";
+			type="Empty";
+			colorName="ColorBlue";
+			angle=223.9126;
+			id=2843;
+		};
+		class Item359
+		{
+			dataType="Marker";
+			position[]={11650.748,21.059107,11747.956};
+			name="Jet_5";
+			type="Empty";
+			colorName="ColorBlue";
+			angle=29.562899;
+			id=2844;
+			atlOffset=-0.0056858063;
+		};
+		class Item360
+		{
+			dataType="Marker";
+			position[]={9013.4268,16.869446,21456.852};
+			name="Jet_6";
+			type="Empty";
+			colorName="ColorBlue";
+			angle=196.418;
+			id=2845;
+			atlOffset=-0.012022018;
+		};
+		
 	};
 };

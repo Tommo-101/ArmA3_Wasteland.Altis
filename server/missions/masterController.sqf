@@ -7,6 +7,7 @@
 _ctrlTypes =
 [
 	"mainMission",
+	"airMission",
 	"moneyMission",
 	"sideMission",
 	"priorityMission",

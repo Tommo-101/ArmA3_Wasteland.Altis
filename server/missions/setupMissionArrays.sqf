@@ -6,47 +6,44 @@
 
 if (!isServer) exitWith {};
 
-//AirMissions =
-//[
-//	// Mission filename, weight
-//  ["mission_AbandonedHeli", 1],
-//	["mission_AbandonedJet", 1],
-//	["mission_ArmedDiversquad", 1],
-//];
+AirMissions =
+[
+  ["mission_CivHeli", 1],
+  ["mission_HostileHelicopter", 0.5],
+	["mission_HostileHeliformation", 1],
+	["mission_HostileJet", 1],
+  ["mission_HostileJetFormation", 1],
+  ["mission_SkySmuggler", 1]
+];
 
 MainMissions =
 [
 	// Mission filename, weight
   ["mission_AbandonedHeli", 1],
 	["mission_AbandonedJet", 1],
+  ["mission_AntiAir", 1],
   ["mission_APC", 1],
-	//["mission_ArmedDiversquad", 1],
   ["mission_ArmedHeli", 1],
-  ["mission_CivHeli", 1],
-	//["mission_Coastal_Convoy", 1],
 	["mission_Convoy", 1],
-	["mission_HostileHeliFormation", 1],
-  ["mission_HostileJetFormation", 1],
   ["mission_LightArmVeh", 1],
 	["mission_MBT", 1],
+  ["mission_policePatrol", 1],
 	["mission_Roadblock", 1],
-  ["mission_SkySmuggler", 1],
 	["mission_Smugglers", 1]
 ];
 
 SideMissions =
 [
   ["mission_AbandonedArtillery", 0.2],
-  ["mission_AirWreck", 0.5],
-  ["mission_HostileHelicopter", 0.5],
+  ["mission_AirWreck", 1],
+  ["mission_HostageRescue", 1],
+  ["mission_Medevac", 1],
 	["mission_MiniConvoy", 1],
-	//["mission_SunkenSupplies", 1],
+  ["mission_Occupation", 2],
+  ["mission_Outpost", 2],
 	["mission_TownInvasion", 2],
-	["mission_Outpost", 3],
 	["mission_Truck", 1],
-	["mission_HostageRescue", 1],
-	["mission_Occupation", 1],
-	["mission_Sniper", 1]
+  ["mission_WepCache", 1]
 ];
 
 MoneyMissions =
@@ -56,26 +53,26 @@ MoneyMissions =
 
 PriorityMissions = //using afgm OR 509 where not exists BUDDSKI7
 [
-	["mission_mechpatrol", 0.5],
-	["mission_tankRush", 0.5],
-	["mission_HillBurrow", 0.5]
+  ["mission_HillBurrow", 1],
+  ["mission_mechpatrol", 1],
+	["mission_tankRush", 1]
+
 ];
 
 LogisticsMissions =
 [
-	["mission_MiniConvoy", 1],
-	["mission_Airdrop", 1.1],
-	["mission_DeliverySupply", 1],
-	["mission_deviceDelivery", 0.8],
-	["mission_AltisHasFallen", 1]
+  ["mission_Airdrop", 1],
+  ["mission_AltisHasFallen", 1],
+  ["mission_DeliverySupply", 1],
+  //["mission_deviceDelivery", 0.3],
+  ["mission_MiniConvoy", 1]
 ];
 
 WaterMissions =
 [
-	["mission_Coastal_Convoy", 1],
-	["mission_ArmedDiversquad", 1],
+  ["mission_ArmedDiversquad", 1],
+  ["mission_Coastal_Convoy", 1],
 	["mission_SunkenTreasure", 1]
-	//["mission_SunkenSupplies", 1]
 ];
 
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
@@ -107,6 +104,7 @@ MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTrea
 WaterMissions = [WaterMissions, [["A3W_underWaterMissions", ["mission_ArmedDiversquad", "mission_SunkenTreasure", "mission_SunkenSupplies"]]]] call removeDisabledMissions;
 LogisticsMissions = [LogisticsMissions, [["A3W_rescueMissions", ["mission_AltisHasFallen"]]]] call removeDisabledMissions;
 PriorityMissions = [PriorityMissions, [["A3W_rescueMissions", ["mission_tankRush"]]]] call removeDisabledMissions;
+AirMissions = [AirMissions, [["A3W_rescueMissions", ["mission_AltisHasFallen"]]]] call removeDisabledMissions;
 
 
 { _x set [2, false] } forEach MainMissions;
@@ -115,3 +113,4 @@ PriorityMissions = [PriorityMissions, [["A3W_rescueMissions", ["mission_tankRush
 { _x set [2, false] } forEach PriorityMissions; //BUDDSKI7
 { _x set [2, false] } forEach LogisticsMissions;
 { _x set [2, false] } forEach WaterMissions;
+{ _x set [2, false] } forEach AirMissions;

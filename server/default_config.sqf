@@ -182,11 +182,14 @@ A3W_logisticsMissionDelay = 7*60;
 A3W_logisticsMissionTimeout = 30*60;
 A3W_waterMissionDelay = 5*60;
 A3W_waterMissionTimeout = 25*60;
+A3W_airMissionDelay = 5*60;
+A3W_airMissionTimeout = 25*60;
+
 
 //Mission Reward Money Amounts
 Tier_0_Reward = 0;						//added to eliminate the need to comment out when wantign to cancel $ reward from missions
 Tier_1_Reward = 50000;				//Default $5,000
 Tier_2_Reward = 75000;				//Default $10,000
-Tier_3_Reward = 1000000;				//Default $15,000
+Tier_3_Reward = 100000;				//Default $15,000
 Tier_4_Reward = 150000;				//Default $25,000
 Tier_5_Reward = 200000;				//Default $40,000

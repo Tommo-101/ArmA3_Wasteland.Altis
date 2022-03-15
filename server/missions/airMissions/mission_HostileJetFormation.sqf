@@ -5,7 +5,7 @@
 //	@file Author: JoSchaap, AgentRev, LouD
 
 if (!isServer) exitwith {};
-#include "mainMissionDefines.sqf"
+#include "airMissionDefines.sqf"
 
 private ["_planeChoices", "_convoyVeh", "_veh1", "_veh2", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_numWaypoints", "_cash", "_boxes1", "_currBox1", "_boxes2", "_currBox2", "_box1", "_box2"];
 
@@ -150,4 +150,4 @@ _successExec =
 	_successHintMessage = "The sky is clear again, the enemy patrol was taken out! Ammo crates and some money have fallen near the pilot.";
 };
 
-_this call mainMissionProcessor;
+_this call airMissionProcessor;
