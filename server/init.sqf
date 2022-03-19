@@ -32,6 +32,8 @@ if (isServer) then
 		};
 
 		diag_log format ["HandleDisconnect - %1 - alive: %2 - local: %3 - isPlayer: %4 - group: %5", [_name, _uid], alive _unit, local _unit, isPlayer _unit, group _unit];
+		//aj - text disconnect to lobby
+		(format ["Player %1 went to lobby", _name]) remoteExecCall ["systemChat", 0];
 
 		_bountyMarker = format ["%1_bountyMarker", _name];
 		if (markerType _bountyMarker == "mil_dot") then

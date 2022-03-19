@@ -9,11 +9,9 @@ v1g Fast Rope by [STELS]Zealot
 #define STR_CUT_ROPES "Cut Ropes"
 
 if (isdedicated) exitwith {};
-
 waituntil {player == player};
 
 zlt_rope_ropes = [];
-
 zlt_mutexAction = false;
 
 zlt_rope_helis = [
@@ -77,8 +75,8 @@ zlt_fnc_tossropes = {
 	} foreach zlt_rope_helidata;
 	sleep random 0.3;
 	if ( count (_heli getvariable ["zlt_ropes",[]]) != 0 ) exitwith { zlt_mutexAction = false; };
-	//_heli animateDoor ['door_R', 1];
-	//_heli animateDoor ['door_L', 1];
+	_heli animateDoor ['door_R', 1];
+	_heli animateDoor ['door_L', 1];
 	{
 		_rope = createVehicle ["land_rope_f", [0,0,0], [], 0, "CAN_COLLIDE"];
 		_rope setdir (getdir _heli);
@@ -171,8 +169,8 @@ zlt_fnc_cutropes = {
 	_ropes = (_veh getvariable ["zlt_ropes", []]);
 	{deletevehicle _x} foreach _ropes;
 	_veh setvariable ["zlt_ropes", [], true];
-	//_veh animateDoor ['door_R', 0];
-	//_veh animateDoor ['door_L', 0];
+	_veh animateDoor ['door_R', 0];
+	_veh animateDoor ['door_L', 0];
 };
 
 zlt_fnc_removeropes = {

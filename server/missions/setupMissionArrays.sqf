@@ -55,8 +55,8 @@ PriorityMissions = //using afgm OR 509 where not exists BUDDSKI7
 [
   ["mission_HillBurrow", 1],
   ["mission_mechpatrol", 1],
-	["mission_tankRush", 1]
-
+	["mission_tankRush", 1],
+  ["mission_EMP",1]
 ];
 
 LogisticsMissions =
@@ -83,6 +83,7 @@ OccupationMissionMarkers = (allMapMarkers select {["Occupation_", _x] call fn_st
 SniperMissionMarkers = (allMapMarkers select {["Sniper_", _x] call fn_startsWith}) apply {[_x, false]};
 JetMarkers = (allMapMarkers select {["Jet_", _x] call fn_startsWith}) apply {[_x, false]};
 HQSafePosMarkers = (allMapMarkers select {["EvacHQ_", _x] call fn_startsWith}) apply {[_x, false]};
+IndustryMissionMarkers = (allMapMarkers select {["Industry_", _x] call fn_startsWith}) apply {[_x, false]};
 
 if !(ForestMissionMarkers isEqualTo []) then
 {
@@ -102,7 +103,7 @@ MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Conv
 SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]]]] call removeDisabledMissions;
 MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTreasure"]]]] call removeDisabledMissions;
 WaterMissions = [WaterMissions, [["A3W_underWaterMissions", ["mission_ArmedDiversquad", "mission_SunkenTreasure", "mission_SunkenSupplies"]]]] call removeDisabledMissions;
-LogisticsMissions = [LogisticsMissions, [["A3W_rescueMissions", ["mission_AltisHasFallen"]]]] call removeDisabledMissions;
+LogisticsMissions = [LogisticsMissions, [["A3W_rescueMissions", ["mission_Convoy"]]]] call removeDisabledMissions;
 PriorityMissions = [PriorityMissions, [["A3W_rescueMissions", ["mission_tankRush"]]]] call removeDisabledMissions;
 AirMissions = [AirMissions, [["A3W_rescueMissions", ["mission_AltisHasFallen"]]]] call removeDisabledMissions;
 

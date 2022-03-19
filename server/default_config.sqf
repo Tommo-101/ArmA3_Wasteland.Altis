@@ -150,6 +150,8 @@ A3W_boxSpawning = 0;               // If serverSpawning = 1, spawn weapon crates
 A3W_baseBuilding = 1;              // If serverSpawning = 1, spawn base parts in towns (0 = no, 1 = yes)
 A3W_essentialsSpawning = 1;        // If serverSpawning = 1, spawn essential items (food sacks, water barrels, minor supply crates) in towns (0 = no, 1 = yes)
 
+A3W_territorySpawnCooldown = 5*60;
+
 // Loot settings
 A3W_buildingLootWeapons = 0;       // Spawn weapon loot in all buildings (0 = no, 1 = yes)
 A3W_buildingLootSupplies = 0;      // Spawn supply loot (backpacks & player items) in all buildings (0 = no, 1 = yes)
@@ -178,7 +180,7 @@ A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
 A3W_priorityMissionDelay = 30*60;
 A3W_priorityMissionTimeout = 60*60;
-A3W_logisticsMissionDelay = 7*60;
+A3W_logisticsMissionDelay = 10*60;
 A3W_logisticsMissionTimeout = 30*60;
 A3W_waterMissionDelay = 5*60;
 A3W_waterMissionTimeout = 25*60;
