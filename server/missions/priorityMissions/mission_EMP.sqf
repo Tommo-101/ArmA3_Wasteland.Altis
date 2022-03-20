@@ -20,8 +20,7 @@ _setupObjects =
 {
 	_missionPos = markerPos _missionLocation;
 
-
-	_camonet = createVehicle ["Land_MultiScreenComputer_01_sand_F", [_missionPos select 0, _missionPos select 1], [], 0, "CAN COLLIDE"];
+	_camonet = createVehicle ["Land_MultiScreenComputer_01_sand_F", [_missionPos select 0, _missionPos select 1], [], 0, "CAN_COLLIDE"];
 	_camonet allowdamage false;
 	_camonet setDir random 360;
 	_camonet setVariable ["R3F_LOG_disabled", false];

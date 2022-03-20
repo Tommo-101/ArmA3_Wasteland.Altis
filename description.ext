@@ -36,9 +36,9 @@ briefing = 0; // if 0, skip Continue button
 
 // A3W UI color (default = sky blue)
 
-#define A3W_UICOLOR_R  0.25 // default = 0.25
-#define A3W_UICOLOR_G  0.51 // default = 0.51
-#define A3W_UICOLOR_B  0.96 // default = 0.96
+#define A3W_UICOLOR_R  0.50 // default = 0.25
+#define A3W_UICOLOR_G  0.70 // default = 0.51
+#define A3W_UICOLOR_B  0.80 // default = 0.96
 
 //Dialog includes
 
@@ -75,13 +75,13 @@ briefing = 0; // if 0, skip Continue button
 #include "addons\parking\list_simple_menu.hpp"
 #include "addons\CHVD\dialog.hpp"
 
-#include "addons\cctv\ui.hpp"
-#include "addons\cctv\laptop_flat_menu.hpp"
-#include "addons\cctv\cctv_menu.hpp"
+//#include "addons\cctv\ui.hpp"
+//#include "addons\cctv\laptop_flat_menu.hpp"
+//#include "addons\cctv\cctv_menu.hpp"
 
-#include "addons\BoS\dialog\BoS_mainMenu.hpp"
-#include "addons\AF_Keypad\AF_KP_defines.hpp"
-#include "addons\AF_Keypad\AF_KP_dialogs.hpp"
+//#include "addons\BoS\dialog\BoS_mainMenu.hpp"
+//#include "addons\AF_Keypad\AF_KP_defines.hpp"
+//#include "addons\AF_Keypad\AF_KP_dialogs.hpp"
 
 class RscTitles
 {
