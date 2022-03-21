@@ -23,6 +23,16 @@ else
 
 _isSniper = (["_sniper_", _unit] call fn_findString != -1);
 _isDiver = (["_diver_", _unit] call fn_findString != -1);
+_isPilot = (["_Pilot_", _unit] call fn_findString != -1);
+_isHeliPilot = (["_Helipilot_", _unit] call fn_findString != -1);
+_isSharpshooter = (["_Sharpshooter_", _unit] call fn_findString != -1);
+_isUAV = (["_UAV_", _unit] call fn_findString != -1);
+_isRecon = (["_recon_", _unit] call fn_findString != -1);
+_isLAT = (["_LAT_", _unit] call fn_findString != -1);
+_isAAA = (["_AAA_", _unit] call fn_findString != -1);
+_isPG = (["_PG_", _unit] call fn_findString != -1);
+_isMedic = (["_medic_", _unit] call fn_findString != -1);
+_isEngineer = (["_engineer_", _unit] call fn_findString != -1);
 
 _defaultVest = "V_Rangemaster_Belt";
 
@@ -44,6 +54,46 @@ switch (_side) do
 				if (_item == "uniform") then { _result = "U_B_Wetsuit" };
 				if (_item == "vest") then { _result = "V_RebreatherB" };
 				if (_item == "goggles") then { _result = "G_Diving" };
+			};
+			case (_isPilot):
+			{
+
+			};
+			case (_isHeliPilot):
+			{
+
+			};
+			case (_isSharpshooter):
+			{
+
+			};
+			case (_isUAV):
+			{
+
+			};
+			case (_isRecon):
+			{
+
+			};
+			case (_isLAT):
+			{
+
+			};
+			case (_isAAA):
+			{
+
+			};
+			case (_isPG):
+			{
+
+			};
+			case (_isMedic):
+			{
+
+			};
+			case (_isEngineer):
+			{
+
 			};
 			default
 			{
@@ -69,6 +119,46 @@ switch (_side) do
 				if (_item == "vest") then { _result = "V_RebreatherIR" };
 				if (_item == "goggles") then { _result = "G_Diving" };
 			};
+			case (_isPilot):
+			{
+
+			};
+			case (_isHeliPilot):
+			{
+
+			};
+			case (_isSharpshooter):
+			{
+
+			};
+			case (_isUAV):
+			{
+
+			};
+			case (_isRecon):
+			{
+
+			};
+			case (_isLAT):
+			{
+
+			};
+			case (_isAAA):
+			{
+
+			};
+			case (_isPG):
+			{
+
+			};
+			case (_isMedic):
+			{
+
+			};
+			case (_isEngineer):
+			{
+
+			};
 			default
 			{
 				if (_item == "uniform") then { _result = "U_O_officer_noInsignia_hex_F" };
@@ -92,6 +182,46 @@ switch (_side) do
 				if (_item == "uniform") then { _result = "U_I_Wetsuit" };
 				if (_item == "vest") then { _result = "V_RebreatherIA" };
 				if (_item == "goggles") then { _result = "G_Diving" };
+			};
+			case (_isPilot):
+			{
+
+			};
+			case (_isHeliPilot):
+			{
+
+			};
+			case (_isSharpshooter):
+			{
+
+			};
+			case (_isUAV):
+			{
+
+			};
+			case (_isRecon):
+			{
+
+			};
+			case (_isLAT):
+			{
+
+			};
+			case (_isAAA):
+			{
+
+			};
+			case (_isPG):
+			{
+
+			};
+			case (_isMedic):
+			{
+
+			};
+			case (_isEngineer):
+			{
+
 			};
 			default
 			{
