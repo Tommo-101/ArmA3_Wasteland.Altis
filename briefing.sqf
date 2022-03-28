@@ -19,6 +19,13 @@ player createDiarySubject ["credits", "Credits"];
 
 player createDiaryRecord ["changelog",
 [
+"v1.4d+",
+"
+<br/>Latest updates found at https://tbg.nn.pe/changelog
+"
+]];
+
+[
 "v1.4d",
 "
 <br/>[Added] ADR-97 SMG

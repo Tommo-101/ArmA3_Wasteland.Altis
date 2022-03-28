@@ -101,7 +101,7 @@ _setupObjects =
 		_boxes = [];
 		for "_i" from 1 to 2 do
 		{
-			_box = createVehicle [["Box_East_WpsSpecial_F","Box_NATO_WpsSpecial_F"] call BIS_fnc_selectRandom, position _heli, [], 3, "NONE"];
+			_box = createVehicle [["Box_NATO_WpsSpecial_F","Box_NATO_WpsSpecial_F"] call BIS_fnc_selectRandom, position _heli, [], 3, "NONE"];
 			[_box, ["mission_USLaunchers","mission_RULaunchers"] call BIS_fnc_selectRandom] call fn_refillbox;
 			_box setVariable ["cmoney", 250000, true];
 			_box setVariable ["R3F_LOG_disabled", false, true];
@@ -152,6 +152,16 @@ _successExec =
 		[_heli, driver _heli] call A3W_fnc_takeOwnership;
 	};
 	{ if (alive _x) then { deleteVehicle _x }; } forEach [_president, _airforceOne];
+
+	for "_i" from 1 to 10 do
+	{
+		_cash = createVehicle ["Land_Money_F", _lastPos, [], 5, "None"];
+		_cash setPos ([_lastPos, [[2 + random 3,0,0], random 360] call BIS_fnc_rotateVector2D] call BIS_fnc_vectorAdd);
+		_cash setDir random 360;
+		_cash setVariable ["cmoney", 5000, true];
+		_cash setVariable ["owner", "world", true];
+	};
+
 	_heli setVariable ["Mission_Vehicle", false, true];
 	_successHintMessage = "The president is safe, well done.";
 };

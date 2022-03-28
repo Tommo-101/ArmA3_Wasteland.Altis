@@ -94,6 +94,7 @@ if (hasInterface || isServer) then
 	//[] execVM "addons\scripts\logo.sqf"; -- For future use.
 	[] execVM "addons\HvT\HvT.sqf";
 	[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
+	[] execVM "addons\credits\welcome.sqf";
 	[] execVM "addons\proving_ground\init.sqf";
 	[] execVM "addons\JumpMF\init.sqf";
 	[] execVM "addons\outlw_magrepack\MagRepack_init.sqf";
@@ -119,3 +120,6 @@ if (hasInterface || isServer) then
 ];
 
 "RM_DISPLAYTEXT_PUBVAR" addPublicVariableEventHandler {(_this select 1) spawn BIS_fnc_dynamicText;};
+
+
+[] execVM "r0ed_SurvivableCrashes\init.sqf"

@@ -322,6 +322,7 @@ if (isServer) then {
 		// Set initial fog level
 		_fogLevel = 2;
 		_overcastLevel = 2;
+		_weatherType = "NONE";
 
 		while {true} do {
 			// Sleep a while until next weather change

@@ -8,7 +8,7 @@ class EditorData
 	toggles=525;
 	class ItemIDProvider
 	{
-		nextID=2061;
+		nextID=2087;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=102;
+		nextID=138;
 	};
 	class Camera
 	{
-		pos[]={4287.354,118.56403,12783.061};
-		dir[]={-0.017870631,-0.59435195,-0.804102};
-		up[]={-0.013206881,0.80419236,-0.59422714};
-		aside[]={-0.99983341,-6.1802439e-008,0.02222015};
+		pos[]={14840.143,297.01907,16240.998};
+		dir[]={-0.75160056,-0.54627484,0.36988193};
+		up[]={-0.49015033,0.83759415,0.24121773};
+		aside[]={0.44158185,-2.9534567e-007,0.89729112};
 	};
 };
 binarizationWanted=0;
@@ -64,13 +64,16 @@ addons[]=
 	"A3_Static_F_Destroyer_Boat_Rack_01",
 	"A3_Supplies_F_Exp_Ammoboxes",
 	"A3_Boat_F_Boat_Armed_01",
-	"A3_Static_F_Destroyer_Ship_Gun_01"
+	"A3_Static_F_Destroyer_Ship_Gun_01",
+	"A3_Weapons_F_Bootcamp_Ammoboxes",
+	"A3_Structures_F_Items_Vessels",
+	"A3_Signs_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=22;
+		items=24;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -225,6 +228,20 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item22
+		{
+			className="A3_Weapons_F_Bootcamp";
+			name="Arma 3 Bootcamp Update - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item23
+		{
+			className="A3_Signs_F";
+			name="Arma 3 - Signs";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -262,7 +279,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=303;
+		items=305;
 		class Item0
 		{
 			dataType="Group";
@@ -7126,7 +7143,7 @@ class Mission
 					fillName="DiagGrid";
 					a=41.720001;
 					b=123.456;
-					angle=313.28882;
+					angle=313.28876;
 					id=1764;
 					atlOffset=112.34835;
 				};
@@ -7178,7 +7195,7 @@ class Mission
 					text="USS Lucky";
 					type="b_naval";
 					colorName="ColorBlue";
-					angle=37.619907;
+					angle=37.6199;
 					id=1769;
 					atlOffset=88.814941;
 				};
@@ -7592,7 +7609,7 @@ class Mission
 					text="USS Liberty";
 					type="b_naval";
 					colorName="ColorBlue";
-					angle=37.619995;
+					angle=306.69751;
 					id=1822;
 					atlOffset=56.421856;
 				};
@@ -7864,7 +7881,7 @@ class Mission
 					fillName="DiagGrid";
 					a=41.720001;
 					b=123.456;
-					angle=88.573982;
+					angle=88.573967;
 					id=1840;
 					atlOffset=185.97;
 				};
@@ -8244,7 +8261,7 @@ class Mission
 					fillName="DiagGrid";
 					a=180;
 					b=130;
-					angle=31.345932;
+					angle=31.345926;
 					id=1849;
 					atlOffset=0.099977493;
 				};
@@ -9455,7 +9472,7 @@ class Mission
 					name="Repair Stn";
 					class Entities
 					{
-						items=19;
+						items=21;
 						class Item0
 						{
 							dataType="Object";
@@ -9482,7 +9499,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={11646.865,25.507183,11976.625};
-								angles[]={0,2.3933525,0};
+								angles[]={0,2.3933523,0};
 							};
 							side="Empty";
 							flags=4;
@@ -9490,11 +9507,114 @@ class Mission
 							{
 								init="[this, true] call A3W_fnc_setupResupplyTruck";
 								name="ResupplyTruck10";
-								textures="Orange";
+								textures="OrangeOrange";
 							};
 							id=1723;
 							type="C_Truck_02_box_F";
 							atlOffset=0.082921982;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="VehicleCustomization";
+									expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"ARRAY"
+															};
+														};
+														class value
+														{
+															items=2;
+															class Item0
+															{
+																class data
+																{
+																	class type
+																	{
+																		type[]=
+																		{
+																			"STRING"
+																		};
+																	};
+																	value="OrangeOrange";
+																};
+															};
+															class Item1
+															{
+																class data
+																{
+																	class type
+																	{
+																		type[]=
+																		{
+																			"SCALAR"
+																		};
+																	};
+																	value=1;
+																};
+															};
+														};
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"ARRAY"
+															};
+														};
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=2;
+							};
 						};
 						class Item2
 						{
@@ -9775,9 +9895,31 @@ class Mission
 							id=1002;
 							atlOffset=186.16611;
 						};
+						class Item19
+						{
+							dataType="Marker";
+							position[]={7372.752,209.99001,7285.1421};
+							name="RepairStation11";
+							text="RS";
+							type="mil_dot";
+							colorName="ColorRed";
+							id=2085;
+							atlOffset=185.96956;
+						};
+						class Item20
+						{
+							dataType="Marker";
+							position[]={15188.565,0,26941.07};
+							name="RepairStation9";
+							text="RS";
+							type="mil_dot";
+							colorName="ColorRed";
+							id=2086;
+							atlOffset=185.97;
+						};
 					};
 					id=1884;
-					atlOffset=133.26416;
+					atlOffset=34.164135;
 				};
 				class Item4
 				{
@@ -10024,7 +10166,7 @@ class Mission
 							name="Parking6_spawn";
 							type="Empty";
 							colorName="ColorBlack";
-							angle=215.59108;
+							angle=215.59106;
 							id=427;
 						};
 						class Item24
@@ -10092,7 +10234,7 @@ class Mission
 				};
 			};
 			id=1879;
-			atlOffset=57.788742;
+			atlOffset=40.208397;
 		};
 		class Item272
 		{
@@ -15302,6 +15444,464 @@ class Mission
 			type="Empty";
 			id=2060;
 			atlOffset=-0.00018310547;
+		};
+		class Item303
+		{
+			dataType="Layer";
+			name="Resupply Stuff";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="Map_objects.";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Resupply";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Layer";
+									name="Resupply_10";
+									class Entities
+									{
+										items=9;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={11643.412,23.845982,11976.129};
+												angles[]={0,2.454468,6.2791886};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												skill=0.60000002;
+												init="this setVectorUp [0,0,1]; this allowDamage false;";
+												name="ResupplyCrates_5";
+												disableSimulation=1;
+											};
+											id=2065;
+											type="Land_CratesWooden_F";
+											atlOffset=0.050632477;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="allowDamage";
+													expression="_this allowdamage _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={11644.875,24.410898,11974.879};
+												angles[]={0,0.8833918,6.2791886};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												skill=0.60000002;
+												init="this setVectorUp [0,0,1]; this allowDamage false; this call A3W_fnc_setupResupplyTruck";
+												name="ResupplyAmmoNet_5";
+											};
+											id=2066;
+											type="Box_FIA_Ammo_F";
+											atlOffset=-0.00038337708;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="allowDamage";
+													expression="_this allowdamage _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={11643.283,24.22423,11975.652};
+												angles[]={0,2.6226139,6.2791886};
+											};
+											side="Empty";
+											class Attributes
+											{
+												skill=0.60000002;
+												init="this setVectorUp [0,0,1]; this allowDamage false; this call A3W_fnc_setupResupplyTruck";
+												name="ResupplyBarrel1_5";
+												createAsSimpleObject=1;
+												disableSimulation=1;
+											};
+											id=2067;
+											type="Land_MetalBarrel_F";
+											atlOffset=0.74468613;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="allowDamage";
+													expression="_this allowdamage _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={11642.688,24.237545,11975.938};
+												angles[]={0,0.90730447,6.2791886};
+											};
+											side="Empty";
+											class Attributes
+											{
+												skill=0.60000002;
+												init="this setVectorUp [0,0,1]; this allowDamage false; this call A3W_fnc_setupResupplyTruck";
+												name="ResupplyBarrel2_5";
+												createAsSimpleObject=1;
+												disableSimulation=1;
+											};
+											id=2068;
+											type="Land_MetalBarrel_F";
+											atlOffset=0.75562096;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="allowDamage";
+													expression="_this allowdamage _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+										class Item4
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={11642.001,23.535299,11975.514};
+												angles[]={0,1.6002675,6.2791886};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												skill=0.60000002;
+												init="this setVectorUp [0,0,1]; this allowDamage false; this call A3W_fnc_setupResupplyTruck";
+												name="ResupplyBarrel3_5";
+												createAsSimpleObject=1;
+												disableSimulation=1;
+											};
+											id=2069;
+											type="Land_MetalBarrel_F";
+											atlOffset=0.050624847;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="allowDamage";
+													expression="_this allowdamage _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+										class Item5
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={11642.5,23.53319,11974.969};
+												angles[]={6.2791886,3.3330369,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												skill=0.60000002;
+												init="this setVectorUp [0,0,1]; this allowDamage false; this call A3W_fnc_setupResupplyTruck";
+												name="ResupplyBarrel4_5";
+												createAsSimpleObject=1;
+												disableSimulation=1;
+											};
+											id=2070;
+											type="Land_MetalBarrel_F";
+											atlOffset=0.050632477;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="allowDamage";
+													expression="_this allowdamage _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+										class Item6
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={11646.292,23.545572,11973.647};
+												angles[]={0,2.4543905,6.2791886};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												skill=0.60000002;
+												init="this setVectorUp [0,0,1]; this allowDamage false;";
+												name="ResupplyAmmoBox_5";
+												disableSimulation=1;
+											};
+											id=2071;
+											type="Land_Pallet_MilBoxes_F";
+											atlOffset=0.050632477;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="allowDamage";
+													expression="_this allowdamage _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+										class Item7
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={11644.176,24.143885,11973.952};
+												angles[]={0,0.89005291,6.2791886};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												skill=0.60000002;
+												init="this setVectorUp [0,0,1]; this allowDamage false;";
+												name="ResupplySign_5";
+												disableSimulation=1;
+											};
+											id=2072;
+											type="Land_Sign_WarningMilitaryArea_F";
+											atlOffset=0.050632477;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="allowDamage";
+													expression="_this allowdamage _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+										class Item8
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={11642.591,23.521767,11977.414};
+												angles[]={0,0.88175267,6.2791886};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												skill=0.60000002;
+												init="this setVectorUp [0,0,1]; this allowDamage false;";
+												name="ResupplyWater_5";
+												disableSimulation=1;
+											};
+											id=2073;
+											type="Land_StallWater_F";
+											atlOffset=0.050632477;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="allowDamage";
+													expression="_this allowdamage _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+									};
+									id=2064;
+									atlOffset=0.066865921;
+								};
+							};
+							id=2063;
+							atlOffset=0.066865921;
+						};
+					};
+					id=2062;
+					atlOffset=0.066865921;
+				};
+			};
+			id=2074;
+			atlOffset=0.066865921;
+		};
+		class Item304
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11643.68,23.055355,11973.936};
+				angles[]={0,0,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2084;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=7.6293945e-005;
 		};
 	};
 	class VehicleInVehicleLinks
