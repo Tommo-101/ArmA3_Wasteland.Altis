@@ -104,20 +104,29 @@ fn_checkStoreItemDLC = "client\functions\fn_checkStoreItemDLC.sqf" call mf_compi
 fn_respawnTimer = "client\systems\scoreboard\fn_respawnTimer.sqf" call mf_compile;
 loadGeneralStore = "client\systems\generalStore\loadGenStore.sqf" call mf_compile;
 populateBaseStore = "client\systems\BasePartsStore\populateBaseStore.sqf" call mf_compile;
+
 loadGunStore = "client\systems\gunStore\loadGunStore.sqf" call mf_compile;
 loadScoreboard = "client\systems\scoreboard\loadScoreboard.sqf" call mf_compile;
 loadVehicleStore = "client\systems\vehicleStore\loadVehicleStore.sqf" call mf_compile;
+loadSpecStore = "client\systems\specStore\loadSpecStore.sqf" call mf_compile;
+
 gearProperties = "client\functions\gearProperties.sqf" call mf_compile;
+
 getCapacity = "client\functions\getCapacity.sqf" call mf_compile;
 getItemInfo = "client\functions\getItemInfo.sqf" call mf_compile;
 getInventory = "client\systems\generalStore\getInventory.sqf" call mf_compile;
 getSellPriceList = "client\systems\selling\getSellPriceList.sqf" call mf_compile;
+
 populateGeneralStore = "client\systems\generalStore\populateGenStore.sqf" call mf_compile;
 populateGunStore = "client\systems\gunStore\populateGunStore.sqf" call mf_compile;
 populateVehicleStore = "client\systems\vehicleStore\populateVehicleStore.sqf" call mf_compile;
+populateSpecStore = "client\systems\specStore\populateSpecStore.sqf" call mf_compile;
+
 repaintVehicle = "client\systems\vehicleStore\repaintVehicle.sqf" call mf_compile;
 requestStoreObject = "client\functions\requestStoreObject.sqf" call mf_compile;
+
 vehicleInfo = "client\systems\vehicleStore\vehicleInfo.sqf" call mf_compile;
+specInfo = "client\systems\specStore\specInfo.sqf" call mf_compile;
 weaponInfo = "client\systems\gunStore\weaponInfo.sqf" call mf_compile;
 
 if (isNil "A3W_fnc_MP") then { A3W_fnc_MP = compile preprocessFileLineNumbers "\A3\functions_f\MP\fn_MP.sqf" };

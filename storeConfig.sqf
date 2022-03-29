@@ -1010,84 +1010,6 @@ allStoreGear = compileFinal str (call headArray + call uniformArray + call vestA
 genObjectsArray = compileFinal str
 [
 	//["Base Re-Locker", "Land_Device_assembled_F", 25000, "object"],  //Cael817, SNAFU,Used for base operations <-- Destroyable
-/*--
-	["Camp Fire", "Land_FirePlace_F", 100, "object"],
-	["Small Platform", "Land_GH_Platform_F", 500, "object"],
-	["Camo Net", "CamoNet_INDP_open_F", 200, "object", "HIDDEN"], // unlisted, only for object saving
-	["Pier Ladder", "Land_PierLadder_F", 250, "object"],
-	["Ammo Cache", "Box_FIA_Support_F", 250, "ammocrate"],
-	["Food sacks", "Land_Sacks_goods_F", 5000, "object"], // Added on player request
-	["Water Barrel", "Land_BarrelWater_F", 5000, "object"], // Added on player request
-	["Empty Ammo Crate", "Box_NATO_Ammo_F", 100, "ammocrate"],
-	["Metal Barrel", "Land_MetalBarrel_F", 100, "object"],
-	["Toilet Box", "Land_ToiletBox_F", 100, "object"],
-	["Lamp Post (Harbour)", "Land_LampHarbour_F", 100, "object"],
-	["Lamp Post (Shabby)", "Land_LampShabby_F", 100, "object"],
-	["Barrier Gate", "Land_BarGate_F", 400, "object"],
-	["Pipes", "Land_Pipes_Large_F", 400, "object"],
-	["Concrete Frame", "Land_CncShelter_F", 400, "object"],
-	["Safety Barrier", "Land_Crash_barrier_F", 400, "object"],
-	["Concrete Barrier", "Land_CncBarrier_F", 400, "object"],
-	["Concrete Barrier (Medium)", "Land_CncBarrierMedium_F", 700, "object"],
-	["Concrete Barrier (Long)", "Land_CncBarrierMedium4_F", 1000, "object"],
-	["HBarrier (1 block)", "Land_HBarrier_1_F", 300, "object"],
-	["HBarrier (3 blocks)", "Land_HBarrier_3_F", 400, "object"],
-	["HBarrier (5 blocks)", "Land_HBarrier_5_F", 500, "object"],
-	["HBarrier Big", "Land_HBarrierBig_F", 1000, "object"],
-	["HBarrier Wall (4 blocks)", "Land_HBarrierWall4_F", 800, "object"],
-	["HBarrier Wall (6 blocks)", "Land_HBarrierWall6_F", 1000, "object"],
-	["HBarrier Watchtower", "Land_HBarrierTower_F", 1200, "object"],
-	["Concrete Wall", "Land_CncWall1_F", 800, "object"],
-	["Concrete Military Wall", "Land_Mil_ConcreteWall_F", 800, "object"],
-	["Concrete Wall (Long)", "Land_CncWall4_F", 1200, "object"],
-	["Military Wall (Big)", "Land_Mil_WallBig_4m_F", 1200, "object"],
-	["Shoot House Wall", "Land_Shoot_House_Wall_F", 180, "object"],
-	["Canal Wall (Small)", "Land_Canal_WallSmall_10m_F", 800, "object"],
-	["Canal Stairs", "Land_Canal_Wall_Stairs_F", 1000, "object"],
-	["Bag Fence (Corner)", "Land_BagFence_Corner_F", 300, "object"],
-	["Bag Fence (End)", "Land_BagFence_End_F", 300, "object"],
-	["Bag Fence (Long)", "Land_BagFence_Long_F", 400, "object"],
-	["Bag Fence (Round)", "Land_BagFence_Round_F", 300, "object"],
-	["Bag Fence (Short)", "Land_BagFence_Short_F", 300, "object"],
-	["Bag Bunker (Small)", "Land_BagBunker_Small_F", 300, "object"],
-	["Bag Bunker (Large)", "Land_BagBunker_Large_F", 1000, "object"],
-	["Bag Bunker Tower", "Land_BagBunker_Tower_F", 2000, "object"],
-	["Military Cargo Post", "Land_Cargo_Patrol_V1_F", 5000, "object"],
-	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 7500, "object"],
-	["Military Cargo HQ", "Land_Cargo_HQ_V1_F", 10000, "object"], // Added on player request
-	["Concrete Ramp", "Land_RampConcrete_F", 1000, "object"],
-	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 1500, "object"],
-	["Concrete Block", "BlockConcrete_F", 300, "object"],
-	["Scaffolding", "Land_Scaffolding_F", 1000, "object"],
-	["Basketball Court", "Land_BC_Court_F", 1000, "object"],
-	//["Transmitter Tower", "Land_TTowerBig_1_F", 2000, "object"],
-	//["Transmitter Tower (Tall)", "Land_TTowerBig_2_F", 3500, "object"],
-	["Kavala Castle (Stone)", "Land_Castle_01_step_F", 2000, "object"],
-	["Runway Edgelight", "Land_runway_edgelight_blue_F", 50, "object"],
-	["Shoot House - Wall (Stand, Long)", "Land_Shoot_House_Wall_Long_Stand_F", 180, "object"],
-	["Shoot House - Wall (Crouch, Long)", "Land_Shoot_House_Wall_Long_Crouch_F", 150, "object"],
-	["Shoot House - Wall (Prone, Long)", "Land_Shoot_House_Wall_Long_Prone_F", 120, "object"],
-	["Shoot House - Corner", "Land_Shoot_House_Corner_F", 150, "object"],
-	["Shoot House - Corner (Stand)", "Land_Shoot_House_Corner_Stand_F", 120, "object"],
-	["Shoot House - Corner (Crouch)", "Land_Shoot_House_Corner_Crouch_F", 90, "object"],
-	["Shoot House - Corner (Prone)", "Land_Shoot_House_Corner_Prone_F", 60, "object"],
-	["Shoot House - Panels", "Land_Shoot_House_Panels_F", 200, "object"],
-	["Shoot House - Tunnel", "Land_Shoot_House_Tunnel_F", 150, "object"],
-	["Shoot House - Tunnel (Stand)", "Land_Shoot_House_Tunnel_Stand_F", 120, "object"],
-	["Shoot House - Tunnel (Crouch)", "Land_Shoot_House_Tunnel_Crouch_F", 90, "object"],
-	["Shoot House - Tunnel (Prone)", "Land_Shoot_House_Tunnel_Prone_F", 60, "object"],
-	["Lamp (Halogen)", "Land_LampHalogen_F", 50, "object"],
-	["Solar Tower", "Land_spp_Tower_F", 1500, "object"],
-	["Canal Wall", "Land_Canal_Wall_10m_F", 400, "object"],
-	["Inn Garden", "Land_i_Addon_03_V1_F", 1000, "object"],
-	["Inn Garden (Middle)", "Land_i_Addon_03mid_V1_F", 500, "object"],
-	["Inn Garden (No Roof)", "Land_i_Addon_04_V1_F", 300, "object"],
-	["Grave (Dirt)", "Land_Grave_dirt_F", 2000, "object"],
-	["Grave (Forest)", "Land_Grave_forest_F", 2000, "object"],
-	["Grave (Rocks)", "Land_Grave_rocks_F", 2000, "object"],
-	["Tower Crane", "Land_Crane_F", 2000, "object"],
-	["Concrete Pier", "Land_Pier_Box_F", 500, "object"]--*/
-
 	["Ammo Cache", "Box_FIA_Support_F", 250, "ammocrate"],
 	["Container (Resupply Crate)", "Land_Cargo10_red_F", 4000, "resupplyObject"],
 	["Boom Gate", "Land_BarGate_F", 150, "object"],
@@ -1366,14 +1288,7 @@ landArray = compileFinal str
 	["Zamak Covered", "I_Truck_02_covered_F", 5000, "vehicle"],
 	["Zamak Fuel", "I_Truck_02_fuel_F", 6000, "vehicle"],
 	["Zamak Medical", "I_Truck_02_medical_F", 7000, "vehicle"],
-	["Zamak Repair", "I_Truck_02_box_F", 8000, "vehicle"],
-
-	["UGV Stomper (NATO)", "B_UGV_01_F", 2500, "vehicle"],
-	["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 15000, "vehicle"],
-	["UGV Stomper (AAF)", "I_UGV_01_F", 2500, "vehicle"],
-	["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 15000, "vehicle"],
-	["UGV Saif (CSAT)", "O_UGV_01_F", 2500, "vehicle"],
-	["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 15000, "vehicle"]
+	["Zamak Repair", "I_Truck_02_box_F", 8000, "vehicle"]
 ];
 
 armoredArray = compileFinal str
@@ -1404,13 +1319,6 @@ armoredArray = compileFinal str
 
 tanksArray = compileFinal str
 [
-	["ED-1E Camera UGV", "B_UGV_02_Science_F", GENSTORE_ITEM_PRICE("B_UGV_02_Science_backpack_F"), "vehicle", "SKIPSAVE"],
-	["ED-1E Camera UGV", "O_UGV_02_Science_F", GENSTORE_ITEM_PRICE("O_UGV_02_Science_backpack_F"), "vehicle", "SKIPSAVE"],
-	["ED-1E Camera UGV", "I_UGV_02_Science_F", GENSTORE_ITEM_PRICE("I_UGV_02_Science_backpack_F"), "vehicle", "SKIPSAVE"],
-	["ED-1D Demining UGV", "B_UGV_02_Demining_F", GENSTORE_ITEM_PRICE("B_UGV_02_Demining_backpack_F"), "vehicle", "SKIPSAVE"],
-	["ED-1D Demining UGV", "O_UGV_02_Demining_F", GENSTORE_ITEM_PRICE("O_UGV_02_Demining_backpack_F"), "vehicle", "SKIPSAVE"],
-	["ED-1D Demining UGV", "I_UGV_02_Demining_F", GENSTORE_ITEM_PRICE("I_UGV_02_Demining_backpack_F"), "vehicle", "SKIPSAVE"],
-
 	["AWC 303 Nyx Recon", "I_LT_01_scout_F", 10000, "vehicle"],
 	["AWC 304 Nyx Autocannon", "I_LT_01_cannon_F", 20000, "vehicle"],
 	["AWC 301 Nyx AT", "I_LT_01_AT_F", 30000, "vehicle"],
@@ -1431,17 +1339,6 @@ tanksArray = compileFinal str
 
 helicoptersArray = compileFinal str
 [
-	["AR-2 Darter UAV", "B_UAV_01_F", GENSTORE_ITEM_PRICE("B_UAV_01_backpack_F"), "vehicle", "SKIPSAVE"],
-	["AR-2 Darter UAV", "O_UAV_01_F", GENSTORE_ITEM_PRICE("O_UAV_01_backpack_F"), "vehicle", "SKIPSAVE"],
-	["AR-2 Darter UAV", "I_UAV_01_F", GENSTORE_ITEM_PRICE("I_UAV_01_backpack_F"), "vehicle", "SKIPSAVE"],
-	["AL-6 Pelican UAV", "B_UAV_06_F", GENSTORE_ITEM_PRICE("B_UAV_06_backpack_F"), "vehicle", "SKIPSAVE"],
-	["AL-6 Pelican UAV", "O_UAV_06_F", GENSTORE_ITEM_PRICE("O_UAV_06_backpack_F"), "vehicle", "SKIPSAVE"],
-	["AL-6 Pelican UAV", "I_UAV_06_F", GENSTORE_ITEM_PRICE("I_UAV_06_backpack_F"), "vehicle", "SKIPSAVE"],
-	["AL-6 Pelican Medical UAV", "B_UAV_06_medical_F", GENSTORE_ITEM_PRICE("B_UAV_06_medical_backpack_F"), "vehicle", "SKIPSAVE"],
-	["AL-6 Pelican Medical UAV", "O_UAV_06_medical_F", GENSTORE_ITEM_PRICE("O_UAV_06_medical_backpack_F"), "vehicle", "SKIPSAVE"],
-	["AL-6 Pelican Medical UAV", "I_UAV_06_medical_F", GENSTORE_ITEM_PRICE("I_UAV_06_medical_backpack_F"), "vehicle", "SKIPSAVE"],
-	["AL-6 Pelican Demining UAV", "C_IDAP_UAV_06_antimine_F", GENSTORE_ITEM_PRICE("C_IDAP_UAV_06_antimine_backpack_F"), "vehicle", "SKIPSAVE"],
-
 	["M-900 Civilian", "C_Heli_Light_01_civil_F", 4000, "vehicle"], // MH-6, no flares
 	["MH-9 Hummingbird", "B_Heli_Light_01_F", 5000, "vehicle"], // MH-6
 	["PO-30 Orca (Unarmed)", "O_Heli_Light_02_unarmed_F", 30000, "vehicle"], // Ka-60
@@ -1480,9 +1377,7 @@ helicoptersArray = compileFinal str
 	["Mi-48 Kajman (MR)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle"], // Mi-28 with gunner // CUSTOM
 	["Mi-48 Kajman (AT)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle", "variant_kajAT"], // Mi-28 with gunner // CUSTOM
 	["Mi-48 Kajman (AA)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle", "variant_kajAA"], // Mi-28 with gunner // CUSTOM
-	["Mi-48 Kajman (HVY)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle", "variant_kajHVY"], // Mi-28 with gunner // CUSTOM
-
-	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 110000, "vehicle"] // Do NOT use "B_T_UAV_03_dynamicLoadout_F" (unlees you don't need ASRAAM)
+	["Mi-48 Kajman (HVY)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle", "variant_kajHVY"] // Mi-28 with gunner // CUSTOM
 ];
 
 planesArray = compileFinal str
@@ -1507,45 +1402,7 @@ planesArray = compileFinal str
 
 	["To-199 Neophron (CAS)", "O_Plane_CAS_02_dynamicLoadout_F", 200000, "vehicle"], // CUSTOM
 
-	["V-44 X Blackfish (Infantry)", "B_T_VTOL_01_infantry_F", 100000, "vehicle"],
-	["V-44 X Blackfish (Gunship)", "B_T_VTOL_01_armed_F", 150000, "vehicle"],
-
-	["Y-32 Xi'an", "O_T_VTOL_02_infantry_dynamicLoadout_F", 120000, "vehicle"],
-
-	//["KH-3A Fenghuang Missile UAV", "O_T_UAV_04_CAS_F", 140000, "vehicle"],
-
-	["MQ4A Greyhawk Missile UAV", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkMissile"],
-	["K40 Ababil-3 Missile UAV", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkMissile"],
-	["K40 Ababil-3 Missile UAV", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkMissile"],
-
-	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkBomber"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
-	["K40 Ababil-3 Bomber UAV", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkBomber"],
-	["K40 Ababil-3 Bomber UAV", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkBomber"],
-
-	["MQ4A Greyhawk Cluster UAV", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkCluster"],
-	["K40 Ababil-3 Cluster UAV", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkCluster"],
-	["K40 Ababil-3 Cluster UAV", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkCluster"],
-
-	["MQ4A Greyhawk (DAGR) UAV", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkDAGR"],
-	["K40 Ababil-3 (DAGR) UAV", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkDAGR"],
-	["K40 Ababil-3 (DAGR) UAV", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkDAGR"],
-
-	["UCAV Sentinel Missile", "B_UAV_05_F", 350000, "vehicle", "variant_sentinelMissile"],
-	["UCAV Sentinel Bomber", "B_UAV_05_F", 350000, "vehicle", "variant_sentinelBomber"],
-	["UCAV Sentinel Cluster", "B_UAV_05_F", 350000, "vehicle", "variant_sentinelCluster"]
-];
-
-antiAirArray = compileFinal str
-[
-	["Mk21 Centurion", "B_SAM_System_02_F", 150000],
-	["Mk41 VLS", "B_Ship_MRLS_01_F", 300000],
-	["Mk45 Hammer", "B_Ship_Gun_01_F", 240000],
-	["Mk49 Spartan", "B_SAM_System_01_F", 160000],
-	["Praetorian 1C", "B_AAA_System_01_F", 120000],
-	["AN/MPQ-105 Radar", "B_Radar_System_01_F", 80000],
-	["MIM-145 Defender", "B_SAM_System_03_F", 140000],
-	["R-750 Cronus Radar", "O_Radar_System_02_F", 80000],
-	["S-750 Rhea", "O_SAM_System_04_F", 150000]
+	["Y-32 Xi'an", "O_T_VTOL_02_infantry_dynamicLoadout_F", 120000, "vehicle"]
 ];
 
 boatsArray = compileFinal str
@@ -1574,7 +1431,98 @@ boatsArray = compileFinal str
 ];
 
 //allVehStoreVehicles = compileFinal str (call landArray + call armoredArray + call tanksArray + call helicoptersArray + call planesArray + call boatsArray);
-allVehStoreVehicles = compileFinal str (call landArray + call armoredArray + call tanksArray + call helicoptersArray + call planesArray + call antiAirArray + call boatsArray);
+allVehStoreVehicles = compileFinal str (call landArray + call armoredArray + call tanksArray + call helicoptersArray + call planesArray + call boatsArray);
+
+droneArray = compileFinal str
+[
+	["ED-1E Camera UGV", "B_UGV_02_Science_F", GENSTORE_ITEM_PRICE("B_UGV_02_Science_backpack_F"), "vehicle", "SKIPSAVE"],
+	["ED-1E Camera UGV", "O_UGV_02_Science_F", GENSTORE_ITEM_PRICE("O_UGV_02_Science_backpack_F"), "vehicle", "SKIPSAVE"],
+	["ED-1E Camera UGV", "I_UGV_02_Science_F", GENSTORE_ITEM_PRICE("I_UGV_02_Science_backpack_F"), "vehicle", "SKIPSAVE"],
+	["ED-1D Demining UGV", "B_UGV_02_Demining_F", GENSTORE_ITEM_PRICE("B_UGV_02_Demining_backpack_F"), "vehicle", "SKIPSAVE"],
+	["ED-1D Demining UGV", "O_UGV_02_Demining_F", GENSTORE_ITEM_PRICE("O_UGV_02_Demining_backpack_F"), "vehicle", "SKIPSAVE"],
+	["ED-1D Demining UGV", "I_UGV_02_Demining_F", GENSTORE_ITEM_PRICE("I_UGV_02_Demining_backpack_F"), "vehicle", "SKIPSAVE"],
+
+	["UGV Stomper (NATO)", "B_UGV_01_F", 2500, "vehicle"],
+	["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 15000, "vehicle"],
+	["UGV Stomper (AAF)", "I_UGV_01_F", 2500, "vehicle"],
+	["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 15000, "vehicle"],
+	["UGV Saif (CSAT)", "O_UGV_01_F", 2500, "vehicle"],
+	["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 15000, "vehicle"],
+
+	["AR-2 Darter UAV", "B_UAV_01_F", GENSTORE_ITEM_PRICE("B_UAV_01_backpack_F"), "vehicle", "SKIPSAVE"],
+	["AR-2 Darter UAV", "O_UAV_01_F", GENSTORE_ITEM_PRICE("O_UAV_01_backpack_F"), "vehicle", "SKIPSAVE"],
+	["AR-2 Darter UAV", "I_UAV_01_F", GENSTORE_ITEM_PRICE("I_UAV_01_backpack_F"), "vehicle", "SKIPSAVE"],
+	["AL-6 Pelican UAV", "B_UAV_06_F", GENSTORE_ITEM_PRICE("B_UAV_06_backpack_F"), "vehicle", "SKIPSAVE"],
+	["AL-6 Pelican UAV", "O_UAV_06_F", GENSTORE_ITEM_PRICE("O_UAV_06_backpack_F"), "vehicle", "SKIPSAVE"],
+	["AL-6 Pelican UAV", "I_UAV_06_F", GENSTORE_ITEM_PRICE("I_UAV_06_backpack_F"), "vehicle", "SKIPSAVE"],
+	["AL-6 Pelican Medical UAV", "B_UAV_06_medical_F", GENSTORE_ITEM_PRICE("B_UAV_06_medical_backpack_F"), "vehicle", "SKIPSAVE"],
+	["AL-6 Pelican Medical UAV", "O_UAV_06_medical_F", GENSTORE_ITEM_PRICE("O_UAV_06_medical_backpack_F"), "vehicle", "SKIPSAVE"],
+	["AL-6 Pelican Medical UAV", "I_UAV_06_medical_F", GENSTORE_ITEM_PRICE("I_UAV_06_medical_backpack_F"), "vehicle", "SKIPSAVE"],
+	["AL-6 Pelican Demining UAV", "C_IDAP_UAV_06_antimine_F", GENSTORE_ITEM_PRICE("C_IDAP_UAV_06_antimine_backpack_F"), "vehicle", "SKIPSAVE"],
+
+	["MQ-12 Falcon", "B_T_UAV_03_F", 110000, "vehicle"], // Do NOT use "B_T_UAV_03_dynamicLoadout_F" (unlees you don't need ASRAAM)
+
+	["K40 Ababil-3 (Missle) Opfor", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkMissile"],
+	["K40 Ababil-3 (Missle) Indy", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkMissile"],
+	["K40 Ababil-3 (Bomber) Opfor", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkBomber"],
+	["K40 Ababil-3 (Bomber) Indy", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkBomber"],
+	["K40 Ababil-3 (Cluster) Opfor", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkCluster"],
+	["K40 Ababil-3 (Cluster) Indy", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkCluster"],
+	["K40 Ababil-3 (DAGR) Opfor", "O_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkDAGR"],
+	["K40 Ababil-3 (DAGR) Indy", "I_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkDAGR"],
+
+	["MQ4A Greyhawk (Missle)", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkMissile"],
+	["MQ4A Greyhawk (Bomber)", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkBomber"],
+	["MQ4A Greyhawk (Cluster)", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkCluster"],
+	["MQ4A Greyhawk (Missle)", "B_UAV_02_dynamicLoadout_F", 200000, "vehicle", "variant_greyhawkDAGR"],
+
+	["UCAV Sentinel (Missile)", "B_UAV_05_F", 350000, "vehicle", "variant_sentinelMissile"],
+	["UCAV Sentinel (Bomber)", "B_UAV_05_F", 350000, "vehicle", "variant_sentinelBomber"],
+	["UCAV Sentinel (Cluster)", "B_UAV_05_F", 350000, "vehicle", "variant_sentinelCluster"],
+
+	["MQ-9 Reaper (Multi-Role)", "USAF_MQ9", 370000, "vehicle"],
+	["MQ-9 Reaper (Missle)", "USAF_MQ9", 370000, "vehicle", "variant_mq9missle"],
+	["MQ-9 Reaper (Bomber)", "USAF_MQ9", 370000, "vehicle", "variant_mq9Bomber"],
+
+	["RQ-4A Global Hawk (Spy)", "USAF_RQ4A", 100000, "vehicle"]
+];
+
+antiAirArray = compileFinal str
+[
+	["Mk21 Centurion", "B_SAM_System_02_F", 150000],
+	["Mk41 VLS", "B_Ship_MRLS_01_F", 300000],
+	["Mk45 Hammer", "B_Ship_Gun_01_F", 240000],
+	["Mk49 Spartan", "B_SAM_System_01_F", 160000],
+	["Praetorian 1C", "B_AAA_System_01_F", 120000],
+	["AN/MPQ-105 Radar", "B_Radar_System_01_F", 80000],
+	["MIM-145 Defender", "B_SAM_System_03_F", 140000],
+	["R-750 Cronus Radar", "O_Radar_System_02_F", 80000],
+	["S-750 Rhea", "O_SAM_System_04_F", 150000]
+];
+
+advHeliArray = compileFinal str
+[
+];
+
+advJetArray = compileFinal str
+[
+	["A10", "USAF_A10", 400000, "vehicle"],
+	["F22 Stealth", "USAF_F22", 500000, "vehicle"],
+	["F22 Heavy", "USAF_F22_Heavy", 500000, "vehicle"],
+	["F35A Stealth", "USAF_F35A_STEALTH", 500000, "vehicle"],
+	["F22A Heavy", "USAF_F35A", 500000, "vehicle"]
+];
+
+advUtilityArray = compileFinal str
+[
+	["C130 Super Hercules", "USAF_C130J", 100000, "vehicle"],
+	["C130 Super Hercules (Cargo)", "USAF_C130J_Cargo", 100000, "vehicle"],
+	["V-44 X Blackfish (Infantry)", "B_T_VTOL_01_infantry_F", 100000, "vehicle"],
+	["V-44 X Blackfish (Gunship)", "B_T_VTOL_01_armed_F", 200000, "vehicle"]
+];
+
+specOpsStore = compileFinal str (call droneArray + call antiAirArray + call advJetArray + call advUtilityArray);
+
 
 uavArray = compileFinal str
 [

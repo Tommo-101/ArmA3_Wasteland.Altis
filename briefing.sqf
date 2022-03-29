@@ -25,6 +25,7 @@ player createDiaryRecord ["changelog",
 "
 ]];
 
+player createDiaryRecord ["changelog",
 [
 "v1.4d",
 "

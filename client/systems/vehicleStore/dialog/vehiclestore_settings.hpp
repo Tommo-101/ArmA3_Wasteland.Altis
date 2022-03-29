@@ -269,7 +269,7 @@ class vehshopd
 		{
 			idc = vehshop_button5;
 			action = "[5] call populateVehicleStore";
-			text = "Anti-air";
+			text = "Boats";
 			sizeEx = VehStoreButton_textSize;
 
 			x = VehStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -278,7 +278,7 @@ class vehshopd
 			h = 0.040 * SZ_SCALE;
 		};
 
-		class StoreButton6: w_RscButton
+		/*class StoreButton6: w_RscButton
 		{
 			idc = vehshop_button6;
 			action = "[6] call populateVehicleStore";
@@ -289,7 +289,7 @@ class vehshopd
 			y = VehStoreMainBG_Y + (0.375 * SZ_SCALE);
 			w = 0.1173 * SZ_SCALE;
 			h = 0.040 * SZ_SCALE;
-		};
+		};*/
 
 		// Submarines transferred in Boats
 		/*

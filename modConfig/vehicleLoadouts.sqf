@@ -15,6 +15,182 @@
 
 switch (true) do
 {
+  //// NEW FOR USAF / SPEC OPS UPDATE
+	// A-10
+	case (_class isKindOf "USAF_A10"):
+	{
+		_mags =
+		[
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["Laserbatteries", [-1]],
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+		];
+		switch (_variant) do
+		{
+			default { _pylons = [
+				"USAF_PylonRack_2Rnd_AIM9X_LAU105",
+				"USAF_PylonRack_1Rnd_ANAAQ28",
+				"USAF_PylonRack_3Rnd_AGM65D",
+				"USAF_PylonRack_1Rnd_GBU12",
+				"USAF_PylonRack_4Rnd_GBU53",
+				"USAF_PylonRack_1Rnd_CBU103",
+				"USAF_PylonRack_4Rnd_GBU53",
+				"USAF_PylonRack_1Rnd_GBU12",
+				"USAF_PylonRack_3Rnd_AGM65D",
+				"USAF_PylonRack_7Rnd_HYDRA70",
+				"USAF_PylonRack_1Rnd_ANALQ131"
+			] };
+		};
+	};
+
+	// F22
+	case (_class isKindOf "USAF_F22"):
+	{
+		_mags =
+		[
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["Laserbatteries", [-1]],
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+		];
+		switch (_variant) do
+		{
+			default { _pylons = [
+				"",
+				"",
+				"USAF_MISSILE_1Rnd_AIM9X",
+				"USAF_Missile_1Rnd_AIM120C_Int",
+				"USAF_PylonRack_4Rnd_GBU53",
+				"USAF_PylonRack_4Rnd_GBU53",
+				"USAF_Missile_1Rnd_AIM120C_Int",
+				"USAF_MISSILE_1Rnd_AIM9X",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				""
+			] };
+		};
+	};
+
+	case (_class isKindOf "USAF_F22_Heavy"):
+	{
+		_mags =
+		[
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["Laserbatteries", [-1]],
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+		];
+		switch (_variant) do
+		{
+			default { _pylons = [
+				"USAF_PylonRack_2Rnd_AIM9X",
+				"USAF_PylonRack_2Rnd_AIM120C",
+				"USAF_MISSILE_1Rnd_AIM9X",
+				"USAF_Missile_1Rnd_AIM120C_Int",
+				"USAF_PylonRack_1Rnd_GBU32",
+				"USAF_PylonRack_1Rnd_GBU32",
+				"USAF_Missile_1Rnd_AIM120C_Int",
+				"USAF_MISSILE_1Rnd_AIM9X",
+				"USAF_PylonRack_2Rnd_AIM120C",
+				"USAF_PylonRack_2Rnd_AIM9X",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				""
+			] };
+		};
+	};
+
+	case (_class isKindOf "USAF_F35A"):
+	{
+		_mags =
+		[
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["Laserbatteries", [-1]],
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+		];
+		switch (_variant) do
+		{
+			default { _pylons = [
+				"USAF_PylonRack_2Rnd_AIM9X",
+				"USAF_PylonRack_2Rnd_AGM154C",
+				"USAF_PylonRack_1Rnd_GBU32",
+				"USAF_Missile_1Rnd_AIM120C",
+				"USAF_PylonRack_4Rnd_GBU53",
+				"USAF_PylonRack_4Rnd_GBU53",
+				"USAF_Missile_1Rnd_AIM120C",
+				"USAF_PylonRack_1Rnd_GBU32",
+				"USAF_PylonRack_2Rnd_AGM154C",
+				"USAF_PylonRack_2Rnd_AIM9X"
+			] };
+		};
+	};
+
+	case (_class isKindOf "USAF_F35A_STEALTH"):
+	{
+		_mags =
+		[
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["USAF_20mm_M61A2", [-1]],
+			["Laserbatteries", [-1]],
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+		];
+		switch (_variant) do
+		{
+			default { _pylons = [
+				"",
+				"",
+				"",
+				"USAF_Missile_1Rnd_AIM120",
+				"USAF_PylonRack_4Rnd_GBU53",
+				"USAF_PylonRack_4Rnd_GBU53",
+				"USAF_Missile_1Rnd_AIM120",
+				"",
+				"",
+				""
+			] };
+		};
+	};
+
+	case (_class isKindOf "USAF_MQ9"):
+	{
+		_mags =
+		[
+			["Laserbatteries", [-1]],
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+		];
+		switch (_variant) do
+		{
+			case "mq9Bomber":	{ _pylons = ["USAF_PylonRack_4Rnd_GBU53","USAF_PylonRack_4Rnd_GBU39","USAF_PylonRack_4Rnd_GBU39","USAF_PylonRack_4Rnd_GBU53"]  };
+			case "mq9missle":	{ _pylons = ["USAF_PylonRack_2Rnd_AGM114P","USAF_PylonRack_2Rnd_AGM114P","USAF_PylonRack_2Rnd_AGM114P","USAF_PylonRack_2Rnd_AGM114P"] };
+			default { _pylons = ["USAF_PylonRack_2Rnd_AGM114P","USAF_PylonRack_1Rnd_GBU12","USAF_PylonRack_1Rnd_GBU12","USAF_PylonRack_2Rnd_AGM114P"] };
+		};
+	};
+
+
+
 	/// HELIS
 	// Mi-48 Kajman -- CUSTOM
 	 case (_class isKindOf "Heli_Attack_02_dynamicLoadout_base_F"):

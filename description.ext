@@ -21,7 +21,7 @@ class Header
 {
 	gameType=Sandbox;
 	minPlayers=1;
-	maxPlayers=146; // 144 players, 2 headless clients
+	maxPlayers=147; // 144 players, 2 headless clients
 };
 author="AgentRev - A3Wasteland.com"; // it would be great if you could keep "A3Wasteland.com" in the name, like "YourName and A3Wasteland.com" :)
 onLoadName = "A3Wasteland Altis"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
@@ -58,6 +58,8 @@ briefing = 0; // if 0, skip Continue button
 #include "client\systems\BasePartsStore\dialog\BaseStore_settings.hpp"
 #include "client\systems\vehicleStore\dialog\vehiclestore_settings.hpp"
 #include "client\systems\vehicleStore\dialog\vehpaint_gui.hpp"
+#include "client\systems\specStore\dialog\specstore_settings.hpp"
+//#include "client\systems\specStore\dialog\vehpaint_gui.hpp"
 #include "client\systems\adminPanel\dialog\adminMenu.hpp"
 #include "client\systems\adminPanel\dialog\modMenu.hpp"
 #include "client\systems\adminPanel\dialog\serverAdminMenu.hpp"

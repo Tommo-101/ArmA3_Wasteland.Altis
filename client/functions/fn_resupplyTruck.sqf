@@ -49,7 +49,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 			_price = _x select 2;
 			_price = round (_price / PRICE_RELATIONSHIP);
 		};
-	} forEach (call allVehStoreVehicles + call staticGunsArray);
+	} forEach (call allVehStoreVehicles + call specOpsStore + call staticGunsArray);
 
 	_titleText =
 	{

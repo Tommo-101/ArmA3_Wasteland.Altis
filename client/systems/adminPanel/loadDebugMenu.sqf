@@ -22,6 +22,7 @@ if (_uid call isAdmin) then
 	_panelOptions = ["Access Gun Store",
 					"Access General Store",
 					"Access Vehicle Store",
+					"Access SpecOps Store",
 					"Access ATM Dialog",
 					"Access Respawn Dialog",
 					"Access Proving Grounds",

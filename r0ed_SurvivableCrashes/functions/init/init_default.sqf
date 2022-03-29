@@ -6,7 +6,7 @@ if(missionNamespace getVariable ["r0ed_SurvivableCrashes_Initialized", false]) e
 	true,   // Exag FX
 	"AUTO", // Med Sys
 	1,      // dmg Multi
-	["Air"],// Veh whitelist
+	["helicopter"],// Veh whitelist
 	{},     // On Crash Code
 	{},     // crew Post Crash code
 	{       // veh post crash code
