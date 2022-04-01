@@ -123,6 +123,7 @@ populateVehicleStore = "client\systems\vehicleStore\populateVehicleStore.sqf" ca
 populateSpecStore = "client\systems\specStore\populateSpecStore.sqf" call mf_compile;
 
 repaintVehicle = "client\systems\vehicleStore\repaintVehicle.sqf" call mf_compile;
+repaintSpecVehicle = "client\systems\specStore\repaintVehicle.sqf" call mf_compile;
 requestStoreObject = "client\functions\requestStoreObject.sqf" call mf_compile;
 
 vehicleInfo = "client\systems\vehicleStore\vehicleInfo.sqf" call mf_compile;

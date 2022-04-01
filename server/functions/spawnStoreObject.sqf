@@ -65,7 +65,7 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 				_itemEntry = _results select 0;
 				_marker = _marker + "_landSpawn";
 			};
-		} forEach [landArray, armoredArray, tanksArray];
+		} forEach [landArray, lightInfArray, armoredArray, antiArray, tanksArray, utilityArray];
 
 		// SEA VEHICLES
 		if (isNil "_itemEntry") then

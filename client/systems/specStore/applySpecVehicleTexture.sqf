@@ -2,7 +2,7 @@
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 /*********************************************************#
-# @@ScriptName: applyVehicleTexture.sqf
+# @@ScriptName: applySpecVehicleTexture.sqf
 # @@Author: Nick 'Bewilderbeest' Ludlam <bewilder@recoil.org>, AgentRev
 # @@Create Date: 2013-09-15 19:33:17
 # @@Modify Date: 2013-09-24 23:03:48
@@ -17,7 +17,7 @@ if (isNull _veh || _texture isEqualTo []) exitWith {};
 
 _veh setVariable ["BIS_enableRandomization", false, true];
 
-scopeName "applyVehicleTexture";
+scopeName "applySpecVehicleTexture";
 
 private _textures = _veh getVariable ["A3W_objectTextures", []];
 private _vehCfg = configFile >> "CfgVehicles" >> typeOf _veh;
@@ -30,7 +30,7 @@ if (_texture isEqualType [] && {_texture isEqualTypeArray [""]}) then
 	_textureSource = _texture select 0;
 	private _srcTextures = getArray (_vehCfg >> "TextureSources" >> _textureSource >> "textures");
 
-	if (_srcTextures isEqualTo []) exitWith { breakOut "applyVehicleTexture" };
+	if (_srcTextures isEqualTo []) exitWith { breakOut "applySpecVehicleTexture" };
 
 	_texture = [];
 	{ _texture pushBack [_forEachIndex, _x]	} forEach _srcTextures;

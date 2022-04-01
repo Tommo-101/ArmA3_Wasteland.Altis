@@ -89,7 +89,7 @@ storePurchaseHandle = _this spawn
 
 		if (count _colorData > 0) then
 		{
-			[_vehicle, _colorData] call applyVehicleTexture;
+			[_vehicle, _colorData] call applySpecVehicleTexture;
 		};
 
 		if (count _animList > 0) then

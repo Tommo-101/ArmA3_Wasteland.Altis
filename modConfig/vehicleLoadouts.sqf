@@ -21,13 +21,12 @@ switch (true) do
 	{
 		_mags =
 		[
-			["USAF_20mm_M61A2", [-1]],
-			["USAF_20mm_M61A2", [-1]],
-			["USAF_20mm_M61A2", [-1]],
-			["USAF_20mm_M61A2", [-1]],
-			["USAF_20mm_M61A2", [-1]],
+			["USAF_GAU8_1150Rnd", [-1]],
+			["USAF_GAU8_1150Rnd", [-1]],
+			["USAF_GAU8_1150Rnd", [-1]],
 			["Laserbatteries", [-1]],
-			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]],
+			["FakeWeapon", [-1]]
 		];
 		switch (_variant) do
 		{
@@ -54,9 +53,9 @@ switch (true) do
 		[
 			["USAF_20mm_M61A2", [-1]],
 			["USAF_20mm_M61A2", [-1]],
-			["USAF_20mm_M61A2", [-1]],
 			["Laserbatteries", [-1]],
-			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]],
+			["FakeWeapon", [-1]]
 		];
 		switch (_variant) do
 		{
@@ -89,9 +88,9 @@ switch (true) do
 		[
 			["USAF_20mm_M61A2", [-1]],
 			["USAF_20mm_M61A2", [-1]],
-			["USAF_20mm_M61A2", [-1]],
 			["Laserbatteries", [-1]],
-			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]],
+			["FakeWeapon", [-1]]
 		];
 		switch (_variant) do
 		{
@@ -124,11 +123,11 @@ switch (true) do
 	{
 		_mags =
 		[
-			["USAF_20mm_M61A2", [-1]],
-			["USAF_20mm_M61A2", [-1]],
-			["USAF_20mm_M61A2", [-1]],
+			["USAF_F35A_CANNON_M", [-1]],
+			["USAF_F35A_CANNON_M", [-1]],
 			["Laserbatteries", [-1]],
-			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+			["300Rnd_CMFlare_Chaff_Magazine", [-1]],
+			["FakeWeapon", [-1]]
 		];
 		switch (_variant) do
 		{
@@ -151,11 +150,11 @@ switch (true) do
 	{
 		_mags =
 		[
-			["USAF_20mm_M61A2", [-1]],
-			["USAF_20mm_M61A2", [-1]],
-			["USAF_20mm_M61A2", [-1]],
+			["USAF_F35A_CANNON_M", [-1]],
+			["USAF_F35A_CANNON_M", [-1]],
 			["Laserbatteries", [-1]],
-			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+			["300Rnd_CMFlare_Chaff_Magazine", [-1]],
+			["FakeWeapon", [-1]]
 		];
 		switch (_variant) do
 		{

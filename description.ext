@@ -117,7 +117,7 @@ class CfgFunctions
 
 	#include "addons\CHVD\CfgFunctions.hpp"
 
-	class r0ed
+	/*class r0ed
 	{
 		tag = "r0ed";
 		class SurvivableCrashes
@@ -127,7 +127,7 @@ class CfgFunctions
 			class crashVisualEffects{};
 			class vehicleInit{};
 		};
-	};
+	};*/
 };
 
 class CfgNotifications

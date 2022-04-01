@@ -91,7 +91,7 @@ _itemData set [2, _price];
 if (!call _checkEnoughMoney) exitWith {};
 
 _buyButton = _dialog displayCtrl specshop_BuyButton_IDC;
-_buyButton buttonSetAction format ["[true, '%1'] call repaintVehicle", netId _vehicle];
+_buyButton buttonSetAction format ["[true, '%1'] call repaintSpecVehicle", netId _vehicle];
 
 // copypasted from loadSpecStore.sqf cause I'm lazy
 private _partList = _Dialog displayCtrl specshop_part_list;
@@ -144,7 +144,7 @@ _applyVehProperties =
 
 	if (_colorData isEqualTo "" || {count _colorData > 0}) then
 	{
-		[_vehicle, _colorData] call applyVehicleTexture;
+		[_vehicle, _colorData] call applySpecVehicleTexture;
 	};
 
 	if (count _animList > 0) then
