@@ -7,12 +7,12 @@
 #define VEHICLE_REPAINT_PRICE_RATIO 0.02
 #define VEHICLE_REPAINT_MAX_DISTANCE 50
 
-#include "dialog\specstoreDefines.hpp";
+#include "dialog\airstoreDefines.hpp";
 
 params [["_buy",false,[false]], ["_vehNetId","",[""]]];
 
 _repaint = true;
-_dialog = uiNamespace getVariable "A3W_vehSpecPaintMenu";
+_dialog = uiNamespace getVariable "A3W_airPaintMenu";
 _vehicle = objectFromNetId ([player getVariable ["lastVehicleRidden", ""], _vehNetId] select _buy);
 
 if (isNull _vehicle) exitWith
@@ -83,27 +83,27 @@ _itemData = [_objName, _type];
 	{
 		_itemData = _x;
 	};
-} forEach (call specOpsStore);
+} forEach forEach (call allAirStoreVehicles);
 
 _price = (ceil (((_itemData param [2,2500]) * VEHICLE_REPAINT_PRICE_RATIO) / 5)) * 5;
 _itemData set [2, _price];
 
 if (!call _checkEnoughMoney) exitWith {};
 
-_buyButton = _dialog displayCtrl specshop_BuyButton_IDC;
-_buyButton buttonSetAction format ["[true, '%1'] call repaintSpecVehicle", netId _vehicle];
+_buyButton = _dialog displayCtrl airshop_BuyButton_IDC;
+_buyButton buttonSetAction format ["[true, '%1'] call repaintVehicle", netId _vehicle];
 
-// copypasted from loadSpecStore.sqf cause I'm lazy
-private _partList = _Dialog displayCtrl specshop_part_list;
+// copypasted from loadVehicleStore.sqf cause I'm lazy
+private _partList = _Dialog displayCtrl airshop_part_list;
 //_partList ctrlEnable false;
-_partList ctrlAddEventHandler ["LBSelChanged", compile preprocessFileLineNumbers "client\systems\specStore\partInfo.sqf"];
+_partList ctrlAddEventHandler ["LBSelChanged", compile preprocessFileLineNumbers "client\systems\vehicleStore\partInfo.sqf"];
 
-/*private _defPartsChk = _Dialog displayCtrl specshop_defparts_checkbox;
+/*private _defPartsChk = _Dialog displayCtrl airshop_defparts_checkbox;
 _defPartsChk cbSetChecked true;
 _defPartsChk ctrlAddEventHandler ["CheckedChanged",
 {
 	params ["_defPartsChk", "_checked"];
-	((ctrlParent _defPartsChk) displayCtrl specshop_part_list) ctrlEnable (_checked < 1);
+	((ctrlParent _defPartsChk) displayCtrl airshop_part_list) ctrlEnable (_checked < 1);
 }];*/
 
 _dialog spawn
@@ -119,22 +119,22 @@ _dialog spawn
 };
 //////////
 
-if (!_buy) exitWith { [_buyButton] call specInfo };
+if (!_buy) exitWith { [_buyButton] call vehicleInfo };
 
-_colorlist = _dialog displayCtrl specshop_color_list;
-_colorIndex = lbCurSel specshop_color_list;
+_colorlist = _dialog displayCtrl airshop_color_list;
+_colorIndex = lbCurSel airshop_color_list;
 _colorText = _colorlist lbText _colorIndex;
 _colorData = if (_colorIndex == -1) then { [] } else compile (_colorlist lbData _colorIndex);
 
-_partList = _dialog displayCtrl specshop_part_list;
-//_defPartsChk = _dialog displayCtrl specshop_defparts_checkbox;
+_partList = _dialog displayCtrl airshop_part_list;
+//_defPartsChk = _dialog displayCtrl airshop_defparts_checkbox;
 _animList = []; // ["anim1", 1, "anim2", 0, ...] - formatted for BIS_fnc_initVehicle
 
 //if (!cbChecked _defPartsChk) then
 //{
 	for "_i" from 0 to (lbSize _partList - 1) do
 	{
-		_animList append [_partList lbData _i, (specshop_list_checkboxTextures find (_partList lbPicture _i)) max 0];
+		_animList append [_partList lbData _i, (airshop_list_checkboxTextures find (_partList lbPicture _i)) max 0];
 	};
 //};
 
@@ -144,7 +144,7 @@ _applyVehProperties =
 
 	if (_colorData isEqualTo "" || {count _colorData > 0}) then
 	{
-		[_vehicle, _colorData] call applySpecVehicleTexture;
+		[_vehicle, _colorData] call applyVehicleTexture;
 	};
 
 	if (count _animList > 0) then

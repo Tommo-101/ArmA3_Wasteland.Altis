@@ -13,7 +13,7 @@ disableSerialization;
 specStore_noBuzzard = false;
 
 private ["_specshopDialog", "_Dialog", "_playerMoney", "_owner", "_droneButton", "_antiAirButton", "_jetButton", "_utilityButton"];
-_vehshopDialog = createDialog "specshopd";
+_specshopDialog = createDialog "specshopd";
 
 _Dialog = findDisplay specshop_DIALOG;
 _playerMoney = _Dialog displayCtrl specshop_money;

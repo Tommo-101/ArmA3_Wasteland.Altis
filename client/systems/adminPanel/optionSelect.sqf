@@ -148,26 +148,31 @@ if (_uid call isAdmin) then
 					closeDialog 0;
 					[] call loadSpecStore;
 				};
-				case 4: //Access ATM Dialog
+				case 4: //Access Air Store
+				{
+					closeDialog 0;
+					[] call loadAirStore;
+				};
+				case 5: //Access ATM Dialog
 				{
 					closeDialog 0;
 					call mf_items_atm_access;
 				};
-				case 5: //Access Respawn Dialog
+				case 6: //Access Respawn Dialog
 				{
 					closeDialog 0;
 					true spawn client_respawnDialog;
 				};
-				case 6: //Access Proving Grounds
+				case 7: //Access Proving Grounds
 				{
 					closeDialog 0;
 					createDialog "balca_debug_main";
 				};
-				case 7: //Show server FPS function
+				case 8: //Show server FPS function
 				{
 					hint format["Server FPS: %1",serverFPS];
 				};
-				case 8: //Test Function
+				case 9: //Test Function
 				{
 					_group = createGroup civilian;
 					_leader = _group createunit ["C_man_polo_1_F", getPos player, [], 0.5, "Form"];

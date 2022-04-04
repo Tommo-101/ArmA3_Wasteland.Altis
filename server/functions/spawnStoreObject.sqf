@@ -10,7 +10,7 @@
 if (!isServer) exitWith {};
 
 scopeName "spawnStoreObject";
-private ["_isGenStore", "_isGunStore", "_isVehStore", "_isSpecStore", "_timeoutKey", "_objectID", "_playerSide", "_objectsArray", "_results", "_itemEntry", "_itemPrice", "_safePos", "_object"];
+private ["_isGenStore", "_isGunStore", "_isVehStore", "_isAirStore", "_isSpecStore", "_timeoutKey", "_objectID", "_playerSide", "_objectsArray", "_results", "_itemEntry", "_itemPrice", "_safePos", "_object"];
 
 params [["_player",objNull,[objNull]], ["_itemEntrySent",[],[[]]], ["_npcName","",[""]], ["_key","",[""]]];
 
@@ -19,12 +19,13 @@ _itemEntrySent params [["_class","",[""]]];
 _isGenStore = ["GenStore", _npcName] call fn_startsWith;
 _isGunStore = ["GunStore", _npcName] call fn_startsWith;
 _isVehStore = ["VehStore", _npcName] call fn_startsWith;
+_isAirStore = ["AirStore", _npcName] call fn_startsWith;
 _isSpecStore = ["SpecStore", _npcName] call fn_startsWith;
 
 private _storeNPC = missionNamespace getVariable [_npcName, objNull];
 private _marker = _npcName;
 
-if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVehStore || _isSpecStore}) then
+if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVehStore || _isAirStore || _isSpecStore}) then
 {
 	_timeoutKey = _key + "_timeout";
 	_objectID = "";
@@ -80,10 +81,27 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 			};
 		};
 
-		// HELICOPTERS
+		_itemPrice = _itemEntry select 2;
+		_itemEntry set [2, _itemPrice];
+	};
+
+	if (_isAirStore) then
+	{
+		// Standard Planes
+		{
+			_results = (call _x) select {_x select [1,999] isEqualTo _itemEntrySent};
+
+			if (count _results > 0) then
+			{
+				_itemEntry = _results select 0;
+				_marker = _marker + "_planeSpawn";
+			};
+		} forEach [civAirArray, combatJetsArray];
+
+		// Gunships
 		if (isNil "_itemEntry") then
 		{
-			_results = (call helicoptersArray) select {_x select [1,999] isEqualTo _itemEntrySent};
+			_results = (call gunshipsHeliArray) select {_x select [1,999] isEqualTo _itemEntrySent};
 
 			if (count _results > 0) then
 			{
@@ -92,31 +110,41 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 			};
 		};
 
-		// AIRPLANES
+		// Utility Helis
 		if (isNil "_itemEntry") then
 		{
-			_results = (call planesArray) select {_x select [1,999] isEqualTo _itemEntrySent};
+			_results = (call utilityHeliArray) select {_x select [1,999] isEqualTo _itemEntrySent};
 
 			if (count _results > 0) then
 			{
 				_itemEntry = _results select 0;
-				_marker = _marker + "_planeSpawn";
+				_marker = _marker + "_heliSpawn";
 			};
 		};
 
-		// ANTI-AIR
+		// Other Planes
 		if (isNil "_itemEntry") then
 		{
-			_results = (call antiAirArray) select {_x select [1,999] isEqualTo _itemEntrySent};
+			_results = (call utilityJetsArray) select {_x select [1,999] isEqualTo _itemEntrySent};
 
 			if (count _results > 0) then
 			{
 				_itemEntry = _results select 0;
-				_marker = _marker + "_landSpawn";
+				_marker = _marker + "_largeplaneSpawn";
 			};
 		};
-		_itemPrice = _itemEntry select 2;
-		_itemEntry set [2, _itemPrice];
+
+		// Special Aircraft
+		if (isNil "_itemEntry") then
+		{
+			_results = (call specialistAirArray) select {_x select [1,999] isEqualTo _itemEntrySent};
+
+			if (count _results > 0) then
+			{
+				_itemEntry = _results select 0;
+				_marker = _marker + "_largeplaneSpawn";
+			};
+		};
 	};
 
 	if (_isSpecStore) then
@@ -131,19 +159,6 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 				_marker = _marker + "_landSpawn";
 			};
 		} forEach [landArray, armoredArray, tanksArray];*/
-
-		/*/ SEA VEHICLES
-		if (isNil "_itemEntry") then
-		{
-			_results = (call boatsArray) select {_x select [1,999] isEqualTo _itemEntrySent};
-
-			if (count _results > 0) then
-			{
-				_itemEntry = _results select 0;
-				_marker = _marker + (["_seaSpawn","_landSpawn"] select (markerType (_marker + "_seaSpawn") isEqualTo "")); // allow boat on landSpawn if no seaSpawn
-				_seaSpawn = true;
-			};
-		};*/
 
 		// DRONES
 		if (isNil "_itemEntry") then

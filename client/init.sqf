@@ -150,6 +150,7 @@ if (["A3W_survivalSystem"] call isConfigOn) then
 
 	[] execVM "client\functions\createGeneralStoreMarkers.sqf";
 	[] execVM "client\functions\createVehicleStoreMarkers.sqf";
+	[] execVM "client\functions\createAirStoreMarkers.sqf";
 	[] execVM "client\functions\createSpecStoreMarkers.sqf";
 	[] execVM "client\functions\createLegendMarkers.sqf";
 };

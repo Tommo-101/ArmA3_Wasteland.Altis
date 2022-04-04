@@ -56,7 +56,7 @@ generic_display_name_variant = {
     {
       _name = _x select 0;
     };
-  } forEach (call allVehStoreVehicles + call specOpsStore + call staticGunsArray);
+  } forEach (call allVehStoreVehicles + call allAirStoreVehicles + call specOpsStore + call staticGunsArray);
 
   if (_name == "") exitWith { [_class] call generic_display_name };
   _name

@@ -109,6 +109,7 @@ loadGunStore = "client\systems\gunStore\loadGunStore.sqf" call mf_compile;
 loadScoreboard = "client\systems\scoreboard\loadScoreboard.sqf" call mf_compile;
 loadVehicleStore = "client\systems\vehicleStore\loadVehicleStore.sqf" call mf_compile;
 loadSpecStore = "client\systems\specStore\loadSpecStore.sqf" call mf_compile;
+loadAirStore = "client\systems\airStore\loadAirStore.sqf" call mf_compile;
 
 gearProperties = "client\functions\gearProperties.sqf" call mf_compile;
 
@@ -121,13 +122,16 @@ populateGeneralStore = "client\systems\generalStore\populateGenStore.sqf" call m
 populateGunStore = "client\systems\gunStore\populateGunStore.sqf" call mf_compile;
 populateVehicleStore = "client\systems\vehicleStore\populateVehicleStore.sqf" call mf_compile;
 populateSpecStore = "client\systems\specStore\populateSpecStore.sqf" call mf_compile;
+populateAirStore = "client\systems\airStore\populateAirStore.sqf" call mf_compile;
 
 repaintVehicle = "client\systems\vehicleStore\repaintVehicle.sqf" call mf_compile;
 repaintSpecVehicle = "client\systems\specStore\repaintVehicle.sqf" call mf_compile;
+repaintAirVehicle = "client\systems\airStore\repaintVehicle.sqf" call mf_compile;
 requestStoreObject = "client\functions\requestStoreObject.sqf" call mf_compile;
 
 vehicleInfo = "client\systems\vehicleStore\vehicleInfo.sqf" call mf_compile;
 specInfo = "client\systems\specStore\specInfo.sqf" call mf_compile;
+airInfo = "client\systems\airStore\airInfo.sqf" call mf_compile;
 weaponInfo = "client\systems\gunStore\weaponInfo.sqf" call mf_compile;
 
 if (isNil "A3W_fnc_MP") then { A3W_fnc_MP = compile preprocessFileLineNumbers "\A3\functions_f\MP\fn_MP.sqf" };

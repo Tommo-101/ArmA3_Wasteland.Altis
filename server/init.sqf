@@ -576,7 +576,7 @@ else
 {
 	_storeGroup = createGroup sideLogic;
 	{
-		if (!isPlayer _x && {(toLower ((vehicleVarName _x) select [0,8])) in ["genstore","gunstore","vehstore","specstore"]}) then
+		if (!isPlayer _x && {(toLower ((vehicleVarName _x) select [0,8])) in ["genstore","gunstore","vehstore","airstore","specstore"]}) then
 		{
 			[_x] joinSilent _storeGroup;
 		};
