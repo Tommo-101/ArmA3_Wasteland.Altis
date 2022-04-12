@@ -26,7 +26,7 @@ if ([_uid, 2] call isAdmin) then {
 					"Teleport me to player",
 					"Teleport player to me",
 					"Unit Markers",
-					"Teleport",
+					"Teleport"
 	];
 
 	{

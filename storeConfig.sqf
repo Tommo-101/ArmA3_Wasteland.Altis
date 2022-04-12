@@ -27,7 +27,16 @@ pistolArray = compileFinal str
 	["Zubr Revolver", "hgun_Pistol_heavy_02_F", 175],
 	["4-five Pistol", "hgun_Pistol_heavy_01_F", 200],
 	["4-five Pistol (Green)", "hgun_Pistol_heavy_01_green_F", 200, "noDLC"],
-	["Starter Pistol", "hgun_Pistol_Signal_F", 200]
+	["Starter Pistol", "hgun_Pistol_Signal_F", 200],
+  // RHS
+	["M9 Beretta", "rhsusf_weap_m9", 200],  // M9 Beretta
+	["M320 GLM", "rhs_weap_M320", 200],  // M320 GLM
+	["Glock 17", "rhsusf_weap_glock17g4", 200],  // Glock 17
+	["M1911A1", "rhsusf_weap_m1911a1", 200], // M1911A1
+	["MP7A2 (AOR1)", "rhsusf_weap_MP7A2_aor1", 200],  // MP7A2 (AOR1)
+  ["MP7A2 (Desert)", "rhsusf_weap_MP7A2_desert", 200],  // MP7A2 (Desert)
+  ["MP7A2 (Winter)", "rhsusf_weap_MP7A2_winter", 200],  // MP7A2 (Winter)
+  ["MP7A2", "rhsusf_weap_MP7A2", 200]  // MP7A2
 ];
 
 smgArray = compileFinal str
@@ -108,7 +117,86 @@ rifleArray = compileFinal str
 	["Type 115 Stealth Rifle (G Hex)", "arifle_ARX_ghex_F", 700],
 
 	//RHS
-	["Type 115 Stealth Rifle (G Hex)", "rhs_weap_sr25_ec", 700],
+	["HK416 D10 (SOPMOD Stock/Desert)", "rhs_weap_hk416d10_LMT_d", 600],
+	["HK416 D10 (SOPMOD Stock/Woodland)", "rhs_weap_hk416d10_LMT_wd", 600],
+	["HK416 D10 (SOPMOD Stock)", "rhs_weap_hk416d10_LMT", 600],
+	["HK416 D10 (M320)", "rhs_weap_hk416d10_m320", 600],
+	["HK416 D10", "rhs_weap_hk416d10", 600],
+	["HK416 D14.5 (Desert Net)", "rhs_weap_hk416d145_d_2", 600],
+	["HK416 D14.5 (Desert Grass)", "rhs_weap_hk416d145_d", 600],
+	["HK416 D14.5 (M320)", "rhs_weap_hk416d145_m320", 600],
+	["HK416 D14.5 (Woodland Net)", "rhs_weap_hk416d145_wd_2", 600],
+	["HK416 D14.5 (Woodland Grass)", "rhs_weap_hk416d145_wd", 600],
+	["HK416 D14.5", "rhs_weap_hk416d145", 600],
+	["M4 (Carryhandle/M203)", "rhs_weap_m4_carryhandle_m203", 600],
+	["M4 (Carryhandle/M203S)", "rhs_weap_m4_carryhandle_m203S", 600],
+	["M4 (Carryhandle/Magpull Stock)", "rhs_weap_m4_carryhandle_mstock", 600],
+	["M4 (Carryhandle)", "rhs_weap_m4_carryhandle", 600],
+	["M4 (M203)", "rhs_weap_m4_m203", 600],
+	["M4 (M203S)", "rhs_weap_m4_m203S", 600],
+	["M4 (M320)", "rhs_weap_m4_m320", 600],
+	["M4 (Magpull Stock)", "rhs_weap_m4_mstock", 600],
+	["M4", "rhs_weap_m4", 600],
+	["M4A1 Block II (Black Rail)", "rhs_weap_m4a1_blockII_bk", 600],
+	["M4A1 Block II (Desert)", "rhs_weap_m4a1_blockII_d", 600],
+	["M4A1 Block II (Black Rail/SOPMOD Stock)", "rhs_weap_m4a1_blockII_KAC_bk", 600],
+	["M4A1 Block II (Desert/SOPMOD Stock)", "rhs_weap_m4a1_blockII_KAC_d", 600],
+	["M4A1 Block II (Woodland/SOPMOD Stock)", "rhs_weap_m4a1_blockII_KAC_wd", 600],
+	["M4A1 Block II (SOPMOD Stock)", "rhs_weap_m4a1_blockII_KAC", 600],
+	["M4A1 Block II (Black Rail/M203)", "rhs_weap_m4a1_blockII_M203_bk", 600],
+	["M4A1 Block II (Desert/M203)", "rhs_weap_m4a1_blockII_M203_d", 600],
+	["M4A1 Block II (Woodland/M203)", "rhs_weap_m4a1_blockII_M203_wd", 600],
+	["M4A1 Block II (M203)", "rhs_weap_m4a1_blockII_M203", 600],
+	["M4A1 Block II (Woodland)", "rhs_weap_m4a1_blockII_wd", 600],
+	["M4A1 Block II", "rhs_weap_m4a1_blockII", 600],
+	["M4A1 (M203)", "rhs_weap_m4a1_carryhandle_m203", 600],
+	["M4A1 (M203S)", "rhs_weap_m4a1_carryhandle_m203S", 600],
+	["M4A1 (Magpull Stock)", "rhs_weap_m4a1_carryhandle_mstock", 600],
+	["M4A1", "rhs_weap_m4a1_carryhandle", 600],
+	["M4A1 PIP (Desert/Magpull Stock)", "rhs_weap_m4a1_d_mstock", 600],
+	["M4A1 PIP (Desert)", "rhs_weap_m4a1_d", 600],
+	["M4A1 PIP (M203)", "rhs_weap_m4a1_m203", 600],
+	["M4A1 PIP (Desert/M203S)", "rhs_weap_m4a1_m203s_d", 600],
+	["M4A1 PIP (Woodland/M203S)", "rhs_weap_m4a1_m203s_wd", 600],
+	["M4A1 PIP (M203S)", "rhs_weap_m4a1_m203s", 600],
+	["M4A1 PIP (M320)", "rhs_weap_m4a1_m320", 600],
+	["M4A1 PIP (Magpull Stock)", "rhs_weap_m4a1_mstock", 600],
+	["M4A1 PIP (Woodland/Magpull Stock)", "rhs_weap_m4a1_wd_mstock", 600],
+	["M4A1 PIP (Woodland)", "rhs_weap_m4a1_wd", 600],
+	["M4A1 PIP", "rhs_weap_m4a1", 600],
+	["SCAR-H (USA/CQC)", "rhs_weap_SCARH_USA_CQC", 600],
+	["SCAR-H (USA/LB)", "rhs_weap_SCARH_USA_LB", 600],
+	["SCAR-H (USA/STD)", "rhs_weap_SCARH_USA_STD", 600],
+	["M14 EBR-RI", "rhs_weap_m14ebrri", 600],
+	["M16A4 (Carryhandle/M203)", "rhs_weap_m16a4_carryhandle_M203", 600],
+	["M16A4 (Carryhandle)", "rhs_weap_m16a4_carryhandle", 600],
+	["M16A4 (IMOD Stock/M203)", "rhs_weap_m16a4_imod_M203", 600],
+	["M16A4 (IMOD Stock)", "rhs_weap_m16a4_imod", 600],
+	["M16A4", "rhs_weap_m16a4", 600],
+	["M27 IAR (KAC Grip)", "rhs_weap_m27iar_grip", 600],
+	["M27 IAR", "rhs_weap_m27iar", 600],
+	["Mk 11 Mod 0 (Desert)", "rhs_weap_sr25_d", 600],
+	["Mk 11 Mod 0 (EC/Desert)", "rhs_weap_sr25_ec_d", 600],
+	["Mk 11 Mod 0 (EC/Woodland)", "rhs_weap_sr25_ec_wd", 600],
+	["Mk 11 Mod 0 (EC)", "rhs_weap_sr25_ec", 600],
+	["Mk 11 Mod 0 (Woodland)", "rhs_weap_sr25_wd", 600],
+	["Mk 11 Mod 0", "rhs_weap_sr25", 600],
+	["Mk 17 Mod 0 (CQC)", "rhs_weap_mk17_CQC", 600],
+	["Mk 17 Mod 0 (LB)", "rhs_weap_mk17_LB", 600],
+	["Mk 17 Mod 0 (STD)", "rhs_weap_mk17_STD", 600],
+	["Mk 18 Mod 1 (Black Rail)", "rhs_weap_mk18_bk", 600],
+	["Mk 18 Mod 1 (Desert)", "rhs_weap_mk18_d", 600],
+	["Mk 18 Mod 1 (Black Rail/SOPMOD Stock)", "rhs_weap_mk18_KAC_bk", 600],
+	["Mk 18 Mod 1 (Desert/SOPMOD Stock)", "rhs_weap_mk18_KAC_d", 600],
+	["Mk 18 Mod 1 (Woodland/SOPMOD Stock)", "rhs_weap_mk18_KAC_wd", 600],
+	["Mk 18 Mod 1 (SOPMOD Stock)", "rhs_weap_mk18_KAC", 600],
+	["Mk 18 Mod 1 (M320)", "rhs_weap_mk18_m320", 600],
+	["Mk 18 Mod 1 (Woodland)", "rhs_weap_mk18_wd", 600],
+	["Mk 18 Mod 1", "rhs_weap_mk18", 600],
+	["M32 MGL", "rhs_weap_m32", 600],
+	["M590A1 (Short)", "rhs_weap_M590_5RD", 600],
+	["M590A1 (Long)", "rhs_weap_M590_8RD", 600],
+
 
 	["AKS-74U Carbine", "arifle_AKS_F", 550],
 	["AKM Rifle", "arifle_AKM_F", 600],
@@ -177,9 +265,19 @@ sniperArray = compileFinal str
 	["GM6 Lynx Sniper", "srifle_GM6_LRPS_F", 3250],
 	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_LRPS_F", 3500],
 	["GM6 Lynx Sniper (G Hex)", "srifle_GM6_ghex_LRPS_F", 3500, "noDLC"],
-	["M107", "rhs_weap_M107", 3500],
-	["M107 (Desert)", "rhs_weap_M107_d", 3500],
-	["M107 (Woodland)", "rhs_weap_M107_w", 3500]
+	["M107 (Desert)", "rhs_weap_M107_d", 3500],  // M107 (Desert)
+  ["M107 (Woodland)", "rhs_weap_M107_w", 3500], // M107 (Woodland)
+  ["M107", "rhs_weap_M107", 3500],  // M107
+	["M24 SWS (Desert)", "rhs_weap_m24sws_d", 1250], // M24 SWS (Desert)
+  ["M24 SWS (Woodland)", "rhs_weap_m24sws_wd", 1250], // M24 SWS (Woodland)
+  ["M24 SWS", "rhs_weap_m24sws", 1250],  // M24 SWS
+	["M40A5 (Desert)", "rhs_weap_m40a5_d", 1250],  // M40A5 (Desert)
+  ["M40A5 (Woodland)", "rhs_weap_m40a5_wd", 1250], // M40A5 (Woodland)
+  ["M40A5", "rhs_weap_m40a5", 1250],  // M40A5
+	["M2010 ESR (Desert)", "rhs_weap_XM2010_d", 1250], // M2010 ESR (Desert)
+  ["M2010 ESR (Semi-arid)", "rhs_weap_XM2010_sa", 12501250], // M2010 ESR (Semi-arid)
+  ["M2010 ESR (Camo)", "rhs_weap_XM2010_wd", 1250], // M2010 ESR (Camo)
+  ["M2010 ESR", "rhs_weap_XM2010", 1250]  // M2010 ESR
 ];
 
 lmgArray = compileFinal str
@@ -207,7 +305,19 @@ lmgArray = compileFinal str
 	["SPMG MMG (MTP)", "MMG_02_camo_F", 2750],
 	["SPMG MMG (Black)", "MMG_02_black_F", 2750],
 	["Navid MMG (Tan)", "MMG_01_tan_F", 3000],
-	["Navid MMG (Hex)", "MMG_01_hex_F", 3000]
+	["Navid MMG (Hex)", "MMG_01_hex_F", 3000],
+
+	["M240B", "rhs_weap_m240B", 3000],  // M240B
+  ["M240G", "rhs_weap_m240G", 3000],  // M240G
+	["M249 PIP (Long/Ltwt.)", "rhs_weap_m249_light_L", 3000],  // M249 PIP (Long/Ltwt.)
+  ["M249 PIP (Short/Ltwt.)", "rhs_weap_m249_light_S", 3000], // M249 PIP (Short/Ltwt.)
+  ["M249 PIP (Long/Para)", "rhs_weap_m249_pip_L_para", 3000], // M249 PIP (Long/Para)
+  ["M249 PIP (Long/Savit)", "rhs_weap_m249_pip_L", 3000],  // M249 PIP (Long/Savit)
+  ["M249 PIP (RIS)", "rhs_weap_m249_pip_ris", 3000],  // M249 PIP (RIS)
+  ["M249 PIP (Short/Para)", "rhs_weap_m249_pip_S_para", 3000], // M249 PIP (Short/Para)
+  ["M249 PIP (Short/Savit)", "rhs_weap_m249_pip_S", 3000], // M249 PIP (Short/Savit)
+  ["M249 PIP", "rhs_weap_m249_pip", 3000], // M249 PIP
+  ["M249", "rhs_weap_m249", 3000] // M249
 ];
 
 launcherArray = compileFinal str
@@ -235,7 +345,16 @@ launcherArray = compileFinal str
 	["Titan MPRL AA (Digi)", "launch_I_Titan_F", 3500],
 	["Titan MPRL AA (Tropic)", "launch_B_Titan_tna_F", 3500, "noDLC"],
 	["Titan MPRL AA (G Hex)", "launch_O_Titan_ghex_F", 3500, "noDLC"],
-	["Titan MPRL AA (Geometric)", "launch_I_Titan_eaf_F", 3500, "noDLC"]
+	["Titan MPRL AA (Geometric)", "launch_I_Titan_eaf_F", 3500, "noDLC"],
+	["FGM-148 Javelin", "rhs_weap_fgm148", 3500],  // FGM-148 Javelin
+  ["FIM-92F", "rhs_weap_fim92", 3500],  // FIM-92F
+	["M136 (HEDP)", "rhs_weap_M136_hedp", 3500],  // M136 (HEDP)
+  ["M136 (HP)", "rhs_weap_M136_hp", 3500], // M136 (HP)
+  ["M136 (HEAT)", "rhs_weap_M136", 3500],  // M136 (HEAT)
+	["M72A7", "rhs_weap_m72a7", 3500], // M72A7
+	["M3 MAAWS", "rhs_weap_maaws", 3500], // M3 MAAWS
+	["MK153 Mod 0 SMAW (Green)", "rhs_weap_smaw_green", 3500], // MK153 Mod 0 SMAW (Green)
+  ["MK153 Mod 0 SMAW (Black)", "rhs_weap_smaw", 3500] // MK153 Mod 0 SMAW (Black)
 ];
 
 allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call rifleArray + call lmgArray + call sniperArray + call launcherArray);
@@ -310,7 +429,24 @@ throwputArray = compileFinal str
 	["Chemlight (Red)", "Chemlight_red", 75],
 	["IR Designator Grenade", "B_IR_Grenade", 100, "WEST"],
 	["IR Designator Grenade", "O_IR_Grenade", 100, "EAST"],
-	["IR Designator Grenade", "I_IR_Grenade", 100, "GUER"]
+	["IR Designator Grenade", "I_IR_Grenade", 100, "GUER"],
+	//RHS
+	["M14", "rhsusf_mine_m14_mag", 150],               // M14
+  ["M49A1 (10m)", "rhsusf_mine_m49a1_10m_mag", 150],         // M49A1 (10m)
+  ["M49A1 (3m)", "rhsusf_mine_m49a1_3m_mag", 150],          // M49A1 (3m)
+  ["M49A1 (6m)", "rhsusf_mine_m49a1_6m_mag", 150],          // M49A1 (6m)
+	["M67 Fragmentation Grenade", "rhs_mag_m67", 60], // M67 Fragmentation Grenade
+	["M69 Practice Grenade", "rhs_mag_m69", 20], // M69 Practice Grenade
+	["M7A3 CS Gas Grenade", "rhs_mag_m7a3_cs", 60],                   // M7A3 CS Gas Grenade
+	["M19", "rhs_mine_M19_mag", 150],                  // M19
+	["AN-M14 TH3 Invendenary Grenade", "rhs_mag_an_m14_th3", 60],                   // AN-M14 TH3 Invendenary Grenade
+  ["AN-M8HC White Smooke", "rhs_mag_an_m8hc", 60],                   // AN-M8HC White Smooke
+  ["M18 Green Smoke Grenade", "rhs_mag_m18_green", 60],                 // M18 Green Smoke Grenade
+  ["M18 Purple Smoke Grenade", "rhs_mag_m18_purple", 60],                // M18 Purple Smoke Grenade
+  ["M18 Red Smoke Grenade", "rhs_mag_m18_red", 60],                   // M18 Red Smoke Grenade
+  ["M18 Yellow Smoke Grenade", "rhs_mag_m18_yellow", 60],                // M18 Yellow Smoke Grenade
+	["MK3A2 Concussion Grenade", "rhs_mag_mk3a2", 60],                     // MK3A2 Concussion Grenade
+  ["M84 Stun Grenade", "rhs_mag_mk84", 60]// M84 Stun Grenade
 ];
 
 //Gun Store Ammo List
@@ -412,10 +548,188 @@ ammoArray = compileFinal str
 	["Signal Flares (Green)", "6Rnd_GreenSignal_F", 45],
 	["Signal Flares (Red)", "6Rnd_RedSignal_F", 45],
 	///RHS
-	[".50 10Rnd M33 M107 Mag", "rhsusf_mag_10Rnd_STD_50BMG_M33", 350],
-	[".50 10Rnd MK211 M107 Mag", "rhsusf_mag_10Rnd_STD_50BMG_mk211", 350],
-	["7.62mm 20Rnd M118 Mag", "rhsusf_20Rnd_762x51_m118_special_Mag", 60],
-	// RHS
+	["Javelin AT", "rhs_fgm148_magazine_AT", 60],
+  ["FGM172A SRAW", "rhs_fgm172a_magazine_AT", 60],
+  ["FGM172B SRAW-MPV", "rhs_fgm172b_magazine_MPV", 60],
+  ["FIM-92F", "rhs_fim92_mag", 60],   // FIM-92F
+  ["100rnd C-Mag M855 (Mixed)", "rhs_mag_100Rnd_556x45_M855_cmag_mixed", 60], // 100rnd C-Mag M855 (Mixed)
+  ["100rnd C-Mag M855", "rhs_mag_100Rnd_556x45_M855_cmag", 60], // 100rnd C-Mag M855
+  ["100rnd C-Mag M855A1 (Mixed)", "rhs_mag_100Rnd_556x45_M855A1_cmag_mixed", 60], // 100rnd C-Mag M855A1 (Mixed)
+  ["100rnd C-Mag M855A1", "rhs_mag_100Rnd_556x45_M855A1_cmag", 60], // 100rnd C-Mag M855A1
+  ["100rnd C-Mag Mk262 Mod 1", "rhs_mag_100Rnd_556x45_Mk262_cmag", 60],  // 100rnd C-Mag Mk262 Mod 1
+  ["100rnd C-Mag Mk262 Mod 0", "rhs_mag_100Rnd_556x45_Mk318_cmag", 60],  // 100rnd C-Mag Mk262 Mod 0
+  ["20rnd STANAG (2x) M193", "rhs_mag_20Rnd_556x45_M193_2MAG_Stanag", 60], // 20rnd STANAG (2x) M193
+  ["20rnd STANAG M193", "rhs_mag_20Rnd_556x45_M193_Stanag", 60],  // 20rnd STANAG M193
+  ["20rnd STANAG (2x) M196 (Tracer)", "rhs_mag_20Rnd_556x45_M196_2MAG_Stanag_Tracer_Red", 60],  // 20rnd STANAG (2x) M196 (Tracer)
+  ["20rnd STANAG M196 (Tracer)", "rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red", 60],  // 20rnd STANAG M196 (Tracer)
+  ["20rnd STANAG M200 (Blank)", "rhs_mag_20Rnd_556x45_M200_Stanag", 60],  // 20rnd STANAG M200 (Blank)
+  ["20rnd STANAG M855", "rhs_mag_20Rnd_556x45_M855_Stanag", 60],  // 20rnd STANAG M855
+  ["20rnd STANAG M855A1", "rhs_mag_20Rnd_556x45_M855A1_Stanag", 60],  // 20rnd STANAG M855A1
+  ["20rnd STANAG Mk262 Mod 1", "rhs_mag_20Rnd_556x45_Mk262_Stanag", 60], // 20rnd STANAG Mk262 Mod 1
+  ["20rnd SCAR M118 Ball", "rhs_mag_20Rnd_SCAR_762x51_m118_special", 60], // 20rnd SCAR M118 Ball
+  ["20rnd SCAR M61 AP", "rhs_mag_20Rnd_SCAR_762x51_m61_ap", 60],  // 20rnd SCAR M61 AP
+  ["20rnd SCAR M62 (Tracer)", "rhs_mag_20Rnd_SCAR_762x51_m62_tracer", 60], // 20rnd SCAR M62 (Tracer)
+  ["20rnd SCAR M80", "rhs_mag_20Rnd_SCAR_762x51_m80_ball", 60], // 20rnd SCAR M80
+  ["20rnd SCAR M80A1 EPR", "rhs_mag_20Rnd_SCAR_762x51_m80a1_epr", 60],  // 20rnd SCAR M80A1 EPR
+  ["20rnd SCAR Mk316 Mod 0", "rhs_mag_20Rnd_SCAR_762x51_mk316_special", 60], // 20rnd SCAR Mk316 Mod 0
+  ["30rnd STANAG M193", "rhs_mag_30Rnd_556x45_M193_Stanag", 60],  // 30rnd STANAG M193
+  ["30rnd STANAG M196 (Tracer)", "rhs_mag_30Rnd_556x45_M196_Stanag_Tracer_Red", 60],  // 30rnd STANAG M196 (Tracer)
+  ["30rnd STANAG M200 (Blank)", "rhs_mag_30Rnd_556x45_M200_Stanag", 60],  // 30rnd STANAG M200 (Blank)
+  ["30rnd PMAG M856 (Tracer)", "rhs_mag_30Rnd_556x45_M855_PMAG_Tan_Tracer_Red", 60],  // 30rnd PMAG M856 (Tracer)
+  ["30rnd PMAG M855", "rhs_mag_30Rnd_556x45_M855_PMAG_Tan", 60],  // 30rnd PMAG M855
+  ["30rnd PMAG M856 (Tracer)", "rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red", 60], // 30rnd PMAG M856 (Tracer)
+  ["30rnd PMAG M855", "rhs_mag_30Rnd_556x45_M855_PMAG", 60],    // 30rnd PMAG M855
+  ["30rnd STANAG (Puller) M856 (Tracer)", "rhs_mag_30Rnd_556x45_M855_Stanag_Pull_Tracer_Red", 60],  // 30rnd STANAG (Puller) M856 (Tracer)
+  ["30rnd STANAG (Puller) M855", "rhs_mag_30Rnd_556x45_M855_Stanag_Pull", 60],  // 30rnd STANAG (Puller) M855
+  ["30rnd STANAG (Ranger) M856 (Tracer)", "rhs_mag_30Rnd_556x45_M855_Stanag_Ranger_Tracer_Red", 60], // 30rnd STANAG (Ranger) M856 (Tracer)
+  ["30rnd STANAG (Ranger) M855", "rhs_mag_30Rnd_556x45_M855_Stanag_Ranger", 60],  // 30rnd STANAG (Ranger) M855
+  ["30rnd STANAG M856 (Tracer)", "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red", 60], // 30rnd STANAG M856 (Tracer)
+  ["30rnd STANAG M855", "rhs_mag_30Rnd_556x45_M855_Stanag", 60],  // 30rnd STANAG M855
+  ["30rnd EPM (Puller) M855A1 (Tracer)", "rhs_mag_30Rnd_556x45_M855A1_EPM_Pull_Tracer_Red", 60], // 30rnd EPM (Puller) M855A1 (Tracer)
+  ["30rnd EPM (Puller) M855A1", "rhs_mag_30Rnd_556x45_M855A1_EPM_Pull", 60],                   // 30rnd EPM (Puller) M855A1
+  ["30rnd EPM (Ranger) M855A1 (Tracer)", "rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger_Tracer_Red", 60],                   // 30rnd EPM (Ranger) M855A1 (Tracer)
+  ["30rnd EPM (Ranger) M855A1", "rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger", 60],                   // 30rnd EPM (Ranger) M855A1
+  ["30rnd EPM M855A1 (Tracer)", "rhs_mag_30Rnd_556x45_M855A1_EPM_Tracer_Red", 60],                   // 30rnd EPM M855A1 (Tracer)
+  ["30rnd EPM M855A1", "rhs_mag_30Rnd_556x45_M855A1_EPM", 60],                   // 30rnd EPM M855A1
+  ["30rnd PMAG M856A1 (Tracer)", "rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan_Tracer_Red", 60],                   // 30rnd PMAG M856A1 (Tracer)
+  ["30rnd PMAG M855A1", "rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan", 60],                   // 30rnd PMAG M855A1
+  ["30rnd PMAG M856A1 (Tracer)", "rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red", 60],                   // 30rnd PMAG M856A1 (Tracer)
+  ["30rnd PMAG M855A1", "rhs_mag_30Rnd_556x45_M855A1_PMAG", 60],                   // 30rnd PMAG M855A1
+  ["30rnd STANAG (Puller) M856A1 (Tracer)", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull_Tracer_Red", 60],                   // 30rnd STANAG (Puller) M856A1 (Tracer)
+  ["30rnd STANAG (Puller) M855A1", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", 60],                   // 30rnd STANAG (Puller) M855A1
+  ["30rnd STANAG (Ranger) M856A1 (Tracer)", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger_Tracer_Red", 60],                   // 30rnd STANAG (Ranger) M856A1 (Tracer)
+  ["30rnd STANAG (Ranger) M855A1", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger", 60],                   // 30rnd STANAG (Ranger) M855A1
+  ["30rnd STANAG M856A1 (Tracer)", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", 60],                   // 30rnd STANAG M856A1 (Tracer)
+  ["30rnd STANAG M855A1", "rhs_mag_30Rnd_556x45_M855A1_Stanag", 60],                   // 30rnd STANAG M855A1
+  ["30rnd PMAG Mk262 Mod 1", "rhs_mag_30Rnd_556x45_Mk262_PMAG_Tan", 60],                   // 30rnd PMAG Mk262 Mod 1
+  ["30rnd PMAG Mk262 Mod 1", "rhs_mag_30Rnd_556x45_Mk262_PMAG", 60],                   // 30rnd PMAG Mk262 Mod 1
+  ["30rnd STANAG (Puller) Mk262 Mod 1", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", 60],                   // 30rnd STANAG (Puller) Mk262 Mod 1
+  ["30rnd STANAG (Ranger) Mk262 Mod 1", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Ranger", 60],                   // 30rnd STANAG (Ranger) Mk262 Mod 1
+  ["30rnd STANAG Mk262 Mod 1", "rhs_mag_30Rnd_556x45_Mk262_Stanag", 60],                   // 30rnd STANAG Mk262 Mod 1
+  ["30rnd PMAG Mk318 Mod 0", "rhs_mag_30Rnd_556x45_Mk318_PMAG_Tan", 60],                   // 30rnd PMAG Mk318 Mod 0
+  ["30rnd PMAG Mk318 Mod 0", "rhs_mag_30Rnd_556x45_Mk318_PMAG", 60],                   // 30rnd PMAG Mk318 Mod 0
+  ["30rnd SCAR (Puller) Mk318 Mod 0", "rhs_mag_30Rnd_556x45_Mk318_SCAR_Pull", 60],                   // 30rnd SCAR (Puller) Mk318 Mod 0
+  ["30rnd SCAR (Ranger) Mk318 Mod 0", "rhs_mag_30Rnd_556x45_Mk318_SCAR_Ranger", 60],                   // 30rnd SCAR (Ranger) Mk318 Mod 0
+  ["30rnd SCAR Mk318 Mod 0", "rhs_mag_30Rnd_556x45_Mk318_SCAR", 60],                   // 30rnd SCAR Mk318 Mod 0
+  ["30rnd STANAG (Puller) Mk318 Mod 0", "rhs_mag_30Rnd_556x45_Mk318_Stanag_Pull", 60],                   // 30rnd STANAG (Puller) Mk318 Mod 0
+  ["30rnd STANAG (Ranger) Mk318 Mod 0", "rhs_mag_30Rnd_556x45_Mk318_Stanag_Ranger", 60],                   // 30rnd STANAG (Ranger) Mk318 Mod 0
+  ["30rnd STANAG Mk318 Mod 0", "rhs_mag_30Rnd_556x45_Mk318_Stanag", 60],                   // 30rnd STANAG Mk318 Mod 0
+
+  ["M397 HET Grenade Round", "rhs_mag_M397_HET", 60],                  // M397 HET Grenade Round
+  ["GL Stun Grenade Round", "rhs_mag_m4009", 60],                     // GL Stun Grenade Round
+  ["M433 HEDP Grenade Round", "rhs_mag_M433_HEDP", 60],                 // M433 HEDP Grenade Round
+  ["M441 HE Grenade Round", "rhs_mag_M441_HE", 60],                   // M441 HE Grenade Round
+  ["M576 Buckshot Round", "rhs_mag_m576", 60],// M576 Buckshot Round
+  ["M585 White Flare Round", "rhs_mag_M585_white", 60],                // M585 White Flare Round
+  ["M661 Green Flare Round", "rhs_mag_m661_green", 60],                // M661 Green Flare Round
+  ["M662 Red Flare Round", "rhs_mag_m662_red", 60],                  // M662 Red Flare Round
+  ["M713 Red Smoke Round", "rhs_mag_m713_Red", 60],                  // M713 Red Smoke Round
+  ["M714 White Smoke Round", "rhs_mag_m714_White", 60],                // M714 White Smoke Round
+  ["M715 Green Smoke Round", "rhs_mag_m715_Green", 60],                // M715 Green Smoke Round
+  ["M716 Yellow Smoke Round", "rhs_mag_m716_yellow", 60],               // M716 Yellow Smoke Round
+  ["M781 Practice Round", "rhs_mag_M781_Practice", 60],             // M781 Practice Round
+
+	["FFV441 HE", "rhs_mag_maaws_HE", 60],                  // FFV441 HE
+  ["FFV751 HEAT", "rhs_mag_maaws_HEAT", 60],                // FFV751 HEAT
+  ["FFV502 HEDP", "rhs_mag_maaws_HEDP", 60],                // FFV502 HEDP
+  ["Six-12 Slug", "rhs_mag_six12_slug", 60],                // Six-12 Slug
+  ["Mk.6 HEAA", "rhs_mag_smaw_HEAA", 60],                 // Mk.6 HEAA
+  ["Mk.3 HEDP", "rhs_mag_smaw_HEDP", 60],                 // Mk.3 HEDP
+  ["Mk.217 Spotting", "rhs_mag_smaw_SR", 60],                   // Mk.217 Spotting
+
+  ["100rnd M249 Softpack M855", "rhsusf_100Rnd_556x45_M200_soft_pouch_coyote", 60],                  // 100rnd M249 Softpack M855
+  ["100rnd M249 Softpack M200", "rhsusf_100Rnd_556x45_M200_soft_pouch_ucp", 60],                     // 100rnd M249 Softpack M200
+  ["100rnd M249 Softpack M200", "rhsusf_100Rnd_556x45_M200_soft_pouch", 60], // 100rnd M249 Softpack M200
+  ["100rnd M249 Softpack M855 (Mixed)", "rhsusf_100Rnd_556x45_M855_mixed_soft_pouch_coyote", 60],                  // 100rnd M249 Softpack M855 (Mixed)
+  ["100rnd M249 Softpack M855 (Mixed)", "rhsusf_100Rnd_556x45_M855_mixed_soft_pouch_ucp", 60],                  // 100rnd M249 Softpack M855 (Mixed)
+  ["100rnd M249 Softpack M855 (Mixed)", "rhsusf_100Rnd_556x45_M855_mixed_soft_pouch", 60],                   // 100rnd M249 Softpack M855 (Mixed)
+  ["100rnd M249 Softpack M855", "rhsusf_100Rnd_556x45_M855_soft_pouch_coyote", 60],                  // 100rnd M249 Softpack M855
+  ["100rnd M249 Softpack M855", "rhsusf_100Rnd_556x45_M855_soft_pouch_ucp", 60],                     // 100rnd M249 Softpack M855
+  ["100rnd M249 Softpack M855", "rhsusf_100Rnd_556x45_M855_soft_pouch", 60], // 100rnd M249 Softpack M855
+  ["100rnd M249 Softpack M855A1 (Mixed)", "rhsusf_100Rnd_556x45_mixed_soft_pouch_coyote", 60],                  // 100rnd M249 Softpack M855A1 (Mixed)
+  ["100rnd M249 Softpack M855A1 (Mixed)", "rhsusf_100Rnd_556x45_mixed_soft_pouch_ucp", 60],                    // 100rnd M249 Softpack M855A1 (Mixed)
+  ["100rnd M249 Softpack M855A1 (Mixed)", "rhsusf_100Rnd_556x45_mixed_soft_pouch", 60],// 100rnd M249 Softpack M855A1 (Mixed)
+  ["100rnd M249 Softpack M855A1", "rhsusf_100Rnd_556x45_soft_pouch_coyote", 60], // 100rnd M249 Softpack M855A1
+  ["100rnd M249 Softpack M855A1", "rhsusf_100Rnd_556x45_soft_pouch_ucp", 60],  // 100rnd M249 Softpack M855A1
+  ["100rnd M249 Softpack M855A1", "rhsusf_100Rnd_556x45_soft_pouch", 60],   // 100rnd M249 Softpack M855A1
+  ["100rnd M240 Box M61 AP", "rhsusf_100Rnd_762x51_m61_ap", 60],       // 100rnd M240 Box M61 AP
+  ["100rnd M240 Box M62 (Tracer)", "rhsusf_100Rnd_762x51_m62_tracer", 60],   // 100rnd M240 Box M62 (Tracer)
+  ["100rnd M240 Box M80A1 EPR", "rhsusf_100Rnd_762x51_m80a1epr", 60],     // 100rnd M240 Box M80A1 EPR
+  ["100rnd M240 Box M82 (Blank)", "rhsusf_100Rnd_762x51_m82_blank", 60],    // 100rnd M240 Box M82 (Blank)
+  ["100rnd M240 Box M80", "rhsusf_100Rnd_762x51", 60],              // 100rnd M240 Box M80
+  ["10rnd AICS M118", "rhsusf_10Rnd_762x51_m118_special_Mag", 60], // 10rnd AICS M118
+  ["10rnd AICS M62 (Tracer)", "rhsusf_10Rnd_762x51_m62_Mag", 60],       // 10rnd AICS M62 (Tracer)
+  ["10rnd AICS M993 AP", "rhsusf_10Rnd_762x51_m993_Mag", 60],      // 10rnd AICS M993 AP
+  ["200rnd M249 Box M855A1", "rhsusf_200Rnd_556x45_box", 60],          // 200rnd M249 Box M855A1
+  ["200rnd M249 Box M855", "rhsusf_200rnd_556x45_M855_box", 60],     // 200rnd M249 Box M855
+  ["200rnd M249 Box M855 (Mixed)", "rhsusf_200rnd_556x45_M855_mixed_box", 60],  // 200rnd M249 Box M855 (Mixed)
+  ["200rnd M249 Softpack M855 (Mixed)", "rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote", 60],                  // 200rnd M249 Softpack M855 (Mixed)
+  ["200rnd M249 Softpack M855 (Mixed)", "rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_ucp", 60],                  // 200rnd M249 Softpack M855 (Mixed)
+  ["200rnd M249 Softpack M855 (Mixed)", "rhsusf_200Rnd_556x45_M855_mixed_soft_pouch", 60],                   // 200rnd M249 Softpack M855 (Mixed)
+  ["200rnd M249 Softpack M855", "rhsusf_200Rnd_556x45_M855_soft_pouch_coyote", 60],                  // 200rnd M249 Softpack M855
+  ["200rnd M249 Softpack M855", "rhsusf_200Rnd_556x45_M855_soft_pouch_ucp", 60],                     // 200rnd M249 Softpack M855
+  ["200rnd M249 Softpack M855", "rhsusf_200Rnd_556x45_M855_soft_pouch", 60], // 200rnd M249 Softpack M855
+  ["200rnd M249 Box M855A1 (Mixed)", "rhsusf_200rnd_556x45_mixed_box", 60],    // 200rnd M249 Box M855A1 (Mixed)
+  ["200rnd M249 Softpack M855A1 (Mixed)", "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote", 60],                  // 200rnd M249 Softpack M855A1 (Mixed)
+  ["200rnd M249 Softpack M855A1 (Mixed)", "rhsusf_200Rnd_556x45_mixed_soft_pouch_ucp", 60],                    // 200rnd M249 Softpack M855A1 (Mixed)
+  ["200rnd M249 Softpack M855A1 (Mixed)", "rhsusf_200Rnd_556x45_mixed_soft_pouch", 60],// 200rnd M249 Softpack M855A1 (Mixed)
+  ["200rnd M249 Softpack M855A1", "rhsusf_200Rnd_556x45_soft_pouch_coyote", 60], // 200rnd M249 Softpack M855A1
+  ["200rnd M249 Softpack M855A1", "rhsusf_200Rnd_556x45_soft_pouch_ucp", 60],  // 200rnd M249 Softpack M855A1
+  ["200rnd M249 Softpack M855A1", "rhsusf_200Rnd_556x45_soft_pouch", 60],   // 200rnd M249 Softpack M855A1
+  ["20rnd M14 M118", "rhsusf_20Rnd_762x51_m118_special_Mag", 60], // 20rnd M14 M118
+  ["20rnd M14 M62 (Tracer)", "rhsusf_20Rnd_762x51_m62_Mag", 60],       // 20rnd M14 M62 (Tracer)
+  ["20rnd M14 M993AP", "rhsusf_20Rnd_762x51_m993_Mag", 60],      // 20rnd M14 M993AP
+  ["20rnd SR-25 M118", "rhsusf_20Rnd_762x51_SR25_m118_special_Mag", 60],                    // 20rnd SR-25 M118
+  ["20rnd SR-25 M62 (Tracer)", "rhsusf_20Rnd_762x51_SR25_m62_Mag", 60],  // 20rnd SR-25 M62 (Tracer)
+  ["20rnd SR-25 M993 AP", "rhsusf_20Rnd_762x51_SR25_m993_Mag", 60], // 20rnd SR-25 M993 AP
+  ["20rnd SR-25 Mk316 Mod 0", "rhsusf_20Rnd_762x51_SR25_mk316_special_Mag", 60],                   // 20rnd SR-25 Mk316 Mod 0
+  ["50rnd M240 Softpack M61 AP", "rhsusf_50Rnd_762x51_m61_ap", 60],        // 50rnd M240 Softpack M61 AP
+  ["50rnd M240 Softpack M62 (Tracer)", "rhsusf_50Rnd_762x51_m62_tracer", 60],    // 50rnd M240 Softpack M62 (Tracer)
+  ["50rnd M240 Softpack M80A1 EPR", "rhsusf_50Rnd_762x51_m80a1epr", 60],      // 50rnd M240 Softpack M80A1 EPR
+  ["50rnd M240 Belt M82 (Blank)", "rhsusf_50Rnd_762x51_m82_blank", 60],     // 50rnd M240 Belt M82 (Blank)
+  ["50rnd M240 Softpack M80", "rhsusf_50Rnd_762x51", 60],               // 50rnd M240 Softpack M80
+  ["5Rnd .00 Buckshot", "rhsusf_5Rnd_00Buck", 60],                // 5Rnd .00 Buckshot
+  ["5Rnd .300WM Mk248 MOD 1", "rhsusf_5Rnd_300winmag_xm2010", 60],      // 5Rnd .300WM Mk248 MOD 1
+  ["5Rnd AICS M118", "rhsusf_5Rnd_762x51_AICS_m118_special_Mag", 60],                     // 5Rnd AICS M118
+  ["5Rnd AICS M62 (Tracer)", "rhsusf_5Rnd_762x51_AICS_m62_Mag", 60],   // 5Rnd AICS M62 (Tracer)
+  ["5Rnd AICS M993 AP", "rhsusf_5Rnd_762x51_AICS_m993_Mag", 60],  // 5Rnd AICS M993 AP
+  ["5Rnd M118", "rhsusf_5Rnd_762x51_m118_special_Mag", 60],  // 5Rnd M118
+  ["5Rnd M62 (Tracer)", "rhsusf_5Rnd_762x51_m62_Mag", 60],        // 5Rnd M62 (Tracer)
+  ["5Rnd M993 AP", "rhsusf_5Rnd_762x51_m993_Mag", 60],       // 5Rnd M993 AP
+  ["5Rnd 12g FRAG", "rhsusf_5Rnd_FRAG", 60],                  // 5Rnd 12g FRAG
+  ["5Rnd 12g HE-EP", "rhsusf_5Rnd_HE", 60],                    // 5Rnd 12g HE-EP
+  ["5Rnd 12g Slug", "rhsusf_5Rnd_Slug", 60],                  // 5Rnd 12g Slug
+  ["8Rnd .00 Buckshot", "rhsusf_8Rnd_00Buck", 60],                // 8Rnd .00 Buckshot
+  ["8Rnd 12g FRAG", "rhsusf_8Rnd_FRAG", 60],                  // 8Rnd 12g FRAG
+  ["8Rnd 12g HE-EP", "rhsusf_8Rnd_HE", 60],                    // 8Rnd 12g HE-EP
+  ["8Rnd 12g Slug", "rhsusf_8Rnd_Slug", 60],                  // 8Rnd 12g Slug
+  ["M112", "rhsusf_m112_mag", 60],                   // M112
+  ["M112 (x4)", "rhsusf_m112x4_mag", 60],                 // M112 (x4)
+  ["10rnd M107 M33", "rhsusf_mag_10Rnd_STD_50BMG_M33", 350],    // 10rnd M107 M33
+  ["10rnd M107 Mk211", "rhsusf_mag_10Rnd_STD_50BMG_mk211", 350],  // 10rnd M107 Mk211
+  ["15rnd M9 M882 FMJ", "rhsusf_mag_15Rnd_9x19_FMJ", 60],         // 15rnd M9 M882 FMJ
+  ["15rnd M9 Mk243 JHP", "rhsusf_mag_15Rnd_9x19_JHP", 60],         // 15rnd M9 Mk243 JHP
+  ["17rnd Glock M882 FMJ", "rhsusf_mag_17Rnd_9x19_FMJ", 60],         // 17rnd Glock M882 FMJ
+  ["17rnd Glock Mk243 JHP", "rhsusf_mag_17Rnd_9x19_JHP", 60],         // 17rnd Glock Mk243 JHP
+  ["40rnd MP7 SX AP", "rhsusf_mag_40Rnd_46x30_AP", 60],         // 40rnd MP7 SX AP
+  ["40rnd MP7 SX FMJ", "rhsusf_mag_40Rnd_46x30_FMJ", 60],        // 40rnd MP7 SX FMJ
+  ["40rnd MP7 SX JHP", "rhsusf_mag_40Rnd_46x30_JHP", 60],        // 40rnd MP7 SX JHP
+  ["6rnd M397 HET Grenades", "rhsusf_mag_6Rnd_M397_HET", 60],          // 6rnd M397 HET Grenades
+  ["6rnd. GL Stun Grenade Round", "rhsusf_mag_6Rnd_m4009", 60],             // 6rnd. GL Stun Grenade Round
+  ["6rnd M433 HEDP Grenades", "rhsusf_mag_6Rnd_M433_HEDP", 60],         // 6rnd M433 HEDP Grenades
+  ["6rnd M441 HE Grenade Rounds", "rhsusf_mag_6Rnd_M441_HE", 60],           // 6rnd M441 HE Grenade Rounds
+  ["6rnd. M576 Buckshot Round", "rhsusf_mag_6Rnd_M576_Buckshot", 60],     // 6rnd. M576 Buckshot Round
+  ["6rnd. M585 White Flare Round", "rhsusf_mag_6Rnd_M585_white", 60],        // 6rnd. M585 White Flare Round
+  ["6rnd. M661 Green Flare Round", "rhsusf_mag_6Rnd_m661_green", 60],        // 6rnd. M661 Green Flare Round
+  ["6rnd. M662 Red Flare Round", "rhsusf_mag_6Rnd_m662_red", 60],          // 6rnd. M662 Red Flare Round
+  ["6rnd. M713 Red Smoke Round", "rhsusf_mag_6Rnd_M713_red", 60],          // 6rnd. M713 Red Smoke Round
+  ["6rnd. M714 White Smoke Round", "rhsusf_mag_6Rnd_M714_white", 60],        // 6rnd. M714 White Smoke Round
+  ["6rnd. M715 Green Smoke Round", "rhsusf_mag_6Rnd_M715_green", 60],        // 6rnd. M715 Green Smoke Round
+  ["6rnd. M716 Yellow Smoke Round", "rhsusf_mag_6Rnd_M716_yellow", 60],       // 6rnd. M716 Yellow Smoke Round
+  ["6rnd. M751 Practice Round", "rhsusf_mag_6Rnd_M781_Practice", 60],     // 6rnd. M751 Practice Round
+  ["7rnd M1911 HP", "rhsusf_mag_7x45acp_MHP", 60],            // 7rnd M1911 HP
+
+	// RHS end
 	[".50 BW 10Rnd Mag", "10Rnd_50BW_Mag_F", 350],             //                 hit                      hit,  radius
 	["PG-7VM HEAT Grenade", "RPG7_F", 900],                   // Direct damage:  343     | Splash damage:  13,  3.0m     | Guidance: none
 	["RPG-42 AT Rocket", "RPG32_F", 1000],                     //                 422     |                 28,  2.5m     |           none
@@ -425,7 +739,7 @@ ammoArray = compileFinal str
 	["MAAWS HE 44 Rocket", "MRAWS_HE_F", 1000],                //                 200     |                 50,  6.0m     |           none
 	["9M135 HEAT Missile", "Vorona_HEAT", 2000],              //                 634     |                 28,  2.5m     |           mouse
 	["9M135 HE Missile", "Vorona_HE", 1750],                   //                 220     |                 45,  8.0m     |           mouse
-	["PCML AT Missile", "NLAW_F", 1750],                       //                 462     |                 25,  2.4m     |           laser/IR, cold/hot ground vehicles
+	["PCML AT Missile", "NLAW_F", 1750], //                 462     |                 25,  2.4m     |           laser/IR, cold/hot ground vehicles
 	["Titan Anti-Tank Missile", "Titan_AT", 3000],            //                 515     |                 20,  2.0m     |           mouse, laser/IR, hot ground vehicles
 	["Titan Anti-Personnel Missile", "Titan_AP", 1750],        //                 100     |                 25, 10.0m     |           mouse, laser/IR
 	["Titan AA Missile", "Titan_AA", 1750],                    //                  80     |                 60,  6.0m     |           aircraft
@@ -554,7 +868,142 @@ accessoriesArray = compileFinal str
 	["TWS", "optic_tws", 4000, "item", "HIDDEN"], // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
 	["TWS MG", "optic_tws_mg", 5000, "item", "HIDDEN"],
 	["Nightstalker", "optic_Nightstalker", 6500, "item", "HIDDEN"],
-	["LEUPOLD MK4", "rhsusf_acc_LEUPOLDMK4_2", 225, "item"]
+	["LEUPOLD MK4", "rhsusf_acc_LEUPOLDMK4_2", 225, "item"],
+
+	// RHS
+	["AT-4 Peep hole handler", "rhs_acc_at4_handler", 400, "item"],  // AT-4 Peep hole handler
+  ["M3 MAAWS sight", "rhs_optic_maaws", 400, "item"], // M3 MAAWS sight
+  ["SMAW sight", "rhs_weap_optic_smaw", 400, "item"], // SMAW sight
+  ["AAC 762-SD", "rhsusf_acc_aac_762sd_silencer", 400, "item"], // AAC 762-SD
+  ["AAC 762-SDN-6", "rhsusf_acc_aac_762sdn6_silencer", 400, "item"], // AAC 762-SDN-6
+  ["AAC SCAR-H SD", "rhsusf_acc_aac_scarh_silencer", 400, "item"], // AAC SCAR-H SD
+  ["M150 RCO + AN/PVS-27", "rhsusf_acc_ACOG_anpvs27", 400, "item"], // M150 RCO + AN/PVS-27
+  ["TA31RCO (Desert)", "rhsusf_acc_ACOG_d", 400, "item"], // TA31RCO (Desert)
+  ["SU-260/P (MOD)", "rhsusf_acc_ACOG_MDO", 400, "item"], // SU-260/P (MOD)
+  ["TA31RCO-RMR", "rhsusf_acc_ACOG_RMR", 400, "item"], // TA31RCO-RMR
+  ["AN/PVQ-31A RCO", "rhsusf_acc_ACOG_USMC", 400, "item"], // AN/PVQ-31A RCO
+  ["TA31RCO (Woodland)", "rhsusf_acc_ACOG_wd", 400, "item"],  // TA31RCO (Woodland)
+  ["M150 RCO", "rhsusf_acc_ACOG", 400, "item"], // M150 RCO
+  ["AN/PVQ-31A (ARD)", "rhsusf_acc_ACOG2_USMC", 400, "item"], // AN/PVQ-31A (ARD)
+  ["M150 RCO (ARD)", "rhsusf_acc_ACOG2", 400, "item"], // M150 RCO (ARD)
+  ["AN/PVQ-31A (ARD/Lens Cover)", "rhsusf_acc_ACOG3_USMC", 400, "item"], // AN/PVQ-31A (ARD/Lens Cover)
+  ["M150 RCO (ARD/Lens Cover)", "rhsusf_acc_ACOG3", 400, "item"], // M150 RCO (ARD/Lens Cover)
+  ["AN/PAS-13G(V)1", "rhsusf_acc_anpas13gv1", 400, "item"], // AN/PAS-13G(V)1
+  ["AN/PEQ-15/M952V Black (Light)", "rhsusf_acc_anpeq15_bk_light", 400, "item"], // AN/PEQ-15/M952V Black (Light)
+  ["AN/PEQ-15 Black (Top)", "rhsusf_acc_anpeq15_bk_top", 400, "item"],  // AN/PEQ-15 Black (Top)
+  ["AN/PEQ-15/M952V Black (Laser)", "rhsusf_acc_anpeq15_bk", 400, "item"], // AN/PEQ-15/M952V Black (Laser)
+  ["AN/PEQ-15/M952V (Light)", "rhsusf_acc_anpeq15_light", 400, "item"],  // AN/PEQ-15/M952V (Light)
+  ["AN/PEQ-15 (Top)", "rhsusf_acc_anpeq15_top", 400, "item"], // AN/PEQ-15 (Top)
+  ["AN/PEQ-15 + WMX (light)", "rhsusf_acc_anpeq15_wmx_light", 400, "item"],  // AN/PEQ-15 + WMX (light)
+  ["AN/PEQ-15 + WMX (laser)", "rhsusf_acc_anpeq15_wmx", 400, "item"], // AN/PEQ-15 + WMX (laser)
+  ["AN/PEQ-15/M952V (Laser)", "rhsusf_acc_anpeq15", 400, "item"],  // AN/PEQ-15/M952V (Laser)
+  ["AN/PEQ-15A", "rhsusf_acc_anpeq15A", 400, "item"], // AN/PEQ-15A
+  ["AN/PEQ-15 Black", "rhsusf_acc_anpeq15side_bk", 400, "item"],  // AN/PEQ-15 Black
+  ["AN/PEQ-15", "rhsusf_acc_anpeq15side", 400, "item"], // AN/PEQ-15
+  ["AN/PEQ-16A (Top/Light)", "rhsusf_acc_anpeq16a_light_top", 400, "item"],  // AN/PEQ-16A (Top/Light)
+  ["AN/PEQ-16A (Light)", "rhsusf_acc_anpeq16a_light", 400, "item"], // AN/PEQ-16A (Light)
+  ["AN/PEQ-16A (Top/Laser)", "rhsusf_acc_anpeq16a_top", 400, "item"],  // AN/PEQ-16A (Top/Laser)
+  ["AN/PEQ-16A (Laser)", "rhsusf_acc_anpeq16a", 400, "item"], // AN/PEQ-16A (Laser)
+  ["AN/PVS-27", "rhsusf_acc_anpvs27", 400, "item"],  // AN/PVS-27
+  ["ARDEC 4-Prong", "rhsusf_acc_ARDEC_M240", 400, "item"],  // ARDEC 4-Prong
+  ["M68 CCO", "rhsusf_acc_compm4", 400, "item"],  // M68 CCO
+  ["M145 MGO (ARD)", "rhsusf_acc_ELCAN_ard", 400, "item"], // M145 MGO (ARD)
+  ["M145 MGO", "rhsusf_acc_ELCAN", 400, "item"],  // M145 MGO
+  ["M552 CCO (Desert)", "rhsusf_acc_eotech_552_d", 400, "item"],  // M552 CCO (Desert)
+  ["M552 CCO (Woodland)", "rhsusf_acc_eotech_552_wd", 400, "item"], // M552 CCO (Woodland)
+  ["M552 CCO", "rhsusf_acc_eotech_552", 400, "item"], // M552 CCO
+  ["XPS3", "rhsusf_acc_eotech_xps3", 400, "item"],  // XPS3
+  ["EXPS3", "rhsusf_acc_EOTECH", 400, "item"], // EXPS3
+  ["G33 + SU-278/PVS", "rhsusf_acc_g33_T1", 400, "item"],  // G33 + SU-278/PVS
+  ["G33 + XPS3 (Tan)", "rhsusf_acc_g33_xps3_tan", 400, "item"], // G33 + XPS3 (Tan)
+  ["G33 + XPS3", "rhsusf_acc_g33_xps3", 400, "item"],   // G33 + XPS3
+  ["Grip Pod", "rhsusf_acc_grip1", 400, "item"],  // Grip Pod
+  ["AFG Grip (Tan)", "rhsusf_acc_grip2_tan", 400, "item"],  // AFG Grip (Tan)
+  ["AFG Grip (Woodland)", "rhsusf_acc_grip2_wd", 400, "item"], // AFG Grip (Woodland)
+  ["AFG Grip", "rhsusf_acc_grip2", 400, "item"],  // AFG Grip
+  ["TD Vertical Grip (Tan)", "rhsusf_acc_grip3_tan", 400, "item"], // TD Vertical Grip (Tan)
+  ["TD Vertical Grip", "rhsusf_acc_grip3", 400, "item"],  // TD Vertical Grip
+  ["SAW Grip & Bipod", "rhsusf_acc_grip4_bipod", 400, "item"], // SAW Grip & Bipod
+  ["SAW Grip", "rhsusf_acc_grip4", 400, "item"], // SAW Grip
+  ["Harris Bipod", "rhsusf_acc_harris_bipod", 400, "item"],  // Harris Bipod
+  ["Harris Bipod", "rhsusf_acc_harris_swivel", 400, "item"],  // Harris Bipod
+  ["KAC Grip & SAW Bipod", "rhsusf_acc_kac_grip_saw_bipod", 400, "item"],  // KAC Grip & SAW Bipod
+  ["KAC Vertical Grip", "rhsusf_acc_kac_grip", 400, "item"],  // KAC Vertical Grip
+  ["Mk. 4 M5 (Desert)", "rhsusf_acc_LEUPOLDMK4_2_d", 400, "item"], // Mk. 4 M5 (Desert)
+  ["Mk. 4 M5 (MRDS)", "rhsusf_acc_LEUPOLDMK4_2_mrds", 400, "item"],  // Mk. 4 M5 (MRDS)
+  ["Mk. 4 ER/T 6.5-20x M5", "rhsusf_acc_LEUPOLDMK4_2", 400, "item"], // Mk. 4 ER/T 6.5-20x M5
+  ["Mk. 4 M3 (Desert)", "rhsusf_acc_LEUPOLDMK4_d", 400, "item"],  // Mk. 4 M3 (Desert)
+  ["Mk. 4 M3 (Woodland)", "rhsusf_acc_LEUPOLDMK4_wd", 400, "item"], // Mk. 4 M3 (Woodland)
+  ["Mk. 4 ER/T 3.5-10x M3", "rhsusf_acc_LEUPOLDMK4", 400, "item"],  // Mk. 4 ER/T 3.5-10x M3
+  ["TiTan (Desert)", "rhsusf_acc_M2010S_d", 400, "item"], // TiTan (Desert)
+  ["TiTan (Semi-Arid)", "rhsusf_acc_M2010S_sa", 400, "item"],  // TiTan (Semi-Arid)
+  ["TiTan (Woodland)", "rhsusf_acc_M2010S_wd", 400, "item"],  // TiTan (Woodland)
+  ["TiTan", "rhsusf_acc_M2010S", 400, "item"], // TiTan
+  ["M24 150X. Flash Hider", "rhsusf_acc_m24_muzzlehider_black", 400, "item"],  // M24 150X. Flash Hider
+  ["M24 150X. Flash Hider (Desert)", "rhsusf_acc_m24_muzzlehider_d", 400, "item"],  // M24 150X. Flash Hider (Desert)
+  ["M24 150X. Flash Hider (Woodland)", "rhsusf_acc_m24_muzzlehider_wd", 400, "item"], // M24 150X. Flash Hider (Woodland)
+  ["M24 Suppressor", "rhsusf_acc_m24_silencer_black", 400, "item"],  // M24 Suppressor
+  ["M24 Suppressor (Desert)", "rhsusf_acc_m24_silencer_d", 400, "item"], // M24 Suppressor (Desert)
+  ["M24 Suppressor (Woodland)", "rhsusf_acc_m24_silencer_wd", 400, "item"],  // M24 Suppressor (Woodland)
+  ["M2A1 GL Sight", "rhsusf_acc_M2A1", 400, "item"],  // M2A1 GL Sight
+  ["M8541 (low mount/Desert)", "rhsusf_acc_M8541_low_d", 400, "item"], // M8541 (low mount/Desert)
+  ["M8541 (low mount/Woodland)", "rhsusf_acc_M8541_low_wd", 400, "item"],  // M8541 (low mount/Woodland)
+  ["M8541 (low mount)", "rhsusf_acc_M8541_low", 400, "item"],   // M8541 (low mount)
+  ["M8541 (MRDS)", "rhsusf_acc_M8541_mrds", 400, "item"], // M8541 (MRDS)
+  ["M8541", "rhsusf_acc_M8541", 400, "item"], // M8541
+  ["M952V", "rhsusf_acc_M952V", 400, "item"],  // M952V
+  ["MRDS Coyote", "rhsusf_acc_mrds_c", 400, "item"],  // MRDS Coyote
+  ["MRDS Coyote (Forward)", "rhsusf_acc_mrds_fwd_c", 400, "item"],  // MRDS Coyote (Forward)
+  ["MRDS (Forward)", "rhsusf_acc_mrds_fwd", 400, "item"],  // MRDS (Forward)
+  ["MRDS", "rhsusf_acc_mrds", 400, "item"],  // MRDS
+  ["NT4 QDSS (Black)", "rhsusf_acc_nt4_black", 400, "item"], // NT4 QDSS (Black)
+  ["NT4 QDSS (Tan)", "rhsusf_acc_nt4_tan", 400, "item"],  // NT4 QDSS (Tan)
+  ["SILENCERCO OMEGA 9K", "rhsusf_acc_omega9k", 400, "item"], // SILENCERCO OMEGA 9K
+  ["M8541A + AN/PVS-27", "rhsusf_acc_premier_anpvs27", 400, "item"],  // M8541A + AN/PVS-27
+  ["M8541A (low mount)", "rhsusf_acc_premier_low", 400, "item"],  // M8541A (low mount)
+  ["M8541A SSDS (MRDS)", "rhsusf_acc_premier_mrds", 400, "item"], // M8541A SSDS (MRDS)
+  ["M8541A SSDS", "rhsusf_acc_premier", 400, "item"],   // M8541A SSDS
+  ["RM05 RMR LT726 (Forward)", "rhsusf_acc_RM05_fwd", 400, "item"],   // RM05 RMR LT726 (Forward)
+  ["RM05 RMR LT726", "rhsusf_acc_RM05", 400, "item"],   // RM05 RMR LT726
+  ["Rotex-II (AOR1)", "rhsusf_acc_rotex_mp7_aor1", 400, "item"],  // Rotex-II (AOR1)
+  ["Rotex-II (Desert)", "rhsusf_acc_rotex_mp7_desert", 400, "item"],    // Rotex-II (Desert)
+  ["Rotex-II (Winter)", "rhsusf_acc_rotex_mp7_winter", 400, "item"],  // Rotex-II (Winter)
+  ["Rotex-II (Black)", "rhsusf_acc_rotex_mp7", 400, "item"],   // Rotex-II (Black)
+  ["Rotex-5 (Grey)", "rhsusf_acc_rotex5_grey", 400, "item"], // Rotex-5 (Grey)
+  ["Rotex-5 (Tan)", "rhsusf_acc_rotex5_tan", 400, "item"],  // Rotex-5 (Tan)
+  ["RVG Grip (Black)", "rhsusf_acc_rvg_blk", 400, "item"],   // RVG Grip (Black)
+  ["RVG Grip (Dark Earth)", "rhsusf_acc_rvg_de", 400, "item"],  // RVG Grip (Dark Earth)
+  ["RX01 Tan (w/o Filter)", "rhsusf_acc_RX01_NoFilter_tan", 400, "item"],  // RX01 Tan (w/o Filter)
+  ["RX01 (w/o Filter)", "rhsusf_acc_RX01_NoFilter", 400, "item"],  // RX01 (w/o Filter)
+  ["RX01 Reflex Tan", "rhsusf_acc_RX01_tan", 400, "item"],  // RX01 Reflex Tan
+  ["RX01 Reflex", "rhsusf_acc_RX01", 400, "item"], // RX01 Reflex
+  ["SAW Bipod", "rhsusf_acc_saw_bipod", 400, "item"],  // SAW Bipod
+  ["SAW Improved Bipod", "rhsusf_acc_saw_lw_bipod", 400, "item"], // SAW Improved Bipod
+  ["SF3P-556-1/2-28", "rhsusf_acc_SF3P556", 400, "item"], // SF3P-556-1/2-28
+  ["SFMB-556-1/2-28", "rhsusf_acc_SFMB556", 400, "item"],  // SFMB-556-1/2-28
+  ["SR-25 Rifle Suppressor (Desert)", "rhsusf_acc_SR25S_d", 400, "item"],  // SR-25 Rifle Suppressor (Desert)
+  ["SR-25 Rifle Suppressor (Woodland)", "rhsusf_acc_SR25S_wd", 400, "item"], // SR-25 Rifle Suppressor (Woodland)
+  ["SR-25 Rifle Suppressor", "rhsusf_acc_SR25S", 400, "item"],  // SR-25 Rifle Suppressor
+  ["SU-230/PVS Coyote", "rhsusf_acc_su230_c", 400, "item"],  // SU-230/PVS Coyote
+  ["SU-230/PVS MRDS Coyote", "rhsusf_acc_su230_mrds_c", 400, "item"], // SU-230/PVS MRDS Coyote
+  ["SU-230/PVS MRDS", "rhsusf_acc_su230_mrds", 400, "item"], // SU-230/PVS MRDS
+  ["SU-230/PVS", "rhsusf_acc_su230", 400, "item"], // SU-230/PVS
+  ["SU-230A/PVS Coyote", "rhsusf_acc_su230a_c", 400, "item"],   // SU-230A/PVS Coyote
+  ["SU-230A/PVS MRDS Coyote", "rhsusf_acc_su230a_mrds_c", 400, "item"],  // SU-230A/PVS MRDS Coyote
+  ["SU-230A/PVS MRDS", "rhsusf_acc_su230a_mrds", 400, "item"],   // SU-230A/PVS MRDS
+  ["SU-230A/PVS", "rhsusf_acc_su230a", 400, "item"],  // SU-230A/PVS
+  ["SU-278/PVS LT660", "rhsusf_acc_T1_high", 400, "item"],  // SU-278/PVS LT660
+  ["SU-278/PVS LT661 (Forward)", "rhsusf_acc_T1_low_fwd", 400, "item"],  // SU-278/PVS LT661 (Forward)
+  ["SU-278/PVS LT661", "rhsusf_acc_T1_low", 400, "item"],   // SU-278/PVS LT661
+  ["Tac-Sac Grip (Black)", "rhsusf_acc_tacsac_blk", 400, "item"], // Tac-Sac Grip (Black)
+  ["Tac-Sac Grip (Blue)", "rhsusf_acc_tacsac_blue", 400, "item"],  // Tac-Sac Grip (Blue)
+  ["Tac-Sac Grip (Tan)", "rhsusf_acc_tacsac_tan", 400, "item"],  // Tac-Sac Grip (Tan)
+  ["TD Stubby Grip (Black)", "rhsusf_acc_tdstubby_blk", 400, "item"],  // TD Stubby Grip (Black)
+  ["TD Stubby Grip (Tan)", "rhsusf_acc_tdstubby_tan", 400, "item"], // TD Stubby Grip (Tan)
+  ["WMX Flashlight (Black)", "rhsusf_acc_wmx_bk", 400, "item"], // WMX Flashlight (Black)
+  ["WMX Flashlight", "rhsusf_acc_wmx", 400, "item"],  // WMX Flashlight
+  ["M151 Spotting Scope", "rhsusf_bino_leopold_mk4", 400, "item"]   // M151 Spotting Scope
+	// RHS END
 ];
 
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
@@ -596,30 +1045,8 @@ headArray = compileFinal str
 	["Crew Helmet (CSAT)", "H_HelmetCrew_O", 60, "hat"],
 	["Crew Helmet (AAF)", "H_HelmetCrew_I", 60, "hat"],
 	// RHS
-	["Pilot Helmet (IHADSS)", "rhsusf_ihadss", 60, "hat"],
-
-	["Crew Helmet Green (Skull)", "rhsusf_hgu56p_visor_mask_skull", 60, "hat"],
-	["Crew Helmet Tan", "rhsusf_hgu56p_visor_mask_tan", 60, "hat"],
-	["Crew Helmet Pink", "rhsusf_hgu56p_visor_mask_pink", 60, "hat"],
-	["Crew Helmet Blue", "rhsusf_hgu56p_visor_mask_saf", 60, "hat"],
-	["Crew Helmet White", "rhsusf_hgu56p_visor_white", 60, "hat"],
-	["Crew Helmet Black (Skull)", "rhsusf_hgu56p_visor_mask_black_skull", 60, "hat"],
-	["Crew Helmet Smiley", "rhsusf_hgu56p_visor_mask_smiley", 60, "hat"],
-	["Crew Helmet Mostash", "rhsusf_hgu56p_visor_mask_green_mo", 60, "hat"],
-	["Crew Helmet USA", "rhsusf_hgu56p_visor_usa", 60, "hat"],
-	["Crew Helmet Empire", "rhsusf_hgu56p_visor_mask_Empire_black", 60, "hat"],
-
-	["Tank Helmet CVC", "rhsusf_cvc_green_helmet", 60, "hat"],
-	["Tank Helmet CVC (Alt)", "rhsusf_cvc_green_alt_helmet", 60, "hat"],
-	["Tank Helmet CVC ESS", "rhsusf_cvc_green_ess", 60, "hat"],
-	["Tank Helmet CVC ESS", "rhsusf_cvc_ess", 60, "hat"],
-
 	["Ops-Core 1", "rhsusf_opscore_01", 60, "hat"],
 	["Ops-Core 2", "rhsusf_opscore_02", 60, "hat"],
-	["Booniehat UCP", "rhs_Booniehat_ucp", 60, "hat"],
-	["Booniehat OCP", "rhs_Booniehat_ocp", 60, "hat"],
-	["Patrol Cap UCP", "rhsusf_patrolcap_ucp", 60, "hat"],
-	["Patrol Cap OCP", "rhsusf_patrolcap_ocp", 60, "hat"],
 	///
 	["Heli Pilot Helmet (NATO)", "H_PilotHelmetHeli_B", 50, "hat"],
 	["Heli Pilot Helmet (CSAT)", "H_PilotHelmetHeli_O", 50, "hat"],
@@ -716,7 +1143,208 @@ headArray = compileFinal str
 	["Racing Helmet (Fuel)", "H_RacingHelmet_1_F", 25, "hat"],
 	["Racing Helmet (Bluking)", "H_RacingHelmet_2_F", 25, "hat"],
 	["Racing Helmet (Redstone)", "H_RacingHelmet_3_F", 25, "hat"],
-	["Racing Helmet (Vrana)", "H_RacingHelmet_4_F", 25, "hat"]
+	["Racing Helmet (Vrana)", "H_RacingHelmet_4_F", 25, "hat"],
+
+	// Headgear
+  ["Utility Cap MARPAT-D", "rhs_8point_marpatd", 25, "hat"],  // Utility Cap MARPAT-D
+  ["Utility Cap MARPAT-WD", "rhs_8point_marpatwd", 25, "hat"], // Utility Cap MARPAT-WD
+  ["Booniehat M81", "rhs_Booniehat_m81", 25, "hat"],   // Booniehat M81
+  ["Booniehat OEF-CP", "rhs_Booniehat_ocp", 25, "hat"],   // Booniehat OEF-CP
+  ["Booniehat UCP", "rhs_Booniehat_ucp", 25, "hat"],   // Booniehat UCP
+  ["Booniehat MARPAT-D", "rhs_booniehat2_marpatd", 25, "hat"],    // Booniehat MARPAT-D
+  ["Booniehat MARPAT-WD", "rhs_booniehat2_marpatwd", 25, "hat"],   // Booniehat MARPAT-WD
+  ["Jet Pilot Helmet", "RHS_jetpilot_usaf", 25, "hat"],   // Jet Pilot Helmet
+  ["Christmas Antlers", "rhs_xmas_antlers", 25, "hat", "HIDDEN"],    // Christmas Antlers
+  ["ACH (Desert/ESS)", "rhsusf_ach_bare_des_ess", 25, "hat"],// ACH (Desert/ESS)
+  ["ACH (Desert/Headset/ESS)", "rhsusf_ach_bare_des_headset_ess", 25, "hat"], // ACH (Desert/Headset/ESS)
+  ["ACH (Desert/Headset)", "rhsusf_ach_bare_des_headset", 25, "hat"],  // ACH (Desert/Headset)
+  ["ACH (Desert)", "rhsusf_ach_bare_des", 25, "hat"],    // ACH (Desert)
+  ["ACH (ESS)", "rhsusf_ach_bare_ess", 25, "hat"],    // ACH (ESS)
+  ["ACH (Headset/ESS)", "rhsusf_ach_bare_headset_ess", 25, "hat"],  // ACH (Headset/ESS)
+  ["ACH (Headset)", "rhsusf_ach_bare_headset", 25, "hat"],// ACH (Headset)
+  ["ACH (Semi-Arid/ESS)", "rhsusf_ach_bare_semi_ess", 25, "hat"],     // ACH (Semi-Arid/ESS)
+  ["ACH (Semi-Arid/Headset/ESS)", "rhsusf_ach_bare_semi_headset_ess", 25, "hat"],// ACH (Semi-Arid/Headset/ESS)
+  ["ACH (Semi-Arid/Headset)", "rhsusf_ach_bare_semi_headset", 25, "hat"], // ACH (Semi-Arid/Headset)
+  ["ACH (Semi-Arid)", "rhsusf_ach_bare_semi", 25, "hat"],   // ACH (Semi-Arid)
+  ["ACH (Tan/ESS)", "rhsusf_ach_bare_tan_ess", 25, "hat"],// ACH (Tan/ESS)
+  ["ACH (Tan/Headset/ESS)", "rhsusf_ach_bare_tan_headset_ess", 25, "hat"], // ACH (Tan/Headset/ESS)
+  ["ACH (Tan/Headset)", "rhsusf_ach_bare_tan_headset", 25, "hat"],  // ACH (Tan/Headset)
+  ["ACH (Tan)", "rhsusf_ach_bare_tan", 25, "hat"],    // ACH (Tan)
+  ["ACH (Woodland/ESS)", "rhsusf_ach_bare_wood_ess", 25, "hat"],     // ACH (Woodland/ESS)
+  ["ACH (Woodland/Headset/ESS)", "rhsusf_ach_bare_wood_headset_ess", 25, "hat"],// ACH (Woodland/Headset/ESS)
+  ["ACH (Woodland/Headset)", "rhsusf_ach_bare_wood_headset", 25, "hat"], // ACH (Woodland/Headset)
+  ["ACH (Woodland)", "rhsusf_ach_bare_wood", 25, "hat"],   // ACH (Woodland)
+  ["ACH", "rhsusf_ach_bare", 25, "hat"],        // ACH
+  ["ACH OEF-CP (Netting)", "rhsusf_ach_helmet_camo_ocp", 25, "hat"],   // ACH OEF-CP (Netting)
+  ["ACH DCU (Early/Rhino)", "rhsusf_ach_helmet_DCU_early_rhino", 25, "hat"], // ACH DCU (Early/Rhino)
+  ["ACH DCU (Early)", "rhsusf_ach_helmet_DCU_early", 25, "hat"],  // ACH DCU (Early)
+  ["ACH DCU", "rhsusf_ach_helmet_DCU", 25, "hat"],  // ACH DCU
+  ["ACH OEF-CP (ESS/Alt)", "rhsusf_ach_helmet_ESS_ocp_alt", 25, "hat"],// ACH OEF-CP (ESS/Alt)
+  ["ACH OEF-CP (ESS)", "rhsusf_ach_helmet_ESS_ocp", 25, "hat"],    // ACH OEF-CP (ESS)
+  ["ACH UCP (ESS/Alt)", "rhsusf_ach_helmet_ESS_ucp_alt", 25, "hat"],// ACH UCP (ESS/Alt)
+  ["ACH UCP (ESS)", "rhsusf_ach_helmet_ESS_ucp", 25, "hat"],    // ACH UCP (ESS)
+  ["ACH OEF-CP (Headset/ESS/Alt)", "rhsusf_ach_helmet_headset_ess_ocp_alt", 25, "hat"],   // ACH OEF-CP (Headset/ESS/Alt)
+  ["ACH OEF-CP (Headset/ESS)", "rhsusf_ach_helmet_headset_ess_ocp", 25, "hat"], // ACH OEF-CP (Headset/ESS)
+  ["ACH UCP (Headset/ESS/Alt)", "rhsusf_ach_helmet_headset_ess_ucp_alt", 25, "hat"],   // ACH UCP (Headset/ESS/Alt)
+  ["ACH UCP (Headset/ESS)", "rhsusf_ach_helmet_headset_ess_ucp", 25, "hat"], // ACH UCP (Headset/ESS)
+  ["ACH OEF-CP (Headset/Alt)", "rhsusf_ach_helmet_headset_ocp_alt", 25, "hat"], // ACH OEF-CP (Headset/Alt)
+  ["ACH OEF-CP (Headset)", "rhsusf_ach_helmet_headset_ocp", 25, "hat"],// ACH OEF-CP (Headset)
+  ["ACH UCP (Headset/Alt)", "rhsusf_ach_helmet_headset_ucp_alt", 25, "hat"], // ACH UCP (Headset/Alt)
+  ["ACH UCP (Headset)", "rhsusf_ach_helmet_headset_ucp", 25, "hat"],// ACH UCP (Headset)
+  ["ACH M81", "rhsusf_ach_helmet_M81", 25, "hat"],  // ACH M81
+  ["ACH OEF-CP (Alt)", "rhsusf_ach_helmet_ocp_alt", 25, "hat"],    // ACH OEF-CP (Alt)
+  ["ACH OEF-CP (Norotos)", "rhsusf_ach_helmet_ocp_norotos", 25, "hat"],// ACH OEF-CP (Norotos)
+  ["ACH OEF-CP", "rhsusf_ach_helmet_ocp", 25, "hat"],  // ACH OEF-CP
+  ["ACH UCP (Alt)", "rhsusf_ach_helmet_ucp_alt", 25, "hat"],    // ACH UCP (Alt)
+  ["ACH UCP (Norotos)", "rhsusf_ach_helmet_ucp_norotos", 25, "hat"],// ACH UCP (Norotos)
+  ["ACH UCP", "rhsusf_ach_helmet_ucp", 25, "hat"],  // ACH UCP
+  ["Bowman Elite II (Cap)", "rhsusf_bowman_cap", 25, "hat"],      // Bowman Elite II (Cap)
+  ["Bowman Elite II", "rhsusf_Bowman", 25, "hat"],          // Bowman Elite II
+  ["ACVC-H, MK-1697 (Tan/Alt.)", "rhsusf_cvc_alt_helmet", 25, "hat"],  // ACVC-H, MK-1697 (Tan/Alt.)
+  ["ACVC-H, MK-1697 (Tan/ESS)", "rhsusf_cvc_ess", 25, "hat"],         // ACVC-H, MK-1697 (Tan/ESS)
+  ["ACVC-H, MK-1697 (Alt.)", "rhsusf_cvc_green_alt_helmet", 25, "hat"],  // ACVC-H, MK-1697 (Alt.)
+  ["ACVC-H, MK-1697 (ESS)", "rhsusf_cvc_green_ess", 25, "hat"],   // ACVC-H, MK-1697 (ESS)
+  ["ACVC-H, MK-1697", "rhsusf_cvc_green_helmet", 25, "hat"],// ACVC-H, MK-1697
+  ["ACVC-H, MK-1697 (Tan)", "rhsusf_cvc_helmet", 25, "hat"],      // ACVC-H, MK-1697 (Tan)
+  ["HGU-56/P (Black)", "rhsusf_hgu56p_black", 25, "hat"],    // HGU-56/P (Black)
+  ["HGU-56/P (Green)", "rhsusf_hgu56p_green", 25, "hat"],    // HGU-56/P (Green)
+  ["HGU-56/P (Black/Mask/Skull)", "rhsusf_hgu56p_mask_black_skull", 25, "hat"],  // HGU-56/P (Black/Mask/Skull)
+  ["HGU-56/P (Black/Mask)", "rhsusf_hgu56p_mask_black", 25, "hat"],     // HGU-56/P (Black/Mask)
+  ["HGU-56/P (Green/Mask/Mo)", "rhsusf_hgu56p_mask_green_mo", 25, "hat"],  // HGU-56/P (Green/Mask/Mo)
+  ["HGU-56/P (Green/Mask)", "rhsusf_hgu56p_mask_green", 25, "hat"],     // HGU-56/P (Green/Mask)
+  ["HGU-56/P (Olive/Mask/Mo)", "rhsusf_hgu56p_mask_mo", 25, "hat"],  // HGU-56/P (Olive/Mask/Mo)
+  ["HGU-56/P (Pink/Mask)", "rhsusf_hgu56p_mask_pink", 25, "hat"],// HGU-56/P (Pink/Mask)
+  ["HGU-56/P (SAF/Mask)", "rhsusf_hgu56p_mask_saf", 25, "hat"], // HGU-56/P (SAF/Mask)
+  ["HGU-56/P (Olive/Mask/Skull)", "rhsusf_hgu56p_mask_skull", 25, "hat"],     // HGU-56/P (Olive/Mask/Skull)
+  ["HGU-56/P (Smiley/Mask)", "rhsusf_hgu56p_mask_smiley", 25, "hat"],    // HGU-56/P (Smiley/Mask)
+  ["HGU-56/P (Tan/Mask)", "rhsusf_hgu56p_mask_tan", 25, "hat"], // HGU-56/P (Tan/Mask)
+  ["HGU-56/P (Olive/Mask)", "rhsusf_hgu56p_mask", 25, "hat"],     // HGU-56/P (Olive/Mask)
+  ["HGU-56/P (Pink)", "rhsusf_hgu56p_pink", 25, "hat"],     // HGU-56/P (Pink)
+  ["HGU-56/P (SAF)", "rhsusf_hgu56p_saf", 25, "hat"],      // HGU-56/P (SAF)
+  ["HGU-56/P (Tan)", "rhsusf_hgu56p_tan", 25, "hat"],      // HGU-56/P (Tan)
+  ["HGU-56/P (USA)", "rhsusf_hgu56p_usa", 25, "hat"],      // HGU-56/P (USA)
+  ["HGU-56/P (Black/Visor)", "rhsusf_hgu56p_visor_black", 25, "hat"],    // HGU-56/P (Black/Visor)
+  ["HGU-56/P (Green/Visor)", "rhsusf_hgu56p_visor_green", 25, "hat"],    // HGU-56/P (Green/Visor)
+  ["HGU-56/P (Black/Visor/Mask/Skull)", "rhsusf_hgu56p_visor_mask_black_skull", 25, "hat"],// HGU-56/P (Black/Visor/Mask/Skull)
+  ["HGU-56/P (Black/Visor/Mask)", "rhsusf_hgu56p_visor_mask_black", 25, "hat"],  // HGU-56/P (Black/Visor/Mask)
+  ["HGU-56/P (Black/Visor/Mask/Empire)", "rhsusf_hgu56p_visor_mask_Empire_black", 25, "hat"],   // HGU-56/P (Black/Visor/Mask/Empire)
+  ["HGU-56/P (Green/Visor/Mask/Mo)", "rhsusf_hgu56p_visor_mask_green_mo", 25, "hat"], // HGU-56/P (Green/Visor/Mask/Mo)
+  ["HGU-56/P (Green/Visor/Mask)", "rhsusf_hgu56p_visor_mask_green", 25, "hat"],  // HGU-56/P (Green/Visor/Mask)
+  ["HGU-56/P (Olive/Visor/Mask/Mo)", "rhsusf_hgu56p_visor_mask_mo", 25, "hat"],  // HGU-56/P (Olive/Visor/Mask/Mo)
+  ["HGU-56/P (Pink/Visor/Mask)", "rhsusf_hgu56p_visor_mask_pink", 25, "hat"],// HGU-56/P (Pink/Visor/Mask)
+  ["HGU-56/P (SAF/Visor/Mask)", "rhsusf_hgu56p_visor_mask_saf", 25, "hat"], // HGU-56/P (SAF/Visor/Mask)
+  ["HGU-56/P (Olive/Visor/Mask/Skull)", "rhsusf_hgu56p_visor_mask_skull", 25, "hat"],  // HGU-56/P (Olive/Visor/Mask/Skull)
+  ["HGU-56/P (Smiley/Visor/Mask)", "rhsusf_hgu56p_visor_mask_smiley", 25, "hat"], // HGU-56/P (Smiley/Visor/Mask)
+  ["HGU-56/P (Tan/Visor/Mask)", "rhsusf_hgu56p_visor_mask_tan", 25, "hat"], // HGU-56/P (Tan/Visor/Mask)
+  ["HGU-56/P (Olive/Visor/Mask)", "rhsusf_hgu56p_visor_mask", 25, "hat"],     // HGU-56/P (Olive/Visor/Mask)
+  ["HGU-56/P (Pink/Visor)", "rhsusf_hgu56p_visor_pink", 25, "hat"],     // HGU-56/P (Pink/Visor)
+  ["HGU-56/P (SAF/Visor)", "rhsusf_hgu56p_visor_saf", 25, "hat"],// HGU-56/P (SAF/Visor)
+  ["HGU-56/P (Tan/Visor)", "rhsusf_hgu56p_visor_tan", 25, "hat"],// HGU-56/P (Tan/Visor)
+  ["HGU-56/P (USA/Visor)", "rhsusf_hgu56p_visor_usa", 25, "hat"],// HGU-56/P (USA/Visor)
+  ["HGU-56/P (White/Visor)", "rhsusf_hgu56p_visor_white", 25, "hat"],    // HGU-56/P (White/Visor)
+  ["HGU-56/P (Olive/Visor)", "rhsusf_hgu56p_visor", 25, "hat"],    // HGU-56/P (Olive/Visor)
+  ["HGU-56/P (White)", "rhsusf_hgu56p_white", 25, "hat"],    // HGU-56/P (White)
+  ["HGU-56/P (Olive)", "rhsusf_hgu56p", 25, "hat"],          // HGU-56/P (Olive)
+  ["LWH M1942", "rhsusf_lwh_helmet_M1942", 25, "hat"],// LWH M1942
+  ["LWH MARPAT-D (ESS)", "rhsusf_lwh_helmet_marpatd_ess", 25, "hat"],// LWH MARPAT-D (ESS)
+  ["LWH MARPAT-D (Headset/ESS)", "rhsusf_lwh_helmet_marpatd_headset", 25, "hat"], // LWH MARPAT-D (Headset/ESS)
+  ["LWH MARPAT-D", "rhsusf_lwh_helmet_marpatd", 25, "hat"],    // LWH MARPAT-D
+  ["LWH MARPAT-WD (Black ESS)", "rhsusf_lwh_helmet_marpatwd_blk_ess", 25, "hat"],// LWH MARPAT-WD (Black ESS)
+  ["LWH MARPAT-WD (Tan ESS)", "rhsusf_lwh_helmet_marpatwd_ess", 25, "hat"],  // LWH MARPAT-WD (Tan ESS)
+  ["LWH MARPAT-WD (Headset/Black ESS)", "rhsusf_lwh_helmet_marpatwd_headset_blk", 25, "hat"],  // LWH MARPAT-WD (Headset/Black ESS)
+  ["LWH MARPAT-WD (Headset)", "rhsusf_lwh_helmet_marpatwd_headset_blk2", 25, "hat"], // LWH MARPAT-WD (Headset)
+  ["LWH MARPAT-WD (Headset/Tan ESS)", "rhsusf_lwh_helmet_marpatwd_headset", 25, "hat"],// LWH MARPAT-WD (Headset/Tan ESS)
+  ["LWH MARPAT-WD", "rhsusf_lwh_helmet_marpatwd", 25, "hat"],   // LWH MARPAT-WD
+  ["MICH 2000 (Semi-Arid/Alt)", "rhsusf_mich_bare_alt_semi", 25, "hat"],    // MICH 2000 (Semi-Arid/Alt)
+  ["MICH 2000 (Tan/Alt)", "rhsusf_mich_bare_alt_tan", 25, "hat"],     // MICH 2000 (Tan/Alt)
+  ["MICH 2000 (Alt)", "rhsusf_mich_bare_alt", 25, "hat"],   // MICH 2000 (Alt)
+  ["MICH 2000 (Headset)", "rhsusf_mich_bare_headset", 25, "hat"],     // MICH 2000 (Headset)
+  ["MICH 2000 (Norotos/Alt/Headset)", "rhsusf_mich_bare_norotos_alt_headset", 25, "hat"],// MICH 2000 (Norotos/Alt/Headset)
+  ["MICH 2000 (Semi-Arid/Norotos/Alt/Headset)", "rhsusf_mich_bare_norotos_alt_semi_headset", 25, "hat"], // MICH 2000 (Semi-Arid/Norotos/Alt/Headset)
+  ["MICH 2000 (Semi-Arid/Norotos/Alt)", "rhsusf_mich_bare_norotos_alt_semi", 25, "hat"], // MICH 2000 (Semi-Arid/Norotos/Alt)
+  ["MICH 2000 (Tan/Norotos/Alt/Headset)", "rhsusf_mich_bare_norotos_alt_tan_headset", 25, "hat"],// MICH 2000 (Tan/Norotos/Alt/Headset)
+  ["MICH 2000 (Tan/Norotos/Alt)", "rhsusf_mich_bare_norotos_alt_tan", 25, "hat"],// MICH 2000 (Tan/Norotos/Alt)
+  ["MICH 2000 (Norotos/Alt)", "rhsusf_mich_bare_norotos_alt", 25, "hat"], // MICH 2000 (Norotos/Alt)
+  ["MICH 2000 (Norotos/ARC/Alt/Headset)", "rhsusf_mich_bare_norotos_arc_alt_headset", 25, "hat"],// MICH 2000 (Norotos/ARC/Alt/Headset)
+  ["MICH 2000 (Semi-Arid/Norotos/ARC/Alt/Headset)", "rhsusf_mich_bare_norotos_arc_alt_semi_headset", 25, "hat"],                   // MICH 2000 (Semi-Arid/Norotos/ARC/Alt/Headset)
+  ["MICH 2000 (Semi-Arid/Norotos/ARC/Alt)", "rhsusf_mich_bare_norotos_arc_alt_semi", 25, "hat"],   // MICH 2000 (Semi-Arid/Norotos/ARC/Alt)
+  ["MICH 2000 (Tan/Norotos/ARC/Alt/Headset)", "rhsusf_mich_bare_norotos_arc_alt_tan_headset", 25, "hat"],                    // MICH 2000 (Tan/Norotos/ARC/Alt/Headset)
+  ["MICH 2000 (Tan/Norotos/ARC/Alt)", "rhsusf_mich_bare_norotos_arc_alt_tan", 25, "hat"],// MICH 2000 (Tan/Norotos/ARC/Alt)
+  ["MICH 2000 (Norotos/ARC/Alt)", "rhsusf_mich_bare_norotos_arc_alt", 25, "hat"],// MICH 2000 (Norotos/ARC/Alt)
+  ["MICH 2000 (Norotos/ARC/Headset)", "rhsusf_mich_bare_norotos_arc_headset", 25, "hat"],// MICH 2000 (Norotos/ARC/Headset)
+  ["MICH 2000 (Semi-Arid/Norotos/ARC/Headset)", "rhsusf_mich_bare_norotos_arc_semi_headset", 25, "hat"], // MICH 2000 (Semi-Arid/Norotos/ARC/Headset)
+  ["MICH 2000 (Semi-Arid/Norotos/ARC)", "rhsusf_mich_bare_norotos_arc_semi", 25, "hat"], // MICH 2000 (Semi-Arid/Norotos/ARC)
+  ["MICH 2000 (Tan/Norotos/ARC)", "rhsusf_mich_bare_norotos_arc_tan", 25, "hat"],// MICH 2000 (Tan/Norotos/ARC)
+  ["MICH 2000 (Norotos/ARC)", "rhsusf_mich_bare_norotos_arc", 25, "hat"], // MICH 2000 (Norotos/ARC)
+  ["MICH 2000 (Norotos/Headset)", "rhsusf_mich_bare_norotos_headset", 25, "hat"],// MICH 2000 (Norotos/Headset)
+  ["MICH 2000 (Semi-Arid/Norotos/Headset)", "rhsusf_mich_bare_norotos_semi_headset", 25, "hat"],   // MICH 2000 (Semi-Arid/Norotos/Headset)
+  ["MICH 2000 (Semi-Arid/Norotos)", "rhsusf_mich_bare_norotos_semi", 25, "hat"],// MICH 2000 (Semi-Arid/Norotos)
+  ["MICH 2000 (Tan/Norotos/Headset)", "rhsusf_mich_bare_norotos_tan_headset", 25, "hat"],// MICH 2000 (Tan/Norotos/Headset)
+  ["MICH 2000 (Tan/Norotos)", "rhsusf_mich_bare_norotos_tan", 25, "hat"], // MICH 2000 (Tan/Norotos)
+  ["MICH 2000 (Norotos)", "rhsusf_mich_bare_norotos", 25, "hat"],     // MICH 2000 (Norotos)
+  ["MICH 2000 (Semi-Arid/Headset)", "rhsusf_mich_bare_semi_headset", 25, "hat"],// MICH 2000 (Semi-Arid/Headset)
+  ["MICH 2000 (Semi-Arid)", "rhsusf_mich_bare_semi", 25, "hat"],  // MICH 2000 (Semi-Arid)
+  ["MICH 2000 (Tan/Headset)", "rhsusf_mich_bare_tan_headset", 25, "hat"], // MICH 2000 (Tan/Headset)
+  ["MICH 2000 (Tan)", "rhsusf_mich_bare_tan", 25, "hat"],   // MICH 2000 (Tan)
+  ["MICH 2000", "rhsusf_mich_bare", 25, "hat"],       // MICH 2000
+  ["MICH 2000 MARPAD-D (Alt/Headset)", "rhsusf_mich_helmet_marpatd_alt_headset", 25, "hat"],  // MICH 2000 MARPAD-D (Alt/Headset)
+  ["MICH 2000 MARPAD-D (Alt)", "rhsusf_mich_helmet_marpatd_alt", 25, "hat"],  // MICH 2000 MARPAD-D (Alt)
+  ["MICH 2000 MARPAD-D (Headset)", "rhsusf_mich_helmet_marpatd_headset", 25, "hat"],// MICH 2000 MARPAD-D (Headset)
+  ["MICH 2000 MARPAD-D (Norotos/ARC/Headset)", "rhsusf_mich_helmet_marpatd_norotos_arc_headset", 25, "hat"],                  // MICH 2000 MARPAD-D (Norotos/ARC/Headset)
+  ["MICH 2000 MARPAD-D (Norotos/ARC)", "rhsusf_mich_helmet_marpatd_norotos_arc", 25, "hat"],  // MICH 2000 MARPAD-D (Norotos/ARC)
+  ["MICH 2000 MARPAD-D (Norotos/Headset)", "rhsusf_mich_helmet_marpatd_norotos_headset", 25, "hat"],// MICH 2000 MARPAD-D (Norotos/Headset)
+  ["MICH 2000 MARPAD-D (Norotos)", "rhsusf_mich_helmet_marpatd_norotos", 25, "hat"],// MICH 2000 MARPAD-D (Norotos)
+  ["MICH 2000 MARPAD-D", "rhsusf_mich_helmet_marpatd", 25, "hat"],   // MICH 2000 MARPAD-D
+  ["MICH 2000 MARPAD-WD (Alt/Headset)", "rhsusf_mich_helmet_marpatwd_alt_headset", 25, "hat"],// MICH 2000 MARPAD-WD (Alt/Headset)
+  ["MICH 2000 MARPAD-WD (Alt)", "rhsusf_mich_helmet_marpatwd_alt", 25, "hat"], // MICH 2000 MARPAD-WD (Alt)
+  ["MICH 2000 MARPAD-WD (Headset)", "rhsusf_mich_helmet_marpatwd_headset", 25, "hat"], // MICH 2000 MARPAD-WD (Headset)
+  ["MICH 2000 MARPAD-WD (Norotos/ARC/Headset)", "rhsusf_mich_helmet_marpatwd_norotos_arc_headset", 25, "hat"],                 // MICH 2000 MARPAD-WD (Norotos/ARC/Headset)
+  ["MICH 2000 MARPAD-WD (Norotos/ARC)", "rhsusf_mich_helmet_marpatwd_norotos_arc", 25, "hat"], // MICH 2000 MARPAD-WD (Norotos/ARC)
+  ["MICH 2000 MARPAD-WD (Norotos/Headset)", "rhsusf_mich_helmet_marpatwd_norotos_headset", 25, "hat"],                     // MICH 2000 MARPAD-WD (Norotos/Headset)
+  ["MICH 2000 MARPAD-WD (Norotos)", "rhsusf_mich_helmet_marpatwd_norotos", 25, "hat"], // MICH 2000 MARPAD-WD (Norotos)
+  ["MICH 2000 MARPAD-WD", "rhsusf_mich_helmet_marpatwd", 25, "hat"],  // MICH 2000 MARPAD-WD
+  ["FAST Ballistic (AOR1/Headset/NSW)", "rhsusf_opscore_aor1_pelt_nsw", 25, "hat"], // FAST Ballistic (AOR1/Headset/NSW)
+  ["FAST Ballistic (AOR1/Headset)", "rhsusf_opscore_aor1_pelt", 25, "hat"],     // FAST Ballistic (AOR1/Headset)
+  ["FAST Ballistic (AOR1)", "rhsusf_opscore_aor1", 25, "hat"],    // FAST Ballistic (AOR1)
+  ["FAST Ballistic (AOR2/Headset/NSW)", "rhsusf_opscore_aor2_pelt_nsw", 25, "hat"], // FAST Ballistic (AOR2/Headset/NSW)
+  ["FAST Ballistic (AOR2/Headset)", "rhsusf_opscore_aor2_pelt", 25, "hat"],     // FAST Ballistic (AOR2/Headset)
+  ["FAST Ballistic (AOR2)", "rhsusf_opscore_aor2", 25, "hat"],    // FAST Ballistic (AOR2)
+  ["FAST Ballistic (Black/Headset)", "rhsusf_opscore_bk_pelt", 25, "hat"], // FAST Ballistic (Black/Headset)
+  ["FAST Ballistic (Black)", "rhsusf_opscore_bk", 25, "hat"],      // FAST Ballistic (Black)
+  ["FAST Ballistic (Coyote Cover/Headset/NSW)", "rhsusf_opscore_coy_cover_pelt", 25, "hat"],// FAST Ballistic (Coyote Cover/Headset/NSW)
+  ["FAST Ballistic (Coyote Cover)", "rhsusf_opscore_coy_cover", 25, "hat"],     // FAST Ballistic (Coyote Cover)
+  ["FAST Ballistic (Foliage Green/Headset/Cam)", "rhsusf_opscore_fg_pelt_cam", 25, "hat"],   // FAST Ballistic (Foliage Green/Headset/Cam)
+  ["FAST Ballistic (Foliage Green/Headset/NSW)", "rhsusf_opscore_fg_pelt_nsw", 25, "hat"],   // FAST Ballistic (Foliage Green/Headset/NSW)
+  ["FAST Ballistic (Foliage Green/Headset)", "rhsusf_opscore_fg_pelt", 25, "hat"], // FAST Ballistic (Foliage Green/Headset)
+  ["FAST Ballistic (Foliage Green)", "rhsusf_opscore_fg", 25, "hat"],      // FAST Ballistic (Foliage Green)
+  ["FAST Maritime (Foliage Green/Headset)", "rhsusf_opscore_mar_fg_pelt", 25, "hat"],   // FAST Maritime (Foliage Green/Headset)
+  ["FAST Maritime (Foliage Green)", "rhsusf_opscore_mar_fg", 25, "hat"],  // FAST Maritime (Foliage Green)
+  ["FAST Maritime (Urban Tan/Headset)", "rhsusf_opscore_mar_ut_pelt", 25, "hat"],   // FAST Maritime (Urban Tan/Headset)
+  ["FAST Maritime (Urban Tan)", "rhsusf_opscore_mar_ut", 25, "hat"],  // FAST Maritime (Urban Tan)
+  ["FAST Ballistic (Multicam Cover/Headset/NSW/Cam)", "rhsusf_opscore_mc_cover_pelt_cam", 25, "hat"],// FAST Ballistic (Multicam Cover/Headset/NSW/Cam)
+  ["FAST Ballistic (Multicam Cover/Headset/NSW)", "rhsusf_opscore_mc_cover_pelt_nsw", 25, "hat"],// FAST Ballistic (Multicam Cover/Headset/NSW)
+  ["FAST Ballistic (Multicam Cover/Headset)", "rhsusf_opscore_mc_cover_pelt", 25, "hat"], // FAST Ballistic (Multicam Cover/Headset)
+  ["FAST Ballistic (Multicam Cover)", "rhsusf_opscore_mc_cover", 25, "hat"],// FAST Ballistic (Multicam Cover)
+  ["FAST Ballistic (Multicam Paint/Headset/NSW)", "rhsusf_opscore_mc_pelt_nsw", 25, "hat"],   // FAST Ballistic (Multicam Paint/Headset/NSW)
+  ["FAST Ballistic (Multicam Paint/Headset)", "rhsusf_opscore_mc_pelt", 25, "hat"], // FAST Ballistic (Multicam Paint/Headset)
+  ["FAST Ballistic (Multicam Paint)", "rhsusf_opscore_mc", 25, "hat"],      // FAST Ballistic (Multicam Paint)
+  ["FAST Ballistic (Paint/Headset/NSW/Cam)", "rhsusf_opscore_paint_pelt_nsw_cam", 25, "hat"], // FAST Ballistic (Paint/Headset/NSW/Cam)
+  ["FAST Ballistic (Paint/Headset/NSW)", "rhsusf_opscore_paint_pelt_nsw", 25, "hat"],// FAST Ballistic (Paint/Headset/NSW)
+  ["FAST Ballistic (Paint/Headset)", "rhsusf_opscore_paint_pelt", 25, "hat"],    // FAST Ballistic (Paint/Headset)
+  ["FAST Ballistic (Paint)", "rhsusf_opscore_paint", 25, "hat"],   // FAST Ballistic (Paint)
+  ["FAST Ballistic (Ranger Green Cover/Headset/NSW)", "rhsusf_opscore_rg_cover_pelt", 25, "hat"], // FAST Ballistic (Ranger Green Cover/Headset/NSW)
+  ["FAST Ballistic (Ranger Green Cover)", "rhsusf_opscore_rg_cover", 25, "hat"],// FAST Ballistic (Ranger Green Cover)
+  ["FAST Ballistic (Urban Tan/Headset/Cam)", "rhsusf_opscore_ut_pelt_cam", 25, "hat"],   // FAST Ballistic (Urban Tan/Headset/Cam)
+  ["FAST Ballistic (Urban Tan/Headset/NSW/Cam)", "rhsusf_opscore_ut_pelt_nsw_cam", 25, "hat"],  // FAST Ballistic (Urban Tan/Headset/NSW/Cam)
+  ["FAST Ballistic (Urban Tan/Headset/NSW)", "rhsusf_opscore_ut_pelt_nsw", 25, "hat"],   // FAST Ballistic (Urban Tan/Headset/NSW)
+  ["FAST Ballistic (Urban Tan/Headset)", "rhsusf_opscore_ut_pelt", 25, "hat"], // FAST Ballistic (Urban Tan/Headset)
+  ["FAST Ballistic (Urban Tan)", "rhsusf_opscore_ut", 25, "hat"],      // FAST Ballistic (Urban Tan)
+  ["Patrol Cap OEF-CP", "rhsusf_patrolcap_ocp", 25, "hat"],   // Patrol Cap OEF-CP
+  ["Patrol Cap UCP", "rhsusf_patrolcap_ucp", 25, "hat"],   // Patrol Cap UCP
+  ["Pro-Tech SF (ESS)", "rhsusf_protech_helmet_ess", 25, "hat"],    // Pro-Tech SF (ESS)
+  ["Pro-Tech SF (Rhino/ESS)", "rhsusf_protech_helmet_rhino_ess", 25, "hat"], // Pro-Tech SF (Rhino/ESS)
+  ["Pro-Tech SF (Rhino)", "rhsusf_protech_helmet_rhino", 25, "hat"],  // Pro-Tech SF (Rhino)
+  ["Pro-Tech S", "rhsusf_protech_helmet", 25, "hat"]  // Pro-Tech S
 ];
 
 uniformArray = compileFinal str
@@ -1042,22 +1670,22 @@ genItemArray = compileFinal str
 	["UAV Terminal", "B_UavTerminal", 150, "gps"],
 	["UAV Terminal", "O_UavTerminal", 150, "gps"],
 	["UAV Terminal", "I_UavTerminal", 150, "gps"],
-	["AR-2 Darter UAV", "B_UAV_01_backpack_F", 2500, "backpack"],
-	["AR-2 Darter UAV", "O_UAV_01_backpack_F", 2500, "backpack"],
-	["AR-2 Darter UAV", "I_UAV_01_backpack_F", 2500, "backpack"],
-	["AL-6 Pelican UAV", "B_UAV_06_backpack_F", 250, "backpack"],
-	["AL-6 Pelican UAV", "O_UAV_06_backpack_F", 250, "backpack"],
-	["AL-6 Pelican UAV", "I_UAV_06_backpack_F", 250, "backpack"],
-	["AL-6 Pelican Medical UAV", "B_UAV_06_medical_backpack_F", 1000, "backpack"],
-	["AL-6 Pelican Medical UAV", "O_UAV_06_medical_backpack_F", 1000, "backpack"],
-	["AL-6 Pelican Medical UAV", "I_UAV_06_medical_backpack_F", 1000, "backpack"],
-	["AL-6 Pelican Demining UAV", "C_IDAP_UAV_06_antimine_backpack_F", 10000, "backpack"],
-	["ED-1E Camera UGV", "B_UGV_02_Science_backpack_F", 1000, "backpack"],
-	["ED-1E Camera UGV", "O_UGV_02_Science_backpack_F", 1000, "backpack"],
-	["ED-1E Camera UGV", "I_UGV_02_Science_backpack_F", 1000, "backpack"],
-	["ED-1D Demining UGV", "B_UGV_02_Demining_backpack_F", 5000, "backpack"],
-	["ED-1D Demining UGV", "O_UGV_02_Demining_backpack_F", 5000, "backpack"],
-	["ED-1D Demining UGV", "I_UGV_02_Demining_backpack_F", 5000, "backpack"],
+	//["AR-2 Darter UAV", "B_UAV_01_backpack_F", 2500, "backpack"],
+	//["AR-2 Darter UAV", "O_UAV_01_backpack_F", 2500, "backpack"],
+	//["AR-2 Darter UAV", "I_UAV_01_backpack_F", 2500, "backpack"],
+	//["AL-6 Pelican UAV", "B_UAV_06_backpack_F", 250, "backpack"],
+	//["AL-6 Pelican UAV", "O_UAV_06_backpack_F", 250, "backpack"],
+	//["AL-6 Pelican UAV", "I_UAV_06_backpack_F", 250, "backpack"],
+	//["AL-6 Pelican Medical UAV", "B_UAV_06_medical_backpack_F", 1000, "backpack"],
+	//["AL-6 Pelican Medical UAV", "O_UAV_06_medical_backpack_F", 1000, "backpack"],
+	//["AL-6 Pelican Medical UAV", "I_UAV_06_medical_backpack_F", 1000, "backpack"],
+//	["AL-6 Pelican Demining UAV", "C_IDAP_UAV_06_antimine_backpack_F", 10000, "backpack"],
+	//["ED-1E Camera UGV", "B_UGV_02_Science_backpack_F", 1000, "backpack"],
+	//["ED-1E Camera UGV", "O_UGV_02_Science_backpack_F", 1000, "backpack"],
+	//["ED-1E Camera UGV", "I_UGV_02_Science_backpack_F", 1000, "backpack"],
+	//["ED-1D Demining UGV", "B_UGV_02_Demining_backpack_F", 5000, "backpack"],
+	//["ED-1D Demining UGV", "O_UGV_02_Demining_backpack_F", 5000, "backpack"],
+//	["ED-1D Demining UGV", "I_UGV_02_Demining_backpack_F", 5000, "backpack"],
 	["Remote Designator (Khaki)", "B_W_Static_Designator_01_weapon_F", 750, "backpack"],
 	["Remote Designator (Sand)", "B_Static_Designator_01_weapon_F", 750, "backpack"],
 	["Remote Designator (Hex)", "O_Static_Designator_02_weapon_F", 750, "backpack"],
@@ -1065,6 +1693,11 @@ genItemArray = compileFinal str
 	["First Aid Kit", "FirstAidKit", 25, "item"],
 	["Medikit", "Medikit", 150, "item"],
 	["Toolkit", "ToolKit", 150, "item"],
+
+	["Designator Batteries", "rhs_LaserFCSMag", 20, "item"], // Designator Batteries
+  ["Designator Batteries", "rhs_LaserMag_ai", 20, "item"], // Designator Batteries
+  ["Designator Batteries", "rhs_LaserMag", 20, "item"], // Designator Batteries
+
 	["Mine Detector", "MineDetector", 100, "item"],
 	["Diving Goggles", "G_Diving", 100, "gogg"],
 	["NV Goggles (Brown)", "NVGoggles", 100, "nvg"],
@@ -1097,9 +1730,30 @@ genItemArray = compileFinal str
 	["Chemlight (Red)", "Chemlight_red", 25, "mag"],
 
 	//RHS
-	["Shemagh (OD)", "rhsusf_shemagh2_gogg_grn", 10, "gogg"],
-	["Shemagh (TAN)", "rhsusf_shemagh2_gogg_tan", 10, "gogg"],
-	["Shemagh (TAN)", "rhsusf_shemagh2_gogg_tan", 10, "gogg"],
+	["Ballistic Goggles (Black)", "rhs_ess_black", 10, "gogg"], // Ballistic Goggles (Black)
+  ["Ballistic Glasses (Black)", "rhs_googles_black", 10, "gogg"], // Ballistic Glasses (Black)
+  ["Ballistic Glasses (Clear)", "rhs_googles_clear", 10, "gogg"], // Ballistic Glasses (Clear)
+  ["Ballistic Glasses (Orange)", "rhs_googles_orange", 10, "gogg"], // Ballistic Glasses (Clear)
+  ["Ballistic Glasses (Yellow)", "rhs_googles_yellow", 10, "gogg"], // Ballistic Glasses (Clear)
+  ["SI Ballistic 2.0 (Black)", "rhsusf_oakley_goggles_blk", 10, "gogg"], // SI Ballistic 2.0 (Black)
+  ["SI Ballistic 2.0 (Clear)", "rhsusf_oakley_goggles_clr", 10, "gogg"], // SI Ballistic 2.0 (Clear)
+  ["SI Ballistic 2.0 (Yellow)", "rhsusf_oakley_goggles_ylw", 10, "gogg"], // SI Ballistic 2.0 (Yellow)
+  ["Shemagh w/ Goggles (Green)", "rhsusf_shemagh_gogg_grn", 10, "gogg"],  // Shemagh w/ Goggles (Green)
+  ["Shemagh w/ Goggles (OD)", "rhsusf_shemagh_gogg_od", 10, "gogg"], // Shemagh w/ Goggles (OD)
+  ["Shemagh w/ Goggles (Tan)", "rhsusf_shemagh_gogg_tan", 10, "gogg"], // Shemagh w/ Goggles (Tan)
+  ["Shemagh w/ Goggles (White)", "rhsusf_shemagh_gogg_white", 10, "gogg"], // Shemagh w/ Goggles (White)
+  ["Shemagh (Green)", "rhsusf_shemagh_grn", 10, "gogg"], // Shemagh (Green)
+  ["Shemagh (OD)", "rhsusf_shemagh_od", 10, "gogg"], // Shemagh (OD)
+  ["Shemagh (Tan)", "rhsusf_shemagh_tan", 10, "gogg"],  // Shemagh (Tan)
+  ["Shemagh (White)", "rhsusf_shemagh_white", 10, "gogg"],// Shemagh (White)
+  ["Shemagh w/ Goggles (Green/alt)", "rhsusf_shemagh2_gogg_grn", 10, "gogg"], // Shemagh w/ Goggles (Green/alt)
+  ["Shemagh w/ Goggles (OD/alt)", "rhsusf_shemagh2_gogg_od", 10, "gogg"], // Shemagh w/ Goggles (OD/alt)
+  ["Shemagh w/ Goggles (Tan/alt)", "rhsusf_shemagh2_gogg_tan", 10, "gogg"], // Shemagh w/ Goggles (Tan/alt)
+  ["Shemagh w/ Goggles (White/alt)", "rhsusf_shemagh2_gogg_white", 10, "gogg"], // Shemagh w/ Goggles (White/alt)
+  ["Shemagh (Green/alt)", "rhsusf_shemagh2_grn", 10, "gogg"], // Shemagh (Green/alt)
+  ["Shemagh (OD/alt)", "rhsusf_shemagh2_od", 10, "gogg"], // Shemagh (OD/alt)
+	["Shemagh (Tan/alt)", "rhsusf_shemagh2_tan", 10, "gogg"],  // Shemagh (Tan/alt)
+  ["Shemagh (White/alt)", "rhsusf_shemagh2_white", 10, "gogg"], // Shemagh (White/alt)
 
 	["Stealth Balaclava (Black)", "G_Balaclava_TI_blk_F", 200, "gogg"],
 	["Stealth Balaclava (Black, Goggles)", "G_Balaclava_TI_G_blk_F", 250, "gogg"],
