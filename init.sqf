@@ -120,6 +120,3 @@ if (hasInterface || isServer) then
 ];
 
 "RM_DISPLAYTEXT_PUBVAR" addPublicVariableEventHandler {(_this select 1) spawn BIS_fnc_dynamicText;};
-
-
-//[] execVM "r0ed_SurvivableCrashes\init.sqf"

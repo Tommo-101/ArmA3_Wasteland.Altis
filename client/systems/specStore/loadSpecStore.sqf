@@ -12,7 +12,7 @@ disableSerialization;
 
 specStore_noBuzzard = false;
 
-private ["_specshopDialog", "_Dialog", "_playerMoney", "_owner", "_droneButton", "_antiAirButton", "_jetButton", "_utilityButton"];
+private ["_specshopDialog", "_Dialog", "_playerMoney", "_owner", "_droneButton", "_antiAirButton", "_jetButton", "_utilityButton","_heliButton","_armorButton"];
 _specshopDialog = createDialog "specshopd";
 
 _Dialog = findDisplay specshop_DIALOG;
@@ -21,8 +21,8 @@ _droneButton = _Dialog displayCtrl specshop_button0;
 _antiAirButton = _Dialog displayCtrl specshop_button1;
 _jetButton = _Dialog displayCtrl specshop_button2;
 _utilityButton = _Dialog displayCtrl specshop_button3;
-//_planeButton = _Dialog displayCtrl specshop_button4;
-//_antiAirButton = _Dialog displayCtrl specshop_button5;
+_heliButton = _Dialog displayCtrl specshop_button4;
+_armorButton = _Dialog displayCtrl specshop_button5;
 //_boatButton = _Dialog displayCtrl specshop_button6;
 
 _playerMoney ctrlSetText format["Cash: $%1", [player getVariable ["cmoney", 0]] call fn_numbersText];
@@ -60,15 +60,15 @@ if (!isNil "_owner") then
 				{
 					_utilityButton ctrlEnable false;
 				};
-				/*case "planes":
+				case "heli":
 				{
-					_planeButton ctrlEnable false;
+					_heliButton ctrlEnable false;
 				};
-				case "antiair":
+				case "armor":
 				{
-					_antiAirButton ctrlEnable false;
+					_armorButton ctrlEnable false;
 				};
-				case "boats":
+				/*case "boats":
 				{
 					_boatButton ctrlEnable false;
 				};*/

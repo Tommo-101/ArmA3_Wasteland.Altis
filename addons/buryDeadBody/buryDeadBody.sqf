@@ -62,7 +62,7 @@
 	----------------------------------------------------------------------------------------------
 */
 
-_price = 5000;
+_price = 20;
 _duration = (round (random 30)) + 30;
 _animation = "AinvPknlMstpSlayWrflDnon_medic";
 

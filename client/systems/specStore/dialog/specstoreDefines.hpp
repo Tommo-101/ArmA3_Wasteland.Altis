@@ -12,8 +12,8 @@
 #define specshop_button1 9291 // Anti-Air
 #define specshop_button2 9292 // Jets
 #define specshop_button3 9293 // Utility
-#define specshop_button4 9294 // Not Used
-#define specshop_button5 9295 // Not Used
+#define specshop_button4 9294 // Helicopters
+#define specshop_button5 9295 // Land Vehicles
 #define specshop_button6 9296 // Not Used
 #define specshop_BuyButton_IDC 9000
 

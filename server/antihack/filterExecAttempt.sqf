@@ -48,6 +48,9 @@ if (_packetName == "BIS_fnc_MP_packet") then
 		}
 		forEach
 		[
+			"rhs_fnc_menuOptions",
+			"RHS_Options_Menu",
+			"rhs_menuOptions",
 			"BIS_fnc_effectKilledAirDestruction",
 			"BIS_fnc_effectKilledAirDestructionStage2",
 			"BIS_fnc_effectKilledSecondaries",
@@ -67,6 +70,7 @@ if (_packetName == "BIS_fnc_MP_packet") then
 			}
 			forEach
 			[
+				"rhs_",
 				"A3W_fnc_",
 				"mf_remote_",
 				"APOC_srv_"

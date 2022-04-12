@@ -23,6 +23,7 @@ if (_uid call isAdmin) then
 					"Access General Store",
 					"Access Vehicle Store",
 					"Access SpecOps Store",
+					"Access Air Store",
 					"Access ATM Dialog",
 					"Access Respawn Dialog",
 					"Access Proving Grounds",

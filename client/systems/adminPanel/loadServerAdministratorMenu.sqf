@@ -27,10 +27,10 @@ if ([_uid, 3] call isAdmin) then {
 							"Teleport player to me",
 							"Unit Markers",
 							"Teleport",
-											"Money",
-											"Debug Menu",
+							"Money",
+							"Debug Menu",
 							"Object Search",
-											"Toggle God-mode",
+							"Toggle God-mode",
 							"Vehicle Invincible",
 							"Infinity Ammo"
 	];

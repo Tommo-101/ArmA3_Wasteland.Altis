@@ -12,6 +12,7 @@ AirMissions =
   ["mission_HostileHelicopter", 0.5],
 	["mission_HostileHeliformation", 1],
 	["mission_HostileJet", 1],
+	["mission_AggressiveJet", 1],
   ["mission_HostileJetFormation", 1],
   ["mission_SkySmuggler", 1]
 ];
@@ -48,7 +49,9 @@ SideMissions =
 
 MoneyMissions =
 [
-	["mission_MoneyShipment", 1]
+	["mission_MoneyShipment", 1],
+  ["mission_BountyHunt", 0.5],
+  ["mission_ATMTransport", 1]
 ];
 
 PriorityMissions = //using afgm OR 509 where not exists BUDDSKI7

@@ -30,6 +30,19 @@ switch (true) do
 		];
 		switch (_variant) do
 		{
+			case "a10heavy":	{ _pylons = [
+				"USAF_PylonRack_2Rnd_AIM9X_LAU105",
+				"USAF_PylonRack_1Rnd_ANAAQ28",
+				"USAF_PylonRack_3Rnd_AGM65D",
+				"USAF_PylonRack_3Rnd_GBU12",
+				"USAF_PylonRack_4Rnd_GBU53",
+				"",
+				"USAF_PylonRack_1Rnd_GBU31",
+				"USAF_PylonRack_3Rnd_GBU38",
+				"USAF_PylonRack_2Rnd_AGM65E",
+				"USAF_PylonRack_7Rnd_APKWS",
+				"USAF_PylonRack_1Rnd_ANALQ131"
+			]  };
 			default { _pylons = [
 				"USAF_PylonRack_2Rnd_AIM9X_LAU105",
 				"USAF_PylonRack_1Rnd_ANAAQ28",
@@ -119,6 +132,7 @@ switch (true) do
 		};
 	};
 
+	/// F35A
 	case (_class isKindOf "USAF_F35A"):
 	{
 		_mags =
@@ -132,16 +146,16 @@ switch (true) do
 		switch (_variant) do
 		{
 			default { _pylons = [
-				"USAF_PylonRack_2Rnd_AIM9X",
-				"USAF_PylonRack_2Rnd_AGM154C",
-				"USAF_PylonRack_1Rnd_GBU32",
+				"USAF_MISSILE_1Rnd_AIM9X",
+				"USAF_PylonRack_1Rnd_GBU12",
+				"USAF_PylonRack_1Rnd_AGM158",
 				"USAF_Missile_1Rnd_AIM120C",
-				"USAF_PylonRack_4Rnd_GBU53",
-				"USAF_PylonRack_4Rnd_GBU53",
+				"USAF_PylonRack_4Rnd_GBU39",
+				"USAF_PylonRack_4Rnd_GBU39",
 				"USAF_Missile_1Rnd_AIM120C",
-				"USAF_PylonRack_1Rnd_GBU32",
-				"USAF_PylonRack_2Rnd_AGM154C",
-				"USAF_PylonRack_2Rnd_AIM9X"
+				"USAF_PylonRack_1Rnd_AGM158",
+				"USAF_PylonRack_1Rnd_GBU12",
+				"USAF_MISSILE_1Rnd_AIM9X"
 			] };
 		};
 	};
@@ -158,14 +172,26 @@ switch (true) do
 		];
 		switch (_variant) do
 		{
+			case "f35asantiradar":	{ _pylons = [
+				"",
+				"",
+				"",
+				"USAF_Missile_1Rnd_AIM120C",
+				"USAF_MISSILE_1Rnd_AARGMER",
+				"USAF_MISSILE_1Rnd_AARGMER",
+				"USAF_Missile_1Rnd_AIM120C",
+				"",
+				"",
+				""
+			]  };
 			default { _pylons = [
 				"",
 				"",
 				"",
-				"USAF_Missile_1Rnd_AIM120",
-				"USAF_PylonRack_4Rnd_GBU53",
-				"USAF_PylonRack_4Rnd_GBU53",
-				"USAF_Missile_1Rnd_AIM120",
+				"USAF_Missile_1Rnd_AIM120C",
+				"USAF_Missile_1Rnd_AIM120C",
+				"USAF_Missile_1Rnd_AIM120C",
+				"USAF_Missile_1Rnd_AIM120C",
 				"",
 				"",
 				""
@@ -173,6 +199,7 @@ switch (true) do
 		};
 	};
 
+	/// MQ9 Drone
 	case (_class isKindOf "USAF_MQ9"):
 	{
 		_mags =
@@ -182,11 +209,235 @@ switch (true) do
 		];
 		switch (_variant) do
 		{
-			case "mq9Bomber":	{ _pylons = ["USAF_PylonRack_4Rnd_GBU53","USAF_PylonRack_4Rnd_GBU39","USAF_PylonRack_4Rnd_GBU39","USAF_PylonRack_4Rnd_GBU53"]  };
-			case "mq9missle":	{ _pylons = ["USAF_PylonRack_2Rnd_AGM114P","USAF_PylonRack_2Rnd_AGM114P","USAF_PylonRack_2Rnd_AGM114P","USAF_PylonRack_2Rnd_AGM114P"] };
-			default { _pylons = ["USAF_PylonRack_2Rnd_AGM114P","USAF_PylonRack_1Rnd_GBU12","USAF_PylonRack_1Rnd_GBU12","USAF_PylonRack_2Rnd_AGM114P"] };
+			case "mq9Bomber":	{ _pylons = [
+				"USAF_PylonRack_4Rnd_GBU53",
+				"USAF_PylonRack_4Rnd_GBU39",
+				"USAF_PylonRack_4Rnd_GBU39",
+				"USAF_PylonRack_4Rnd_GBU53"
+			]  };
+			case "mq9missle":	{ _pylons = [
+				"USAF_PylonRack_2Rnd_AGM114P",
+				"USAF_PylonRack_2Rnd_AGM114P",
+				"USAF_PylonRack_2Rnd_AGM114P",
+				"USAF_PylonRack_2Rnd_AGM114P"
+			] };
+			default { _pylons = [
+				"USAF_PylonRack_2Rnd_AGM114P",
+				"USAF_PylonRack_1Rnd_GBU12",
+				"USAF_PylonRack_1Rnd_GBU12",
+				"USAF_PylonRack_2Rnd_AGM114P"
+			] };
 		};
 	};
+
+	/// Apache Helicopter
+	case (_class isKindOf "RHS_AH64D_wd"):
+	{
+		_mags =
+		[
+			["rhsusf_mag_DIRCM", [-1]],
+			["rhsusf_mag_DIRCM", [-1]],
+			["rhsusf_mag_DIRCM", [-1]],
+			["rhsusf_mag_DIRCM", [-1]],
+			["Laserbatteries", [-1]],
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]],
+			["rhs_mag_FFAR_38", [-1]]
+		];
+		switch (_variant) do
+		{
+			case "ah64ground":	{ _pylons = [
+				"USAF_PylonRack_2Rnd_AGM114P",
+				"USAF_PylonRack_2Rnd_AGM114P",
+				"USAF_PylonRack_2Rnd_AGM114P",
+				"USAF_PylonRack_2Rnd_AGM114P"
+			] };
+			default { _pylons = [
+				"rhs_mag_Sidewinder_heli",
+				"rhs_mag_M151_19",
+				"rhs_mag_AGM114L_4",
+				"rhs_mag_AGM114K_4",
+				"rhs_mag_M151_19",
+				"rhs_mag_Sidewinder_heli",
+				"rhsusf_M130_CMFlare_Chaff_Magazine_x2"
+			] };
+		};
+	};
+
+	/// Littlebird
+	case (_class isKindOf "RHS_MELB_AH6M"):
+	{
+		_mags =
+		[
+			["Laserbatteries", [-1]],
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+		];
+		switch (_variant) do
+		{
+			case "ah6mheavy":	{ _pylons = [
+				"rhsusf_mag_gau19_melb_left",
+				"rhs_mag_m134_pylon_3000",
+				"rhs_mag_m134_pylon_3000",
+				"rhs_mag_AGM114N_2"
+			] };
+			default { _pylons = [
+				"rhs_mag_M151_7",
+				"rhs_mag_m134_pylon_3000",
+				"rhs_mag_m134_pylon_3000",
+				"rhs_mag_M151_7"
+			] };
+		};
+	};
+	/// Blackhawk
+	case (_class isKindOf "RHS_UH60M_ESSS"):
+	{
+		_mags =
+		[
+			["Laserbatteries", [-1]],
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+		];
+		switch (_variant) do
+		{
+			default { _pylons = [
+				"rhs_mag_AGM114N_4",
+				"rhs_mag_DAGR_16",
+				"rhs_mag_DAGR_16",
+				"rhs_mag_AGM114N_4",
+				"rhsusf_M130_CMFlare_Chaff_Magazine_x2"
+			] };
+		};
+	};
+	/// FA-18F
+	case (_class isKindOf "JS_JC_FA18F"):
+	{
+		_mags =
+		[
+			["js_m_fa18_empty", [-1]],
+			["js_m_fa18_m61", [-1]],
+			["js_m_fa18_m61", [-1]],
+			["Laserbatteries", [-1]],
+			["js_m_fa18_buddypod_x1", [-1]],
+			["js_m_fa18_altflir_pod_x1", [-1]],
+			["js_w_master_arms_safe", [-1]],
+			["js_jc_120Rnd_CMFlare_Magazine", [-1]],
+			["js_jc_120Rnd_CMFlare_Magazine", [-1]],
+			["js_jc_120Rnd_CMChaff_Magazine", [-1]],
+			["js_jc_120Rnd_CMChaff_Magazine", [-1]]
+		];
+		switch (_variant) do
+		{
+			default { _pylons = [
+				"PylonRack_Missile_BIM9X_x1",
+				"PylonRack_Missile_BIM9X_x1",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonRack_Missile_AGM_02_x1",
+				"PylonRack_Missile_AGM_02_x1",
+				"PylonRack_Bomb_GBU12_x2",
+				"PylonRack_Bomb_GBU12_x2",
+				"PylonMissile_1Rnd_GAA_missiles",
+				"PylonMissile_1Rnd_GAA_missiles",
+				"js_m_fa18_wing_tank_x1"
+			] };
+		};
+	};
+	/// FA-18E
+	case (_class isKindOf "JS_JC_FA18E"):
+	{
+		_mags =
+		[
+			["js_m_fa18_empty", [-1]],
+			["js_m_fa18_m61", [-1]],
+			["js_m_fa18_m61", [-1]],
+			["Laserbatteries", [-1]],
+			["js_m_fa18_buddypod_x1", [-1]],
+			["js_m_fa18_altflir_pod_x1", [-1]],
+			["js_w_master_arms_safe", [-1]],
+			["js_jc_120Rnd_CMFlare_Magazine", [-1]],
+			["js_jc_120Rnd_CMFlare_Magazine", [-1]],
+			["js_jc_120Rnd_CMChaff_Magazine", [-1]],
+			["js_jc_120Rnd_CMChaff_Magazine", [-1]]
+		];
+		switch (_variant) do
+		{
+			case "fa18aclm":	{ _pylons = [
+				"PylonMissile_Missile_BIM9X_x1",
+				"PylonMissile_Missile_BIM9X_x1",
+				"PylonMissile_Missile_HARM_x1",
+				"PylonMissile_Missile_HARM_x1",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"USAF_PylonRack_1Rnd_AGM86",
+				"USAF_PylonRack_1Rnd_AGM86",
+				"PylonRack_Missile_BIM9X_x1",
+				"PylonRack_Missile_BIM9X_x1",
+				"js_m_fa18_wing_tank_x1",
+				"js_jc_120Rnd_CMChaff_Magazine",
+				"js_jc_120Rnd_CMFlare_Magazine"
+			] };
+			case "fa18cas":	{ _pylons = [
+				"PylonMissile_Missile_BIM9X_x1",
+				"PylonMissile_Missile_BIM9X_x1",
+				"PylonMissile_Missile_HARM_x1",
+				"PylonMissile_Missile_HARM_x1",
+				"PylonRack_Missile_AGM_02_x1",
+				"PylonRack_Missile_AGM_02_x1",
+				"PylonRack_Missile_AGM_02_x1",
+				"PylonRack_Missile_AGM_02_x1",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonRack_Bomb_GBU12_x2",
+				"PylonRack_2Rnd_BombCluster_01_F",
+				"js_jc_120Rnd_CMChaff_Magazine",
+				"js_jc_120Rnd_CMFlare_Magazine"
+			] };
+			case "fa18mr":	{ _pylons = [
+				"PylonMissile_Missile_BIM9X_x1",
+				"PylonMissile_Missile_BIM9X_x1",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonMissile_1Rnd_Bomb_04_F",
+				"PylonMissile_1Rnd_Bomb_04_F",
+				"PylonRack_Bomb_SDB_x4",
+				"PylonRack_Bomb_SDB_x4",
+				"PylonRack_2Rnd_BombCluster_01_F",
+				"PylonRack_2Rnd_BombCluster_01_F",
+				"js_m_fa18_wing_tank_x1",
+				"js_jc_120Rnd_CMChaff_Magazine",
+				"js_jc_120Rnd_CMFlare_Magazine"
+			] };
+			case "fa18mheavy":	{ _pylons = [
+				"PylonMissile_Missile_BIM9X_x1",
+				"PylonMissile_Missile_BIM9X_x1",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonMissile_Missile_HARM_x1",
+				"PylonMissile_Missile_HARM_x1",
+				"PylonRack_3Rnd_Missile_AGM_02_F",
+				"PylonRack_3Rnd_Missile_AGM_02_F",
+				"PylonRack_2Rnd_BombCluster_01_F",
+				"PylonRack_2Rnd_BombCluster_01_F",
+				"js_m_fa18_wing_tank_x1",
+				"js_jc_120Rnd_CMChaff_Magazine",
+				"js_jc_120Rnd_CMFlare_Magazine"
+			] };
+			default { _pylons = [ // AA variant
+				"PylonMissile_Missile_BIM9X_x1",
+				"PylonMissile_Missile_BIM9X_x1",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonRack_1Rnd_AAA_missiles",
+				"PylonRack_1Rnd_AAA_missiles",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"PylonRack_Missile_AMRAAM_D_x2",
+				"js_m_fa18_wing_tank_x1",
+				"js_jc_120Rnd_CMChaff_Magazine",
+				"js_jc_120Rnd_CMFlare_Magazine"
+			] };
+		};
+	};
+
+
 
 
 

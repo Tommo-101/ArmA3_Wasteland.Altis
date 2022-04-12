@@ -149,16 +149,16 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 
 	if (_isSpecStore) then
 	{
-		/*/ LAND VEHICLES
+		// LAND VEHICLES
 		{
 			_results = (call _x) select {_x select [1,999] isEqualTo _itemEntrySent};
 
 			if (count _results > 0) then
 			{
 				_itemEntry = _results select 0;
-				_marker = _marker + "_landSpawn";
+				_marker = _marker + "_planeSpawn";
 			};
-		} forEach [landArray, armoredArray, tanksArray];*/
+		} forEach [advArmorArray];
 
 		// DRONES
 		if (isNil "_itemEntry") then

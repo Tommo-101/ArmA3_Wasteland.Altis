@@ -30,8 +30,8 @@ _vehArray = switch (_switch) do
 	case 1: { call antiAirArray };
 	case 2: { call advJetArray };
 	case 3: { call advUtilityArray };
-	//case 4: { call planesArray };
-	//case 5: { call antiAirArray };
+	case 4: { call advHeliArray };
+	case 5: { call advArmorArray };
 	//case 6: { call boatsArray };
 	default { [] };
 };

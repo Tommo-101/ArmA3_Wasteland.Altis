@@ -48,7 +48,7 @@ _setupObjects =
 	_aiGroup setCombatMode "RED";
 	_aiGroup setBehaviour "COMBAT";
 
-	_missionPicture = "client\icons\emp.paa";
+	_missionPicture = "pictures\emp.paa";
 	_missionHintText = format ["<br/>Rogue units are preparing <t color='%1'>an EMP attack</t>.<br/>Intercept their plans, kill these scumbags and avoid the EMP attack!<br/>For fuck's sake ..!", PriorityMissionColor];
 };
 
