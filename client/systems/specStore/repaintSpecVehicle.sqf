@@ -1,7 +1,7 @@
 // ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2019 A3Wasteland.com *
 // ******************************************************************************************
-//	@file Name: repaintVehicle.sqf
+//	@file Name: repaintSpecVehicle.sqf
 //	@file Author: AgentRev
 
 #define VEHICLE_REPAINT_PRICE_RATIO 0.02
@@ -83,7 +83,7 @@ _itemData = [_objName, _type];
 	{
 		_itemData = _x;
 	};
-} forEach (call specOpsStore);
+} forEach call specOpsStore;
 
 _price = (ceil (((_itemData param [2,2500]) * VEHICLE_REPAINT_PRICE_RATIO) / 5)) * 5;
 _itemData set [2, _price];

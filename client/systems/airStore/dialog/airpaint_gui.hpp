@@ -5,13 +5,13 @@
 
 #define airPaint_Button_textSize (0.04 * TEXT_SCALE)
 
-class A3W_airPaintMenu
+class A3W_vehAirPaintMenu
 {
 	idd = A3W_airPaintIDD;
 	movingEnable = true;
 	enableSimulation = true;
-	onLoad = "uiNamespace setVariable ['A3W_airPaintMenu', _this select 0]; [] call repaintAirVehicle";
-	onUnload = "uiNamespace setVariable ['A3W_airPaintMenu', nil]";
+	onLoad = "uiNamespace setVariable ['A3W_vehAirPaintMenu', _this select 0]; [] call repaintAirVehicle";
+	onUnload = "uiNamespace setVariable ['A3W_vehAirPaintMenu', nil]";
 
 	#define airPaint_MARGIN 0.02
 	#define airPaint_MARGIN_X (FeedMenu_MARGIN * X_SCALE)
@@ -79,7 +79,7 @@ class A3W_airPaintMenu
 		class ColorList: w_RscList
 		{
 			idc = airshop_color_list;
-			//onLBSelChanged = "[] execVM 'client\systems\vehicleStore\colorInfo.sqf'";
+			//onLBSelChanged = "[] execVM 'client\systems\airStore\colorInfo.sqf'";
 			font = "RobotoCondensed";
 			sizeEx = 0.034 * TEXT_SCALE;
 			rowHeight = 0.06 * TEXT_SCALE;
@@ -134,7 +134,7 @@ class A3W_airPaintMenu
 		class PartList: w_RscList
 		{
 			idc = airshop_part_list;
-			//onLBSelChanged = ""; // handled in repaintVehicle.sqf
+			//onLBSelChanged = ""; // handled in repaintAirVehicle.sqf
 			font = "RobotoCondensed";
 			sizeEx = 0.034 * TEXT_SCALE;
 			rowHeight = 0.05 * TEXT_SCALE;

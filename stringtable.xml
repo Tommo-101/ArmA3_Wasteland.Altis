@@ -76,6 +76,9 @@
 		<Key ID="STR_WL_ShopDescriptions_RepairKit">
 			<English>With this kit, you won't need an engineer!</English>
 		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Defibrillator">
+			<English>With this tool, you can bring back anyone included yourself from unconscious!</English>
+		</Key>
 		<Key ID="STR_WL_ShopDescriptions_MedKit">
 			<English>With this kit, you won't need a medic!</English>
 		</Key>
@@ -96,6 +99,12 @@
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_Warchest">
 			<English>A safe to store your team's money.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_QuadBike">
+			<English>A packable/deployable quad bike in player inventory</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_WaterScooter">
+			<English>A packable/deployable water scooter in player inventory</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_LSD">
             <English>A synthetic crystalline compound, lysergic acid diethylamide, that is a potent hallucinogenic drug.</English>

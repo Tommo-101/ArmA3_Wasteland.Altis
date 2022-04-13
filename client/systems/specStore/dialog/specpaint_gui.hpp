@@ -10,7 +10,7 @@ class A3W_vehSpecPaintMenu
 	idd = A3W_specPaintIDD;
 	movingEnable = true;
 	enableSimulation = true;
-	onLoad = "uiNamespace setVariable ['A3W_vehSpecPaintMenu', _this select 0]; [] call repaintVehicle";
+	onLoad = "uiNamespace setVariable ['A3W_vehSpecPaintMenu', _this select 0]; [] call repaintSpecVehicle";
 	onUnload = "uiNamespace setVariable ['A3W_vehSpecPaintMenu', nil]";
 
 	#define VehSpecPaint_MARGIN 0.02
@@ -134,7 +134,7 @@ class A3W_vehSpecPaintMenu
 		class PartList: w_RscList
 		{
 			idc = specshop_part_list;
-			//onLBSelChanged = ""; // handled in repaintVehicle.sqf
+			//onLBSelChanged = ""; // handled in repaintSpecVehicle.sqf
 			font = "RobotoCondensed";
 			sizeEx = 0.034 * TEXT_SCALE;
 			rowHeight = 0.05 * TEXT_SCALE;

@@ -156,7 +156,7 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 			if (count _results > 0) then
 			{
 				_itemEntry = _results select 0;
-				_marker = _marker + "_planeSpawn";
+				_marker = _marker + "_landSpawn";
 			};
 		} forEach [advArmorArray];
 

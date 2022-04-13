@@ -9,7 +9,7 @@ if (!isServer) exitwith {};
 
 private ["_planeChoices", "_convoyVeh", "_veh1", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_cash", "_boxes1", "_currBox1", "_boxes2", "_currBox2", "_box1", "_box2"];
 
-_moneyAmount = Tier_1_Reward;
+_moneyAmount = Tier_2_Reward;
 
 _setupVars =
 {

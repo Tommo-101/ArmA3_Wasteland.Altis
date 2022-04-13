@@ -51,12 +51,12 @@ if (hasInterface) then
 		case (["SpecStore", _npcName] call _startsWith):
 		{
 			_npc addAction ["<img image='client\icons\store.paa'/> Open SpecOps Store", "client\systems\specStore\loadSpecStore.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
-			_npc addAction ["<img image='client\icons\repair.paa'/> Paint vehicle", { createDialog "A3W_vehPaintMenu" }, [], 0.999, false, true, "", STORE_ACTION_CONDITION + " && " + SELL_VEH_CONTENTS_CONDITION];
+			_npc addAction ["<img image='client\icons\repair.paa'/> Paint vehicle", { createDialog "A3W_vehSpecPaintMenu" }, [], 0.999, false, true, "", STORE_ACTION_CONDITION + " && " + SELL_VEH_CONTENTS_CONDITION];
 		};
 		case (["AirStore", _npcName] call _startsWith):
 		{
 			_npc addAction ["<img image='client\icons\store.paa'/> Open Aircraft Store", "client\systems\airStore\loadAirStore.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
-			_npc addAction ["<img image='client\icons\repair.paa'/> Paint vehicle", { createDialog "A3W_airPaintMenu" }, [], 0.999, false, true, "", STORE_ACTION_CONDITION + " && " + SELL_VEH_CONTENTS_CONDITION];
+			_npc addAction ["<img image='client\icons\repair.paa'/> Paint vehicle", { createDialog "A3W_vehAirPaintMenu" }, [], 0.999, false, true, "", STORE_ACTION_CONDITION + " && " + SELL_VEH_CONTENTS_CONDITION];
 		};
 	};
 

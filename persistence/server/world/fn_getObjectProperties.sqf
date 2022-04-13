@@ -64,6 +64,7 @@ switch (true) do
 		_variables pushBack ["R3F_LOG_disabled", true];
 		_variables pushBack ["packing", false];
 		_variables pushBack ["ownerName", toArray (_obj getVariable ["ownerName", ""])];
+		_variables pushBack ["beaconName", _obj getVariable ["beaconName", (_obj getVariable "ownerName")]];
 	};
 	case (_obj call _isCamera):
 	{

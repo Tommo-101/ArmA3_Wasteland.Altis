@@ -35,7 +35,7 @@ gunshipsHeliArray = compileFinal str
 
 	// New RHS HELIS
 	["AH-64D Apache", "RHS_AH64D_wd", 120000, "vehicle"],
-	["AH-64D Apache Rocket", "RHS_AH64D_wd", 100000, "vehicle", "variant_ah64ground"]
+	//["AH-64D Apache Rocket", "RHS_AH64D_wd", 100000, "vehicle", "variant_ah64ground", "HIDDEN"]
 ];
 
 combatJetsArray = compileFinal str

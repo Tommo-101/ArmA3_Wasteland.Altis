@@ -45,11 +45,12 @@
 	//["<img image='\A3\ui_f\data\igui\cfg\VehicleToggles\LightsIconOn_ca.paa'/> Lights On", fn_driverAssistLightsOn, [], 0.5, false, true, "", "_driver = driver objectParent player; isAgent teamMember _driver && {(_driver getVariable ['A3W_driverAssistOwner', objNull]) in [player,objNull]} && !isLightOn vehicle player"],
 	//["<img image='\A3\ui_f\data\igui\cfg\VehicleToggles\LightsIconOn_ca.paa'/> Lights Off", fn_driverAssistLightsOff, [], 0.5, false, true, "", "_driver = driver objectParent player; isAgent teamMember _driver && {(_driver getVariable ['A3W_driverAssistOwner', objNull]) in [player,objNull]} && isLightOn vehicle player"],
 
-	//Detect Beacons
-	["<img image='addons\spawnBeaconDetector\spawnBeaconDetector.paa'/> Spawn Beacon Detector On", "addons\spawnBeaconDetector\spawnBeaconDetector.sqf",0,-10,false,false,"","('MineDetector' in (items player)) && !spawnBeaconDetectorInProgress && vehicle player == player"],
-	["<img image='addons\spawnBeaconDetector\spawnBeaconDetector.paa'/> Spawn Beacon Detector Off", {spawnBeaconDetectorInProgress = false},0,-10,false,false,"","(spawnBeaconDetectorInProgress)"],
+	[format ["<img image='\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa' color='%1'/> <t color='%1'>[</t>Airdrop Menu<t color='%1'>]</t>", "#FF0000"],"addons\APOC_Airdrop_Assistance\APOC_cli_menu.sqf",[], -100, false, false],
+	["<img image='client\icons\radar.paa'/> Track Devices", "addons\beacondetector\beacondetector.sqf",0,-10,false,false,"","('MineDetector' in (items player)) && !BeaconScanInProgress"],
+	["<img image='\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\transport_ca.paa'/> <t color='#FFFFFF'>Cancel tracking.</t>", "Beaconscanstop = true",0,-10,false,false,"","BeaconScanInProgress"],
 
-	[format ["<img image='\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa' color='%1'/> <t color='%1'>[</t>Airdrop Menu<t color='%1'>]</t>", "#FF0000"],"addons\APOC_Airdrop_Assistance\APOC_cli_menu.sqf",[], -100, false, false]
+	["<img image='\A3\ui_f\data\Map\VehicleIcons\pictureHeal_ca.paa'/> Treat yourself", "player action ['HealSoldierSelf', player];", [], 200, true, true, "", "damage player <= 0.2 && damage player != 0 && 'FirstAidKit' in (items player) && count (['abswp', 'abdvp', 'advep', 'asdvp', 'asswp', 'aswmp'] select {[_x, animationState player] call fn_startsWith}) == 0 && vehicle player == player"],
+	["<img image='\A3\ui_f\data\Map\VehicleIcons\pictureHeal_ca.paa'/> Treat unit", "player action ['HealSoldier', cursorObject];", [], 200, true, true, "", "cursorObject distance player < 2.5 && cursorObject isKindOf 'CAManBase' && damage cursorObject <= 0.2 && damage cursorObject != 0 && 'FirstAidKit' in (items player) && count (['abswp', 'abdvp', 'advep', 'asdvp', 'asswp', 'aswmp'] select {[_x, animationState player] call fn_startsWith}) == 0 && vehicle player == player"]
 ];
 
 //Door Locking

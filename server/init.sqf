@@ -168,6 +168,7 @@ if (isServer) then
 		"A3W_antiHackMinRecoil",
 		"A3W_spawnBeaconCooldown",
 		"A3W_spawnBeaconSpawnHeight",
+		"A3W_maxSpawnBeacons",
 		"A3W_vehicleSaving",
 		"A3W_staticWeaponSaving",
 		"A3W_missionFarAiDrawLines",

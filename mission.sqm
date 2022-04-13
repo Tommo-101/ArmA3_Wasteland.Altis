@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=550;
+		nextID=571;
 	};
 	class Camera
 	{
-		pos[]={20762.152,37.352676,7273.043};
-		dir[]={0.66150725,-0.23956843,-0.71071643};
-		up[]={0.16331112,0.97084135,-0.17546129};
-		aside[]={-0.73202807,-5.553884e-007,-0.6813426};
+		pos[]={23047.154,38.859779,18774.65};
+		dir[]={-0.91384566,-0.37887913,-0.14610356};
+		up[]={-0.37413493,0.92544299,-0.059816245};
+		aside[]={-0.15787408,-3.0573574e-008,0.98746663};
 	};
 };
 binarizationWanted=0;
@@ -9253,7 +9253,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={14158.5,20.195353,16249.05};
-										angles[]={0,1.4112349,-0};
+										angles[]={0,1.4112349,0};
 									};
 									side="Civilian";
 									flags=7;
@@ -9345,7 +9345,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={27020.115,20.351931,23347.822};
-										angles[]={0,3.0657229,-0};
+										angles[]={0,3.0657229,0};
 									};
 									side="Civilian";
 									flags=7;
@@ -9404,7 +9404,7 @@ class Mission
 						};
 					};
 					id=1883;
-					atlOffset=58.031387;
+					atlOffset=41.056511;
 				};
 				class Item3
 				{
@@ -9431,6 +9431,7 @@ class Mission
 							};
 							id=435;
 							type="C_Truck_02_box_F";
+							atlOffset=-0.0040359497;
 						};
 						class Item1
 						{
@@ -10181,7 +10182,7 @@ class Mission
 						class Item0
 						{
 							dataType="Marker";
-							position[]={22987.75,0,18774};
+							position[]={22998.125,0,18771.875};
 							name="AirStore1_planeSpawn";
 							type="Empty";
 							colorName="ColorBlack";
@@ -10363,7 +10364,7 @@ class Mission
 							name="AirStore2_planeSpawn";
 							type="Empty";
 							colorName="ColorBlack";
-							angle=42.999989;
+							angle=42.999985;
 							id=307;
 							atlOffset=-0.00044631958;
 						};
@@ -10480,7 +10481,7 @@ class Mission
 							name="AirStore3_planeSpawn";
 							type="Empty";
 							colorName="ColorBlack";
-							angle=42.999996;
+							angle=42.999992;
 							id=4854;
 							atlOffset=0.00030708313;
 						};
@@ -10512,7 +10513,7 @@ class Mission
 							name="AirStore4_planeSpawn";
 							type="Empty";
 							colorName="ColorBlack";
-							angle=42.999992;
+							angle=42.999989;
 							id=4864;
 							atlOffset=-0.00028991699;
 						};
@@ -10606,7 +10607,7 @@ class Mission
 				};
 			};
 			id=1879;
-			atlOffset=14.248129;
+			atlOffset=15.965839;
 		};
 		class Item266
 		{
@@ -17671,7 +17672,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14161.165,19.589067,16245.698};
+				position[]={14159.727,19.587633,16246.501};
 			};
 			areaSize[]={1,-1,1};
 			id=4839;
@@ -17865,7 +17866,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14162,19.589832,16245.125};
-				angles[]={0,0.40502489,-0};
+				angles[]={0,0.40502489,0};
 			};
 			side="Empty";
 			flags=5;

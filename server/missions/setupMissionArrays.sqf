@@ -12,7 +12,7 @@ AirMissions =
   ["mission_HostileHelicopter", 0.5],
 	["mission_HostileHeliformation", 1],
 	["mission_HostileJet", 1],
-	["mission_AggressiveJet", 1],
+	["mission_AggressiveJet", 0.3],
   ["mission_HostileJetFormation", 1],
   ["mission_SkySmuggler", 1]
 ];

@@ -75,7 +75,7 @@ if (!isNil "_owner") then
 
 private _partList = _Dialog displayCtrl airshop_part_list;
 _partList ctrlEnable false;
-_partList ctrlAddEventHandler ["LBSelChanged", compile preprocessFileLineNumbers "client\systems\vehicleStore\partInfo.sqf"];
+_partList ctrlAddEventHandler ["LBSelChanged", compile preprocessFileLineNumbers "client\systems\airStore\partInfo.sqf"];
 
 private _defPartsChk = _Dialog displayCtrl airshop_defparts_checkbox;
 _defPartsChk cbSetChecked true;

@@ -230,39 +230,6 @@ switch (true) do
 		};
 	};
 
-	/// Apache Helicopter
-	case (_class isKindOf "RHS_AH64D_wd"):
-	{
-		_mags =
-		[
-			["rhsusf_mag_DIRCM", [-1]],
-			["rhsusf_mag_DIRCM", [-1]],
-			["rhsusf_mag_DIRCM", [-1]],
-			["rhsusf_mag_DIRCM", [-1]],
-			["Laserbatteries", [-1]],
-			["240Rnd_CMFlare_Chaff_Magazine", [-1]],
-			["rhs_mag_FFAR_38", [-1]]
-		];
-		switch (_variant) do
-		{
-			case "ah64ground":	{ _pylons = [
-				"USAF_PylonRack_2Rnd_AGM114P",
-				"USAF_PylonRack_2Rnd_AGM114P",
-				"USAF_PylonRack_2Rnd_AGM114P",
-				"USAF_PylonRack_2Rnd_AGM114P"
-			] };
-			default { _pylons = [
-				"rhs_mag_Sidewinder_heli",
-				"rhs_mag_M151_19",
-				"rhs_mag_AGM114L_4",
-				"rhs_mag_AGM114K_4",
-				"rhs_mag_M151_19",
-				"rhs_mag_Sidewinder_heli",
-				"rhsusf_M130_CMFlare_Chaff_Magazine_x2"
-			] };
-		};
-	};
-
 	/// Littlebird
 	case (_class isKindOf "RHS_MELB_AH6M"):
 	{
@@ -311,13 +278,10 @@ switch (true) do
 	{
 		_mags =
 		[
-			["js_m_fa18_empty", [-1]],
+			["js_safe", [-1]],
 			["js_m_fa18_m61", [-1]],
 			["js_m_fa18_m61", [-1]],
 			["Laserbatteries", [-1]],
-			["js_m_fa18_buddypod_x1", [-1]],
-			["js_m_fa18_altflir_pod_x1", [-1]],
-			["js_w_master_arms_safe", [-1]],
 			["js_jc_120Rnd_CMFlare_Magazine", [-1]],
 			["js_jc_120Rnd_CMFlare_Magazine", [-1]],
 			["js_jc_120Rnd_CMChaff_Magazine", [-1]],
@@ -345,13 +309,10 @@ switch (true) do
 	{
 		_mags =
 		[
-			["js_m_fa18_empty", [-1]],
+			["js_safe", [-1]],
 			["js_m_fa18_m61", [-1]],
 			["js_m_fa18_m61", [-1]],
 			["Laserbatteries", [-1]],
-			["js_m_fa18_buddypod_x1", [-1]],
-			["js_m_fa18_altflir_pod_x1", [-1]],
-			["js_w_master_arms_safe", [-1]],
 			["js_jc_120Rnd_CMFlare_Magazine", [-1]],
 			["js_jc_120Rnd_CMFlare_Magazine", [-1]],
 			["js_jc_120Rnd_CMChaff_Magazine", [-1]],
@@ -436,8 +397,6 @@ switch (true) do
 			] };
 		};
 	};
-
-
 
 
 

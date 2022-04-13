@@ -1,7 +1,7 @@
 // ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2019 A3Wasteland.com *
 // ******************************************************************************************
-//	@file Name: repaintVehicle.sqf
+//	@file Name: repaintAirVehicle.sqf
 //	@file Author: AgentRev
 
 #define VEHICLE_REPAINT_PRICE_RATIO 0.02
@@ -12,7 +12,7 @@
 params [["_buy",false,[false]], ["_vehNetId","",[""]]];
 
 _repaint = true;
-_dialog = uiNamespace getVariable "A3W_airPaintMenu";
+_dialog = uiNamespace getVariable "A3W_vehAirPaintMenu";
 _vehicle = objectFromNetId ([player getVariable ["lastVehicleRidden", ""], _vehNetId] select _buy);
 
 if (isNull _vehicle) exitWith
@@ -83,7 +83,7 @@ _itemData = [_objName, _type];
 	{
 		_itemData = _x;
 	};
-} forEach forEach (call allAirStoreVehicles);
+} forEach call allAirStoreVehicles;
 
 _price = (ceil (((_itemData param [2,2500]) * VEHICLE_REPAINT_PRICE_RATIO) / 5)) * 5;
 _itemData set [2, _price];
@@ -91,12 +91,12 @@ _itemData set [2, _price];
 if (!call _checkEnoughMoney) exitWith {};
 
 _buyButton = _dialog displayCtrl airshop_BuyButton_IDC;
-_buyButton buttonSetAction format ["[true, '%1'] call repaintVehicle", netId _vehicle];
+_buyButton buttonSetAction format ["[true, '%1'] call repaintAirVehicle", netId _vehicle];
 
 // copypasted from loadVehicleStore.sqf cause I'm lazy
 private _partList = _Dialog displayCtrl airshop_part_list;
 //_partList ctrlEnable false;
-_partList ctrlAddEventHandler ["LBSelChanged", compile preprocessFileLineNumbers "client\systems\vehicleStore\partInfo.sqf"];
+_partList ctrlAddEventHandler ["LBSelChanged", compile preprocessFileLineNumbers "client\systems\airStore\partInfo.sqf"];
 
 /*private _defPartsChk = _Dialog displayCtrl airshop_defparts_checkbox;
 _defPartsChk cbSetChecked true;
@@ -144,7 +144,7 @@ _applyVehProperties =
 
 	if (_colorData isEqualTo "" || {count _colorData > 0}) then
 	{
-		[_vehicle, _colorData] call applyVehicleTexture;
+		[_vehicle, _colorData] call applyAirVehicleTexture;
 	};
 
 	if (count _animList > 0) then
