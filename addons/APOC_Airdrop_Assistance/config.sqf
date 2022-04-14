@@ -9,7 +9,12 @@ APOC_AA_VehOptions =
   ["Strider HMG", "I_MRAP_03_hmg_F", 50000, "vehicle"],
   ["Ifrit HMG", "O_MRAP_02_hmg_F", 50000, "vehicle"],
   ["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 95000, "vehicle"],
-  ["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 100000, "vehicle"]
+  ["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 100000, "vehicle"],
+  ["M1097A2 Transporter Armored", "rhsusf_m1165_usarmy_wd", 18000, "vehicle"],
+  //["M1151 HMMWV LPV Unarmed", "rhsusf_m1151_usarmy_wd", 25000, "vehicle"],
+  ["M1151 HMMWV M2 HMG (v2)", "rhsusf_m1151_m2_v2_usarmy_wd", 30000, "vehicle"],
+  ["M1151 HMMWV MK19 GMG (v2)", "rhsusf_m1151_mk19_v2_usarmy_wd", 36000, "vehicle"]
+  //["M2A3 Bradley B3", "RHS_M2A3_BUSKIII_wd", 125000, "vehicle"]
 ];
 
 APOC_AA_SupOptions =

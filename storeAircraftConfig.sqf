@@ -34,7 +34,7 @@ gunshipsHeliArray = compileFinal str
 	["Mi-48 Kajman (HVY)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle", "variant_kajHVY"], // Mi-28 with gunner // CUSTOM
 
 	// New RHS HELIS
-	["AH-64D Apache", "RHS_AH64D_wd", 120000, "vehicle"],
+	["AH-64D Apache", "RHS_AH64D_wd", 120000, "vehicle"]
 	//["AH-64D Apache Rocket", "RHS_AH64D_wd", 100000, "vehicle", "variant_ah64ground", "HIDDEN"]
 ];
 

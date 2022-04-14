@@ -38,6 +38,7 @@ createAATeam = [_path, "createUnits\createAATeam.sqf"] call mf_compile;
 createATTeam = [_path, "createUnits\createATTeam.sqf"] call mf_compile;
 createRandomPilot = [_path, "createUnits\createRandomPilot.sqf"] call mf_compile;
 createRandomPolice = [_path, "createUnits\createRandomPolice.sqf"] call mf_compile;
+createRandomRHSUSFSoldier = [_path, "createUnits\createRandomRHSUSFSoldier.sqf"] call mf_compile;
 createRandomSoldier = [_path, "createUnits\createRandomSoldier.sqf"] call mf_compile;
 createRandomSoldierC = [_path, "createUnits\createRandomSoldierC.sqf"] call mf_compile;
 createRandomVTOLCrew = [_path, "createUnits\createRandomVTOLCrew.sqf"] call mf_compile;

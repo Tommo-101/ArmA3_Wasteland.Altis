@@ -29,16 +29,10 @@ _setupVars =
 			50000, // Money
 			[
 				[ // NATO convoy
-					["I_G_Offroad_01_armor_armed_lxWS","I_G_Offroad_01_armor_AT_lxWS","I_G_Offroad_01_AT_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"] // Veh 2
-				],
-				[ // CSAT convoy
-					["I_G_Offroad_01_armor_armed_lxWS","I_G_Offroad_01_armor_AT_lxWS","I_G_Offroad_01_AT_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"] // Veh 2
-				],
-				[ // AAF convoy
-					["I_G_Offroad_01_armor_armed_lxWS","I_G_Offroad_01_armor_AT_lxWS","I_G_Offroad_01_AT_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"] // Veh 2
+					["rhsusf_m1151_m2_v2_usarmy_wd"],  // Machine Gun/Command Vehicle
+					["rhsusf_m1151_mk19_v2_usarmy_wd", "rhsusf_m1043_w_mk19"], // MK19
+					["rhsusf_m1152_rsv_usarmy_wd", "rhsusf_m1152_sicps_usarmy_wd"], // Transport
+					["rhsusf_m1151_m240_v2_usarmy_wd", "rhsusf_m1151_m2_lras3_v1_usarmy_wd"] // Machine Gun
 				]
 			]
 		],
@@ -48,19 +42,11 @@ _setupVars =
 			70000, // Money
 			[
 				[ // NATO convoy
-					["B_LSV_01_armed_F","B_LSV_01_AT_F","B_LSV_01_armed_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"], // Veh 2
-					["I_G_Offroad_01_armor_armed_lxWS","I_G_Offroad_01_armor_AT_lxWS","I_G_Offroad_01_AT_F"] // Veh 3
-				],
-				[ // CSAT convoy
-					["B_LSV_01_armed_F","B_LSV_01_AT_F","B_LSV_01_armed_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"], // Veh 2
-					["I_G_Offroad_01_armor_armed_lxWS","I_G_Offroad_01_armor_AT_lxWS","I_G_Offroad_01_AT_F"] // Veh 3
-				],
-				[ // AAF convoy
-					["B_LSV_01_armed_F","B_LSV_01_AT_F","B_LSV_01_armed_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"] ,// Veh 2
-					["I_G_Offroad_01_armor_armed_lxWS","I_G_Offroad_01_armor_AT_lxWS","I_G_Offroad_01_AT_F"] // Veh 3
+					["rhsusf_M1232_MC_M2_usmc_wd"], // Machine Gun/Command Vehicle
+					["rhsusf_m1240a1_m240_usmc_wd"], // Machine Gun/Command Vehicle
+					["rhsusf_CGRCAT1A2_Mk19_usmc_wd"], // MK19
+					["rhsusf_CGRCAT1A2_usmc_wd", "rhsusf_m1240a1_usmc_wd"], // Transport
+					["rhsusf_CGRCAT1A2_M2_usmc_wd", "rhsusf_m1240a1_m240_usmc_wd"] // Machine Gun
 				]
 			]
 		],
@@ -70,19 +56,15 @@ _setupVars =
 			100000, // Money
 			[
 				[ // NATO convoy
-					["B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"], // Veh 2
-					["B_LSV_01_armed_F","B_LSV_01_AT_F","B_LSV_01_armed_F"] // Veh 3
-				],
-				[ // CSAT convoy
-					["B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"], // Veh 2
-					["B_LSV_01_armed_F","B_LSV_01_AT_F","B_LSV_01_armed_F"] // Veh 3
-				],
-				[ // AAF convoy
-					["B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"], // Veh 2
-					["B_LSV_01_armed_F","B_LSV_01_AT_F","B_LSV_01_armed_F"] // Veh 3
+					["rhsusf_M1232_MC_M2_usmc_wd"], // Machine Gun/Command Vehicle
+					["rhsusf_m1240a1_m240_usmc_wd"], // Machine Gun/Command Vehicle
+					["rhsusf_CGRCAT1A2_Mk19_usmc_wd"], // MK19
+					["rhsusf_CGRCAT1A2_usmc_wd"], // Transport
+					["rhsusf_m1240a1_usmc_wd"], // Transport
+					["rhsusf_CGRCAT1A2_M2_usmc_wd"], // Machine Gun
+					["rhsusf_m1240a1_m240_usmc_wd"], // Machine Gun
+					["rhsusf_m1151_m2_v2_usarmy_wd"],  // Machine Gun/Command Vehicle
+					["rhsusf_m1151_mk19_v2_usarmy_wd", "rhsusf_m1043_w_mk19"] // MK19
 				]
 			]
 		],
@@ -92,22 +74,14 @@ _setupVars =
 			200000, // Money
 			[
 				[ // NATO convoy
-					["B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"], // Veh 2
-					["B_D_MBT_01_TUSK_lxWS","B_D_MBT_01_TUSK_lxWS","B_D_MBT_01_TUSK_lxWS"], // Veh 3
-					["APC_Wheeled_01_mortar_base_lxWS","B_APC_Wheeled_01_cannon_F","APC_Wheeled_01_atgm_base_lxWS"] // Veh 4
-				],
-				[ // CSAT convoy
-					["B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"], // Veh 2
-					["B_D_MBT_01_TUSK_lxWS","B_D_MBT_01_TUSK_lxWS","B_D_MBT_01_TUSK_lxWS"], // Veh 3
-					["APC_Wheeled_01_mortar_base_lxWS","B_APC_Wheeled_01_cannon_F","APC_Wheeled_01_atgm_base_lxWS"] // Veh 4
-				],
-				[ // AAF convoy
-					["B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F","B_AFV_Wheeled_01_up_cannon_F"], // Veh 1
-					["O_SFIA_Truck_02_Ammo_lxWS","O_SFIA_Truck_02_Ammo_lxWS"], // Veh 2
-					["B_D_MBT_01_TUSK_lxWS","B_D_MBT_01_TUSK_lxWS","B_D_MBT_01_TUSK_lxWS"], // Veh 3
-					["APC_Wheeled_01_mortar_base_lxWS","B_APC_Wheeled_01_cannon_F","APC_Wheeled_01_atgm_base_lxWS"] // Veh 4
+					["rhsusf_M1232_MC_M2_usmc_wd"],
+					["RHS_M6_wd"],
+					["RHS_M6_wd"],
+					["RHS_M2A3_BUSKIII_wd"],
+					["RHS_M2A3_BUSKI_wd"],
+					["rhsusf_stryker_m1132_m2_wd"],
+					["rhsusf_M1220_M153_M2_usarmy_wd"],
+					["rhsusf_m1240a1_m2crows_usarmy_wd"]
 				]
 			]
 		]
@@ -154,22 +128,22 @@ _setupObjects =
 		_vehicle setDir _direction;
 		_aiGroup addVehicle _vehicle;
 
-		_soldier = [_aiGroup, _position] call createRandomSoldier;
+		_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
 		_soldier moveInDriver _vehicle;
 
 		if !(_type isKindOf "LT_01_base_F") then
 		{
-			_soldier = [_aiGroup, _position] call createRandomSoldier;
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
 			_soldier moveInCargo [_vehicle, 0];
 		};
 
 		if !(_type isKindOf "Truck_F") then
 		{
-			_soldier = [_aiGroup, _position] call createRandomSoldier;
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
 			_soldier moveInGunner _vehicle;
 			if (_type isKindOf "LT_01_base_F") exitWith {};
 
-			_soldier = [_aiGroup, _position] call createRandomSoldier;
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
 
 			if (_vehicle emptyPositions "commander" > 0) then
 			{
@@ -218,10 +192,10 @@ _setupObjects =
 
 	_missionPos = getPosATL leader _aiGroup;
 
-	_missionPicture = "pictures\atmtransport.paa";
+	//_missionPicture = "pictures\atmtransport.paa";
 	_vehicleName = getText (configFile >> "cfgVehicles" >> _veh2 >> "displayName");
 
-	_missionHintText = format ["A convoy is transporting <t color='%1'>%2</t> to an unknown ATM storage.<br/>Best chance for you to earn some extra money!", moneyMissionColor, _moneyText];
+	_missionHintText = format ["A convoy is transporting <t color='%1'>%2</t> to an unknown ATM location.<br/>Best chance for you to earn some extra money!", moneyMissionColor, _moneyText];
 
 	_numWaypoints = count waypoints _aiGroup;
 };
@@ -247,7 +221,7 @@ _successExec =
 		_cash setVariable ["owner", "world", true];
 	};
 
-	_successHintMessage = "Nice! Some ATM will stay empty today ..";
+	_successHintMessage = "Nice! Look's like that ATM shipment won't be going anywhere..";
 };
 
 _this call moneyMissionProcessor;

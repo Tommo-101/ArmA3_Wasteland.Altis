@@ -106,6 +106,9 @@
 		<Key ID="STR_WL_ShopDescriptions_WaterScooter">
 			<English>A packable/deployable water scooter in player inventory</English>
 		</Key>
+		<Key ID="STR_WL_ShopDescriptions_strapBomb">
+			<English>A Boom (Dynamite) need strap on vest in order to detonate</English>
+		</Key>
 		<Key ID="STR_WL_ShopDescriptions_LSD">
             <English>A synthetic crystalline compound, lysergic acid diethylamide, that is a potent hallucinogenic drug.</English>
         </Key>
