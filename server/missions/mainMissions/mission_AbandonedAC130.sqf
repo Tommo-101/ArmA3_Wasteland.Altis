@@ -7,7 +7,7 @@
 //	@file Created: 08/12/2012 15:19
 
 if (!isServer) exitwith {};
-#include "sideMissionDefines.sqf";
+#include "mainMissionDefines.sqf";
 
 private ["_vehicleClass", "_nbUnits"];
 
@@ -15,16 +15,14 @@ _setupVars =
 {
 	_vehicleClass = // to specify a vehicleLoadouts variant, simply write "class/variant", e.g. "O_Heli_Light_02_dynamicLoadout_F/orcaDAR"
 	[
-		"B_MBT_01_mlrs_F",
-		"B_MBT_01_arty_F",
-		"RHS_BM21_MSV_01"
+		"USAF_AC130U"
 	];
 
 	while {_vehicleClass isEqualType []} do { _vehicleClass = selectRandom _vehicleClass };
 	if (_vehicleClass find "/" != -1) then { _vehicleClass = _vehicleClass splitString "/" };
 
-	_missionType = "Abandoned Artillery";
-	_locationsArray = MissionSpawnMarkers;
+	_missionType = "Abandoned AC-130";
+	_locationsArray = JetMarkers;
 
 	_nbUnits = AI_GROUP_LARGE;
 };

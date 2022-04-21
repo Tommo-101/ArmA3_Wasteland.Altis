@@ -13,6 +13,8 @@ AirMissions =
 	["mission_HostileHeliformation", 1],
 	["mission_HostileJet", 1],
 	["mission_AggressiveJet", 0.3],
+	["mission_NukeBomber", 0.3],
+	["mission_HostileSU25Formation", 0.5],
   ["mission_HostileJetFormation", 1],
   ["mission_SkySmuggler", 1]
 ];
@@ -30,7 +32,8 @@ MainMissions =
 	["mission_MBT", 1],
   ["mission_policePatrol", 1],
 	["mission_Roadblock", 1],
-	["mission_Smugglers", 1]
+	["mission_Smugglers", 1],
+	["mission_AbandonedAC130", 0.1]
 ];
 
 SideMissions =
@@ -58,8 +61,8 @@ PriorityMissions = //using afgm OR 509 where not exists BUDDSKI7
 [
   ["mission_HillBurrow", 1],
   ["mission_mechpatrol", 1],
-	["mission_tankRush", 1],
-  ["mission_EMP",1]
+	["mission_tankRush", 1]
+  //["mission_EMP",1]
 ];
 
 LogisticsMissions =

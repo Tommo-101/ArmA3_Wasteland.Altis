@@ -76,4 +76,4 @@ class JTS_FNC_SENT {};
 
 class rhs_menuOptions {};
 class rhs_fnc_menuOptions {};
-class RHS_Options_Menu {};
+class rhs_Options_Menu {};

@@ -34,7 +34,11 @@ gunshipsHeliArray = compileFinal str
 	["Mi-48 Kajman (HVY)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle", "variant_kajHVY"], // Mi-28 with gunner // CUSTOM
 
 	// New RHS HELIS
-	["AH-64D Apache", "RHS_AH64D_wd", 120000, "vehicle"]
+	["AH-64D Apache", "RHS_AH64D_wd", 120000, "vehicle"],
+
+	["KA-52", "RHS_Ka52_vvs", 120000, "vehicle"],
+	["Mi-24V", "RHS_Mi24V_vvs", 120000, "vehicle"],
+	["Mi-28N", "rhs_mi28n_vvs", 120000, "vehicle"]
 	//["AH-64D Apache Rocket", "RHS_AH64D_wd", 100000, "vehicle", "variant_ah64ground", "HIDDEN"]
 ];
 
@@ -53,6 +57,12 @@ combatJetsArray = compileFinal str
 	["A-164 Wipeout (CLST)", "B_Plane_CAS_01_dynamicLoadout_F", 200000, "vehicle", "variant_wipeCLST"], // CUSTOM
 	["To-199 Neophron (CAS)", "O_Plane_CAS_02_dynamicLoadout_F", 200000, "vehicle"], // CUSTOM
 	["Y-32 Xi'an", "O_T_VTOL_02_infantry_dynamicLoadout_F", 120000, "vehicle"],
+
+	["MiG-29s (AA)", "rhs_mig29s_vmf", 220000, "vehicle"],
+	["SU-25 (HVY-CAS)", "RHS_Su25SM_vvs", 240000, "vehicle"],
+	["T50 2011 (AA-ExT)", "RHS_T50_vvs_generic_ext", 270000, "vehicle"],
+	["T50 2013+ (AA)", "RHS_T50_vvs_blueonblue", 270000, "vehicle"],
+	["TU-95 Bomber", "RHS_TU95MS_vvs_old", 280000, "vehicle"],
 
 	["F/A-18E Super Hornet (AA)", "JS_JC_FA18E", 300000, "vehicle"], // CUSTOM
 	["F/A-18E Super Hornet (HVY)", "JS_JC_FA18E", 320000, "vehicle", "variant_fa18mheavy"], // CUSTOM
@@ -81,13 +91,22 @@ utilityHeliArray = compileFinal str
 	["Mi-290 Taru (Medical)", "O_Heli_Transport_04_medevac_F", 45000, "vehicle"],
 	["Mi-290 Taru (Repair)", "O_Heli_Transport_04_repair_F", 45000, "vehicle"],
 	["CH-67 Huron (Unarmed)", "B_Heli_Transport_03_unarmed_F", 45000, "vehicle"], // CH-47
-	["CH-67 Huron (Armed)", "B_Heli_Transport_03_F", 50000, "vehicle"] // CH-47 with 2 side miniguns
+	["CH-67 Huron (Armed)", "B_Heli_Transport_03_F", 50000, "vehicle"], // CH-47 with 2 side miniguns
+
+	["KA-60 (Unarmed)", "rhs_ka60_grey", 30000, "vehicle"],
+	["Mi-8AMT (Unarmed)", "RHS_Mi8AMT_vvs", 40000, "vehicle"],
+	["Mi-8AMT (armed)", "RHS_Mi8mt_vvs", 45000, "vehicle"]
 ];
 
 specialistAirArray = compileFinal str
 [
 	["UH-60M Medivac", "RHS_UH60M_MEV2", 40000, "vehicle"],
-	["CH-47 Chinook", "RHS_CH_47F", 70000, "vehicle"]
+	["CH-47 Chinook", "RHS_CH_47F", 70000, "vehicle"],
+
+	["AC-130U", "USAF_AC130U", 500000, "vehicle", "HIDDEN"],
+
+	["Mi-8AMTSh", "RHS_Mi8AMTSh_vvs", 80000, "vehicle"],
+	["Mi-8MTV-3 Heavy", "RHS_Mi8MTV3_heavy_vvs", 90000, "vehicle"]
 ];
 
 allAirStoreVehicles = compileFinal str (call civAirArray + call gunshipsHeliArray + call combatJetsArray + call utilityJetsArray + call utilityHeliArray + call specialistAirArray);

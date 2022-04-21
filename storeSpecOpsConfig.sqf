@@ -69,6 +69,8 @@ antiAirArray = compileFinal str
 	["Mk49 Spartan", "B_SAM_System_01_F", 160000],
 	["Praetorian 1C", "B_AAA_System_01_F", 120000],
 	["AN/MPQ-105 Radar", "B_Radar_System_01_F", 80000],
+	["P-37 Radar", "rhs_p37_turret_vpvo", 80000],
+	["PRV-13 Radar", "rhs_prv13_turret_vpvo", 80000],
 	["MIM-145 Defender", "B_SAM_System_03_F", 140000],
 	["R-750 Cronus Radar", "O_Radar_System_02_F", 80000],
 	["S-750 Rhea", "O_SAM_System_04_F", 150000]

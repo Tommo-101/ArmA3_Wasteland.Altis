@@ -32,7 +32,14 @@ pistolArray = compileFinal str
 	["M9 Beretta", "rhsusf_weap_m9", 200],  // M9 Beretta
 	["M320 GLM", "rhs_weap_M320", 200],  // M320 GLM
 	["Glock 17", "rhsusf_weap_glock17g4", 200],  // Glock 17
-	["M1911A1", "rhsusf_weap_m1911a1", 200] // M1911A1
+	["M1911A1", "rhsusf_weap_m1911a1", 200], // M1911A1
+
+	["PM Makarov", "rhs_weap_makarov_pm", 200],
+	["MP-443", "rhs_weap_pya", 200],
+
+	["RSP-30 Red Flare", "rhs_weap_rsp30_red", 100],
+	["RSP-30 Green Flare", "rhs_weap_rsp30_green", 100],
+	["RSP-30 White Flare", "rhs_weap_rsp30_white", 100]
 ];
 
 smgArray = compileFinal str
@@ -200,6 +207,44 @@ rifleArray = compileFinal str
 	["Mk 18 Mod 1", "rhs_weap_mk18", 650],
 	["M32 MGL", "rhs_weap_m32", 1000],
 
+
+	//RHSAFRF
+	["AK103","rhs_weap_ak103", 600],
+	["AK103-1","rhs_weap_ak103_1", 600],
+	["AK103-2","rhs_weap_ak103_2", 600],
+	["AK103 (GP25)","rhs_weap_ak103_gp25", 600],
+	["AK103 (GP25/B-13)","rhs_weap_ak103_gp25_npz", 600],
+	["AK103 (B-13)","rhs_weap_ak103_npz", 600],
+	["AK104","rhs_weap_ak104", 600],
+	["AK104 (B-13)","rhs_weap_ak104_npz", 600],
+	["AK105","rhs_weap_ak105", 600],
+	["AK105 (B-13)","rhs_weap_ak105_npz", 600],
+	["AK74","rhs_weap_ak74m", 600],
+	["AK74M 2-MAG","rhs_weap_ak74m_2mag", 600],
+	["AK74M (Green)","rhs_weap_ak74m_2mag_camo", 600],
+	["AK74M 2-MAG (B-13)","rhs_weap_ak74m_2mag_npz", 600],
+	["AK74M (Green)","rhs_weap_ak74m_camo", 600],
+	["AK74M Folded (Green)","rhs_weap_ak74m_camo_folded", 600],
+	["AK74M (B-13/Green)","rhs_weap_ak74m_camo_npz", 600],
+	["AK74M (Desert)","rhs_weap_ak74m_desert", 600],
+	["AK74M Folded (Desert)","rhs_weap_ak74m_desert_folded", 600],
+	["AK74M (B-13/Desert)","rhs_weap_ak74m_desert_npz", 600],
+	["AK74M Folded","rhs_weap_ak74m_folded", 600],
+	["AK74M (GP25)","rhs_weap_ak74m_gp25", 600],
+	["AK74M (GP25/B-13)","rhs_weap_ak74m_gp25_npz", 600],
+	["AK74M (B-13)","rhs_weap_ak74m_npz", 600],
+	["AK74M (PLUM)","rhs_weap_ak74m_plummag", 600],
+	["AK74M Folded (PLUM)","rhs_weap_ak74m_plummag_folded", 600],
+	["AK74M (B-13/PLUM)","rhs_weap_ak74m_plummag_npz", 600],
+	["AKM","rhs_weap_akm", 600],
+	["AKM (GP25)","rhs_weap_akm_gp25", 600],
+	["AKM S","rhs_weap_akms", 600],
+	["AKM S (GP25)","rhs_weap_akms_gp25", 600],
+	["AS Val","rhs_weap_asval", 600],
+	["AS Val (Grip)","rhs_weap_asval_grip", 600],
+	["AS Val (B-13)","rhs_weap_asval_npz", 600],
+	["AS Val (Grip/B-13)","rhs_weap_asval_grip_npz", 600],
+
 	["AKS-74U Carbine", "arifle_AKS_F", 550],
 	["AKM Rifle", "arifle_AKM_F", 600],
 	["AKU-12 Carbine", "arifle_AK12U_F", 600],
@@ -280,7 +325,14 @@ sniperArray = compileFinal str
 	["M2010 ESR (Desert)", "rhs_weap_XM2010_d", 3000], // M2010 ESR (Desert)
   ["M2010 ESR (Semi-arid)", "rhs_weap_XM2010_sa", 3000], // M2010 ESR (Semi-arid)
   ["M2010 ESR (Camo)", "rhs_weap_XM2010_wd", 3000], // M2010 ESR (Camo)
-  ["M2010 ESR", "rhs_weap_XM2010", 3000]  // M2010 ESR
+  ["M2010 ESR", "rhs_weap_XM2010", 3000],  // M2010 ESR
+
+	["SVDP", "rhs_weap_svdp", 1250],
+	["SVDP (Rail)","rhs_weap_svdp_npz", 1250],
+	["SVDP (Woodland)","rhs_weap_svdp_wd", 1250],
+	["SVDP (Rail/Woodland)","rhs_weap_svdp_wd_npz", 1250],
+	["SVDS","rhs_weap_svds", 1250],
+	["SVDS (Rail)","rhs_weap_svds_npz", 1250]
 ];
 
 lmgArray = compileFinal str
@@ -320,7 +372,10 @@ lmgArray = compileFinal str
   ["M249 PIP (Short/Para)", "rhs_weap_m249_pip_S_para", 3000], // M249 PIP (Short/Para)
   ["M249 PIP (Short/Savit)", "rhs_weap_m249_pip_S", 3000], // M249 PIP (Short/Savit)
   ["M249 PIP", "rhs_weap_m249_pip", 3000], // M249 PIP
-  ["M249", "rhs_weap_m249", 3000] // M249
+  ["M249", "rhs_weap_m249", 3000], // M249
+
+	["PKM","rhs_weap_pkm", 2000],
+	["PKP","rhs_weap_pkp", 2000]
 ];
 
 launcherArray = compileFinal str
@@ -358,7 +413,12 @@ launcherArray = compileFinal str
 	["M72A7", "rhs_weap_m72a7", 2000], // M72A7
 	["M3 MAAWS", "rhs_weap_maaws", 2500], // M3 MAAWS
 	["MK153 Mod 0 SMAW (Green)", "rhs_weap_smaw_green", 2500], // MK153 Mod 0 SMAW (Green)
-  ["MK153 Mod 0 SMAW (Black)", "rhs_weap_smaw", 2500] // MK153 Mod 0 SMAW (Black)
+  ["MK153 Mod 0 SMAW (Black)", "rhs_weap_smaw", 2500], // MK153 Mod 0 SMAW (Black)
+
+	["9K38 Igla","rhs_weap_igla", 2000],
+	["RGP-26","rhs_weap_rpg26", 2000],
+	["RPG-7","rhs_weap_rpg7", 2000],
+	["RSHG-2","rhs_weap_rshg2", 2000]
 ];
 
 allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call rifleArray + call lmgArray + call sniperArray + call launcherArray);
@@ -400,6 +460,16 @@ staticGunsArray = compileFinal str
 	["Mk6 Mortar", "O_Mortar_01_F", 25000],
 	["Mk6 Mortar", "I_Mortar_01_F", 25000],
 	//RHS
+	["ZU-23-2", "RHS_ZU23_MSV", 22000],
+	["SPG-9M Low tripod", "rhs_SPG9M_MSV", 10000],
+	["NSV (6T7) Low tripod", "RHS_NSV_TriPod_MSV", 10000],
+	["KORD 6U16 High tripod", "rhs_KORD_high_MSV", 12000],
+	["KORD 6U16 Low tripod", "rhs_KORD_MSV", 12000],
+	["AGS-30 Low tripod", "RHS_AGS30_TriPod_MSV", 12000],
+	["9K38 AA Seat", "rhs_Igla_AA_pod_msv", 12000],
+	["9K133-1 Kornet Low tripod", "rhs_Kornet_9M133_2_msv", 10000],
+	["9k115-2 Metis", "rhs_Metis_9k115_2_msv", 10000],
+
 	["M119 Howitzer", "RHS_M119_D", 45000],
 	["TOW tripod", "RHS_TOW_TriPod_WD", 10000],
 	["M2 .50 High tripod", "RHS_M2StaticMG_WD", 10000],
@@ -552,7 +622,44 @@ ammoArray = compileFinal str
 	["12 Gauge 6Rnd Slug", "6Rnd_12Gauge_Slug", 100],
 	["Signal Flares (Green)", "6Rnd_GreenSignal_F", 45],
 	["Signal Flares (Red)", "6Rnd_RedSignal_F", 45],
-	///RHS
+	///RHSAFRF
+	["30rnd 545x39 AK", "rhs_30Rnd_545x39_AK", 200],
+	["30rnd 545x39 AK no tracers", "rhs_30Rnd_545x39_AK_no_tracers", 200],
+	["30rnd 545x39 AK Green", "rhs_30Rnd_545x39_AK_green", 200200],
+	["30rnd 545x39 7N10 AK", "rhs_30Rnd_545x39_7N10_AK", 200],
+	["30rnd 545x39 7N22 AK", "rhs_30Rnd_545x39_7N22_AK", 200],
+	["30rnd 545x39 7U1 AK", "rhs_30Rnd_545x39_7U1_AK", 200],
+	["45rnd 545X39 7N22 AK", "rhs_45Rnd_545X39_7N22_AK", 200],
+	["45rnd 545X39 7N10 AK", "rhs_45Rnd_545X39_7N10_AK", 200],
+	["45rnd 545X39 Green", "rhs_45Rnd_545X39_AK_Green", 200],
+	["45rnd 545X39", "rhs_45Rnd_545X39_AK", 200],
+	["45rnd 545X39 7U1 AK", "rhs_45Rnd_545X39_7U1_AK", 200],
+	["30rnd 762x39mm", "rhs_30Rnd_762x39mm", 200],
+	["30rnd 762x39mm (Tracer)", "rhs_30Rnd_762x39mm_tracer", 200],
+	["30rnd 762x39mm 89", "rhs_30Rnd_762x39mm_89", 200],
+	["30rnd 762x39mm U", "rhs_30Rnd_762x39mm_U", 200],
+	["20rnd 9x39mm SP5", "rhs_20rnd_9x39mm_SP5", 200],
+	["20rnd 9x39mm SP6", "rhs_20rnd_9x39mm_SP6", 200],
+
+	["100rnd 762x54mmR","rhs_100Rnd_762x54mmR", 250],
+	["100rnd 762x54mmR Green","rhs_100Rnd_762x54mmR_green", 250],
+
+	["10Rnd 762x54mmR 7N1","rhs_10Rnd_762x54mmR_7N1", 100],
+
+	["RPG-26 Ammo","rhs_rpg26_mag",100],
+	["RPG-2 Ammo","rhs_rshg2_mag",100],
+	["RPG-18 Ammo","rhs_rpg18_mag",100],
+	["RPG-7 PG-7VL","rhs_rpg7_PG7VL_mag",250],
+	["RPG-7 PG-7VR","rhs_rpg7_PG7VR_mag",250],
+	["RPG-7 TBG-7V","rhs_rpg7_TBG7V_mag",250],
+	["RPG-7 OG-7V","rhs_rpg7_OG7V_mag",250],
+	["9k32 Rocket","rhs_mag_9k32_rocket",250],
+	["9k38 Rocket","rhs_mag_9k38_rocket",250],
+
+	["17rnd 9x19","rhs_mag_9x19_17", 30],
+	["12rnd 9x18 57N181S","rhs_mag_9x18_12_57N181S", 30],
+
+	//RHSUSF
 	["Javelin AT", "rhs_fgm148_magazine_AT", 1700],
   ["FGM172A SRAW", "rhs_fgm172a_magazine_AT", 800],
   ["FGM172B SRAW-MPV", "rhs_fgm172b_magazine_MPV", 800],
@@ -877,6 +984,34 @@ accessoriesArray = compileFinal str
 	["TWS MG", "optic_tws_mg", 5000, "item", "HIDDEN"],
 	["Nightstalker", "optic_Nightstalker", 6500, "item", "HIDDEN"],
 	["LEUPOLD MK4", "rhsusf_acc_LEUPOLDMK4_2", 225, "item"],
+
+	//RHSAFRF
+	["RUS BIPOD","rhs_bipod", 200, "item"],
+	["THPA","rhs_acc_tgpa", 200, "item"],
+	["PBS-1","rhs_acc_pbs1", 200, "item"],
+	["DTK-4 short","rhs_acc_dtk4short", 200, "item"],
+	["TGPV","rhs_acc_tgpv", 200, "item"],
+	["DTK-4 long","rhs_acc_dtk4long", 200, "item"],
+	["DTK-4 screw","rhs_acc_dtk4screws", 200, "item"],
+	["DTK Muzzle Flash","rhs_acc_muzzleFlash_dtk", 200, "item"],
+	["DTK-3","rhs_acc_dtk3", 200, "item"],
+	["DTK-1","rhs_acc_dtk1", 200, "item"],
+	["DTK","rhs_acc_dtk", 200, "item"],
+	["DTK-1L","rhs_acc_dtk1l", 200, "item"],
+	["AK5","rhs_acc_ak5", 200, "item"],
+	["1P29","rhs_acc_1p29", 200, "item"],
+	["1P78","rhs_acc_1p78", 200, "item"],
+	["PKAS","rhs_acc_pkas", 200, "item"],
+	["EKP-1","rhs_acc_ekp1", 200, "item"],
+	["1P63","rhs_acc_1p63", 200, "item"],
+	["EKP1-B","rhs_acc_ekp1b", 200, "item"],
+	["EKP1-C","rhs_acc_ekp1c", 200, "item"],
+	["EKP1-D","rhs_acc_ekp1d", 200, "item"],
+	["NPZ","rhs_acc_npz", 200, "item"],
+	["PSO-1M2","rhs_acc_pso1m2", 200, "item"],
+	["PGO-7V","rhs_acc_pgo7v", 200, "item"],
+	["1PN93-1","rhs_acc_1pn93_1", 200, "item"],
+	["1PN93-2","rhs_acc_1pn93_2", 200, "item"],
 
 	// RHS
 	["AT-4 Peep hole handler", "rhs_acc_at4_handler", 400, "item"],  // AT-4 Peep hole handler
@@ -2208,6 +2343,22 @@ colorsArray = compileFinal str
 			]]
 		]
 	],
+	/*[
+		"USAF_F35A_STEALTH",
+		[
+			["Cheese (Why?)", [
+				[0, _texDir + "mohawk_marine_one_0.paa"]
+			]]
+		]
+	],
+	[
+		"USAF_F35A",
+		[
+			["Cheese (Why?)", [
+				[0, _texDir + "mohawk_marine_one_0.paa"]
+			]]
+		]
+	],*/
 	[
 		"B_MRAP_01_F",
 		[
