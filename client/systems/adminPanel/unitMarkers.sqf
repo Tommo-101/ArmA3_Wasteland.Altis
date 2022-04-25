@@ -1,7 +1,6 @@
-
-if ((getPlayerUID player) call isAdmin) then
+_uid = getPlayerUID player;
+if (_uid call isAdmin) then
 {
-	hint "Unit Markers- 123";
 	if (isNil "adminUnitMarkers") then { adminUnitMarkers = false };
 
 	if (!adminUnitMarkers) then
@@ -18,7 +17,7 @@ if ((getPlayerUID player) call isAdmin) then
 					case INDEPENDENT: { [0, 1, 0, 1] };
 					default           { [1, 1, 1, 1] };
 				};
-				_maxDistance = 1000;
+				_maxDistance = 2000;
 				if (vehicle player isKindOf "Plane" && _speed >= 200) then
 				{
 					_maxDistance = _maxDistance * _speed / 200;

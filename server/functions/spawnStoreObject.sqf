@@ -413,6 +413,11 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 					(group _object) setGroupOwner owner _player;
 				};
 			};
+
+			if (_isVehStore) then
+			{
+				[getPlayerUID _player, name _player, side _player, "Buy Vehicle", netId _object, _itemPrice, position _object, typeOf _object, ""] call fn_logPlayerAction;
+			};
 		};
 	};
 };

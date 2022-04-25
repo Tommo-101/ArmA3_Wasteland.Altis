@@ -459,6 +459,7 @@ staticGunsArray = compileFinal str
 	["Mk6 Mortar", "B_Mortar_01_F", 25000],
 	["Mk6 Mortar", "O_Mortar_01_F", 25000],
 	["Mk6 Mortar", "I_Mortar_01_F", 25000],
+	["2B14-1 'Podnos' Mortar", "rhs_2b14_82mm_vmf", 25000],
 	//RHS
 	["ZU-23-2", "RHS_ZU23_MSV", 22000],
 	["SPG-9M Low tripod", "rhs_SPG9M_MSV", 10000],
@@ -471,6 +472,7 @@ staticGunsArray = compileFinal str
 	["9k115-2 Metis", "rhs_Metis_9k115_2_msv", 10000],
 
 	["M119 Howitzer", "RHS_M119_D", 45000],
+	["2A18M (D-30A) Artillery", "rhs_D30_vmf", 45000],
 	["TOW tripod", "RHS_TOW_TriPod_WD", 10000],
 	["M2 .50 High tripod", "RHS_M2StaticMG_WD", 10000],
 	["MK19 Low tripod", "RHS_MK19_TriPod_WD", 12000]
@@ -1599,11 +1601,14 @@ uniformArray = compileFinal str
 	["Army Combat Uniform (UCP)", "rhs_uniform_acu_ucp", 500, "uni"],
 	["Army Combat Uniform (UCP-D)", "rhs_uniform_acu_ucpd", 500, "uni"],
 	["Battle Dress Uniform (ERDL)", "rhs_uniform_bdu_erdl", 500, "uni"],
+	["Combat Uniform OCP","rhs_uniform_cu_ocp", 500, "uni"],
+	["Combat Uniform OCP (Patchless)","rhs_uniform_cu_ocp_patchless", 500, "uni"],
 	["Combat Uniform OCP (101st Airborne Div.)", "rhs_uniform_cu_ocp_101st", 500, "uni"],
 	["Combat Uniform OCP (10th Mountain Div.)", "rhs_uniform_cu_ocp_10th", 500, "uni"],
 	["Combat Uniform OCP (1st Cavalry Div.)", "rhs_uniform_cu_ocp_1stcav", 500, "uni"],
 	["Combat Uniform OCP (82nd Airborne Div.)", "rhs_uniform_cu_ocp_82nd", 500, "uni"],
-	["Combat Uniform OCP", "rhs_uniform_cu_ocp", 500, "uni"],
+	["Combat Uniform UCP", "rhs_uniform_cu_ucp", 500, "uni"],
+	["Combat Uniform UCP (Patchless)", "rhs_uniform_cu_ucp_patchless", 500, "uni"],
 	["Combat Uniform UCP (101st Airborne Div.)", "rhs_uniform_cu_ucp_101st", 500, "uni"],
 	["Combat Uniform UCP (10th Mountain Div.)", "rhs_uniform_cu_ucp_10th", 500, "uni"],
 	["Combat Uniform UCP (1st Cavalry Div.)", "rhs_uniform_cu_ucp_1stcav", 500, "uni"],
@@ -1611,6 +1616,38 @@ uniformArray = compileFinal str
 	["Combat Uniform UCP", "rhs_uniform_cu_ucp", 500, "uni"],
 	["FROG MARPAT-D", "rhs_uniform_FROG01_d", 500, "uni"],
 	["FROG MARPAT-WD", "rhs_uniform_FROG01_wd", 500, "uni"],
+	["FROG M81","rhs_uniform_FROG01_m81", 500, "uni"],
+
+	["6hs122 (Spring)","rhs_uniform_6hs122_v1", 500, "uni"],
+	["6hs122 (Spring/Gloves)","rhs_uniform_6hs122_gloves_v1", 500, "uni"],
+	["6hs122 (Fall)","rhs_uniform_6hs122_v2", 500, "uni"],
+	["6hs122 (Fall/Gloves)","rhs_uniform_6hs122_gloves_v2", 500, "uni"],
+
+	["Cossack Uniform","rhs_uniform_cossack", 500, "uni"],
+	["DF-15 Flight coverall","rhs_uniform_df15", 500, "uni"],
+	["DF-15 Flight coverall (Tan)","rhs_uniform_df15_tan", 500, "uni"],
+	["EMR (Desert)","rhs_uniform_emr_des_patchless", 500, "uni"],
+	["EMR (Patchless/Desert)","rhs_uniform_emr_patchless", 500, "uni"],
+	["Flora","rhs_uniform_flora", 500, "uni"],
+	["Flora (Patchless)","rhs_uniform_flora_patchless", 500, "uni"],
+	["M-Flora (Patchless)","rhs_uniform_mflora_patchless", 500, "uni"],
+	["Flora Alt. (Patchless)","rhs_uniform_flora_patchless_alt", 500, "uni"],
+	["Gorka 1 Afghanka","rhs_uniform_gorka_1_a", 500, "uni"],
+	["Gorka 1 Berezka","rhs_uniform_gorka_1_b", 500, "uni"],
+	["Gorka (Green)","rhs_uniform_gorka_r_g", 500, "uni"],
+	["Gorka (Green/Gloves)","rhs_uniform_gorka_r_g_gloves", 500, "uni"],
+	["Gorka (Yellow)","rhs_uniform_gorka_r_y", 500, "uni"],
+	["Gorka (Yellow/Gloves)","rhs_uniform_gorka_r_y_gloves", 500, "uni"],
+	["M88 (Patchless)","rhs_uniform_m88_patchless", 500, "uni"],
+	//["","rhs_uniform_msv_emr", 500, "uni"],
+	//["","rhs_uniform_mvd_izlom", 500, "uni"],
+	//["","rhs_uniform_rva_flora", 500, "uni"],
+//	["","rhs_uniform_vdv_emr", 500, "uni"],
+	//["","rhs_uniform_vdv_emr_des", 500, "uni"],
+	//["","rhs_uniform_vdv_flora", 500, "uni"],
+	//["","rhs_uniform_vdv_mflora", 500, "uni"],
+	//["","rhs_uniform_vmf_flora", 500, "uni"],
+	//["","rhs_uniform_vmf_flora_subdued", 500, "uni"],
 	//
 	/*["Racing Suit (Black)", "U_C_Driver_1_black", 25, "uni"], // can only be worn by civilian units
 	["Racing Suit (Blue)", "U_C_Driver_1_blue", 25, "uni"],
@@ -1760,7 +1797,9 @@ vestArray = compileFinal str
 	["SPCS (Squad Leader/UCP)", "rhsusf_spcs_ucp_squadleader", 200, "vest"],
 	["SPCS (Team Leader Alt/UCP)", "rhsusf_spcs_ucp_teamleader_alt", 200, "vest"],
 	["SPCS (Team Leader/UCP)", "rhsusf_spcs_ucp_teamleader", 200, "vest"],
-	["SPCS (UCP)", "rhsusf_spcs_ucp", 200, "vest"]
+	["SPCS (UCP)", "rhsusf_spcs_ucp", 200, "vest"],
+
+
 ];
 
 backpackArray = compileFinal str
