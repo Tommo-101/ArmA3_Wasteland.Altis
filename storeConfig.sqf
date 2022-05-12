@@ -459,6 +459,7 @@ staticGunsArray = compileFinal str
 	["Mk6 Mortar", "B_Mortar_01_F", 25000],
 	["Mk6 Mortar", "O_Mortar_01_F", 25000],
 	["Mk6 Mortar", "I_Mortar_01_F", 25000],
+	["MRS120 120mm Mortar", "BWA3_MRS120_Fleck", 25000],
 	["2B14-1 'Podnos' Mortar", "rhs_2b14_82mm_vmf", 25000],
 	//RHS
 	["ZU-23-2", "RHS_ZU23_MSV", 22000],
@@ -475,7 +476,9 @@ staticGunsArray = compileFinal str
 	["2A18M (D-30A) Artillery", "rhs_D30_vmf", 45000],
 	["TOW tripod", "RHS_TOW_TriPod_WD", 10000],
 	["M2 .50 High tripod", "RHS_M2StaticMG_WD", 10000],
-	["MK19 Low tripod", "RHS_MK19_TriPod_WD", 12000]
+	["MK19 Low tripod", "RHS_MK19_TriPod_WD", 12000],
+	["MG3 Low tripod", "rnt_mg3_static", 10000],
+	["Milan AT Low tripod", "Redd_Milan_Static", 12000]
 ];
 
 throwputArray = compileFinal str
@@ -1797,9 +1800,7 @@ vestArray = compileFinal str
 	["SPCS (Squad Leader/UCP)", "rhsusf_spcs_ucp_squadleader", 200, "vest"],
 	["SPCS (Team Leader Alt/UCP)", "rhsusf_spcs_ucp_teamleader_alt", 200, "vest"],
 	["SPCS (Team Leader/UCP)", "rhsusf_spcs_ucp_teamleader", 200, "vest"],
-	["SPCS (UCP)", "rhsusf_spcs_ucp", 200, "vest"],
-
-
+	["SPCS (UCP)", "rhsusf_spcs_ucp", 200, "vest"]
 ];
 
 backpackArray = compileFinal str
@@ -1997,6 +1998,19 @@ allStoreGear = compileFinal str (call headArray + call uniformArray + call vestA
 genObjectsArray = compileFinal str
 [
 	//["Base Re-Locker", "Land_Device_assembled_F", 25000, "object"],  //Cael817, SNAFU,Used for base operations <-- Destroyable
+	["(BWA) Fuel Container (Fleck)", "BWA3_TCK9_Fuel_Fleck", 2000, "object"],
+	["(BWA) Fuel Container (Tropen)", "BWA3_TCK9_Fuel_Tropen", 2000, "object"],
+	["(BWA) Fuel Container (Winter)", "BWA3_TCK9_Fuel_Winter", 2000, "object"],
+	["(BWA) Ammo Container (Fleck)", "BWA3_WLP14_Ammo_Fleck", 2000, "object"],
+	["(BWA) Ammo Container (Tropen)", "BWA3_WLP14_Ammo_Tropen", 2000, "object"],
+	["(BWA) Ammo Container (Winter)", "BWA3_WLP14_Ammo_Winter", 2000, "object"],
+	["(BWA) Repair Container (Fleck)", "BWA3_WLP14_Repair_Fleck", 2000, "object"],
+	["(BWA) Repair Container (Tropen)", "BWA3_WLP14_Repair_Tropen", 2000, "object"],
+	["(BWA) Repair Container (Winter)", "BWA3_WLP14_Repair_Winter", 2000, "object"],
+	["(BWA) Flatbed (Olive)", "BWA3_WLP14_Flatbed_Oliv", 1000, "object"],
+	["(BWA) Flatbed (Tropen)", "BWA3_WLP14_Flatbed_Tropen", 1000, "object"],
+	["(BWA) Flatbed (Winter)", "BWA3_WLP14_Flatbed_Winter", 1000, "object"],
+
 	["Ammo Cache", "Box_FIA_Support_F", 250, "ammocrate"],
 	["Container (Resupply Crate)", "Land_Cargo10_red_F", 4000, "resupplyObject"],
 	["Boom Gate", "Land_BarGate_F", 150, "object"],
@@ -2037,7 +2051,8 @@ genObjectsArray = compileFinal str
 	["Scaffolding", "Land_Scaffolding_F", 250, "object"],
 	["Scaffolding (New)", "Land_Scaffolding_New_F", 250, "object"],
 	["Fireplace", "Land_FirePlace_F", 50, "object"],
-	["Campfire", "Land_Campfire_F", 65, "object"]
+	["Campfire", "Land_Campfire_F", 65, "object"],
+	["(BWA) German Flag", "BWA3_Flag_Germany", 500, "object"]
 ];
 
 genBuildingsArray = compileFinal str

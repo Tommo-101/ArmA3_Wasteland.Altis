@@ -2,7 +2,7 @@
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Version: 2.1
-//	@file Name: mission_ATMTransport.sqf
+//	@file Name: mission_NATOATMTransport.sqf
 //	@file Author: JoSchaap / routes by Del1te - (original idea by Sanjo), AgentRev
 //	@file Created: 31/08/2013 18:19
 //	@file WS Edit: GriffinZS
@@ -25,7 +25,7 @@ _setupVars =
 	[
 		// Easy
 		[
-			"Small ATM Transport", // Marker text
+			"Small NATO Money Transport", // Marker text
 			50000, // Money
 			[
 				[ // NATO convoy
@@ -38,7 +38,7 @@ _setupVars =
 		],
 		// Medium
 		[
-			"Medium ATM Transport", // Marker text
+			"Medium NATO Money Transport", // Marker text
 			70000, // Money
 			[
 				[ // NATO convoy
@@ -52,7 +52,7 @@ _setupVars =
 		],
 		// Hard
 		[
-			"Large ATM Transport", // Marker text
+			"Large NATO Money Transport", // Marker text
 			100000, // Money
 			[
 				[ // NATO convoy
@@ -70,7 +70,7 @@ _setupVars =
 		],
 		// Extreme
 		[
-			"Heavy ATM Transport", // Marker text
+			"Heavy NATO Money Transport", // Marker text
 			200000, // Money
 			[
 				[ // NATO convoy
@@ -195,7 +195,7 @@ _setupObjects =
 	//_missionPicture = "pictures\atmtransport.paa";
 	_vehicleName = getText (configFile >> "cfgVehicles" >> _veh2 >> "displayName");
 
-	_missionHintText = format ["A convoy is transporting <t color='%1'>%2</t> to an unknown ATM location.<br/>Best chance for you to earn some extra money!", moneyMissionColor, _moneyText];
+	_missionHintText = format ["A NATO convoy is transporting <t color='%1'>%2</t> to an unknown ATM location.<br/>Best chance for you to earn some extra money!", moneyMissionColor, _moneyText];
 
 	_numWaypoints = count waypoints _aiGroup;
 };
@@ -221,7 +221,7 @@ _successExec =
 		_cash setVariable ["owner", "world", true];
 	};
 
-	_successHintMessage = "Nice! Look's like that ATM shipment won't be going anywhere..";
+	_successHintMessage = "Nice! Look's like that ATM shipment won't be going anywhere, NATO will be pretty hurt over that..";
 };
 
 _this call moneyMissionProcessor;

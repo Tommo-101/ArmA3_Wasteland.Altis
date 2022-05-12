@@ -68,7 +68,7 @@ _setupObjects =
 	_extractedPoint = createMarker ["missionAirForceOne", getPos _airforceOne];
 	_extractedPoint setMarkerType "loc_plane";
 	_extractedPoint setMarkerText "Air Force One";
-	_extractedPoint setMarkerColor "ColorWhite";
+	_extractedPoint setMarkerColor "ColorGreen";
 	_extractedPoint setMarkerSize [0.5, 0.5];
 
 	_AAgroup = createGroup CIVILIAN;

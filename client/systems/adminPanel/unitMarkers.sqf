@@ -18,22 +18,23 @@ if (_uid call isAdmin) then
 					default           { [1, 1, 1, 1] };
 				};
 				_maxDistance = 2000;
-				if (vehicle player isKindOf "Plane" && _speed >= 200) then
-				{
-					_maxDistance = _maxDistance * _speed / 200;
-				}
-				if (vehicle player isKindOf "Helicopter" && _speed >= 125) then
-				{
-					_maxDistance = _maxDistance * _speed / 125;
-				};
+				//if (vehicle player isKindOf "Plane" && _speed >= 200) then
+				//{
+				//	_maxDistance = _maxDistance * (_speed / 200);
+				//}
+				//if (vehicle player isKindOf "Helicopter" && _speed >= 125) then
+				//{
+				//	_maxDistance = _maxDistance * (_speed / 125);
+				//};
 				_dist = (_x distance player) / _maxDistance;
 				_tagcolor set [3, 1 - _dist];
-			drawIcon3D ["", _tagcolor, [(visiblePositionasl _x select 0), (visiblePositionasl _x select 1), (ASLToATL (visiblePositionASL _x) select 2) + 1.5 ], 1.5, 1.5, 0, name _x, 2, 0.03, "PuristaBold" ];
+				drawIcon3D ["", _tagcolor, [(visiblePositionasl _x select 0), (visiblePositionasl _x select 1), (ASLToATL (visiblePositionASL _x) select 2) + 1.5 ], 1.5, 1.5, 0, name _x, 2, 0.03, "PuristaBold" ];
 			} foreach ((allUnits - [player]) select { alive _x });
 		}];
+
 		player setVariable ["unitMarkers", _eh, true];
-	} else
-	{
+
+	} else {
 		adminUnitMarkers = false;
 		hint "Unit Markers OFF";
 		_eh = player getVariable ["unitMarkers", -1];

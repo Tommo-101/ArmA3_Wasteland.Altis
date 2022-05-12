@@ -17,6 +17,7 @@ _setupVars =
 	[
 		"B_MBT_01_mlrs_F",
 		"B_MBT_01_arty_F",
+		"BWA3_Panzerhaubitze2000_Fleck",
 		"RHS_BM21_MSV_01"
 	];
 

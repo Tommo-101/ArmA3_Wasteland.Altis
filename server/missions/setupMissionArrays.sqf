@@ -9,12 +9,12 @@ if (!isServer) exitWith {};
 AirMissions =
 [
   ["mission_CivHeli", 1],
-  ["mission_HostileHelicopter", 0.5],
+  ["mission_HostileHelicopter", 0.6],
 	["mission_HostileHeliformation", 1],
 	["mission_HostileJet", 1],
-	["mission_AggressiveJet", 0.3],
-	["mission_NukeBomber", 0.3],
-	["mission_HostileSU25Formation", 0.5],
+	["mission_AggressiveJet", 0.2],
+	["mission_NukeBomber", 0.2],
+	["mission_HostileSU25Formation", 0.6],
   ["mission_HostileJetFormation", 1],
   ["mission_SkySmuggler", 1]
 ];
@@ -43,9 +43,9 @@ SideMissions =
   ["mission_HostageRescue", 1],
   ["mission_Medevac", 1],
 	["mission_MiniConvoy", 1],
-  ["mission_Occupation", 2],
-  ["mission_Outpost", 2],
-	["mission_TownInvasion", 2],
+  ["mission_Occupation", 1],
+  ["mission_Outpost", 1],
+	["mission_TownInvasion", 1],
 	["mission_Truck", 1],
   ["mission_WepCache", 1]
 ];
@@ -54,7 +54,8 @@ MoneyMissions =
 [
 	["mission_MoneyShipment", 1],
   ["mission_BountyHunt", 0.5],
-  ["mission_ATMTransport", 1]
+  ["mission_RUSATMTransport", 1],
+  ["mission_NATOATMTransport", 1]
 ];
 
 PriorityMissions = //using afgm OR 509 where not exists BUDDSKI7

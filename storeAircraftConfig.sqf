@@ -35,6 +35,18 @@ gunshipsHeliArray = compileFinal str
 
 	// New RHS HELIS
 	["AH-64D Apache", "RHS_AH64D_wd", 120000, "vehicle"],
+	["AH-1 Apache", "UK3CB_BAF_Apache_AH1", 120000, "vehicle"],
+	["AH-1 Apache (AT)", "UK3CB_BAF_Apache_AH1_AT", 125000, "vehicle"],
+	["AH-1 Apache (CAS)", "UK3CB_BAF_Apache_AH1_CAS", 130000, "vehicle"],
+	["AH-1 Apache (JS)", "UK3CB_BAF_Apache_AH1_JS", 135000, "vehicle"],
+
+	["UH Tiger Gunpod (FZ Rockets)", "BWA3_Tiger_Gunpod_FZ", 120000, "vehicle"],
+	["UH Tiger Gunpod (Heavy)", "BWA3_Tiger_Gunpod_Heavy", 130000, "vehicle"],
+	["UH Tiger Gunpod (PARS)", "BWA3_Tiger_Gunpod_PARS", 140000, "vehicle"],
+	["UH Tiger RMK (FZ Rockets)", "BWA3_Tiger_RMK_FZ", 140000, "vehicle"],
+	["UH Tiger RMK (Heavy)", "BWA3_Tiger_RMK_Heavy", 160000, "vehicle"],
+	["UH Tiger RMK (PARS)", "BWA3_Tiger_RMK_PARS", 180000, "vehicle"],
+	["UH Tiger RMK (MR)", "BWA3_Tiger_RMK_Universal", 180000, "vehicle"],
 
 	["KA-52", "RHS_Ka52_vvs", 120000, "vehicle"],
 	["Mi-24V", "RHS_Mi24V_vvs", 120000, "vehicle"],
@@ -95,16 +107,22 @@ utilityHeliArray = compileFinal str
 
 	["KA-60 (Unarmed)", "rhs_ka60_grey", 30000, "vehicle"],
 	["Mi-8AMT (Unarmed)", "RHS_Mi8AMT_vvs", 40000, "vehicle"],
-	["Mi-8AMT (armed)", "RHS_Mi8mt_vvs", 45000, "vehicle"]
+	["Mi-8AMT (Armed)", "RHS_Mi8mt_vvs", 45000, "vehicle"],
+
+	["AW159 Wildcat AH1 (CAS)", "UK3CB_BAF_Wildcat_AH1_6_Armed", 40000, "vehicle"],
+	["AW159 Wildcat AH1 (HELL)", "UK3CB_BAF_Wildcat_AH1_HEL_8A", 50000, "vehicle"],
+	["AW159 Wildcat AH1 (Unarmed)", "UK3CB_BAF_Wildcat_AH1_TRN_8A", 30000, "vehicle"],
+
+	["Merlin HC3 Cargo (Unarmed)", "UK3CB_BAF_Merlin_HC3_Cargo", 30000, "vehicle"],
+	["Merlin HC3 CSAR (Armed)", "UK3CB_BAF_Merlin_HC3_CSAR", 37000, "vehicle"],
+	["Merlin HC3 GPMG (Armed)", "UK3CB_BAF_Merlin_HC3_18_GPMG", 39000, "vehicle"]
 ];
 
 specialistAirArray = compileFinal str
 [
 	["UH-60M Medivac", "RHS_UH60M_MEV2", 40000, "vehicle"],
 	["CH-47 Chinook", "RHS_CH_47F", 70000, "vehicle"],
-
 	["AC-130U", "USAF_AC130U", 500000, "vehicle", "HIDDEN"],
-
 	["Mi-8AMTSh", "RHS_Mi8AMTSh_vvs", 80000, "vehicle"],
 	["Mi-8MTV-3 Heavy", "RHS_Mi8MTV3_heavy_vvs", 90000, "vehicle"]
 ];

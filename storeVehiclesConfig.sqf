@@ -47,8 +47,19 @@ landArray = compileFinal str
 	["Van Ambulance", "C_Van_02_medevac_F", 1500, "vehicle", "SKIPSAVE"],
 	["Van Repair", "C_Van_02_service_F", 2000, "vehicle", "SKIPSAVE"],
 
+	["Eagle IV", "BWA3_Eagle_Fleck", 2000, "vehicle", "SKIPSAVE"],
+	["Eagle IV (FLW100)", "BWA3_Eagle_FLW100_Fleck", 2300, "vehicle", "SKIPSAVE"],
+
 	["UAZ-3151", "RHS_UAZ_MSV_01", 3000, "vehicle", "SKIPSAVE"],
-	["UAZ-3151 (Open)", "rhs_uaz_open_MSV_01", 3000, "vehicle", "SKIPSAVE"]
+	["UAZ-3151 (Open)", "rhs_uaz_open_MSV_01", 3000, "vehicle", "SKIPSAVE"],
+
+	["Land Rover Ambulance", "UK3CB_BAF_LandRover_Amb_Green_A", 25000, "vehicle", "SKIPSAVE"],
+	["Land Rover Hard Top", "UK3CB_BAF_LandRover_Hard_Green_A", 25000, "vehicle", "SKIPSAVE"],
+	["Land Rover Soft Top", "UK3CB_BAF_LandRover_Soft_Green_A", 25000, "vehicle", "SKIPSAVE"],
+	["Land Rover Soft Top FFR", "UK3CB_BAF_LandRover_Soft_FFR_Green_A", 25000, "vehicle", "SKIPSAVE"],
+
+	["Land Rover Snatch", "UK3CB_BAF_LandRover_Snatch_Green_A", 30000, "vehicle", "SKIPSAVE"],
+	["Land Rover Snatch FFR", "UK3CB_BAF_LandRover_Snatch_FFR_Green_A", 30000, "vehicle", "SKIPSAVE"],
 ];
 
 lightInfArray = compileFinal str
@@ -68,6 +79,12 @@ lightInfArray = compileFinal str
 	["Strider", "I_MRAP_03_F", 15000, "vehicle", "SKIPSAVE", "HIDDEN"],
 	["Strider HMG", "I_MRAP_03_hmg_F", 20000, "vehicle", "SKIPSAVE", "HIDDEN"],
 	["Strider GMG", "I_MRAP_03_gmg_F", 25000, "vehicle", "SKIPSAVE", "HIDDEN"],
+
+	["Panther GPMG", "UK3CB_BAF_Panther_GPMG_Green_A", 16000, "vehicle"],
+	["Land Rover WMIK GMG", "UK3CB_BAF_LandRover_WMIK_GMG_Green_A", 25000, "vehicle"],
+	["Land Rover WMIK GPMG", "UK3CB_BAF_LandRover_WMIK_GPMG_Green_A", 25000, "vehicle"],
+	["Land Rover WMIK HMG", "UK3CB_BAF_LandRover_WMIK_HMG_Green_A", 25000, "vehicle"],
+	["Land Rover WMIK Milan", "UK3CB_BAF_LandRover_WMIK_Milan_Green_A", 29000, "vehicle"],
 	/// New Humvees
 	["M1043 HMMWV Unarmed", "rhsusf_m1043_w", 12000, "vehicle"],
 	["M1043 HMMWV M2 HMG", "rhsusf_m1043_w_m2", 18000, "vehicle"],
@@ -84,14 +101,28 @@ lightInfArray = compileFinal str
 	["M1151 HMMWV MK19 Crows", "rhsusf_m1151_mk19crows_usarmy_wd", 30000, "vehicle"],
 	["M1151 HMMWV TOW", "rhsusf_m966_w", 34000, "vehicle"],
 
+	["Jackal 2 (HMG)", "UK3CB_BAF_Jackal2_L111A1_G", 20000, "vehicle"],
+	["Jackal 2 (GMG)", "UK3CB_BAF_Jackal2_L134A1_G", 25000, "vehicle"],
+
+	["Dingo 2 GE A3.2B (MG3)", "BWA3_Dingo2_FLW100_MG3_Fleck", 22000, "vehicle"],
+	["Dingo 2 GE A3.2B (GMW)", "BWA3_Dingo2_FLW200_GMW_Fleck", 24000, "vehicle"],
+	["Dingo 2 GE A3.3B (M2)", "BWA3_Dingo2_FLW200_M2_Fleck", 24000, "vehicle"],
+	["Dingo 2 GE A3.4 CG-13 (GMW)", "BWA3_Dingo2_FLW200_GMW_CG13_Fleck", 24000, "vehicle"],
+	["Dingo 2 GE A3.4 CG-13 (M2)", "BWA3_Dingo2_FLW200_M2_CG13_Fleck", 24000, "vehicle"],
+	["Dingo 2 GE A3.4 CG-13 (MG3)", "BWA3_Dingo2_FLW100_MG3_CG13_Fleck", 24000, "vehicle"],
+
 	["GAZ-233011 (Unarmed)", "rhs_tigr_msv", 16000, "vehicle"],
 	["GAZ-233114 (Unarmed)", "rhs_tigr_m_msv", 17000, "vehicle"],
 	["GAZ-233014", "rhs_tigr_sts_msv", 24000, "vehicle"],
 
-	["PRP-3", "rhs_prp3_tv", 30000, "vehicle"],
-	["PRP-3", "rhs_prp3_tv", 30000, "vehicle"],
+	["FV432 Mark 3 Bulldog GPMG", "UK3CB_BAF_FV432_Mk3_GPMG_Green", 34000, "vehicle"],
+	["FV432 Mark 3 Bulldog RWS", "UK3CB_BAF_FV432_Mk3_RWS_Green", 37000, "vehicle"],
 
-	["PTS-M", "rhs_pts_vmf", 15000, "vehicle"]
+	["PRP-3", "rhs_prp3_tv", 30000, "vehicle"],
+	["PRP-3", "rhs_prp3_tv", 30000, "vehicle"],
+	["PTS-M", "rhs_pts_vmf", 15000, "vehicle"],
+
+	["Panther GPMG", "UK3CB_BAF_Panther_GPMG_Green_A", 24000, "vehicle"]
 ];
 
 armoredArray = compileFinal str
@@ -115,6 +146,10 @@ armoredArray = compileFinal str
 	["M2A3 Bradley B3", "RHS_M2A3_BUSKIII_wd", 95000, "vehicle"],
 	["M6A2 Bradley (AA)", "RHS_M6_wd", 120000, "vehicle"],
 
+	["FV510 Warrior IFV", "UK3CB_BAF_Warrior_A3_W", 75000, "vehicle"],
+	["Puma IFV", "BWA3_Puma_Fleck", 75000, "vehicle"],
+	["Marder 1A5", "Redd_Marder_1A5_Flecktarn", 75000, "vehicle"],
+
 	["BTR-60PB", "rhs_btr60_msv", 45000, "vehicle"],
 	["BTR-70", "rhs_btr70_msv", 45000, "vehicle"],
 	["BTR-80", "rhs_btr80_msv", 50000, "vehicle"],
@@ -126,7 +161,7 @@ armoredArray = compileFinal str
 
 	["BMP-3 Vesna", "rhs_bmp3mera_msv", 70000, "vehicle"],
 
-	["T-15 (HEAT)", "rhs_t15_tv", 95000, "vehicle"]
+	["T-15 (HEAT)", "rhs_t15_tv", 95000, "vehicle", "HIDDEN"]
 ];
 
 antiArray = compileFinal str
@@ -140,6 +175,9 @@ antiArray = compileFinal str
 	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 65000, "vehicle"],
 	["Rhino MGS", "B_AFV_Wheeled_01_cannon_F", 85000, "vehicle"],
 	["Rhino MGS UP", "B_AFV_Wheeled_01_up_cannon_F", 90000, "vehicle"],
+
+	["Gerpard 1A2 AA", "Redd_Tank_Gepard_1A2_Flecktarn", 65000, "vehicle"],
+
 	// RHS stuff
 	["BM-21", "RHS_BM21_MSV_01", 300000, "vehicle", "SKIPSAVE", "HIDDEN"],
 	["BM-21", "B_MBT_01_mlrs_F", 300000, "vehicle", "SKIPSAVE", "HIDDEN"],
@@ -166,6 +204,8 @@ tanksArray = compileFinal str
 	["M1A2 Abrams SEPV1 T1", "rhsusf_m1a2sep1tuskiwd_usarmy", 160000, "vehicle"],
 	["M1A2 Abrams SEPV1 T2", "rhsusf_m1a2sep1tuskiiwd_usarmy", 180000, "vehicle"],
 	["M1A2 Abrams SEPV2", "rhsusf_m1a2sep2wd_usarmy", 190000, "vehicle"],
+
+	["Leopard 2A6M MBT", "BWA3_Leopard2_Fleck", 160000, "vehicle"],
 
 	["T-72B (1989)", "rhs_t72bc_tv", 90000, "vehicle"],
 	["T-80BV", "rhs_t80bv", 90000, "vehicle"],
@@ -204,7 +244,9 @@ boatsArray = compileFinal str
 	["SDV Submarine (AAF)", "I_SDV_01_F", 20000, "submarine", "SKIPSAVE"],
 
 	["BMK Tug", "rhs_bmk_t", 10000, "boat", "SKIPSAVE"],
-	["Mk.V SOC", "rhsusf_mkvsoc", 90000, "boat", "SKIPSAVE"]
+	["Mk.V SOC", "rhsusf_mkvsoc", 90000, "boat", "SKIPSAVE"],
+	["Raiding Craft GPMG", "UK3CB_BAF_RHIB_GPMG", 20000, "boat", "SKIPSAVE"],
+	["Raiding Craft HMG", "UK3CB_BAF_RHIB_HMG", 20000, "boat", "SKIPSAVE"],
 ];
 
 utilityArray = compileFinal str
@@ -240,7 +282,15 @@ utilityArray = compileFinal str
 	["M1097A2 Transporter (2 Door)", "rhsusf_m998_w_2dr", 12000, "vehicle"],
 	["M1097A2 Transporter (4 Door)", "rhsusf_m998_w_4dr", 14000, "vehicle"],
 	["M1097A2 Transporter Covered", "rhsusf_m998_w_2dr_fulltop", 14000, "vehicle"],
-	["M1097A2 Transporter Armored", "rhsusf_m1165_usarmy_wd", 15000, "vehicle"]
+	["M1097A2 Transporter Armored", "rhsusf_m1165_usarmy_wd", 15000, "vehicle"],
+
+	// Coyote Utility
+	["Coyote TSV Logi (HMG)", "UK3CB_BAF_Coyote_Logistics_L111A1_W", 20000, "vehicle"],
+	["Coyote TSV Logi (GMG)", "UK3CB_BAF_Coyote_Logistics_L134A1_W", 20000, "vehicle"],
+	["Coyote TSV Pax (HMG)", "UK3CB_BAF_Coyote_Passenger_L111A1_W", 24000, "vehicle"],
+	["Coyote TSV Pax (GMG)", "UK3CB_BAF_Coyote_Passenger_L134A1_W", 24000, "vehicle"],
+
+	["MULTI A4 FSE", "BWA3_Multi_Fleck", 10000, "vehicle"]
 ];
 
 //allVehStoreVehicles = compileFinal str (call landArray + call armoredArray + call tanksArray + call helicoptersArray + call planesArray + call boatsArray);

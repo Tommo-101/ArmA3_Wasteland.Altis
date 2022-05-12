@@ -58,6 +58,8 @@ droneArray = compileFinal str
 	["MQ-9 Reaper (Missle)", "USAF_MQ9", 370000, "vehicle", "variant_mq9missle"],
 	["MQ-9 Reaper (Bomber)", "USAF_MQ9", 370000, "vehicle", "variant_mq9Bomber"],
 
+	["MQ-9 Reaper (RAF)", "UK3CB_BAF_MQ9_Reaper", 350000, "vehicle"],
+
 	["RQ-4A Global Hawk (Spy)", "USAF_RQ4A", 100000, "vehicle"]
 ];
 
@@ -71,6 +73,8 @@ antiAirArray = compileFinal str
 	["AN/MPQ-105 Radar", "B_Radar_System_01_F", 80000],
 	["P-37 Radar", "rhs_p37_turret_vpvo", 80000],
 	["PRV-13 Radar", "rhs_prv13_turret_vpvo", 80000],
+	["Mantis Radar", "rnt_mantis_radar", 80000],
+	["Mantis GDF-020", "rnt_mantis_base", 120000],
 	["MIM-145 Defender", "B_SAM_System_03_F", 140000],
 	["R-750 Cronus Radar", "O_Radar_System_02_F", 80000],
 	["S-750 Rhea", "O_SAM_System_04_F", 150000]

@@ -202,11 +202,7 @@ switch (true) do
 	/// MQ9 Drone
 	case (_class isKindOf "USAF_MQ9"):
 	{
-		_mags =
-		[
-			["Laserbatteries", [-1]],
-			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
-		];
+		_mags =	[];
 		switch (_variant) do
 		{
 			case "mq9Bomber":	{ _pylons = [

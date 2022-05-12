@@ -6,7 +6,7 @@ private ["_missionPos"];
 
 _missionPos = _this select 0;
 _defMines = [];
-_nbMines = 60;
+_nbMines = 30;
 _maxRadius = 80;
 _nbRings = 4;
 _mineGap = 0;
