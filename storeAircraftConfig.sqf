@@ -92,7 +92,7 @@ utilityJetsArray = compileFinal str
 utilityHeliArray = compileFinal str
 [
 	["PO-30 Orca (Unarmed)", "O_Heli_Light_02_unarmed_F", 30000, "vehicle"], // Ka-60
-	["WY-55 Hellcat (Unarmed)", "I_Heli_light_03_unarmed_F", 30000, "vehicle"], // AW159
+	["WY-55 Hellcat (Unarmed)", "I_Heli_light_03_unarmed_F", 30000, "vehicle","HIDDEN"], // AW159
 	["CH-49 Mohawk", "I_Heli_Transport_02_F", 30000, "vehicle"], // AW101
 	["Mi-290 Taru (Resupply)", "O_Heli_Transport_04_ammo_F", 45000, "vehicle"],
 	["Mi-290 Taru (Crane)", "O_Heli_Transport_04_F", 45000, "vehicle"], // CH-54
@@ -102,8 +102,8 @@ utilityHeliArray = compileFinal str
 	["Mi-290 Taru (Transport)", "O_Heli_Transport_04_covered_F", 45000, "vehicle"],
 	["Mi-290 Taru (Medical)", "O_Heli_Transport_04_medevac_F", 45000, "vehicle"],
 	["Mi-290 Taru (Repair)", "O_Heli_Transport_04_repair_F", 45000, "vehicle"],
-	["CH-67 Huron (Unarmed)", "B_Heli_Transport_03_unarmed_F", 45000, "vehicle"], // CH-47
-	["CH-67 Huron (Armed)", "B_Heli_Transport_03_F", 50000, "vehicle"], // CH-47 with 2 side miniguns
+	["CH-67 Huron (Unarmed)", "B_Heli_Transport_03_unarmed_F", 45000, "vehicle","HIDDEN"], // CH-47
+	["CH-67 Huron (Armed)", "B_Heli_Transport_03_F", 50000, "vehicle","HIDDEN"], // CH-47 with 2 side miniguns
 
 	["KA-60 (Unarmed)", "rhs_ka60_grey", 30000, "vehicle"],
 	["Mi-8AMT (Unarmed)", "RHS_Mi8AMT_vvs", 40000, "vehicle"],

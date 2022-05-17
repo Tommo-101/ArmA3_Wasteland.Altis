@@ -59,7 +59,7 @@ landArray = compileFinal str
 	["Land Rover Soft Top FFR", "UK3CB_BAF_LandRover_Soft_FFR_Green_A", 25000, "vehicle", "SKIPSAVE"],
 
 	["Land Rover Snatch", "UK3CB_BAF_LandRover_Snatch_Green_A", 30000, "vehicle", "SKIPSAVE"],
-	["Land Rover Snatch FFR", "UK3CB_BAF_LandRover_Snatch_FFR_Green_A", 30000, "vehicle", "SKIPSAVE"],
+	["Land Rover Snatch FFR", "UK3CB_BAF_LandRover_Snatch_FFR_Green_A", 30000, "vehicle", "SKIPSAVE"]
 ];
 
 lightInfArray = compileFinal str
@@ -246,7 +246,7 @@ boatsArray = compileFinal str
 	["BMK Tug", "rhs_bmk_t", 10000, "boat", "SKIPSAVE"],
 	["Mk.V SOC", "rhsusf_mkvsoc", 90000, "boat", "SKIPSAVE"],
 	["Raiding Craft GPMG", "UK3CB_BAF_RHIB_GPMG", 20000, "boat", "SKIPSAVE"],
-	["Raiding Craft HMG", "UK3CB_BAF_RHIB_HMG", 20000, "boat", "SKIPSAVE"],
+	["Raiding Craft HMG", "UK3CB_BAF_RHIB_HMG", 20000, "boat", "SKIPSAVE"]
 ];
 
 utilityArray = compileFinal str
