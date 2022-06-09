@@ -74,14 +74,14 @@ combatJetsArray = compileFinal str
 	["SU-25 (HVY-CAS)", "RHS_Su25SM_vvs", 240000, "vehicle"],
 	["T50 2011 (AA-ExT)", "RHS_T50_vvs_generic_ext", 270000, "vehicle"],
 	["T50 2013+ (AA)", "RHS_T50_vvs_blueonblue", 270000, "vehicle"],
-	["TU-95 Bomber", "RHS_TU95MS_vvs_old", 280000, "vehicle"],
+	["TU-95 Bomber", "RHS_TU95MS_vvs_old", 280000, "vehicle","HIDDEN"]
 
-	["F/A-18E Super Hornet (AA)", "JS_JC_FA18E", 300000, "vehicle"], // CUSTOM
-	["F/A-18E Super Hornet (HVY)", "JS_JC_FA18E", 320000, "vehicle", "variant_fa18mheavy"], // CUSTOM
-	["F/A-18E Super Hornet (MUTLI)", "JS_JC_FA18E", 300000, "vehicle", "variant_fa18mr"], // CUSTOM
-	["F/A-18E Super Hornet (CAS)", "JS_JC_FA18E", 320000, "vehicle", "variant_fa18cas"], // CUSTOM
-	["F/A-18E Super Hornet (ACLM)", "JS_JC_FA18E", 350000, "vehicle", "variant_fa18aclm"], // CUSTOM
-	["F/A-18F Super Hornet (EW)", "JS_JC_FA18F", 300000, "vehicle"] // CUSTOM
+	//["F/A-18E Super Hornet (AA)", "JS_JC_FA18E", 300000, "vehicle"], // CUSTOM
+	//["F/A-18E Super Hornet (HVY)", "JS_JC_FA18E", 320000, "vehicle", "variant_fa18mheavy"], // CUSTOM
+	//["F/A-18E Super Hornet (MUTLI)", "JS_JC_FA18E", 300000, "vehicle", "variant_fa18mr"], // CUSTOM
+	//["F/A-18E Super Hornet (CAS)", "JS_JC_FA18E", 320000, "vehicle", "variant_fa18cas"], // CUSTOM
+	//["F/A-18E Super Hornet (ACLM)", "JS_JC_FA18E", 350000, "vehicle", "variant_fa18aclm"], // CUSTOM
+	//["F/A-18F Super Hornet (EW)", "JS_JC_FA18F", 300000, "vehicle"] // CUSTOM
 ];
 
 utilityJetsArray = compileFinal str

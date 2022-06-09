@@ -36,6 +36,12 @@ MainMissions =
 	["mission_AbandonedAC130", 0.1]
 ];
 
+/*InfectedMissions =
+[
+	// Mission filename, weight
+  ["mission_TownInfection", 1]
+];*/
+
 SideMissions =
 [
   ["mission_AbandonedArtillery", 0.2],
@@ -122,3 +128,4 @@ AirMissions = [AirMissions, [["A3W_rescueMissions", ["mission_AltisHasFallen"]]]
 { _x set [2, false] } forEach LogisticsMissions;
 { _x set [2, false] } forEach WaterMissions;
 { _x set [2, false] } forEach AirMissions;
+//{ _x set [2, false] } forEach InfectedMissions;

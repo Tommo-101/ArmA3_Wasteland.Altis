@@ -2171,6 +2171,10 @@ genItemArray = compileFinal str
 	["Medikit", "Medikit", 150, "item"],
 	["Toolkit", "ToolKit", 150, "item"],
 
+	//Zombies
+	["Zombie Cure", "RyanZombiesAntiVirusCure_Item", 20000, "item", "HIDDEN"],
+	["Anti-Zombie Pills", "RyanZombiesAntiVirusTemporary_Item", 10000, "item", "HIDDEN"],
+
 	["Designator Batteries", "rhs_LaserFCSMag", 20, "item"], // Designator Batteries
   ["Designator Batteries", "rhs_LaserMag_ai", 20, "item"], // Designator Batteries
   ["Designator Batteries", "rhs_LaserMag", 20, "item"], // Designator Batteries
@@ -2688,6 +2692,23 @@ colorsArray = compileFinal str
 				[0, _texDir + "mohawk_marine_one_0.paa"],
 				[1, _texDir + "mohawk_marine_one_1.paa"],
 				[2, _texDir + "mohawk_marine_one_2.paa"]
+			]]
+		]
+	],
+	[
+		"RHS_CH_47F",
+		[
+			["RAF (Camo)", [
+				[0, _texDir + "baf_hc1_ext_1_co.paa"],
+				[1, _texDir + "baf_hc1_ext_2_co.paa"],
+				[2, _texDir + "baf_hc1_ext_mlod_co.paa"],
+				[3, _texDir + "baf_hc1_preview.paa"]
+			]],
+			["RAF", [
+				[0, _texDir + "baf_hc2_ext_1_co.paa"],
+				[1, _texDir + "baf_hc2_ext_2_co.paa"],
+				[2, _texDir + "baf_hc2_ext_mlod_co.paa"],
+				[3, _texDir + "baf_hc2_preview.paa"]
 			]]
 		]
 	],

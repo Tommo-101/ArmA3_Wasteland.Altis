@@ -7,6 +7,7 @@
 _ctrlTypes =
 [
 	"mainMission",
+	//"infectedMission",
 	"airMission",
 	"moneyMission",
 	"sideMission",

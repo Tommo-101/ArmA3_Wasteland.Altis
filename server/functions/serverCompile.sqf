@@ -31,7 +31,7 @@ setLocationState = [_path, "setLocationState.sqf"] call mf_compile;
 setMissionState = [_path, "setMissionState.sqf"] call mf_compile;
 cleanupMissionObjects = [_path, "cleanupMissionObjects.sqf"] call mf_compile;
 
-addDefensiveMines = [_path, "createUnits\addDefensiveMines.sqf"] call mf_compile;
+//addDefensiveMines = [_path, "createUnits\addDefensiveMines.sqf"] call mf_compile;
 createAASoldier = [_path, "createUnits\createAASoldier.sqf"] call mf_compile;
 //createATSoldier = [_path, "createUnits\createATSoldier.sqf"] call mf_compile;
 createAATeam = [_path, "createUnits\createAATeam.sqf"] call mf_compile;
@@ -53,6 +53,7 @@ createCustomGroup4 = [_path, "createUnits\customGroup4.sqf"] call mf_compile;
 createCustomGroup5 = [_path, "createUnits\customGroup5.sqf"] call mf_compile;
 createCustomGroup6 = [_path, "createUnits\customGroup6.sqf"] call mf_compile;
 createCustomGroup7 = [_path, "createUnits\customGroup7.sqf"] call mf_compile;
+createZombieGroup = [_path, "createUnits\customZombieGroup.sqf"] call mf_compile;
 createGroup1 = [_path, "createUnits\Group1.sqf"] call mf_compile;
 createGroup2 = [_path, "createUnits\Group2.sqf"] call mf_compile;
 createGroup3 = [_path, "createUnits\Group3.sqf"] call mf_compile;

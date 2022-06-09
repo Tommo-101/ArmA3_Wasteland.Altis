@@ -193,4 +193,4 @@ _successExec =
 	_successHintMessage = "The patrol has been stopped, the ammo crates are yours to take. Find them near the wreck!";
 };
 
-_this call mainMissionProcessor;
+_this call waterMissionProcessor;

@@ -29,10 +29,10 @@ _setupVars =
 			50000, // Money
 			[
 				[ // NATO convoy
-					["rhsusf_m1151_m2_v2_usarmy_wd"],  // Machine Gun/Command Vehicle
-					["rhsusf_m1151_mk19_v2_usarmy_wd", "rhsusf_m1043_w_mk19"], // MK19
-					["rhsusf_m1152_rsv_usarmy_wd", "rhsusf_m1152_sicps_usarmy_wd"], // Transport
-					["rhsusf_m1151_m240_v2_usarmy_wd", "rhsusf_m1151_m2_lras3_v1_usarmy_wd"] // Machine Gun
+					["rhsusf_m1151_m2_v2_usarmy_wd"],  // Machine Gun/Command Vehicle (MRAP_01_base_F)
+					["rhsusf_m1151_mk19_v2_usarmy_wd", "rhsusf_m1043_w_mk19"], // MK19 (MRAP_01_base_F)
+					["rhsusf_m1152_rsv_usarmy_wd", "rhsusf_m1152_sicps_usarmy_wd"], // Transport (MRAP_01_base_F)
+					["rhsusf_m1151_m240_v2_usarmy_wd", "rhsusf_m1151_m2_lras3_v1_usarmy_wd"] // Machine Gun (MRAP_01_base_F)
 				]
 			]
 		],
@@ -42,11 +42,11 @@ _setupVars =
 			70000, // Money
 			[
 				[ // NATO convoy
-					["rhsusf_M1232_MC_M2_usmc_wd"], // Machine Gun/Command Vehicle
-					["rhsusf_m1240a1_m240_usmc_wd"], // Machine Gun/Command Vehicle
-					["rhsusf_CGRCAT1A2_Mk19_usmc_wd"], // MK19
-					["rhsusf_CGRCAT1A2_usmc_wd", "rhsusf_m1240a1_usmc_wd"], // Transport
-					["rhsusf_CGRCAT1A2_M2_usmc_wd", "rhsusf_m1240a1_m240_usmc_wd"] // Machine Gun
+					["rhsusf_M1232_MC_M2_usmc_wd"], // Machine Gun/Command Vehicle (MRAP_01_base_F)
+					["rhsusf_m1240a1_m240_usmc_wd"], // Machine Gun/Command Vehicle (MRAP_01_base_F)
+					["rhsusf_CGRCAT1A2_Mk19_usmc_wd"], // MK19 (MRAP_01_base_F)
+					["rhsusf_CGRCAT1A2_usmc_wd", "rhsusf_m1240a1_usmc_wd"], // Transport (MRAP_01_base_F)
+					["rhsusf_CGRCAT1A2_M2_usmc_wd", "rhsusf_m1240a1_m240_usmc_wd"] // Machine Gun (MRAP_01_base_F)
 				]
 			]
 		],
@@ -56,15 +56,15 @@ _setupVars =
 			100000, // Money
 			[
 				[ // NATO convoy
-					["rhsusf_M1232_MC_M2_usmc_wd"], // Machine Gun/Command Vehicle
-					["rhsusf_m1240a1_m240_usmc_wd"], // Machine Gun/Command Vehicle
-					["rhsusf_CGRCAT1A2_Mk19_usmc_wd"], // MK19
-					["rhsusf_CGRCAT1A2_usmc_wd"], // Transport
-					["rhsusf_m1240a1_usmc_wd"], // Transport
-					["rhsusf_CGRCAT1A2_M2_usmc_wd"], // Machine Gun
-					["rhsusf_m1240a1_m240_usmc_wd"], // Machine Gun
-					["rhsusf_m1151_m2_v2_usarmy_wd"],  // Machine Gun/Command Vehicle
-					["rhsusf_m1151_mk19_v2_usarmy_wd", "rhsusf_m1043_w_mk19"] // MK19
+					["rhsusf_M1232_MC_M2_usmc_wd"], // Machine Gun/Command Vehicle (MRAP_01_base_F)
+					["rhsusf_m1240a1_m240_usmc_wd"], // Machine Gun/Command Vehicle (MRAP_01_base_F)
+					["rhsusf_CGRCAT1A2_Mk19_usmc_wd"], // MK19 (MRAP_01_base_F)
+					["rhsusf_CGRCAT1A2_usmc_wd"], // Transport (MRAP_01_base_F)
+					["rhsusf_m1240a1_usmc_wd"], // Transport (MRAP_01_base_F)
+					["rhsusf_CGRCAT1A2_M2_usmc_wd"], // Machine Gun (MRAP_01_base_F)
+					["rhsusf_m1240a1_m240_usmc_wd"], // Machine Gun (MRAP_01_base_F)
+					["rhsusf_m1151_m2_v2_usarmy_wd"],  // Machine Gun/Command Vehicle (MRAP_01_base_F)
+					["rhsusf_m1151_mk19_v2_usarmy_wd", "rhsusf_m1043_w_mk19"] // MK19 (MRAP_01_base_F)
 				]
 			]
 		],
@@ -74,14 +74,14 @@ _setupVars =
 			200000, // Money
 			[
 				[ // NATO convoy
-					["rhsusf_M1232_MC_M2_usmc_wd"],
-					["RHS_M6_wd"],
-					["RHS_M6_wd"],
-					["RHS_M2A3_BUSKIII_wd"],
-					["RHS_M2A3_BUSKI_wd"],
-					["rhsusf_stryker_m1132_m2_wd"],
-					["rhsusf_M1220_M153_M2_usarmy_wd"],
-					["rhsusf_m1240a1_m2crows_usarmy_wd"]
+					["rhsusf_M1232_MC_M2_usmc_wd"], //(MRAP_01_base_F)
+					["RHS_M6_wd"], // (APC_Tracked_03_base_F)
+					["RHS_M6_wd"], // (APC_Tracked_03_base_F)
+					["RHS_M2A3_BUSKIII_wd"], // (APC_Tracked_03_base_F)
+					["RHS_M2A3_BUSKI_wd"], // (APC_Tracked_03_base_F)
+					["rhsusf_stryker_m1132_m2_wd"], // (Wheeled_APC_F)
+					["rhsusf_M1220_M153_M2_usarmy_wd"], // (MRAP_01_base_F)
+					["rhsusf_m1240a1_m2crows_usarmy_wd"] // (MRAP_01_base_F)
 				]
 			]
 		]
@@ -115,44 +115,45 @@ _setupObjects =
 		_vehicle setVariable ["R3F_LOG_disabled", true, true];
 		[_vehicle] call vehicleSetup;
 
-		// apply tropical textures to vehicles on Tanoa
-		if (worldName == "Tanoa" && _type select [1,3] != "_T_") then
-		{
-			switch (toUpper (_type select [0,2])) do
-			{
-				case "B_": { [_vehicle, ["Olive"]] call applyVehicleTexture };
-				case "O_": { [_vehicle, ["GreenHex"]] call applyVehicleTexture };
-			};
-		};
-
 		_vehicle setDir _direction;
 		_aiGroup addVehicle _vehicle;
 
 		_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
 		_soldier moveInDriver _vehicle;
 
-		if !(_type isKindOf "LT_01_base_F") then
-		{
-			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
-			_soldier moveInCargo [_vehicle, 0];
-		};
-
-		if !(_type isKindOf "Truck_F") then
+		//MRAP_01_base_F Soldiers
+		if !(_type isKindOf "MRAP_01_base_F") then
 		{
 			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
 			_soldier moveInGunner _vehicle;
-			if (_type isKindOf "LT_01_base_F") exitWith {};
-
 			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
+			_soldier moveInAny [_vehicle, 0];
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
+			_soldier moveInAny [_vehicle, 0];
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
+			_soldier moveInAny [_vehicle, 0];
+		};
 
-			if (_vehicle emptyPositions "commander" > 0) then
-			{
-				_soldier moveInCommander _vehicle;
-			}
-			else
-			{
-				_soldier moveInCargo [_vehicle, 1];
-			};
+		if !(_type isKindOf "APC_Tracked_03_base_F") then
+		{
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
+			_soldier moveInGunner _vehicle;
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
+			_soldier moveInAny [_vehicle, 0];
+		};
+
+		if !(_type isKindOf "Wheeled_APC_F") then
+		{
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
+			_soldier moveInGunner _vehicle;
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
+			_soldier moveInAny [_vehicle, 0];
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
+			_soldier moveInAny [_vehicle, 0];
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
+			_soldier moveInAny [_vehicle, 0];
+			_soldier = [_aiGroup, _position] call createRandomRHSUSFSoldier;
+			_soldier moveInAny [_vehicle, 0];
 		};
 
 		[_vehicle, _aiGroup] spawn checkMissionVehicleLock;

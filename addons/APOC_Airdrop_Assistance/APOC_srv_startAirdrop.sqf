@@ -15,10 +15,12 @@ diag_log format ["SERVER - Apoc's Airdrop Assistance - Player: %1, Drop Type: %2
 _selectionArray = [];
 
 switch (_type) do {
-	case "vehicle": {_selectionArray = APOC_AA_VehOptions};
+	case "vehicleUS": {_selectionArray = APOC_AA_VehUSOptions};
+	case "vehicleUK": {_selectionArray = APOC_AA_VehUKOptions};
+	case "vehicleRUS": {_selectionArray = APOC_AA_VehRUSOptions};
 	case "supply": 	{_selectionArray = APOC_AA_SupOptions};
 	case "picnic":	{_selectionArray = APOC_AA_SupOptions};
-	default 		{_selectionArray = APOC_AA_VehOptions; diag_log "AAA - Default Array Selected - Something broke";};
+	default 		{_selectionArray = APOC_AA_VehUSOptions; diag_log "AAA - Default Array Selected - Something broke";};
 };
 
 _selectionName 	= (_selectionArray select _selectionNumber) select 0;
@@ -29,8 +31,7 @@ _price 			= (_selectionArray select _selectionNumber) select 2;
 //OK, now the real fun
 
 /////// Let's spawn us  an AI helo to carry the cargo /////////////////////////////////////////////////
-
- _heliType = "B_Heli_Transport_03_unarmed_F";
+ _heliType = "RHS_CH_47F";
  _center = createCenter civilian;
 _grp = createGroup civilian;
 if(isNil("_grp2"))then{_grp2 = createGroup civilian;}else{_grp2 = _grp2;};
@@ -74,7 +75,7 @@ _heli flyInHeight _flyHeight;
 
 //////// Create Purchased Object //////////////////////////////////////////////
 _object = switch (_type) do {
-	case "vehicle":
+	case "vehicleUS":
 	{
 		_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];
 		_object = createVehicle [_selectionClass, _objectSpawnPos, [], 0, "None"];
@@ -90,6 +91,41 @@ _object = switch (_type) do {
 		_object attachTo [_heli, [0,0,-5]]; //Attach Object to the heli
 		_object
 	};
+
+	case "vehicleUK":
+	{
+		_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];
+		_object = createVehicle [_selectionClass, _objectSpawnPos, [], 0, "None"];
+		diag_log format ["Apoc's Airdrop Assistance - Object Spawned at %1", position _object];
+		_object setVariable ["A3W_purchasedStoreObject", true];
+		_object setVariable ["A3W_purchasedVehicle", true, true];
+		_object setVariable ["ownerUID", getPlayerUID _player, true];
+		[_object, false] call vehicleSetup;
+		if (_object getVariable ["A3W_purchasedVehicle", false] && !isNil "fn_manualVehicleSave") then
+		{
+			_object call fn_manualVehicleSave;
+		};
+		_object attachTo [_heli, [0,0,-5]]; //Attach Object to the heli
+		_object
+	};
+
+	case "vehicleRUS":
+	{
+		_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];
+		_object = createVehicle [_selectionClass, _objectSpawnPos, [], 0, "None"];
+		diag_log format ["Apoc's Airdrop Assistance - Object Spawned at %1", position _object];
+		_object setVariable ["A3W_purchasedStoreObject", true];
+		_object setVariable ["A3W_purchasedVehicle", true, true];
+		_object setVariable ["ownerUID", getPlayerUID _player, true];
+		[_object, false] call vehicleSetup;
+		if (_object getVariable ["A3W_purchasedVehicle", false] && !isNil "fn_manualVehicleSave") then
+		{
+			_object call fn_manualVehicleSave;
+		};
+		_object attachTo [_heli, [0,0,-5]]; //Attach Object to the heli
+		_object
+	};
+
 	case "supply":
 	{
 		_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];

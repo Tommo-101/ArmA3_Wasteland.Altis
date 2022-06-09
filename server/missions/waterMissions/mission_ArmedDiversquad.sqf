@@ -82,4 +82,4 @@ _successExec =
 	_successHintMessage = "The sunken crates have been captured, well done.";
 };
 
-_this call mainMissionProcessor;
+_this call waterMissionProcessor;

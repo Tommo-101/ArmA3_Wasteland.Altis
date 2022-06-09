@@ -114,45 +114,17 @@ _setupObjects =
 		_vehicle setVariable ["R3F_LOG_disabled", true, true];
 		[_vehicle] call vehicleSetup;
 
-		// apply tropical textures to vehicles on Tanoa
-		if (worldName == "Tanoa" && _type select [1,3] != "_T_") then
-		{
-			switch (toUpper (_type select [0,2])) do
-			{
-				case "B_": { [_vehicle, ["Olive"]] call applyVehicleTexture };
-				case "O_": { [_vehicle, ["GreenHex"]] call applyVehicleTexture };
-			};
-		};
-
 		_vehicle setDir _direction;
 		_aiGroup addVehicle _vehicle;
 
 		_soldier = [_aiGroup, _position] call createRandomRHSAFRFSoldier;
 		_soldier moveInDriver _vehicle;
-
-		if !(_type isKindOf "LT_01_base_F") then
-		{
-			_soldier = [_aiGroup, _position] call createRandomRHSAFRFSoldier;
-			_soldier moveInCargo [_vehicle, 0];
-		};
-
-		if !(_type isKindOf "Truck_F") then
-		{
-			_soldier = [_aiGroup, _position] call createRandomRHSAFRFSoldier;
-			_soldier moveInGunner _vehicle;
-			if (_type isKindOf "LT_01_base_F") exitWith {};
-
-			_soldier = [_aiGroup, _position] call createRandomRHSAFRFSoldier;
-
-			if (_vehicle emptyPositions "commander" > 0) then
-			{
-				_soldier moveInCommander _vehicle;
-			}
-			else
-			{
-				_soldier moveInCargo [_vehicle, 1];
-			};
-		};
+		_soldier = [_aiGroup, _position] call createRandomRHSAFRFSoldier;
+		_soldier moveInAny [_vehicle, 0];
+		_soldier = [_aiGroup, _position] call createRandomRHSAFRFSoldier;
+		_soldier moveInAny [_vehicle, 0];
+		_soldier = [_aiGroup, _position] call createRandomRHSAFRFSoldier;
+		_soldier moveInAny [_vehicle, 0];
 
 		[_vehicle, _aiGroup] spawn checkMissionVehicleLock;
 

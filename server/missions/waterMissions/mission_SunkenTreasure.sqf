@@ -85,4 +85,4 @@ _successExec =
 	_successHintMessage = "The treasure has been captured, well done.";
 };
 
-_this call moneyMissionProcessor;
+_this call waterMissionProcessor;

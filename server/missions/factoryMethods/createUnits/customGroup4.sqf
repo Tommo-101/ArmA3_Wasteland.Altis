@@ -116,5 +116,5 @@ for "_i" from 1 to _nbUnits do
 	//_unit setVariable ["AI_MoneyDrop", true, true];
 };
 
-[_pos] call addDefensiveMines;
+//[_pos] call addDefensiveMines;
 [_group, _pos] call defendArea;
