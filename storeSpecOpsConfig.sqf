@@ -66,7 +66,7 @@ droneArray = compileFinal str
 antiAirArray = compileFinal str
 [
 	["Mk21 Centurion", "B_SAM_System_02_F", 150000],
-	["Mk41 VLS", "B_Ship_MRLS_01_F", 300000],
+	["Mk41 VLS", "B_Ship_MRLS_01_F", 400000],
 	["Mk45 Hammer", "B_Ship_Gun_01_F", 240000],
 	["Mk49 Spartan", "B_SAM_System_01_F", 160000],
 	["Praetorian 1C", "B_AAA_System_01_F", 120000],

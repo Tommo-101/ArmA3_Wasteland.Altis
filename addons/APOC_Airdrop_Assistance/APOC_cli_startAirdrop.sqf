@@ -14,10 +14,12 @@ _player 			= _this select 2;
 //hint format ["Well we've made it this far! %1, %2, %3,",_player,_type,_selectionNumber];
 _selectionArray = [];
 switch (_type) do {
-	case "vehicle": {_selectionArray = APOC_AA_VehOptions};
+	case "vehicleUS": {_selectionArray = APOC_AA_VehUSOptions};
+	case "vehicleUK": {_selectionArray = APOC_AA_VehUKOptions};
+	case "vehicleRUS": {_selectionArray = APOC_AA_VehRUSOptions};
 	case "supply": 	{_selectionArray = APOC_AA_SupOptions};
 	case "picnic":	{_selectionArray = APOC_AA_SupOptions};
-	default 		{_selectionArray = APOC_AA_VehOptions; diag_log "AAA - Default Array Selected - Something broke";};
+	default 		{_selectionArray = APOC_AA_VehUSOptions; diag_log "AAA - Default Array Selected - Something broke";};
 };
 _selectionName 	= (_selectionArray select _selectionNumber) select 0;
 _price 			= (_selectionArray select _selectionNumber) select 2;

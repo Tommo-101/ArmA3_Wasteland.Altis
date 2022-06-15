@@ -12,12 +12,20 @@ APOC_AA_VehUSOptions =
 
 APOC_AA_VehUKOptions =
 [
-  ["Rescue Boat", "C_Rubberboat", 5000, "vehicle"]
+  //["Rescue Boat", "C_Rubberboat", 5000, "vehicle"],
+  ["Raiding Craft GPMG", "UK3CB_BAF_RHIB_GPMG", 24000, "vehicle"],
+  ["Coyote TSV Logi (HMG)", "UK3CB_BAF_Coyote_Logistics_L111A1_W", 23000, "vehicle"],
+  ["Land Rover Hard Top", "UK3CB_BAF_LandRover_Hard_Green_A", 26000, "vehicle"],
+  ["Jackal 2 (GMG)", "UK3CB_BAF_Jackal2_L134A1_G", 35000, "vehicle"],
+  ["Land Rover Snatch", "UK3CB_BAF_LandRover_Snatch_Green_A", 35000, "vehicle"],
+  ["FV432 Mark 3 Bulldog GPMG", "UK3CB_BAF_FV432_Mk3_GPMG_Green", 38000, "vehicle"]
 ];
 
 APOC_AA_VehRUSOptions =
 [
-  ["Rescue Boat", "C_Rubberboat", 5000, "vehicle"]
+  //["Rescue Boat", "C_Rubberboat", 5000, "vehicle"]
+  ["BTR-60PB", "rhs_btr60_msv", 50000, "vehicle"],
+  ["GAZ-66 AA", "rhs_gaz66_zu23_msv", 55000, "vehicle"]
 ];
 
 APOC_AA_SupOptions =

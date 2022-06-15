@@ -19,7 +19,7 @@ pistolArray = compileFinal str
 [
 	// Handguns
 	["PM Pistol", "hgun_Pistol_01_F", 1250],
-	["P07 Pistol", "hgun_P07_F", 150],
+	["P07 Pistol", "hgun_P07_F", 1500],
 	["P07 Pistol (Khaki)", "hgun_P07_khk_F", 1500, "noDLC"],
 	["P07 Pistol (Black)", "hgun_P07_blk_F", 1500, "noDLC"],
 	["Rook-40 Pistol", "hgun_Rook40_F", 1500],
