@@ -910,18 +910,18 @@ ammoArray = compileFinal str
 	// BWMod
 	["P8 9 mm 15Rnd Mag", "BWA3_15Rnd_9x19_P8", 60],
 	["P12 .45 ACP 12Rnd Mag", "BWA3_12Rnd_45ACP_P12", 60],
-	["P2A1 26.5 mm DM55 Single Star (white)", "BWA3_1Rnd_Flare_Singlestar_White", 30],
-	["P2A1 26.5 mm DM51 Single Star (green)", "BWA3_1Rnd_Flare_Singlestar_Green", 30],
-	["P2A1 26.5 mm DM51 Single Star (red)", "BWA3_1Rnd_Flare_Singlestar_Red", 30],
-	["P2A1 26.5 mm DM516 Illumination", "BWA3_1Rnd_Flare_Illum", 60],
-	["P2A1 26.5 mm DM25 Multi Star (white)", "BWA3_1Rnd_Flare_Multistar_White", 60],
-	["P2A1 26.5 mm DM25 Multi Star (green)", "BWA3_1Rnd_Flare_Multistar_Green", 60],
-	["P2A1 26.5 mm DM25 Multi Star (red)", "BWA3_1Rnd_Flare_Multistar_Red", 60],
-	["84 mm HEAT-T Rocket", "BWA3_CarlGustav_HEAT", 1000],
-	["84 mm HE Rocket", "BWA3_CarlGustav_HE", 1000],
-	["84 mm HEDP Rocket", "BWA3_CarlGustav_HEDP", 1000],
-	["84 mm Smoke Rocket", "BWA3_CarlGustav_Smoke", 1000],
-	["84 mm Illum Rocket", "BWA3_CarlGustav_Illum", 1000],
+	["P2A1 26.5 mm DM55 Single Star (white)", "BWA3_1Rnd_Flare_Singlestar_White", 300],
+	["P2A1 26.5 mm DM51 Single Star (green)", "BWA3_1Rnd_Flare_Singlestar_Green", 300],
+	["P2A1 26.5 mm DM51 Single Star (red)", "BWA3_1Rnd_Flare_Singlestar_Red", 300],
+	["P2A1 26.5 mm DM516 Illumination", "BWA3_1Rnd_Flare_Illum", 6000],
+	["P2A1 26.5 mm DM25 Multi Star (white)", "BWA3_1Rnd_Flare_Multistar_White", 600],
+	["P2A1 26.5 mm DM25 Multi Star (green)", "BWA3_1Rnd_Flare_Multistar_Green", 600],
+	["P2A1 26.5 mm DM25 Multi Star (red)", "BWA3_1Rnd_Flare_Multistar_Red", 600],
+	["84 mm HEAT-T Rocket", "BWA3_CarlGustav_HEAT", 10000],
+	["84 mm HE Rocket", "BWA3_CarlGustav_HE", 10000],
+	["84 mm HEDP Rocket", "BWA3_CarlGustav_HEDP", 10000],
+	["84 mm Smoke Rocket", "BWA3_CarlGustav_Smoke", 10000],
+	["84 mm Illum Rocket", "BWA3_CarlGustav_Illum", 10000],
 	["7.62x51 mm 20Rnd Mag", "BWA3_20Rnd_762x51_G28", 120],
 	["7.62x51 mm 20Rnd Mag Tracer", "BWA3_20Rnd_762x51_G28_Tracer", 120],
 	["7.62x51 mm 20Rnd Mag (IR-DIM)", "BWA3_20Rnd_762x51_G28_Tracer_Dim", 120],
@@ -957,44 +957,44 @@ ammoArray = compileFinal str
 
 	//
 	[".50 BW 10Rnd Mag", "10Rnd_50BW_Mag_F", 350],             //                 hit                      hit,  radius
-	["PG-7VM HEAT Grenade", "RPG7_F", 900],                   // Direct damage:  343     | Splash damage:  13,  3.0m     | Guidance: none
-	["RPG-42 AT Rocket", "RPG32_F", 1000],                     //                 422     |                 28,  2.5m     |           none
-	["RPG-42 HE Rocket", "RPG32_HE_F", 1000],                  //                 200     |                 50,  6.0m     |           none
-	["MAAWS HEAT 75 Rocket", "MRAWS_HEAT_F", 1500],            //                 495     |                 14,  2.0m     |           none
-	["MAAWS HEAT 55 Rocket", "MRAWS_HEAT55_F", 1450],          //                 450     |                 14,  2.0m     |           none
-	["MAAWS HE 44 Rocket", "MRAWS_HE_F", 1000],                //                 200     |                 50,  6.0m     |           none
-	["9M135 HEAT Missile", "Vorona_HEAT", 2000],              //                 634     |                 28,  2.5m     |           mouse
-	["9M135 HE Missile", "Vorona_HE", 1750],                   //                 220     |                 45,  8.0m     |           mouse
-	["PCML AT Missile", "NLAW_F", 1750], //                 462     |                 25,  2.4m     |           laser/IR, cold/hot ground vehicles
-	["Titan Anti-Tank Missile", "Titan_AT", 3000],            //                 515     |                 20,  2.0m     |           mouse, laser/IR, hot ground vehicles
-	["Titan Anti-Personnel Missile", "Titan_AP", 1750],        //                 100     |                 25, 10.0m     |           mouse, laser/IR
-	["Titan AA Missile", "Titan_AA", 1750],                    //                  80     |                 60,  6.0m     |           aircraft
-	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 225],
-	["40mm 3Rnd HE Grenades", "3Rnd_HE_Grenade_shell", 750],
-	["40mm Smoke Round (White)", "1Rnd_Smoke_Grenade_shell", 100],
-	["40mm Smoke Round (Purple)", "1Rnd_SmokePurple_Grenade_shell", 100],
-	["40mm Smoke Round (Blue)", "1Rnd_SmokeBlue_Grenade_shell", 100],
-	["40mm Smoke Round (Green)", "1Rnd_SmokeGreen_Grenade_shell", 100],
-	["40mm Smoke Round (Yellow)", "1Rnd_SmokeYellow_Grenade_shell", 100],
-	["40mm Smoke Round (Orange)", "1Rnd_SmokeOrange_Grenade_shell", 100],
-	["40mm Smoke Round (Red)", "1Rnd_SmokeRed_Grenade_shell", 100],
-	["40mm 3Rnd Smokes (White)", "3Rnd_Smoke_Grenade_shell", 300],
-	["40mm 3Rnd Smokes (Purple)", "3Rnd_SmokePurple_Grenade_shell", 300],
-	["40mm 3Rnd Smokes (Blue)", "3Rnd_SmokeBlue_Grenade_shell", 300],
-	["40mm 3Rnd Smokes (Green)", "3Rnd_SmokeGreen_Grenade_shell", 300],
-	["40mm 3Rnd Smokes (Yellow)", "3Rnd_SmokeYellow_Grenade_shell", 300],
-	["40mm 3Rnd Smokes (Orange)", "3Rnd_SmokeOrange_Grenade_shell", 300],
-	["40mm 3Rnd Smokes (Red)", "3Rnd_SmokeRed_Grenade_shell", 300],
-	["40mm Flare Round (White)", "UGL_FlareWhite_F", 125],
-	["40mm Flare Round (Green)", "UGL_FlareGreen_F", 125],
-	["40mm Flare Round (Yellow)", "UGL_FlareYellow_F", 125],
-	["40mm Flare Round (Red)", "UGL_FlareRed_F", 125],
-	["40mm Flare Round (IR)", "UGL_FlareCIR_F", 125],
-	["40mm 3Rnd Flares (White)", "3Rnd_UGL_FlareWhite_F", 350],
-	["40mm 3Rnd Flares (Green)", "3Rnd_UGL_FlareGreen_F", 350],
-	["40mm 3Rnd Flares (Yellow)", "3Rnd_UGL_FlareYellow_F", 350],
-	["40mm 3Rnd Flares (Red)", "3Rnd_UGL_FlareRed_F", 350],
-	["40mm 3Rnd Flares (IR)", "3Rnd_UGL_FlareCIR_F", 350]
+	["PG-7VM HEAT Grenade", "RPG7_F", 10000],                   // Direct damage:  343     | Splash damage:  13,  3.0m     | Guidance: none
+	["RPG-42 AT Rocket", "RPG32_F", 10000],                     //                 422     |                 28,  2.5m     |           none
+	["RPG-42 HE Rocket", "RPG32_HE_F", 10000],                  //                 200     |                 50,  6.0m     |           none
+	["MAAWS HEAT 75 Rocket", "MRAWS_HEAT_F", 10000],            //                 495     |                 14,  2.0m     |           none
+	["MAAWS HEAT 55 Rocket", "MRAWS_HEAT55_F", 10000],          //                 450     |                 14,  2.0m     |           none
+	["MAAWS HE 44 Rocket", "MRAWS_HE_F", 10000],                //                 200     |                 50,  6.0m     |           none
+	["9M135 HEAT Missile", "Vorona_HEAT", 20000],              //                 634     |                 28,  2.5m     |           mouse
+	["9M135 HE Missile", "Vorona_HE", 10000],                   //                 220     |                 45,  8.0m     |           mouse
+	["PCML AT Missile", "NLAW_F", 10000], //                 462     |                 25,  2.4m     |           laser/IR, cold/hot ground vehicles
+	["Titan Anti-Tank Missile", "Titan_AT", 10000],            //                 515     |                 20,  2.0m     |           mouse, laser/IR, hot ground vehicles
+	["Titan Anti-Personnel Missile", "Titan_AP", 10000],        //                 100     |                 25, 10.0m     |           mouse, laser/IR
+	["Titan AA Missile", "Titan_AA", 10000],                    //                  80     |                 60,  6.0m     |           aircraft
+	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 2250],
+	["40mm 3Rnd HE Grenades", "3Rnd_HE_Grenade_shell", 7500],
+	["40mm Smoke Round (White)", "1Rnd_Smoke_Grenade_shell", 1000],
+	["40mm Smoke Round (Purple)", "1Rnd_SmokePurple_Grenade_shell", 1000],
+	["40mm Smoke Round (Blue)", "1Rnd_SmokeBlue_Grenade_shell", 1000],
+	["40mm Smoke Round (Green)", "1Rnd_SmokeGreen_Grenade_shell", 1000],
+	["40mm Smoke Round (Yellow)", "1Rnd_SmokeYellow_Grenade_shell", 1000],
+	["40mm Smoke Round (Orange)", "1Rnd_SmokeOrange_Grenade_shell", 1000],
+	["40mm Smoke Round (Red)", "1Rnd_SmokeRed_Grenade_shell", 1000],
+	["40mm 3Rnd Smokes (White)", "3Rnd_Smoke_Grenade_shell", 3000],
+	["40mm 3Rnd Smokes (Purple)", "3Rnd_SmokePurple_Grenade_shell", 3000],
+	["40mm 3Rnd Smokes (Blue)", "3Rnd_SmokeBlue_Grenade_shell", 3000],
+	["40mm 3Rnd Smokes (Green)", "3Rnd_SmokeGreen_Grenade_shell", 3000],
+	["40mm 3Rnd Smokes (Yellow)", "3Rnd_SmokeYellow_Grenade_shell", 3000],
+	["40mm 3Rnd Smokes (Orange)", "3Rnd_SmokeOrange_Grenade_shell", 3000],
+	["40mm 3Rnd Smokes (Red)", "3Rnd_SmokeRed_Grenade_shell", 3000],
+	["40mm Flare Round (White)", "UGL_FlareWhite_F", 1250],
+	["40mm Flare Round (Green)", "UGL_FlareGreen_F", 1250],
+	["40mm Flare Round (Yellow)", "UGL_FlareYellow_F", 1250],
+	["40mm Flare Round (Red)", "UGL_FlareRed_F", 1250],
+	["40mm Flare Round (IR)", "UGL_FlareCIR_F", 1250],
+	["40mm 3Rnd Flares (White)", "3Rnd_UGL_FlareWhite_F", 3500],
+	["40mm 3Rnd Flares (Green)", "3Rnd_UGL_FlareGreen_F", 3500],
+	["40mm 3Rnd Flares (Yellow)", "3Rnd_UGL_FlareYellow_F", 3500],
+	["40mm 3Rnd Flares (Red)", "3Rnd_UGL_FlareRed_F", 3500],
+	["40mm 3Rnd Flares (IR)", "3Rnd_UGL_FlareCIR_F", 3500]
 ];
 
 //Gun Store item List
