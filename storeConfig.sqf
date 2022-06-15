@@ -439,7 +439,7 @@ launcherArray = compileFinal str
 	["RPG-42 Alamut", "launch_RPG32_F", 22500],
 	["RPG-42 Alamut (G Hex)", "launch_RPG32_ghex_F", 22500, "noDLC"],
 	["RPG-42 Alamut (Green)", "launch_RPG32_green_F", 22500, "noDLC"],
-	["PCML", "launch_NLAW_F", 2750],
+	["PCML", "launch_NLAW_F", 27500],
 	["MAAWS Mk4 Mod 0 (Green)", "launch_MRAWS_green_rail_F", 25000, "noDLC"], // RPG-42 and MAAWS are similar, but MAAWS has longer range
 	["MAAWS Mk4 Mod 0 (Olive)", "launch_MRAWS_olive_rail_F", 25000, "noDLC"],
 	["MAAWS Mk4 Mod 0 (Sand)", "launch_MRAWS_sand_rail_F", 25000, "noDLC"],
@@ -571,31 +571,31 @@ throwputArray = compileFinal str
 	["IR Designator Grenade", "O_IR_Grenade", 1000, "EAST"],
 	["IR Designator Grenade", "I_IR_Grenade", 1000, "GUER"],
 	//RHS
-	["M14", "rhsusf_mine_m14_mag", 150],               // M14
-  ["M49A1 (10m)", "rhsusf_mine_m49a1_10m_mag", 150],         // M49A1 (10m)
-  ["M49A1 (3m)", "rhsusf_mine_m49a1_3m_mag", 150],          // M49A1 (3m)
-  ["M49A1 (6m)", "rhsusf_mine_m49a1_6m_mag", 150],          // M49A1 (6m)
-	["M67 Fragmentation Grenade", "rhs_mag_m67", 60], // M67 Fragmentation Grenade
+	["M14", "rhsusf_mine_m14_mag", 1500],               // M14
+  ["M49A1 (10m)", "rhsusf_mine_m49a1_10m_mag", 1500],         // M49A1 (10m)
+  ["M49A1 (3m)", "rhsusf_mine_m49a1_3m_mag", 1500],          // M49A1 (3m)
+  ["M49A1 (6m)", "rhsusf_mine_m49a1_6m_mag", 1500],          // M49A1 (6m)
+	["M67 Fragmentation Grenade", "rhs_mag_m67", 600], // M67 Fragmentation Grenade
 	["M69 Practice Grenade", "rhs_mag_m69", 20], // M69 Practice Grenade
-	["M7A3 CS Gas Grenade", "rhs_mag_m7a3_cs", 60],                   // M7A3 CS Gas Grenade
-	["M19", "rhs_mine_M19_mag", 150],                  // M19
-	["AN-M14 TH3 Invendenary Grenade", "rhs_mag_an_m14_th3", 60],                   // AN-M14 TH3 Invendenary Grenade
-  ["AN-M8HC White Smooke", "rhs_mag_an_m8hc", 60],                   // AN-M8HC White Smooke
-  ["M18 Green Smoke Grenade", "rhs_mag_m18_green", 60],                 // M18 Green Smoke Grenade
-  ["M18 Purple Smoke Grenade", "rhs_mag_m18_purple", 60],                // M18 Purple Smoke Grenade
-  ["M18 Red Smoke Grenade", "rhs_mag_m18_red", 60],                   // M18 Red Smoke Grenade
-  ["M18 Yellow Smoke Grenade", "rhs_mag_m18_yellow", 60],                // M18 Yellow Smoke Grenade
-	["MK3A2 Concussion Grenade", "rhs_mag_mk3a2", 60],                     // MK3A2 Concussion Grenade
-  ["M84 Stun Grenade", "rhs_mag_mk84", 60],// M84 Stun Grenade
+	["M7A3 CS Gas Grenade", "rhs_mag_m7a3_cs", 6000],                   // M7A3 CS Gas Grenade
+	["M19", "rhs_mine_M19_mag", 1500],                  // M19
+	["AN-M14 TH3 Invendenary Grenade", "rhs_mag_an_m14_th3", 6000],                   // AN-M14 TH3 Invendenary Grenade
+  ["AN-M8HC White Smooke", "rhs_mag_an_m8hc", 600],                   // AN-M8HC White Smooke
+  ["M18 Green Smoke Grenade", "rhs_mag_m18_green", 600],                 // M18 Green Smoke Grenade
+  ["M18 Purple Smoke Grenade", "rhs_mag_m18_purple", 600],                // M18 Purple Smoke Grenade
+  ["M18 Red Smoke Grenade", "rhs_mag_m18_red", 600],                   // M18 Red Smoke Grenade
+  ["M18 Yellow Smoke Grenade", "rhs_mag_m18_yellow", 600],                // M18 Yellow Smoke Grenade
+	["MK3A2 Concussion Grenade", "rhs_mag_mk3a2", 6000],                     // MK3A2 Concussion Grenade
+  ["M84 Stun Grenade", "rhs_mag_mk84", 6000],// M84 Stun Grenade
 	//BWMod
-	["DM51A1 Frag Grenade", "BWA3_DM51A1", 150],
-	["DM25 Smoke Grenade (white)", "BWA3_DM25", 150],
-	["DM32A2B1 (orange)", "BWA3_DM32_Orange", 150],
-	["DM32A2B1 (yellow)", "BWA3_DM32_Yellow", 150],
-	["DM32A2B1 (green)", "BWA3_DM32_Green", 150],
-	["DM32A2B1 (red)", "BWA3_DM32_Red", 150],
-	["DM32A2B1 (purple)", "BWA3_DM32_Purple", 150],
-	["DM32A2B1 (blue)", "BWA3_DM32_Blue", 150]
+	["DM51A1 Frag Grenade", "BWA3_DM51A1", 1500],
+	["DM25 Smoke Grenade (white)", "BWA3_DM25", 1500],
+	["DM32A2B1 (orange)", "BWA3_DM32_Orange", 1500],
+	["DM32A2B1 (yellow)", "BWA3_DM32_Yellow", 1500],
+	["DM32A2B1 (green)", "BWA3_DM32_Green", 1500],
+	["DM32A2B1 (red)", "BWA3_DM32_Red", 1500],
+	["DM32A2B1 (purple)", "BWA3_DM32_Purple", 1500],
+	["DM32A2B1 (blue)", "BWA3_DM32_Blue", 1500]
 ];
 
 //Gun Store Ammo List
@@ -717,22 +717,22 @@ ammoArray = compileFinal str
 	["100rnd 762x54mmR","rhs_100Rnd_762x54mmR", 250],
 	["100rnd 762x54mmR Green","rhs_100Rnd_762x54mmR_green", 250],
 	["10Rnd 762x54mmR 7N1","rhs_10Rnd_762x54mmR_7N1", 100],
-	["RPG-26 Ammo","rhs_rpg26_mag",100],
-	["RPG-2 Ammo","rhs_rshg2_mag",100],
-	["RPG-18 Ammo","rhs_rpg18_mag",100],
-	["RPG-7 PG-7VL","rhs_rpg7_PG7VL_mag",250],
-	["RPG-7 PG-7VR","rhs_rpg7_PG7VR_mag",250],
-	["RPG-7 TBG-7V","rhs_rpg7_TBG7V_mag",250],
-	["RPG-7 OG-7V","rhs_rpg7_OG7V_mag",250],
-	["9k32 Rocket","rhs_mag_9k32_rocket",250],
-	["9k38 Rocket","rhs_mag_9k38_rocket",250],
+	["RPG-26 Ammo","rhs_rpg26_mag",8000],
+	["RPG-2 Ammo","rhs_rshg2_mag",8000],
+	["RPG-18 Ammo","rhs_rpg18_mag",8000],
+	["RPG-7 PG-7VL","rhs_rpg7_PG7VL_mag",8000],
+	["RPG-7 PG-7VR","rhs_rpg7_PG7VR_mag",8000],
+	["RPG-7 TBG-7V","rhs_rpg7_TBG7V_mag",8000],
+	["RPG-7 OG-7V","rhs_rpg7_OG7V_mag",8000],
+	["9k32 Rocket","rhs_mag_9k32_rocket",8000],
+	["9k38 Rocket","rhs_mag_9k38_rocket",8000],
 	["17rnd 9x19","rhs_mag_9x19_17", 30],
 	["12rnd 9x18 57N181S","rhs_mag_9x18_12_57N181S", 30],
 	//RHSUSF
-	["Javelin AT", "rhs_fgm148_magazine_AT", 1700],
-  ["FGM172A SRAW", "rhs_fgm172a_magazine_AT", 800],
-  ["FGM172B SRAW-MPV", "rhs_fgm172b_magazine_MPV", 800],
-  ["FIM-92F", "rhs_fim92_mag", 800],   // FIM-92F
+	["Javelin AT", "rhs_fgm148_magazine_AT", 17000],
+  ["FGM172A SRAW", "rhs_fgm172a_magazine_AT", 8000],
+  ["FGM172B SRAW-MPV", "rhs_fgm172b_magazine_MPV", 8000],
+  ["FIM-92F", "rhs_fim92_mag", 10000],   // FIM-92F
   ["100rnd C-Mag M855 (Mixed)", "rhs_mag_100Rnd_556x45_M855_cmag_mixed", 250], // 100rnd C-Mag M855 (Mixed)
   ["100rnd C-Mag M855", "rhs_mag_100Rnd_556x45_M855_cmag", 250], // 100rnd C-Mag M855
   ["100rnd C-Mag M855A1 (Mixed)", "rhs_mag_100Rnd_556x45_M855A1_cmag_mixed", 250], // 100rnd C-Mag M855A1 (Mixed)
@@ -808,13 +808,13 @@ ammoArray = compileFinal str
   ["M715 Green Smoke Round", "rhs_mag_m715_Green", 50],                // M715 Green Smoke Round
   ["M716 Yellow Smoke Round", "rhs_mag_m716_yellow", 50],               // M716 Yellow Smoke Round
   ["M781 Practice Round", "rhs_mag_M781_Practice", 50],             // M781 Practice Round
-	["FFV441 HE", "rhs_mag_maaws_HE", 800],                  // FFV441 HE
-  ["FFV751 HEAT", "rhs_mag_maaws_HEAT", 800],                // FFV751 HEAT
-  ["FFV502 HEDP", "rhs_mag_maaws_HEDP", 800],                // FFV502 HEDP
+	["FFV441 HE", "rhs_mag_maaws_HE", 8000],                  // FFV441 HE
+  ["FFV751 HEAT", "rhs_mag_maaws_HEAT", 8000],                // FFV751 HEAT
+  ["FFV502 HEDP", "rhs_mag_maaws_HEDP", 8000],                // FFV502 HEDP
   ["Six-12 Slug", "rhs_mag_six12_slug", 800],                // Six-12 Slug
-  ["Mk.6 HEAA", "rhs_mag_smaw_HEAA", 800],                 // Mk.6 HEAA
-  ["Mk.3 HEDP", "rhs_mag_smaw_HEDP", 800],                 // Mk.3 HEDP
-  ["Mk.217 Spotting", "rhs_mag_smaw_SR", 60],                   // Mk.217 Spotting
+  ["Mk.6 HEAA", "rhs_mag_smaw_HEAA", 8000],                 // Mk.6 HEAA
+  ["Mk.3 HEDP", "rhs_mag_smaw_HEDP", 8000],                 // Mk.3 HEDP
+  ["Mk.217 Spotting", "rhs_mag_smaw_SR", 6000],                   // Mk.217 Spotting
   ["100rnd M249 Softpack M855", "rhsusf_100Rnd_556x45_M200_soft_pouch_coyote", 250],                  // 100rnd M249 Softpack M855
   ["100rnd M249 Softpack M200", "rhsusf_100Rnd_556x45_M200_soft_pouch_ucp", 250],                     // 100rnd M249 Softpack M200
   ["100rnd M249 Softpack M200", "rhsusf_100Rnd_556x45_M200_soft_pouch", 250], // 100rnd M249 Softpack M200
