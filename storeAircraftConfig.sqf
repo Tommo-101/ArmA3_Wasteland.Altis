@@ -16,16 +16,19 @@ civAirArray = compileFinal str
 
 gunshipsHeliArray = compileFinal str
 [
-	["UH-80 Ghost Hawk", "B_Heli_Transport_01_F", 35000, "vehicle"], // UH-60 Stealth with 2 side miniguns
+	["UH-80 Ghost Hawk", "B_Heli_Transport_01_F", 35000, "vehicle","HIDDEN"], // UH-60 Stealth with 2 side miniguns
+
 	["AH-9 Pawnee (Gun-Only)", "B_Heli_Light_01_dynamicLoadout_F", 60000, "vehicle", "variant_pawneeGun"], // CUSTOM
 	["AH-9 Pawnee (CAS)", "B_Heli_Light_01_dynamicLoadout_F", 70000, "vehicle"], // CUSTOM
 	["AH-9 Pawnee (Unguided AT)", "B_Heli_Light_01_dynamicLoadout_F", 70000, "vehicle", "variant_pawneeGun"], // CUSTOM
 	["PO-30 Orca (DAR)", "O_Heli_Light_02_dynamicLoadout_F", 60000, "vehicle"], // CUSTOM
 	["PO-30 Orca (DAGR)", "O_Heli_Light_02_dynamicLoadout_F", 70000, "vehicle", "variant_orcaDAGR"], // CUSTOM
 	["PO-30 Orca (DAKKA)", "O_Heli_Light_02_dynamicLoadout_F", 60000, "vehicle", "variant_orcaDAKKA"], // CUSTOM
-	["WY-55 Hellcat (DAKKA)", "I_Heli_light_03_dynamicLoadout_F", 80000, "vehicle", "variant_catDAKKA"], // CUSTOM
-	["WY-55 Hellcat (MR)", "I_Heli_light_03_dynamicLoadout_F", 80000, "vehicle"], // CUSTOM
-	["WY-55 Hellcat (AT)", "I_Heli_light_03_dynamicLoadout_F", 100000, "vehicle", "variant_catAT"], // CUSTOM
+
+	["WY-55 Hellcat (DAKKA)", "I_Heli_light_03_dynamicLoadout_F", 80000, "vehicle", "variant_catDAKKA","HIDDEN"], // CUSTOM
+	["WY-55 Hellcat (MR)", "I_Heli_light_03_dynamicLoadout_F", 80000, "vehicle","HIDDEN"], // CUSTOM
+	["WY-55 Hellcat (AT)", "I_Heli_light_03_dynamicLoadout_F", 100000, "vehicle", "variant_catAT","HIDDEN"], // CUSTOM
+
 	["AH-99 Blackfoot (CAS)", "B_Heli_Attack_01_dynamicLoadout_F", 100000, "vehicle"], // RAH-66 with gunner // CUSTOM
 	["AH-99 Blackfoot (MR)", "B_Heli_Attack_01_dynamicLoadout_F", 100000, "vehicle", "variant_footMR"], // CUSTOM
 	["Mi-48 Kajman (MR)", "O_Heli_Attack_02_dynamicLoadout_F", 120000, "vehicle"], // Mi-28 with gunner // CUSTOM
@@ -115,7 +118,10 @@ utilityHeliArray = compileFinal str
 
 	["Merlin HC3 Cargo (Unarmed)", "UK3CB_BAF_Merlin_HC3_Cargo", 30000, "vehicle"],
 	["Merlin HC3 CSAR (Armed)", "UK3CB_BAF_Merlin_HC3_CSAR", 37000, "vehicle"],
-	["Merlin HC3 GPMG (Armed)", "UK3CB_BAF_Merlin_HC3_18_GPMG", 39000, "vehicle"]
+	["Merlin HC3 GPMG (Armed)", "UK3CB_BAF_Merlin_HC3_18_GPMG", 39000, "vehicle"],
+
+	["Merlin HC4 GPMG (Armed)", "UK3CB_BAF_Merlin_HC4_18_GPMG", 50000, "vehicle","HIDDEN"], // For mission
+	["CH-53E Super Stallion (Armed)", "rhsusf_CH53E_USMC_GAU21", 70000, "vehicle","HIDDEN"] // For mission
 ];
 
 specialistAirArray = compileFinal str

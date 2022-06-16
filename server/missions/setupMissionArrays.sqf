@@ -8,11 +8,11 @@ if (!isServer) exitWith {};
 
 AirMissions =
 [
+  ["mission_AggressiveJet", 0.2],
   ["mission_CivHeli", 1],
   ["mission_HostileHelicopter", 0.6],
 	["mission_HostileHeliformation", 1],
 	["mission_HostileJet", 1],
-	["mission_AggressiveJet", 0.2],
 	["mission_NukeBomber", 0.2],
 	["mission_HostileSU25Formation", 0.6],
   ["mission_HostileJetFormation", 1],
@@ -32,15 +32,8 @@ MainMissions =
 	["mission_MBT", 1],
   ["mission_policePatrol", 1],
 	["mission_Roadblock", 1],
-	["mission_Smugglers", 1],
-	["mission_AbandonedAC130", 0.1]
+	["mission_Smugglers", 1]
 ];
-
-/*InfectedMissions =
-[
-	// Mission filename, weight
-  ["mission_TownInfection", 1]
-];*/
 
 SideMissions =
 [
@@ -51,6 +44,7 @@ SideMissions =
 	["mission_MiniConvoy", 1],
   ["mission_Occupation", 1],
   ["mission_Outpost", 1],
+  ["mission_Sniper", 1],
 	["mission_TownInvasion", 1],
 	["mission_Truck", 1],
   ["mission_WepCache", 1]
@@ -77,7 +71,6 @@ LogisticsMissions =
   ["mission_Airdrop", 1],
   ["mission_AltisHasFallen", 1],
   ["mission_DeliverySupply", 1],
-  //["mission_deviceDelivery", 0.3],
   ["mission_MiniConvoy", 1]
 ];
 
@@ -85,6 +78,7 @@ WaterMissions =
 [
   ["mission_ArmedDiversquad", 1],
   ["mission_Coastal_Convoy", 1],
+  ["mission_SunkenSupplies", 1],
 	["mission_SunkenTreasure", 1]
 ];
 

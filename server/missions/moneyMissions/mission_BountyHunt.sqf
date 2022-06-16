@@ -14,7 +14,7 @@ private ["_boxes1", "_box1", "_geoPos", "_sniper", "_marker1", "_currBox1", "_sm
 
 _setupVars =
 {
-	_missionType = "Notorious Sniper";
+	_missionType = "Jackal Sniper";
 	_locationsArray = MissionSpawnMarkers;
 };
 
@@ -66,7 +66,7 @@ _setupObjects =
 	_marker1 setMarkerColor "colorOPFOR";
 
 	_missionPicture = "pictures\bountyhunt.paa";
-	_missionHintText = format ["<br/>Rumors say <t color='%1'>a notorious sniper</t> has been spotted! Last spot at marked position.<br/>He is carrying <t color='%1'>$20.000</t>.<br/>Nothing more is known...", moneyMissionColor];
+	_missionHintText = format ["<br/>The Jackals have unleashed a <t color='%1'>notorious sniper</t> and they have been spotted! Last spot at marked position.<br/>He is carrying <t color='%1'>$20.000</t>.<br/>Nothing more is known...", moneyMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
@@ -77,7 +77,7 @@ _failedExec =
 {
 	// Mission failed
 	deleteMarker "SniperArea";
-	_failedHintMessage = format ["The notorious sniper has left!"];
+	_failedHintMessage = format ["The Jackal sniper has left!"];
 };
 
 _successExec =
@@ -105,7 +105,7 @@ _successExec =
 	uiSleep 2;
 	deleteMarker "SMMarker1";
 
-	_successHintMessage = "Hm. Good job. But it was not THE notorious sniper ..";
+	_successHintMessage = "Good job. You've taken out the Jackals sniper ..";
 };
 
 _this call moneyMissionProcessor;

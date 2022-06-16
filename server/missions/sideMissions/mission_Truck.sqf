@@ -24,18 +24,25 @@ _setupObjects =
 
 	_vehicleClass =
 	[
-		"B_Truck_01_covered_F",
-		"B_Truck_01_fuel_F",
-		"B_Truck_01_medical_F",
-		"B_Truck_01_Repair_F",
-		"O_Truck_03_covered_F",
-		"O_Truck_03_fuel_F",
-		"O_Truck_03_medical_F",
-		"O_Truck_03_repair_F",
-		"I_Truck_02_covered_F",
-		"I_Truck_02_fuel_F",
-		"I_Truck_02_medical_F",
-		"I_Truck_02_box_F"
+		//"B_Truck_01_covered_F",
+		//"B_Truck_01_fuel_F",
+		//"B_Truck_01_medical_F",
+		//"B_Truck_01_Repair_F",
+		//"O_Truck_03_covered_F",
+		//"O_Truck_03_fuel_F",
+		//"O_Truck_03_medical_F",
+		//"O_Truck_03_repair_F",
+		//"I_Truck_02_covered_F",
+		//"I_Truck_02_fuel_F",
+		//"I_Truck_02_medical_F",
+		//"I_Truck_02_box_F"
+		"Redd_Tank_Fuchs_1A4_San_Flecktarn",
+		"UK3CB_BAF_MAN_HX58_Transport_Green",
+		"UK3CB_BAF_LandRover_Amb_Green_A",
+		"rhsusf_m1152_sicps_usarmy_d",
+		"rhsusf_M1078A1P2_D_fmtv_usarmy",
+		"rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy",
+		"rhsusf_M1078A1P2_B_WD_flatbed_fmtv_usarmy"
 	] call BIS_fnc_selectRandom;
 
 	// Class, Position, Fuel, Ammo, Damage, Special

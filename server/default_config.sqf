@@ -115,7 +115,7 @@ PDB_ObjectFileID = "A3W_";         // Object savefile prefix (if you run multipl
 // extDB settings
 A3W_extDB_ServerID = 1;            // Server ID to use in the database for the particular server running off this config file; if you have multiple servers, they all need different IDs
 A3W_extDB_Environment = "normal";  // Value used to separate player & object data from multiple environments running on the same map (e.g. "normal", "hardcore", "dev", etc. can be whatever you want)
-A3W_extDB_playerSaveCrossMap = 0;  // Player saves are shared across maps in same environment, with player location saved separately for each map; death resets save on all maps (0 = no, 1 = yes)
+A3W_extDB_playerSaveCrossMap = 1;  // Player saves are shared across maps in same environment, with player location saved separately for each map; death resets save on all maps (0 = no, 1 = yes)
 A3W_extDB_GhostingTimer = 5*60;    // Number of seconds a player has to wait when switching between servers running the same map (0 = disabled)
 A3W_extDB_GhostingAdmins = 0;      // Apply ghosting restriction to server admins (0 = no, 1 = yes)
 A3W_extDB_SaveUnlockedObjects = 0; // Save and restore unlocked baseparts that were purchased or locked at least once during their lifetime (0 = no, 1 = yes)
@@ -163,30 +163,29 @@ A3W_territoryCaptureTime = 3*60;   // Time in seconds needed to capture a territ
 A3W_territoryPayroll = 1;          // Periodically reward sides and indie groups based on how many territories they own (0 = no, 1 = yes)
 A3W_territoryWarningIcons = 0;     // Show exclamation marks on map for friendly territories where enemies are present (0 = no, 1 = yes)
 A3W_payrollInterval = 30*60;       // Delay in seconds between each payroll
-A3W_payrollAmount = 100;           // Amount of money rewarded per territory on each payroll
+A3W_payrollAmount = 3000;           // Amount of money rewarded per territory on each payroll
 
 // Mission settings
 A3W_serverMissions = 1;            // Enable server missions (0 = no, 1 = yes)
 A3W_missionsDifficulty = 0;        // Missions difficulty (0 = normal, 1 = hard)
 A3W_missionFarAiDrawLines = 1;     // Draw small red lines on the map from mission markers to individual units & vehicles which are further away than 75m from the objective (0 = no, 1 = yes)
-A3W_missionsQuantity = 9;          // Number of missions running at the same time (0 to 6)
+A3W_missionsQuantity = 10;          // Number of missions running at the same time (0 to 6)
 A3W_heliPatrolMissions = 1;        // Enable missions involving flying helicopters piloted by AI (0 = no, 1 = yes)
 A3W_underWaterMissions = 1;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
-A3W_mainMissionDelay = 10*60;      // Time in seconds between Main Missions
+A3W_mainMissionDelay = 5*60;      // Time in seconds between Main Missions
 A3W_mainMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
 A3W_sideMissionTimeout = 45*60;    // Time in seconds that a Side Mission will run for, unless completed
-A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
+A3W_moneyMissionDelay = 10*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
 A3W_priorityMissionDelay = 30*60;
 A3W_priorityMissionTimeout = 60*60;
-A3W_logisticsMissionDelay = 10*60;
+A3W_logisticsMissionDelay = 5*60;
 A3W_logisticsMissionTimeout = 30*60;
-A3W_waterMissionDelay = 5*60;
+A3W_waterMissionDelay = 10*60;
 A3W_waterMissionTimeout = 25*60;
 A3W_airMissionDelay = 5*60;
 A3W_airMissionTimeout = 25*60;
-
 
 //Mission Reward Money Amounts
 Tier_0_Reward = 0;						//added to eliminate the need to comment out when wantign to cancel $ reward from missions

@@ -6,86 +6,37 @@
 AirdropMenu =
 [
 	["Airdrop",true],
-			["US Vehicles", [2], "#USER:VehicleUSMenu", -5, [["expression", ""]], "1", "1"],
-			["UK Vehicles", [3], "#USER:VehicleUKMenu", -5, [["expression", ""]], "1", "1"],
-			["RUS Vehicles", [4], "#USER:VehicleRUSMenu", -5, [["expression", ""]], "1", "1"],
-			["Supplies", [5], "#USER:SupplyMenu", -5, [["expression", ""]], "1", "1"],
-			["Cancel Airdrop", [6], "", -3, [["expression", ""]], "1", "1"]
+			["Vehicles", [2], "#USER:VehicleMenu", -5, [["expression", ""]], "1", "1"],
+			["Supplies", [3], "#USER:SupplyMenu", -5, [["expression", ""]], "1", "1"],
+			["Cancel Airdrop", [4], "", -3, [["expression", ""]], "1", "1"]
 ];
 //////////////////////////////////////////////////////
-//Setting up the US Vehicle Menu ///////////////////////
+//Setting up the Vehicle Menu ///////////////////////
 /////////////////////////////////////////////////////
-VehicleUSMenu = [];
-_startVehUSMenu = ["US Vehicles",true];
-VehicleUSMenu pushback _startVehUSMenu;
+VehicleMenu = [];
+_startVehMenu = ["Vehicles",true];
+VehicleMenu pushback _startVehMenu;
 
 _i=0;
 {
-_optionVehUSMenu = [];
-_lineElement1=format ["%1 ($%2)",(APOC_AA_VehUSOptions select _i) select 0, (APOC_AA_VehUSOptions select _i) select 2];
-_type = (APOC_AA_VehUSOptions select _i) select 3;
-_optionVehUSMenu pushback _lineElement1;
-_optionVehUSMenu append [[_i+2], "", -5];
-_optionVehUSMenu pushback [["expression", format ['["%1",%2,player] execVM "addons\APOC_Airdrop_Assistance\APOC_cli_startAirdrop.sqf"',_type,_i]]];
-_optionVehUSMenu append ["1","1"];
-VehicleUSMenu pushback _optionVehUSMenu;
-//diag_log format["Here's the menu structure: %1",VehicleUSMenu];
+_optionVehMenu = [];
+_lineElement1=format ["%1 ($%2)",(APOC_AA_VehOptions select _i) select 0, (APOC_AA_VehOptions select _i) select 2];
+_type = (APOC_AA_VehOptions select _i) select 3;
+_optionVehMenu pushback _lineElement1;
+
+_optionVehMenu append [[_i+2], "", -5];
+
+_optionVehMenu pushback [["expression", format ['["%1",%2,player] execVM "addons\APOC_Airdrop_Assistance\APOC_cli_startAirdrop.sqf"',_type,_i]]];
+
+_optionVehMenu append ["1","1"];
+
+VehicleMenu pushback _optionVehMenu;
+//diag_log format["Here's the menu structure: %1",VehicleMenu];
 _i=_i+1;
-}forEach APOC_AA_VehUSOptions;
+}forEach APOC_AA_VehOptions;
 
-_endVehUSMenu = ["Cancel Airdrop", [_i+2], "", -3, [["expression", ""]], "1", "1"];
-VehicleUSMenu pushback _endVehUSMenu;
-
-//////////////////////////////////////////////////////
-//Setting up the UK Vehicle Menu ///////////////////////
-/////////////////////////////////////////////////////
-VehicleUKMenu = [];
-_startVehUKMenu = ["UK Vehicles",true];
-VehicleUKMenu pushback _startVehUKMenu;
-
-_i=0;
-{
-_optionVehUKMenu = [];
-_lineElement1=format ["%1 ($%2)",(APOC_AA_VehUKOptions select _i) select 0, (APOC_AA_VehUKOptions select _i) select 2];
-_type = (APOC_AA_VehUKOptions select _i) select 3;
-_optionVehUKMenu pushback _lineElement1;
-_optionVehUKMenu append [[_i+2], "", -5];
-_optionVehUKMenu pushback [["expression", format ['["%1",%2,player] execVM "addons\APOC_Airdrop_Assistance\APOC_cli_startAirdrop.sqf"',_type,_i]]];
-_optionVehUKMenu append ["1","1"];
-VehicleUKMenu pushback _optionVehUKMenu;
-//diag_log format["Here's the menu structure: %1",VehicleUSMenu];
-_i=_i+1;
-}forEach APOC_AA_VehUKOptions;
-
-_endVehUKMenu = ["Cancel Airdrop", [_i+2], "", -3, [["expression", ""]], "1", "1"];
-VehicleUKMenu pushback _endVehUKMenu;
-
-///////////////////////////////////////////////////////
-
-//////////////////////////////////////////////////////
-//Setting up the RUS Vehicle Menu ///////////////////////
-/////////////////////////////////////////////////////
-VehicleRUSMenu = [];
-_startVehRUSMenu = ["RUS Vehicles",true];
-VehicleRUSMenu pushback _startVehRUSMenu;
-
-_i=0;
-{
-_optionVehRUSMenu = [];
-_lineElement1=format ["%1 ($%2)",(APOC_AA_VehRUSOptions select _i) select 0, (APOC_AA_VehRUSOptions select _i) select 2];
-_type = (APOC_AA_VehRUSOptions select _i) select 3;
-_optionVehRUSMenu pushback _lineElement1;
-_optionVehRUSMenu append [[_i+2], "", -5];
-_optionVehRUSMenu pushback [["expression", format ['["%1",%2,player] execVM "addons\APOC_Airdrop_Assistance\APOC_cli_startAirdrop.sqf"',_type,_i]]];
-_optionVehRUSMenu append ["1","1"];
-VehicleRUSMenu pushback _optionVehRUSMenu;
-//diag_log format["Here's the menu structure: %1",VehicleUSMenu];
-_i=_i+1;
-}forEach APOC_AA_VehRUSOptions;
-
-_endVehRUSMenu = ["Cancel Airdrop", [_i+2], "", -3, [["expression", ""]], "1", "1"];
-VehicleRUSMenu pushback _endVehRUSMenu;
-
+_endVehMenu = ["Cancel Airdrop", [_i+2], "", -3, [["expression", ""]], "1", "1"];
+VehicleMenu pushback _endVehMenu;
 ///////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////

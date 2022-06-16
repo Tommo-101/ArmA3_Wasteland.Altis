@@ -15,11 +15,16 @@ _setupVars =
 {
 	_vehicleClass = // to specify a vehicleLoadouts variant, simply write "class/variant", e.g. "O_Heli_Light_02_dynamicLoadout_F/orcaDAR"
 	[
-		"B_Plane_Fighter_01_F",
-		"O_Plane_Fighter_02_F",
-		"B_Plane_CAS_01_dynamicLoadout_F",
-		"O_Plane_CAS_02_dynamicLoadout_F",
-		"O_T_VTOL_02_infantry_dynamicLoadout_F"
+		//"B_Plane_Fighter_01_F",
+		//"O_Plane_Fighter_02_F",
+		//"B_Plane_CAS_01_dynamicLoadout_F",
+	  //"O_Plane_CAS_02_dynamicLoadout_F",
+		//"O_T_VTOL_02_infantry_dynamicLoadout_F"
+		"rhs_mig29s_vmf",
+		"RHS_T50_vvs_blueonblue",
+		"USAF_A10",
+		"USAF_F22",
+		"USAF_F35A_STEALTH"
 	];
 
 	while {_vehicleClass isEqualType []} do { _vehicleClass = selectRandom _vehicleClass };

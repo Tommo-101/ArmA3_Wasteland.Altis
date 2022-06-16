@@ -166,7 +166,7 @@ _setupObjects =
 	//_missionPicture = "pictures\atmtransport.paa";
 	_vehicleName = getText (configFile >> "cfgVehicles" >> _veh2 >> "displayName");
 
-	_missionHintText = format ["A Russian convoy is transporting <t color='%1'>%2</t> to an unknown ATM location.<br/>Best chance for you to earn some extra money!", moneyMissionColor, _moneyText];
+	_missionHintText = format ["A Russian convoy is transporting <t color='%1'>%2</t> to an unknown location.<br/>Best chance for you to earn some extra money!", moneyMissionColor, _moneyText];
 
 	_numWaypoints = count waypoints _aiGroup;
 };
@@ -192,7 +192,7 @@ _successExec =
 		_cash setVariable ["owner", "world", true];
 	};
 
-	_successHintMessage = "Nice! Look's like that ATM shipment won't be going anywhere, Putin will likely drop some nukes and commit war crimes now..";
+	_successHintMessage = "Nice! Look's like that shipment won't be going anywhere, Putin will likely drop some nukes and commit war crimes now..";
 };
 
 _this call moneyMissionProcessor;

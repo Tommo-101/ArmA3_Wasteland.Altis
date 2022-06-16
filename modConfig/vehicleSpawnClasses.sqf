@@ -17,7 +17,9 @@ civilianVehicles =
 	"C_Hatchback_01_sport_F",
 	"C_SUV_01_F",
 	"C_Offroad_01_F",
-	["C_Van_01_box_F", "C_Van_01_transport_F", "C_Van_01_fuel_F"]
+	["C_Van_01_box_F", "C_Van_01_transport_F", "C_Van_01_fuel_F"],
+	"rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy", "UK3CB_BAF_LandRover_Snatch_Green_A",
+	"UK3CB_BAF_LandRover_Amb_Green_A"
 ];
 
 //Light Military Vehicle List - Random Spawns
@@ -26,6 +28,7 @@ lightMilitaryVehicles =
 	//British Vehicles
 	"UK3CB_BAF_LandRover_Amb_Green_A", "UK3CB_BAF_LandRover_Hard_Green_A", "UK3CB_BAF_LandRover_Soft_Green_A",
 	//US Vehicles
+	"rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy",
 	"rhsusf_m1151_usarmy_wd", "rhsusf_m1043_w", "rhsusf_m1151_m2crows_usarmy_wd", "rhsusf_m1151_m240_v1_usarmy_wd"
 ];
 
@@ -81,45 +84,18 @@ A3W_planeSpawnOdds = 0.25; // 0.0 to 1.0
 //Random Weapon List - Change this to what you want to spawn in cars.
 vehicleWeapons =
 [
-	[
-		"rhsusf_weap_m9",
-		"rhsusf_weap_glock17g4",
-		"rhs_weap_makarov_pm",
-
-		"rhs_weap_M590_5RD",
-		"rhsusf_weap_MP7A2_aor1",
-		"rhsusf_weap_MP7A2",
-		"BWA3_MP7",
-
-		"rhs_weap_m32", // Sting
-		[
-			"rhs_weap_m4a1_blockII_bk", // ADR-97
-			"rhs_weap_m4a1_blockII_d",
-			"rhs_weap_m4a1_blockII_KAC_bk",
-			"rhs_weap_m4a1_blockII_KAC_d",
-			"rhs_weap_m4a1_blockII_KAC_wd",
-			"rhs_weap_m4a1_blockII_KAC",
-			"rhs_weap_m4a1_blockII_M203_bk",
-			"rhs_weap_m4a1_blockII_M203_d",
-			"rhs_weap_m4a1_blockII_M203_wd",
-			"rhs_weap_m4a1_blockII_M203",
-			"rhs_weap_m4a1_blockII_wd",
-			"rhs_weap_m4a1_blockII"
-		],
-		[
-			"rhs_weap_sr25_d",
-			"rhs_weap_sr25_ec_d",
-			"rhs_weap_sr25_ec_wd",
-			"rhs_weap_sr25_ec",
-			"rhs_weap_sr25_wd",
-			"rhs_weap_sr25"
-		]
-	],
+	["rhsusf_weap_m9","rhsusf_weap_glock17g4","rhs_weap_makarov_pm"],
+	["rhs_weap_m32"],
+	["rhs_weap_M590_5RD","rhsusf_weap_MP7A2_aor1","rhsusf_weap_MP7A2","BWA3_MP7"],
+	["rhs_weap_m4a1_blockII_bk", "rhs_weap_m4a1_blockII_d","rhs_weap_m4a1_blockII_KAC_bk","rhs_weap_m4a1_blockII_KAC_d","rhs_weap_m4a1_blockII_KAC_wd","rhs_weap_m4a1_blockII_KAC","rhs_weap_m4a1_blockII_M203_bk","rhs_weap_m4a1_blockII_M203_d","rhs_weap_m4a1_blockII_M203_wd","rhs_weap_m4a1_blockII_M203","rhs_weap_m4a1_blockII_wd","rhs_weap_m4a1_blockII"],
+	["rhs_weap_sr25_d","rhs_weap_sr25_ec_d","rhs_weap_sr25_ec_wd","rhs_weap_sr25_ec","rhs_weap_sr25_wd","rhs_weap_sr25"],
 	["rhs_weap_M107_d", "rhs_weap_M107_w", "rhs_weap_M107"],
 	["rhs_weap_m24sws_d", "rhs_weap_m24sws_wd", "rhs_weap_m24sws"],
 	["rhs_weap_m240B", "rhs_weap_m240G"],
-	["rhs_weap_m249_light_L", "rhs_weap_m249_light_S", "rhs_weap_m249_pip_L_para", "rhs_weap_m249_pip_L", "rhs_weap_m249_pip_ris", "rhs_weap_m249_pip_S_para", "rhs_weap_m249_pip_S", "rhs_weap_m249_pip", "rhs_weap_m249"],
-
+	["rhs_weap_makarov_pm","rhs_weap_pya"],
+	["rhs_weap_ak103","rhs_weap_ak103_1","rhs_weap_ak103_2"],
+	["BWA3_G38","BWA3_G38_tan","BWA3_G38_AG40","BWA3_G38_AG40_tan"],
+	["rhs_weap_m249_light_L", "rhs_weap_m249_light_S", "rhs_weap_m249_pip_L_para", "rhs_weap_m249_pip_L", "rhs_weap_m249_pip_ris", "rhs_weap_m249_pip_S_para", "rhs_weap_m249_pip_S", "rhs_weap_m249_pip", "rhs_weap_m249"]
 	//["arifle_TRG20_F", "arifle_TRG21_F", "arifle_TRG21_GL_F"],
 	//["arifle_Mk20C_F", "arifle_Mk20_F", "arifle_Mk20_GL_F"],
 	//["arifle_Katiba_F", "arifle_Katiba_C_F", "arifle_Katiba_GL_F"],
@@ -155,5 +131,5 @@ vehicleAddition2 =
 	"rhs_mag_m18_green",
 	"rhs_mag_m18_purple",
 	"rhs_mag_m18_red",
-	"rhs_mag_m18_yellow",
+	"rhs_mag_m18_yellow"
 ];

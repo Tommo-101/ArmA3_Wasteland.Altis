@@ -49,27 +49,32 @@ _boxList =
 					{
 						_boxItems =
 						[
-							["wep", "arifle_MX_F", 5, 4],
-							["wep", "arifle_MX_SW_F", 2, 4],
-							["wep", "SMG_01_F", 1, 5] // Vermin
+							["wep", "rhs_weap_m4_m203", 1, 4],
+							["wep", "rhs_weap_m4a1_blockII_bk", 1, 4],
+							["wep", "rhs_weap_SCARH_USA_CQC", 1, 4],
+							["wep", "rhs_weap_sr25_d", 1, 4],
+							["wep", "rhs_weap_mk18_bk", 1, 4],
+							["wep", "rhs_weap_m4a1_d_mstock", 1, 4]
 						]
 					};
 					case (_box isKindOf "Box_East_Wps_F"):
 					{
 						_boxItems =
 						[
-							["wep", "arifle_Katiba_F", 5, 4],
-							["wep", "LMG_Zafir_F", 2, 4],
-							["wep", "SMG_02_F", 1, 5] // Sting
+							["wep", "rhs_weap_ak103", 2, 4],
+							["wep", "rhs_weap_ak74m", 2, 4],
+							["wep", "rhs_weap_akm", 2, 5]
 						]
 					};
 					case (_box isKindOf "Box_IND_Wps_F"):
 					{
 						_boxItems =
 						[
-							["wep", "arifle_Mk20_F", 5, 4],
-							["wep", "LMG_Mk200_F", 2, 4],
-							["wep", "hgun_PDW2000_F", 1, 5]
+							["wep", "rhs_weap_m4_m203", 1, 4],
+							["wep", "rhs_weap_ak103", 5, 4],
+							["wep", "rhs_weap_ak74m", 2, 4],
+							["wep", "rhs_weap_mk18_bk", 1, 4],
+							["wep", "rhs_weap_akm", 1, 5]
 						]
 					};
 					default { _boxItems = [] };

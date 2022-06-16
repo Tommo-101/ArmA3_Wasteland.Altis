@@ -5,6 +5,7 @@
 //	@file Name: mission_airdrop.sqf
 //	@file Author: Leon
 //	@file Created: 08/19/2021 18:45
+//	@file WSEdit: GriffinZS
 
 if (!isServer) exitwith {};
 #include "logisticsMissionDefines.sqf"
@@ -13,7 +14,7 @@ private ["_town", "_dropCenter", "_dropRadius", "_dropName", "_cratePos", "_crat
 
 _setupVars =
 {
-	_missionType = "Airdrop Supply";
+	_missionType = "False Airdrop";
 	_locationsArray = MissionSpawnMarkers;
 };
 
@@ -31,8 +32,8 @@ _setupObjects =
 	_crate = createVehicle ["Land_CargoBox_V1_F", _missionPos vectorAdd [0, 0, 75], [], 1, "None"];
 	_crate setVariable ["Mission_Crate", true];
 	_crate setVariable ["Mission_AirdropOnly", true];
-	_crate allowDamage false; 
-	_smoke = createVehicle ["SmokeShell", position _crate, [], 0, "NONE"]; 
+	_crate allowDamage false;
+	_smoke = createVehicle ["SmokeShell", position _crate, [], 0, "NONE"];
 	_smoke attachTo [_crate, [0, 0, 0.65]];
 
 	_para = createVehicle ["I_parachute_02_F", position _crate, [], 0, ""];
@@ -52,15 +53,15 @@ _setupObjects =
 	};
 
 	_missionAirdrop = createMarker ["missionAirdrop", _dropCenter];
-	_missionAirdrop setMarkerType "loc_container";
-	_missionAirdrop setMarkerText "Airdrop Zone";
-	_missionAirdrop setMarkerColor "ColorWhite";
+	_missionAirdrop setMarkerType "Contact_circle2";
+	_missionAirdrop setMarkerText "Airdrop Delivery";
+	_missionAirdrop setMarkerColor "ColorEAST";
 	_missionAirdrop setMarkerSize [0.5, 0.5];
 
 	_aiGroup = createGroup CIVILIAN;
 	[_aiGroup, _missionPos, 2, 7] call createCustomGroup;
 
-	_missionHintText = format ["An medical supply has been airdrop at wrong location, please lift it up and airdrop to Town <t color='%2'>%1</t>!", _dropName, logisticsMissionColor];
+	_missionHintText = format ["Medical supplies have been <t color='%2'>airdropped at wrong location</t>!<br/>Jackal units just arrived.<br/>Kill them and deliver the supplies to <t color='%2'>%1</t>!", _dropName, logisticsMissionColor];
 };
 
 _ignoreAiDeaths = true;
@@ -91,6 +92,7 @@ _failedExec =
 	};
 	deleteMarker _missionAirdrop;
 	deleteVehicle _crate;
+	_failedHintMessage = format ["The enemy has the supplies now!"];
 };
 
 _successExec =
@@ -98,7 +100,7 @@ _successExec =
 	if (!isNil "_lastDriver") then
 	{
 		[_lastDriver, 7500] call A3W_fnc_setCMoney;
-		_lastDriver globalChat "Your received cash 7,500 for sent airdrop.";
+		_lastDriver globalChat "Your received cash 7,500 for delivered the airdrop.";
 	} else
 	{
 		_cash = createVehicle ["Land_Money_F", position _crate, [], 0, "None"];
@@ -108,6 +110,7 @@ _successExec =
 	};
 	deleteMarker _missionAirdrop;
 	deleteVehicle _crate;
-	_successHintMessage = "Civilian received resupply.";
+	_successHintMessage = "The medical supplies have been delivered. Good job!";
 };
+
 _this call logisticsMissionProcessor;
